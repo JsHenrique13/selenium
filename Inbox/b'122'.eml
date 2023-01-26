@@ -1,0 +1,323 @@
+Return-Path: <tributospma2021@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id +VkHDt6GamJnFgAAgqjM2g
+	(envelope-from <tributospma2021@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Thu, 28 Apr 2022 09:21:50 -0300
+Return-path: <tributospma2021@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Thu, 28 Apr 2022 09:21:50 -0300
+Received: from mail-ej1-f44.google.com ([209.85.218.44]:40514)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <tributospma2021@gmail.com>)
+	id 1nk39U-0001Lm-M6
+	for admrh@acarape.ce.gov.br; Thu, 28 Apr 2022 09:21:50 -0300
+Received: by mail-ej1-f44.google.com with SMTP id l18so9185809ejc.7
+        for <admrh@acarape.ce.gov.br>; Thu, 28 Apr 2022 05:21:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :cc;
+        bh=6pr5bPLoY8/uzeaUKhNykbzTN94l0gyhMn6O15F9ekQ=;
+        b=clKVWV9Y9RgI2PfalhSqkLRbMK7ywmC5e8d0BKpK9RjvOwf2Dmwz7gfpahHdSTNkzK
+         4IR+ka+TgV4FC9NMUiy1y5y054y3NHuoazYQnkYJISLlEAlxHzQR+NK64Whn38zn6/Ou
+         eIwslw1wIzhSeyQZ4nyFi/DlifvNCOzXGoOSE+Dlgi/IQzFmeY3rqhEnS8aXO7wpsaB5
+         TXrU67VdtiTSK0bgHKWquY94CsjQYC6UBNq5gEVMetWt33TaZvJ09qbpTfBvB2yA71U4
+         Od0cyCc44sjN5HebfQrf2Y/p1dBUPY/gXZhGumPPtPOt7iqvRCzb/mcj3y48YZkh8VNb
+         lMmg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:cc;
+        bh=6pr5bPLoY8/uzeaUKhNykbzTN94l0gyhMn6O15F9ekQ=;
+        b=Xs1tDad8FlKG1UPZFsabtSmYYI4U5tU91FhZhLvwbjXXq+NTGM19CyMCP1ggl506pg
+         jWnJBN+++uNNQ1CwAm6UOfFilRB6MUL1z+bks7i2UB0C+NG0xx9dUI+gffMI5UcfGVqf
+         RYFOqKyFIOyvHB9jWZJ7sE3EB/N5l+gmrsTzmZUejN7AugYMAZIoQlrjQIJqkj4ej1E5
+         P0v8LgW21dHllYcDYLEWjSJCO2OXun1a73HJKiw22XYaII0fvMkEfh1fXuxuaRmTG7lx
+         Dj/nBdyQ3qmOLH/s6PKAuFQkx8ufDewEP4hID2SJRBogE5CJLjfzc7pxk9y/yywlHYot
+         fhmg==
+X-Gm-Message-State: AOAM531H9D0HQdCWud3MhPFcNdPAbmi1uaVNSesa11j5Erad2LGM+Tpj
+	s5CA+cH9RzsAuRYy2ScOIFy4Gk+jAd0YM+BOwHk=
+X-Google-Smtp-Source: ABdhPJwQzv8qI+Yss/HS6+UslR3JKv65zqcAJCuBph3KkbKzIsJbItwccoVGfWqGeIT9H+Rjz18veyoB+nF8F0+Xb2Q=
+X-Received: by 2002:a17:906:4fcc:b0:6e0:3269:2054 with SMTP id
+ i12-20020a1709064fcc00b006e032692054mr30357641ejw.117.1651148461569; Thu, 28
+ Apr 2022 05:21:01 -0700 (PDT)
+MIME-Version: 1.0
+References: <MW4PR03MB6635109CAA92A236958DDB9ECEFA9@MW4PR03MB6635.namprd03.prod.outlook.com>
+In-Reply-To: <MW4PR03MB6635109CAA92A236958DDB9ECEFA9@MW4PR03MB6635.namprd03.prod.outlook.com>
+From: Tributos Acarape <tributospma2021@gmail.com>
+Date: Thu, 28 Apr 2022 09:20:50 -0300
+Message-ID: <CAPavgQ7ktCVOn34D8jHsHmDBY62QL2BX3rUmXMBsaLwRfxLtig@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Parecer_Jur=C3=ADdico_=2D_Proc=2E?=
+To: Advocacia Associada Fernandes <advfernandesneto@hotmail.com>
+Cc: Procuradoria Geral <procuradoriapma2021@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000085fd5805ddb5f554"
+Bcc: admrh@acarape.ce.gov.br
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Fernandes Neto e Advogados Associados, Bom dia Iremos *direcionar
+    esta demanda à Secretaria Municipal de Administração e Finanças, juntamente
+    com a Tesouraria Municipal*, pois não temos como atender. *Por gentileza,
+    confirmem o recebimento.* [...] 
+ Content analysis details:   (0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [tributospma2021[at]gmail.com]
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [tributospma2021[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+X-Spam-Flag: NO
+
+--00000000000085fd5805ddb5f554
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Fernandes Neto e Advogados Associados,
+Bom dia
+
+Iremos *direcionar esta demanda =C3=A0 Secretaria Municipal de Administra=
+=C3=A7=C3=A3o e
+Finan=C3=A7as, juntamente com  a Tesouraria Municipal*, pois n=C3=A3o temos=
+ como
+atender.
+*Por gentileza, confirmem o recebimento.*
+Segue c=C3=B3pia para a Procuradoria Geral deste munic=C3=ADpio.
+Ao inteiro dispor de maiores informa=C3=A7=C3=B5es.
+
+Atenciosamente,
+
+=C3=81mon Oliveira
+Ag. Municipal
+SEMAFI/NAT - Acarape-CE
+*Cuide de sua sa=C3=BAde e de quem voc=C3=AA ama > *
+Use m=C3=A1scara /
+Salve vidas
+* /  Lave suas m=C3=A3os / Mantenha uma dist=C3=A2ncia segura!!! *
+
+Em qua., 27 de abr. de 2022 =C3=A0s 16:50, Advocacia Associada Fernandes <
+advfernandesneto@hotmail.com> escreveu:
+
+> * PARECER JUR=C3=8DDICO    Fortaleza - CE, 27 de abril de 2022.    Ao Ilm=
+o. Sr.
+> Dr. Procurador do Munic=C3=ADpio de Acarape - CE  Assunto: A=C3=A7=C3=A3o=
+ Ordin=C3=A1ria de
+> Cobran=C3=A7a  Ref. Ao Proc. N=C2=BA 0000151-13.2018.8.06.0027   Cuida-se=
+ de Parecer
+> Jur=C3=ADdico acerca do cumprimento de decis=C3=A3o proferida no processo=
+ de n=C2=BA
+> 0000151-13.2018.8.06.0027 (A=C3=A7=C3=A3o Ordin=C3=A1ria de Cobran=C3=A7a=
+), em tr=C3=A2mite na Vara
+> =C3=9Anica na Comarca desta cidade.  Na oportunidade, venho informar-lhe =
+que o
+> Munic=C3=ADpio de Acarape foi intimado para dar cumprimento a senten=C3=
+=A7a de fls.
+> 61-62, na forma da certid=C3=A3o de fls. 67, em anexo.  O presente feito =
+foi
+> ajuizado por Marcel Rolim Queiroz, em face do ente p=C3=BAblico, pleitean=
+do sua
+> condena=C3=A7=C3=A3o na de cobran=C3=A7a consistente em sal=C3=A1rios rel=
+ativos a plant=C3=B5es
+> trabalhados no m=C3=AAs de agosto de 2016.  Ante todo o exposto, em atend=
+imento
+> ao despacho anexo, emitimos parecer no sentido de que o Munic=C3=ADpio d=
+=C3=AA
+> cumprimento imediatamente =C3=A0 decis=C3=A3o, a fim de que seja realizad=
+o o
+> pagamento dos sal=C3=A1rios, no importe de R$ 3.200,00 em duas parcelas d=
+e R$
+> 1.600,00, sob pena de aplica=C3=A7=C3=A3o de multa di=C3=A1ria, configura=
+=C3=A7=C3=A3o de crime de
+> desobedi=C3=AAncia e caracteriza=C3=A7=C3=A3o de ato de improbidade admin=
+istrativa.  Sem
+> mais para o momento e sempre =C3=A0 disposi=C3=A7=C3=A3o, estimo votos de=
+ considera=C3=A7=C3=A3o.
+> Atenciosamente, *
+>
+>
+> Fernandes Neto
+>
+> Advogados Associados
+>
+>
+
+--00000000000085fd5805ddb5f554
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Fernandes Neto e Advogados Associados,<br></div><div>=
+Bom dia</div><div><div><br></div><div>Iremos <b>direcionar esta demanda =C3=
+=A0 Secretaria Municipal de Administra=C3=A7=C3=A3o e Finan=C3=A7as, juntam=
+ente com=C2=A0 a Tesouraria Municipal</b>, pois n=C3=A3o temos como atender=
+.</div><div><b>Por gentileza, confirmem o recebimento.</b></div><div>Segue =
+c=C3=B3pia para a Procuradoria Geral deste munic=C3=ADpio.</div><div>Ao int=
+eiro dispor de maiores informa=C3=A7=C3=B5es.<br></div><div><br></div></div=
+><div><div id=3D"m_-2643917800795113899gmail-m_199176844393593746gmail-m_78=
+19458016024767674gmail-m_4173874467399714864gmail-m_-3126636767973154167gma=
+il-m_2826592930655160085gmail-m_292954371585249307gmail-m_-1759372881407201=
+100gmail-m_-7720708118790456085gmail-m_-6451852882240000880gmail-m_-4664973=
+943403654429gmail-:1dp" style=3D"font-size:0.875rem;direction:ltr;margin:8p=
+x 0px 0px;padding:0px;font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-s=
+erif"><div id=3D"m_-2643917800795113899gmail-m_199176844393593746gmail-m_78=
+19458016024767674gmail-m_4173874467399714864gmail-m_-3126636767973154167gma=
+il-m_2826592930655160085gmail-m_292954371585249307gmail-m_-1759372881407201=
+100gmail-m_-7720708118790456085gmail-m_-6451852882240000880gmail-m_-4664973=
+943403654429gmail-:1dq" style=3D"overflow:hidden;font-variant-numeric:norma=
+l;font-variant-east-asian:normal;font-stretch:normal;font-size:small;line-h=
+eight:1.5;font-family:Arial,Helvetica,sans-serif"><div dir=3D"ltr"><div>Ate=
+nciosamente,<br></div><div><br></div><div>=C3=81mon Oliveira</div><div>Ag. =
+Municipal</div><div>SEMAFI/NAT - Acarape-CE</div><div><div><span style=3D"b=
+ackground-color:rgb(0,255,0)"><b>Cuide de sua sa=C3=BAde e de quem voc=C3=
+=AA ama &gt;=C2=A0</b><div style=3D"font-weight:bold;color:black;white-spac=
+e:nowrap;padding:8px 5px 0px;display:inline-block;font-family:arial,sans-se=
+rif;text-align:center">Use m=C3=A1scara /</div><div style=3D"color:black;fo=
+nt-weight:bold;padding:8px 5px 0px;white-space:nowrap;display:inline-block;=
+font-family:arial,sans-serif;text-align:center">Salve vidas</div><b><span s=
+tyle=3D"color:black;font-family:arial,sans-serif;text-align:center">=C2=A0/=
+=C2=A0=C2=A0</span><span style=3D"color:black;font-family:arial,sans-serif;=
+text-align:center">Lave suas m=C3=A3os /=C2=A0</span><span style=3D"color:b=
+lack;font-family:arial,sans-serif;text-align:center">Mantenha uma dist=C3=
+=A2ncia segura</span>!!!=C2=A0</b></span></div></div></div></div></div></di=
+v></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr=
+">Em qua., 27 de abr. de 2022 =C3=A0s 16:50, Advocacia Associada Fernandes =
+&lt;<a href=3D"mailto:advfernandesneto@hotmail.com" target=3D"_blank">advfe=
+rnandesneto@hotmail.com</a>&gt; escreveu:<br></div><blockquote class=3D"gma=
+il_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,2=
+04,204);padding-left:1ex">
+
+
+
+
+<div dir=3D"ltr">
+<div style=3D"font-family:Calibri,Helvetica,sans-serif;font-size:12pt;color=
+:rgb(0,0,0)">
+<b style=3D"font-weight:normal">
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:center;background-color:=
+rgb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:700">PARECER JUR=C3=8DDICO=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:right;background-color:r=
+gb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:right;background-color:r=
+gb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">Fortaleza - CE, 27 de abril de 2022.</span><sp=
+an style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color:rg=
+b(0,0,0);font-weight:700">=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">Ao Ilmo. Sr. Dr. Procurador do Munic=C3=ADpio =
+de Acarape - CE=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:700">Assunto: A=C3=A7=C3=A3o Ordin=C3=A1ria de Cobr=
+an=C3=A7a=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">Ref. Ao Proc. N=C2=BA 0000151-13.2018.8.06.002=
+7</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">Cuida-se de Parecer Jur=C3=ADdico acerca do cu=
+mprimento de decis=C3=A3o proferida no processo de n=C2=BA 0000151-13.2018.=
+8.06.0027 (A=C3=A7=C3=A3o Ordin=C3=A1ria de Cobran=C3=A7a), em tr=C3=A2mite=
+ na Vara
+ =C3=9Anica na Comarca desta cidade.=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt;padding:12pt 0pt 0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">Na oportunidade, venho informar-lhe que o Muni=
+c=C3=ADpio de Acarape foi intimado para dar cumprimento a senten=C3=A7a de =
+fls. 61-62, na forma da certid=C3=A3o de fls. 67, em anexo.=C2=A0</span></p=
+>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt;padding:12pt 0pt 0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">O presente feito foi ajuizado por Marcel Rolim=
+ Queiroz, em face do ente p=C3=BAblico, pleiteando sua condena=C3=A7=C3=A3o=
+ na de cobran=C3=A7a consistente em sal=C3=A1rios relativos a plant=C3=B5es
+ trabalhados no m=C3=AAs de agosto de 2016.=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt;padding:12pt 0pt 10pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">Ante todo o exposto, em atendimento ao despach=
+o anexo, emitimos parecer no sentido de que o Munic=C3=ADpio d=C3=AA cumpri=
+mento imediatamente =C3=A0 decis=C3=A3o, a fim de que seja realizado
+ o pagamento dos sal=C3=A1rios, no importe de R$ 3.200,00 em duas parcelas =
+de R$ 1.600,00, sob pena de aplica=C3=A7=C3=A3o de multa di=C3=A1ria, confi=
+gura=C3=A7=C3=A3o de crime de desobedi=C3=AAncia e caracteriza=C3=A7=C3=A3o=
+ de ato de improbidade administrativa.=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 10pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">Sem mais para o momento e sempre =C3=A0 dispos=
+i=C3=A7=C3=A3o, estimo votos de considera=C3=A7=C3=A3o.=C2=A0</span></p>
+<p dir=3D"ltr" style=3D"line-height:1.8;text-align:justify;background-color=
+:rgb(255,255,255);margin-top:0pt;margin-bottom:0pt">
+<span style=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;;color=
+:rgb(0,0,0);font-weight:400">Atenciosamente,
+</span></p>
+</b><br>
+<br>
+</div>
+<div>
+<div style=3D"font-family:Calibri,Helvetica,sans-serif;font-size:12pt;color=
+:rgb(0,0,0)">
+<br>
+</div>
+<div id=3D"gmail-m_-2643917800795113899gmail-m_8193844111963720183Signature=
+">
+<div>
+<div style=3D"font-family:Calibri,Helvetica,sans-serif;font-size:12pt;color=
+:rgb(0,0,0)">
+<p style=3D"margin:0cm 0cm 0.0001pt;font-size:11pt;font-family:Calibri,&quo=
+t;sans-serif&quot;">
+<span style=3D"font-size:20pt;font-family:Haettenschweiler,&quot;sans-serif=
+&quot;">Fernandes Neto</span></p>
+<p style=3D"margin:0cm 0cm 0.0001pt;font-size:11pt;font-family:Calibri,&quo=
+t;sans-serif&quot;">
+<span style=3D"font-size:12pt;font-family:&quot;Agency FB&quot;,&quot;sans-=
+serif&quot;">Advogados Associados</span></p>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</blockquote></div>
+
+--00000000000085fd5805ddb5f554--

@@ -1,0 +1,168 @@
+Return-Path: <tributos.acarape.ce@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id MELfOpqHTmP2dQAAgqjM2g
+	(envelope-from <tributos.acarape.ce@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Tue, 18 Oct 2022 08:01:46 -0300
+Return-path: <tributos.acarape.ce@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Tue, 18 Oct 2022 08:01:47 -0300
+Received: from mail-ot1-f53.google.com ([209.85.210.53]:43541)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <tributos.acarape.ce@gmail.com>)
+	id 1okkLw-00035I-St
+	for admrh@acarape.ce.gov.br;
+	Tue, 18 Oct 2022 08:01:46 -0300
+Received: by mail-ot1-f53.google.com with SMTP id t4-20020a9d7f84000000b00661c3d864f9so7387160otp.10
+        for <admrh@acarape.ce.gov.br>; Tue, 18 Oct 2022 04:01:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=V3uIdF07mXEhz7XNXvejo55vJ3GvHh7GN/T4kEqDWdo=;
+        b=m4KJd5eQ+9+jekG+cjPKp6h3dbmARSxkpgWSNqUe19P+7oLDmZmd6zHLc8P78i3wjP
+         GkNeHmh3b5BTml8QT9esxvdmpda5kjCZ6nwDgeHpIz4Vg4Vtz/t1EchMBu9Kue0AhFXK
+         /s93jqgeTrXTtPRUOchwD0129emaai7nK0GSEGwA7v3+3793RK/9vNRlmPTElwkKyYhX
+         3VmX6JP271XlxmRtKBgXcbavY8sYB4CjNJET5GB7UuHUCN4z/O3VHLBg/iu/V0h4oXdK
+         kD6/bPQCrF0U0f3ikSPHxmRrw2uEUU/IoXkjADrzUv54i/FjZKVhSiT3hmJILDCbXhfh
+         Ma7Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=V3uIdF07mXEhz7XNXvejo55vJ3GvHh7GN/T4kEqDWdo=;
+        b=xQ7zXa6FItiKB+4v6TfWlJHOQUDZ1CZV7OUkJZcKdYY3CsHHgi8hxECumTnUnVdJ24
+         gJEqMJm+0Wf778Q2rseo6Xf1vR4+Hr2kpPZ4X9/zVAoq5W571c0JBXmqsNZQF9JHwQxy
+         L76tib4fP+cB729nBOyjYahxkEInJ3fCzx/Va5de8O/tS/172CqB0VS1XT+6Go7EIerP
+         uZnXJ+vnyFb0armCWaTiVSBlnfjMVKp3PEY/Bad/8RVG6r4CDoeK6D3NTe4qaQQQTrRU
+         NyD1tEw+GjqlsoC/L+fZ/pf2z1BToSbEG5cTVV0UepiwpO7D7ERMmPVaiiwUa4dzzrm9
+         Xblw==
+X-Gm-Message-State: ACrzQf0cN6/5DT4BdcA/VPPZcDO6mOD4VMv2VFxV3o/dpo+FrFhjFTu9
+	w2A2IJXnHAucCZRUKb8KnWZ5kRxGSV+PTpyevz/1ZnpXt6ruDw==
+X-Google-Smtp-Source: AMsMyM54KO00R4Q/37c16qHsTHt6wXdg9ourz+e/OeTo1ivo7uxWdjhWVThrIVfmHXoF+3ZwocXiIPBjPEohEdbfRoA=
+X-Received: by 2002:a9d:5383:0:b0:660:e848:ea2f with SMTP id
+ w3-20020a9d5383000000b00660e848ea2fmr956908otg.381.1666090862682; Tue, 18 Oct
+ 2022 04:01:02 -0700 (PDT)
+MIME-Version: 1.0
+From: =?UTF-8?Q?N=C3=BAcleo_de_Adm=2E_Tribut=C3=A1ria_Acarape=2DCE?= <tributos.acarape.ce@gmail.com>
+Date: Tue, 18 Oct 2022 08:00:00 -0300
+Message-ID: <CAKN6VY1h1xmffEfCEKhUkd3HkmJ1iWXnboc21XSNevX=ZvJCoQ@mail.gmail.com>
+Subject: =?UTF-8?B?U09MSUNJVEHDh8ODTyBERSBJTkZPUk1Bw4fDlUVT?=
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="00000000000008a68005eb4d0285"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Senhor Davys Queiroz de Vasconcelos - Gerente de Recursos
+   Humanos da PMA, Bom dia Com o intuito de atender às solicitações da Procuradoria
+    Municipal, referente a juntada de provas a Execução Fiscal em andamento,
+    portanto, vimos solicitar deste RH a confirmação se o Senhor Fr [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [tributos.acarape.ce[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+X-Spam-Flag: NO
+
+--00000000000008a68005eb4d0285
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Senhor Davys Queiroz de Vasconcelos - Gerente de Recursos Humanos  da PMA,
+Bom dia
+
+Com o intuito de atender =C3=A0s solicita=C3=A7=C3=B5es da Procuradoria Mun=
+icipal,
+referente a juntada de provas a Execu=C3=A7=C3=A3o Fiscal em andamento, por=
+tanto, vimos
+solicitar deste RH a confirma=C3=A7=C3=A3o se o Senhor Francisco de Freitas=
+ Dias
+Filho (CPF n=C2=BA 815.796.833-04), faz parte do quadro de agentes municipa=
+is,
+bem como seus dados para contato (endere=C3=A7o, e-mail, telefone, celular =
+e
+etc) e sua atual condi=C3=A7=C3=A3o perante o Munic=C3=ADpio, para que poss=
+amos informar a
+assessoria jur=C3=ADdica deste munic=C3=ADpio.
+=C3=80 inteira disposi=C3=A7=C3=A3o de maiores informa=C3=A7=C3=B5es.
+
+Atenciosamente,
+
+=C3=81mon Oliveira
+Ag. Municipal - Mat.: 4972
+Fiscal de Tributos
+NAT/SEMAFI - Acarape-CE
+
+--=20
+*N=C3=9ACLEO DE ADMINISTRA=C3=87=C3=83O TRIBUT=C3=81RIA - ACARAPE-CE*
+* "A maior atra=C3=A7=C3=A3o de uma cidade =C3=A9 a qualidade de vida de se=
+us moradores."
+Jaime Lerner*
+
+--00000000000008a68005eb4d0285
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><span style=3D"color:rgb(32,31,30);font-family:Calibr=
+i,Helvetica,sans-serif;font-size:16px;margin:0px"><span style=3D"color:rgb(=
+34,34,34);font-family:Arial,Helvetica,sans-serif;font-size:small">Senhor Da=
+vys Queiroz de Vasconcelos - Gerente de Recursos Humanos=C2=A0 da PMA,=C2=
+=A0</span><div style=3D"color:rgb(34,34,34);font-family:Arial,Helvetica,san=
+s-serif;font-size:small">Bom dia</div></span></div><div><span style=3D"colo=
+r:rgb(32,31,30);font-family:Calibri,Helvetica,sans-serif;font-size:16px;mar=
+gin:0px"><br></span></div><div><span style=3D"color:rgb(32,31,30);font-fami=
+ly:Calibri,Helvetica,sans-serif;font-size:16px;margin:0px">Com o intuito de=
+ atender =C3=A0s solicita=C3=A7=C3=B5es da Procuradoria Municipal, referent=
+e a juntada de provas a Execu=C3=A7=C3=A3o Fiscal em andamento</span><span =
+style=3D"color:rgb(32,31,30);font-family:Calibri,Helvetica,sans-serif;font-=
+size:16px">,</span><span style=3D"color:rgb(32,31,30);font-family:Calibri,H=
+elvetica,sans-serif;font-size:16px">=C2=A0portanto,</span><font color=3D"#2=
+01f1e" face=3D"Calibri, Helvetica, sans-serif"><span style=3D"font-size:16p=
+x">=C2=A0vimos solicitar deste=C2=A0RH=C2=A0a confirma=C3=A7=C3=A3o se o=C2=
+=A0</span></font><span style=3D"color:rgb(32,31,30);font-family:Calibri,Hel=
+vetica,sans-serif;font-size:16px">Senhor Francisco de Freitas Dias Filho </=
+span><font face=3D"arial, sans-serif"><span style=3D"color:rgb(32,31,30)">(=
+CPF n=C2=BA=C2=A0</span>815.796.833-04),</font><font color=3D"#201f1e"><fon=
+t face=3D"arial, sans-serif" style=3D"">=C2=A0</font><font face=3D"Calibri,=
+ Helvetica, sans-serif" style=3D"font-size:16px">faz parte do quadro de age=
+ntes municipais, bem como seus dados para contato (endere=C3=A7o, e-mail, t=
+elefone, celular e etc) e sua atual condi=C3=A7=C3=A3o perante o Munic=C3=
+=ADpio,=C2=A0</font></font><span style=3D"color:rgb(32,31,30);font-family:C=
+alibri,Helvetica,sans-serif;font-size:16px">para que possamos informar a as=
+sessoria jur=C3=ADdica deste munic=C3=ADpio.</span></div><div><span style=
+=3D"color:rgb(32,31,30);font-family:Calibri,Helvetica,sans-serif;font-size:=
+16px">=C3=80 inteira disposi=C3=A7=C3=A3o de maiores informa=C3=A7=C3=B5es.=
+</span></div><div><span style=3D"color:rgb(32,31,30);font-family:Calibri,He=
+lvetica,sans-serif;font-size:16px"><br></span></div><div><div style=3D"colo=
+r:rgb(80,0,80)">Atenciosamente,</div><div style=3D"color:rgb(80,0,80)"><br>=
+</div><div style=3D"color:rgb(80,0,80)">=C3=81mon Oliveira</div><div style=
+=3D"color:rgb(80,0,80)">Ag. Municipal - Mat.: 4972</div><div style=3D"color=
+:rgb(80,0,80)">Fiscal=C2=A0de=C2=A0Tributos</div><div style=3D"color:rgb(80=
+,0,80)">NAT/SEMAFI - Acarape-CE</div></div><div><br></div>-- <br><div dir=
+=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div =
+dir=3D"ltr"><div style=3D"text-align:center"><b><font face=3D"arial black, =
+sans-serif">N=C3=9ACLEO DE ADMINISTRA=C3=87=C3=83O TRIBUT=C3=81RIA - ACARAP=
+E-CE</font></b></div><div style=3D"text-align:center"><b><i><font face=3D"a=
+rial black, sans-serif">=C2=A0&quot;A maior atra=C3=A7=C3=A3o de uma cidade=
+ =C3=A9 a qualidade de vida de seus moradores.&quot; Jaime Lerner</font></i=
+></b><br></div></div></div></div>
+
+--00000000000008a68005eb4d0285--

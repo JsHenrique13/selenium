@@ -1,0 +1,60 @@
+Return-Path: <>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id oJd3GXyIemFFNwAAgqjM2g
+	(envelope-from <>)
+	for <admrh@acarape.ce.gov.br>; Thu, 28 Oct 2021 08:24:44 -0300
+Return-path: <>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Thu, 28 Oct 2021 08:24:44 -0300
+Received: from [::1] (port=60308 helo=server2.assesi.com)
+	by server2.assesi.com with esmtpa (Exim 4.94.2)
+	id 1mg3WW-0003iQ-Pm
+	for admrh@acarape.ce.gov.br; Thu, 28 Oct 2021 08:24:44 -0300
+MIME-Version: 1.0
+Date: Thu, 28 Oct 2021 08:24:44 -0300
+From: admfinancas@acarape.ce.gov.br
+To: admrh@acarape.ce.gov.br
+Subject: =?UTF-8?Q?Confirma=C3=A7=C3=A3o_de_Leitura_=28exibida=29=3A_Re?=
+ =?UTF-8?Q?=3A_INFORMA=C3=87=C3=95ES_FUNCIONAL?=
+Message-ID: <befd0aa1790d6e1269aa454c657d181b@acarape.ce.gov.br>
+X-Sender: admfinancas@acarape.ce.gov.br
+References: <54a0b0ed9f332a25dc1d8f06130236ce@acarape.ce.gov.br>
+ <6cbde92d916cf5c19090d4ce7da94d68@acarape.ce.gov.br>
+In-Reply-To: <6cbde92d916cf5c19090d4ce7da94d68@acarape.ce.gov.br>
+User-Agent: Roundcube Webmail/1.4.11
+Content-Type: multipart/report;
+ report-type=disposition-notification;
+ boundary="=_10493f0b9a428a71458a034c29d99abb"
+
+--=_10493f0b9a428a71458a034c29d99abb
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+Esta =C3=A9 uma confirma=C3=A7=C3=A3o de leitura da sua mensagem
+
+	Para: procuradoria@acarape.ce.gov.br
+	Assunto: Re: INFORMA=C3=87=C3=95ES FUNCIONAL
+	Data: 2021-10-26 10:34
+
+Nota: Esta confirma=C3=A7=C3=A3o de leitura somente informa que a mensagem =
+foi aberta
+no computador do destinat=C3=A1rio. N=C3=A3o h=C3=A1 garantia que o destina=
+t=C3=A1rio tenha
+lido ou compreendido o conte=C3=BAdo da mensagem.
+--=_10493f0b9a428a71458a034c29d99abb
+Content-Transfer-Encoding: 7bit
+Content-Type: message/disposition-notification;
+ name=MDNPart2.txt
+Content-Disposition: inline;
+ filename=MDNPart2.txt;
+ size=280
+
+Final-Recipient: rfc822; admfinancas@acarape.ce.gov.br
+Original-Message-ID: <6cbde92d916cf5c19090d4ce7da94d68@acarape.ce.gov.br>
+Disposition: manual-action/MDN-sent-manually; displayed
+Original-Recipient: procuradoria@acarape.ce.gov.br
+Reporting-UA: Roundcube Webmail/1.4.11
+
+--=_10493f0b9a428a71458a034c29d99abb--

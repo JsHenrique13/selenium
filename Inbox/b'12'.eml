@@ -1,0 +1,473 @@
+Return-Path: <ag4367@caixa.gov.br>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id aIJaC81pVGHkOAAAgqjM2g
+	(envelope-from <ag4367@caixa.gov.br>)
+	for <admrh@acarape.ce.gov.br>; Wed, 29 Sep 2021 10:27:41 -0300
+Return-path: <ag4367@caixa.gov.br>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Wed, 29 Sep 2021 10:27:41 -0300
+Received: from mail-cpzbra01on2070.outbound.protection.outlook.com ([40.107.112.70]:39680 helo=BRA01-CPZ-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <ag4367@caixa.gov.br>)
+	id 1mVZca-0003pl-HM
+	for admrh@acarape.ce.gov.br; Wed, 29 Sep 2021 10:27:41 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=khCsh0TWsF6qQkLsgFPMu7OP8VlXtIIiPUzTR9l0NigykfRwzNsLYtBJ6kseRlRxegt97fgJ6NC2FAZJKHUk+fruuRp25F8RsArd1iaaM5mcG/+CEtJwZD1UYZ81C8mQbzehm1ukNZniyZbh3ldpCSlUNia//BrBorRw2O4toKS83NYQrAZ+KMxor6n6br/Y9tZQroZMIWylU/CQ7r7S13J/3u6r729JPlGuZ0iuGMrelbRdxa3qXUsMr5C/4SHFMjg2wkzvPUPehBt63C71R3E9bgw6HFfFs54bxcWXYznklXA+eDXvO0y+03ErH3jkuuqXyIVYCf3uDlomAW7RJA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version;
+ bh=eYoHLB59lTiRr92Y7nFTMcIqxajHWCFB8WGoOu0gynk=;
+ b=oWzxNUwDQgw3mIcFJDbAw0Fx367Ukrd65GB1vbZnNO6+PwuFYBoLAeI61mkhj4gk3dlRmaRJ8xgAVFeplmck+5pHdc1awUn67jInFrkKAHKlJcskXgMofJ6lSMPrHpzvrlVy4BOdw9lGCCTYVnqQF5yqab5fNaFw667+RdNLYSh2Cte473fJpxY2Ec+sopqBR5NeDHgeNe+tetMgRLTZ9u3jyXssjo7WpFrlnjXE9ES9EuHfXskMXTv6kHGeZ+Bhq00/QE23f3yp6vN1NvQKeCQzcSM/Om+u5z8IwVxldP301d+AxnjxCxNU/Mf6HnJXzUWjcTrTnNTJTMNdgbXB4A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=caixa.gov.br; dmarc=pass action=none header.from=caixa.gov.br;
+ dkim=pass header.d=caixa.gov.br; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=caixa.gov.br;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=eYoHLB59lTiRr92Y7nFTMcIqxajHWCFB8WGoOu0gynk=;
+ b=h/DUYfMo+ii6o91+7hDN7iZVsR6z805wx5EQF8toJl+hxd+kPSmDE0beDPP92wZTM+ZKxSpYrG2Dm1jyeH2J5JEbd5/kGaTF4tvRmajRYXS9779MsH/inhJZTRoUgKWHOSfvoRCo17FRcI0RcI/d+6t9s3gTYbqidpb12buEWTE=
+Received: from CP4P284MB0819.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:90::12)
+ by CP4P284MB1345.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:a5::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4566.14; Wed, 29 Sep
+ 2021 13:26:46 +0000
+Received: from CP4P284MB0819.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::3959:c1ff:4300:7ac0]) by CP4P284MB0819.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::3959:c1ff:4300:7ac0%5]) with mapi id 15.20.4566.014; Wed, 29 Sep 2021
+ 13:26:46 +0000
+From: =?iso-8859-1?Q?A4367CE_-_AG_Aboli=E7=E3o/CE?= <ag4367@caixa.gov.br>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+CC: "devysdss@yahoo.com" <devysdss@yahoo.com>
+Subject: =?iso-8859-1?Q?Novas_Contas_Sal=E1rios_Prefeitura_de_Acarape?=
+Thread-Topic: =?iso-8859-1?Q?Novas_Contas_Sal=E1rios_Prefeitura_de_Acarape?=
+Thread-Index: Ade1NWjo+k8WWYAUR7GdXzBkAIVUDw==
+Date: Wed, 29 Sep 2021 13:26:46 +0000
+Message-ID:
+ <CP4P284MB08190D9BC54F5F05E9149CB9E1A99@CP4P284MB0819.BRAP284.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: pt-BR
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels: MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Enabled=true;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_SetDate=2021-09-29T13:26:42Z;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Method=Standard;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Name=_PUBLICO;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_SiteId=ab9bba98-684a-43fb-add8-9c2bebede229;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_ActionId=8bfe6385-ba45-4d3d-9588-7417fedea9e8;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_ContentBits=1
+dlp-version: 11.6.300.5
+dlp-reaction: no-action
+dlp-product: dlpe-windows
+authentication-results: acarape.ce.gov.br; dkim=none (message not signed)
+ header.d=none;acarape.ce.gov.br; dmarc=none action=none
+ header.from=caixa.gov.br;
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 66d64083-d30c-42b2-18b8-08d9834cc92f
+x-ms-traffictypediagnostic: CP4P284MB1345:
+x-ms-exchange-transport-forked: True
+x-microsoft-antispam-prvs:
+ <CP4P284MB134584CD3936DC040161DDC6E6A99@CP4P284MB1345.BRAP284.PROD.OUTLOOK.COM>
+x-ms-oob-tlc-oobclassifiers: OLM:1728;
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ zDm9siAPmmGQhiycDPzvDHieOPR7rEmoyNalvDBE0P26okPDIIvFu9gU5r2Fh5XeF6v1qPbp4z5No/RCPB6BfKddHZCUQFeTWSLRFLcWfmQmrCoHWCPj1R+YcudnAzgy9YLFewXTcxIqvgJkGqT0Zd4TK9j0c6sRcvkafDU0FcqAFj5NqfR/kVeJVAV2V7w10wPskgM3ose4s+05qXl+9k0dlXlzeSd+V+/DFy8m5/Sk2+Mdyesf6/RswFOBKwwKoDvJkNm8GUmKv6ecadkocrfmPJVKLvaIYHGgPkPLo76z0u1KocJTQQJj1mT/L/vhPH0fq/7gYIzh9CDM6EOa3smpr6ABWi/mudKA5LZAgM5MzFOG0TAkXgVz1RG8zzviJkKJ5D/uLcoMzV1+GXwRAYGqkX7yZISS9bhJMSfLFRZvxb0Ny4ZyoCEMrMiKf4PRYt7fTQDn2TNq6HOJKLqpXXtI/3pjvg3wsZNQrp0yBHTLLttgRWML+FOLFF09s+YFzYtBc8GQ9akICTwIgIu6QVXueBRQyXy/jH7zhK/d806ly388NMumkRfxz83TWtenTOEWVmohXnB38BlW9JXUKii7NKD3ElkVrLKCzzOzs9wwqCmtU3ZIa1IvZAhJHRL9yn//y2kanUls3odZEg8G4Clq6pubx8GDFb/m9uOzAjA=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:pt;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CP4P284MB0819.BRAP284.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(4636009)(366004)(99936003)(558084003)(66946007)(66556008)(66476007)(66616009)(64756008)(6916009)(7696005)(6506007)(52536014)(508600001)(66446008)(71200400001)(10290500003)(19627235002)(38100700002)(2906002)(5660300002)(316002)(4326008)(55016002)(76116006)(122000001)(26005)(33656002)(186003)(8936002)(66574015)(38070700005)(9686003)(224303003)(86362001);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?JJtCJFpfVFN9GG9edBbm5fwK9Bxi59eyWQcofK6sBOf42FH1sa16hEeFrh?=
+ =?iso-8859-1?Q?es60nUqdkY/dPrYrfZb6nwhrE1T9mTuNaqMATvwvPwfGr6IORf2gdp5c9V?=
+ =?iso-8859-1?Q?KVcRVe6INC23Kq/qcRpIQYefzgR03yvfKwWgIJsIQXCC3Nq/JaFo6bVQrx?=
+ =?iso-8859-1?Q?Jz9HlY4wA11H5ZHQfvTCnIsLGzmMtXh+D06NXkpUWZPYdFdpQ6WuaHSzm4?=
+ =?iso-8859-1?Q?di+fKaegQnSQkr8dc17Z7i1/JKqvQ+teyUzazz0lwAF8PIRjpgkFYBTDSF?=
+ =?iso-8859-1?Q?N966VfUT3QS5RzLhjHXxrQ5A7y9ScDTELXtSv21ri3RX23OUCFtlftCKe9?=
+ =?iso-8859-1?Q?PcgwpN0RQOfhZnPI6IKeMKcWFpqLlfX7pfJMwuFy/JdiP+Wm8u3M6ClkfJ?=
+ =?iso-8859-1?Q?VXkvjdm3+A2hzA0AVtDll7HQsuUUnHXnl3OIY4xPBuyGFbIM81e0A590Du?=
+ =?iso-8859-1?Q?Bx1ranBK+UNKv8Ljm8dDAhv4i4NHUBF+D/JAEnejhlwoWXkAJn7wmlPuIE?=
+ =?iso-8859-1?Q?NQlmsMNzVQx7s/xQUuO32yR1OBUPiymLHdNLAxnVNQB3coRmgSN08nHVTH?=
+ =?iso-8859-1?Q?r6OKollOd7qmW1/iQyY9oKrfs1654Sy1tyPj9Zs7pGOLvNlCBvkiAIOa77?=
+ =?iso-8859-1?Q?qTfaGvVN+XBWfidqTmhX467R6QqhriKKPvdG3dwPftcUAP/7G/Y6RM+5v0?=
+ =?iso-8859-1?Q?4Nbgs+Jzo4DqVQZ0N5ryH5I2z2/Px7dCMtVcHvLvbRFG3gRq9XfOV12NXX?=
+ =?iso-8859-1?Q?pKDHWCXSlyVgTR9rj0ZHpkVbsZn2uu79JoB+AFwtED4WR+pDl9Op8ERssT?=
+ =?iso-8859-1?Q?oeUf+l7Ett72Od5fSeI/bSnAidDK5q7CqONwWzQqTTPADbKo+s/0faw2kX?=
+ =?iso-8859-1?Q?Lbpg2srjyYwqPe6gqj3tKEB18TCUwzPr9roqSd+6Uk0A6VMt9MGk1cdyEp?=
+ =?iso-8859-1?Q?RVpDGGw14snfm+VoeMZpfZc4ffsewwC2tLckvhv33eftRzwTBJwulolz5q?=
+ =?iso-8859-1?Q?zzX4n2p13OmUDhQYaeJMtEf1Ei6FjgHu9VIhGtlI9Pyj24Cnm5wi6d8rVI?=
+ =?iso-8859-1?Q?7u7UP96AdbnxRzajtAD+Kvjd6Ssn8NRi91c5gkmEfCC/XEfUJog1bqv/QC?=
+ =?iso-8859-1?Q?DgdowbhaA6HQOuK5ap6KyPd5UEn8qBo4FMN26WooO1nAmQHXEPx9rN+v+p?=
+ =?iso-8859-1?Q?wu53bWz1EmwPq6PqylhQzfPJWHZVKNxAcFOmqXrY70v+dVzFu7CD/i72WV?=
+ =?iso-8859-1?Q?oLqSRiU3KAbG46i2lid5MJUchbWoibWQiaovvipjGRJSHdwFF6CcvTSjqi?=
+ =?iso-8859-1?Q?v8nrR1utaH5JkjEt8Qn3A8fmW6DOmGU9cFbk7Fq0V2M2I35I4SUSHV6BW1?=
+ =?iso-8859-1?Q?LUka3z0HWU?=
+Content-Type: multipart/mixed;
+	boundary="_004_CP4P284MB08190D9BC54F5F05E9149CB9E1A99CP4P284MB0819BRAP_"
+MIME-Version: 1.0
+X-OriginatorOrg: caixa.gov.br
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CP4P284MB0819.BRAP284.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 66d64083-d30c-42b2-18b8-08d9834cc92f
+X-MS-Exchange-CrossTenant-originalarrivaltime: 29 Sep 2021 13:26:46.4531
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: ab9bba98-684a-43fb-add8-9c2bebede229
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: PdfaH1Wy+2l4RED/P3th01A9RlaZjp5niEB8u38JKarba7IL73XCUyU9StEajQRRqPye8ArKUMg7rDaA6nvBd8AmnEEyoJS14AyM9S9MXiw=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CP4P284MB1345
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  E-mail classificado como #PUBLICO À Prefeitura de Acarape
+   Conforme solicitado segue anexo dados das novas contas salários, abertas nesta
+    data. 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+X-Spam-Flag: NO
+
+--_004_CP4P284MB08190D9BC54F5F05E9149CB9E1A99CP4P284MB0819BRAP_
+Content-Type: multipart/alternative;
+	boundary="_000_CP4P284MB08190D9BC54F5F05E9149CB9E1A99CP4P284MB0819BRAP_"
+
+--_000_CP4P284MB08190D9BC54F5F05E9149CB9E1A99CP4P284MB0819BRAP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+E-mail classificado como #PUBLICO
+
+=C0
+Prefeitura de Acarape
+
+
+Conforme solicitado segue anexo dados das novas contas sal=E1rios, abertas =
+nesta data.
+
+
+Atenciosamente
+
+Marcelo Flavio de Castro Barros
+Gerente de Carteira PF
+Ag. Aboli=E7=E3o/CE
+
+
+--_000_CP4P284MB08190D9BC54F5F05E9149CB9E1A99CP4P284MB0819BRAP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EstiloDeEmail17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"PT-BR" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<p class=3D"msipheadere7d5a1b3" align=3D"Left" style=3D"margin:0"><span sty=
+le=3D"font-size:10.0pt;font-family:Arial;color:#008000">E-mail classificado=
+ como #PUBLICO</span></p>
+<br>
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif">=C0<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif">Prefeitura de Acarape<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"text-indent:35.4pt"><span style=3D"font-fam=
+ily:&quot;Arial&quot;,sans-serif">Conforme solicitado segue anexo dados das=
+ novas contas sal=E1rios, abertas nesta data.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif">Atenciosamente<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;mso-fareast-language:PT-BR">Marcelo Flavio de Castro Barros<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;mso-fareast-language:PT-BR">Gerente de Carteira PF<o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;mso-fareast-language:PT-BR">Ag. Aboli=E7=E3o/CE<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_CP4P284MB08190D9BC54F5F05E9149CB9E1A99CP4P284MB0819BRAP_--
+
+--_004_CP4P284MB08190D9BC54F5F05E9149CB9E1A99CP4P284MB0819BRAP_
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;
+	name="=?iso-8859-1?Q?Contas_Sal=E1rios_Prefeitura_de_Acarape_29-09-2021.xlsx?="
+Content-Description:
+ =?iso-8859-1?Q?Contas_Sal=E1rios_Prefeitura_de_Acarape_29-09-2021.xlsx?=
+Content-Disposition: attachment;
+	filename="=?iso-8859-1?Q?Contas_Sal=E1rios_Prefeitura_de_Acarape_29-09-2021.xlsx?=";
+	size=11492; creation-date="Wed, 29 Sep 2021 13:26:27 GMT";
+	modification-date="Wed, 29 Sep 2021 13:26:27 GMT"
+Content-Transfer-Encoding: base64
+
+UEsDBBQABgAIAAAAIQB7ksghegEAAIEFAAATAAgCW0NvbnRlbnRfVHlwZXNdLnhtbCCiBAIooAAC
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACs
+lMtuwjAQRfeV+g+RtxUxdFFVFYFFH8sWCfoBJp4kFolteQYKf9+JeaiqeCiCTaLYnnvuTGY8HK+b
+OllBQONsJgZpXyRgc6eNLTPxPfvoPYsESVmtamchExtAMR7d3w1nGw+YcLTFTFRE/kVKzCtoFKbO
+g+WdwoVGEX+GUnqVL1QJ8rHff5K5swSWetRqiNHwDQq1rCl5X/Py1sncWJG8bs+1qEwo72uTK2Kj
+cmX1P0jPFYXJQbt82bB0ij6A0lgBUFOnPhgmhikQcWIo5FFmgBq7QXdZpRwZjWFlPD5w6icI7c7p
+rHZxX/w7gtGQTFSgT9Vw7nJdyx8XFnPnFul5ka6liSVKG2Xs3vcZfjyMMr4GNzbS5heFL/gg7jGQ
+8Xm9hShzAYi0qQFvXfYoeolcqQB6Sty95c0N/NU+54NHahKcR57aAN2rsB+RNrrnWQgCGTgMybFm
+OxB55K8uO7R3igbdlZ0vkVxzNX4rcwQu4wU6+gUAAP//AwBQSwMEFAAGAAgAAAAhABNevmUCAQAA
+3wIAAAsACAJfcmVscy8ucmVscyCiBAIooAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACskk1LAzEQhu+C/yHMvTvbKiLSbC9F6E1k/QExmf1g
+N5mQpLr990ZBdKG2Hnqcr3eeeZn1ZrKjeKMQe3YSlkUJgpxm07tWwkv9uLgHEZNyRo3sSMKBImyq
+66v1M40q5aHY9T6KrOKihC4l/4AYdUdWxYI9uVxpOFiVchha9EoPqiVcleUdht8aUM00xc5ICDtz
+A6I++Lz5vDY3Ta9py3pvyaUjK5CmRM6QWfiQ2ULq8zWiVqGlJMGwfsrpiMr7ImMDHida/Z/o72vR
+UlJGJYWaA53m+ew4BbS8pEVzE3/cmUZ85zC8Mg+nWG4vyaL3MbE9Y85XzzcSzt6y+gAAAP//AwBQ
+SwMEFAAGAAgAAAAhAGH7w3WkAwAAowgAAA8AAAB4bC93b3JrYm9vay54bWysVV1vozgUfV9p/wPi
+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
+
+--_004_CP4P284MB08190D9BC54F5F05E9149CB9E1A99CP4P284MB0819BRAP_--

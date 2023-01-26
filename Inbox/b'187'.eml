@@ -1,0 +1,260 @@
+Return-Path: <tributos.acarape.ce@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id kG2BDYh8SWNUfQAAgqjM2g
+	(envelope-from <tributos.acarape.ce@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Fri, 14 Oct 2022 12:13:12 -0300
+Return-path: <tributos.acarape.ce@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Fri, 14 Oct 2022 12:13:12 -0300
+Received: from mail-oi1-f176.google.com ([209.85.167.176]:39921)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <tributos.acarape.ce@gmail.com>)
+	id 1ojMN4-0005xP-UL
+	for admrh@acarape.ce.gov.br;
+	Fri, 14 Oct 2022 12:13:12 -0300
+Received: by mail-oi1-f176.google.com with SMTP id n130so5328662oia.6
+        for <admrh@acarape.ce.gov.br>; Fri, 14 Oct 2022 08:12:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=gmdoRlrghtaZ43ZfUpWgOTJ928bmC2OoO4GNOL9fxvU=;
+        b=Ek6INuX1OP85nHCVXXHJXj+iEEfl9+/hLJjbzlked4tq1Yn8b4OPC7/8Z7reCol4M1
+         XKLZ8B58iH37y3tZuL7MGyjrK7lIyAaIx2qCUJItcJphmkH7+xegp53oTUAIWOHHZQMB
+         MtNAZLBRD02DYoN6HApq3nfA81NHAhIm/Y8CsX7Dk4y1K6g41LBuw4sDyEINhPgenG7c
+         SZdwxBHiezXuvafLmVlxKOlpBEIde3nnl/PlireHx1sDRTju/MZ6QZQ6Roy02Ck2ZUvV
+         rsmQHGchCD6N8Rkjv3Z2k0WHwQ7/JNnCZn4Vj5xIfeAQOxNDkGfadU9/mrV3KJ9JH2KL
+         hhDw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=gmdoRlrghtaZ43ZfUpWgOTJ928bmC2OoO4GNOL9fxvU=;
+        b=BHxhuPZRYOG00klR0TV5dqHYsPT4plN1/mXRqdtT3lPrtPW/Xdywcpi6IMMZ8YpQTC
+         5JEfEisZd7mmUqlCI6QuCYy9X/uB0YVUuQuc7lchTJyxY7/8s5ghhWgw3aw/XzFMu1uv
+         QTMeVxLiCqlufI2gAEYJ/VkHdNPCc7iLFzslEDQnRDyin4zZZ2MuNXm64DokI52XI4kX
+         MIaEziOe+3edYwYSW29Ivkp25eD/sF48TVdVJTwuVLMr/1Z0vWoA/hN3a4vpF9og1d9A
+         gelbBsbbzLn2nejwLkkm8amltoEK/qBe4Uz+8wNlrCkT4uu4Hc/BpnakjYDLgJ7/Crjo
+         +MNA==
+X-Gm-Message-State: ACrzQf3oVkE8sUMnG1sOgTxG7ykIc6Zi7Bpzo6pjcq2om4qEOnC0d5pO
+	7bG4FhI+lCBRT0nJ+GQIqa00DLR3lur5BsDtAep+CegA9yGuhQ==
+X-Google-Smtp-Source: AMsMyM7Yv/VFFGMxP7Xb56poEMDP0wFXQ8z6Y5kJK2GiiHrT/TAGm+/JDhtq2In7ySZ73L3VMEjaf9GRDtEhz6U7cTY=
+X-Received: by 2002:a05:6808:bca:b0:350:b366:157 with SMTP id
+ o10-20020a0568080bca00b00350b3660157mr2718335oik.3.1665760348455; Fri, 14 Oct
+ 2022 08:12:28 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAKN6VY1CeXNcy_ABtKZ6=VGw+CQWuT0YRMP3Cn9TAjewi5wNRw@mail.gmail.com>
+ <90bce0675f8d06b1efe8c69755d90a28@acarape.ce.gov.br>
+In-Reply-To: <90bce0675f8d06b1efe8c69755d90a28@acarape.ce.gov.br>
+From: =?UTF-8?Q?N=C3=BAcleo_de_Adm=2E_Tribut=C3=A1ria_Acarape=2DCE?= <tributos.acarape.ce@gmail.com>
+Date: Fri, 14 Oct 2022 12:12:16 -0300
+Message-ID: <CAKN6VY1703y1r_WEbJHA82ba-vcV+zmRkOCtFLh9J0EER15cfg@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IFNPTElDSVRBw4fDg08gREUgSU5GT1JNQcOHw5VFUw==?=
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="000000000000d9c5f505eb000d8d"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Senhor Davys Queiroz de Vasconcelos - Gerente de Recursos
+   Humanos da PMA, Boa tarde Confirmamos o recebimento do arquivo. Ciente para
+    próximas consultas. Desde já, agradecemos. Atenciosamente, 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [tributos.acarape.ce[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+X-Spam-Flag: NO
+
+--000000000000d9c5f505eb000d8d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Senhor Davys Queiroz de Vasconcelos - Gerente de Recursos Humanos  da PMA,
+Boa tarde
+
+Confirmamos o recebimento do arquivo.
+Ciente para pr=C3=B3ximas consultas.
+Desde j=C3=A1, agradecemos.
+
+Atenciosamente,
+
+=C3=81mon Oliveira
+Ag. Municipal - Mat.: 4972
+Fiscal de Tributos
+NAT/SEMAFI - Acarape-CE
+
+Em sex., 14 de out. de 2022 =C3=A0s 07:37, <admrh@acarape.ce.gov.br> escrev=
+eu:
+
+> Em 2022-10-13 14:06, N=C3=BAcleo de Adm. Tribut=C3=A1ria Acarape-CE escre=
+veu:
+> > Senhor Davys Queiroz de Vasconcelos - Gerente de Recursos Humanos  da
+> > PMA,
+> > Boa tarde
+> >
+> > Com o intuito de atender =C3=A0s solicita=C3=A7=C3=B5es da Procuradoria=
+ Municipal,
+> > referente ao Proc. n=C2=BA  0002251-04.2019.8.06.0027, em nome do Senho=
+r
+> > Jos=C3=A9 Wagner Rodrigues, portanto, vimos solicitar deste RH a
+> > confirma=C3=A7=C3=A3o se este Sr. faz parte do quadro de agentes munici=
+pais,
+> > bem como sua atual condi=C3=A7=C3=A3o perante o Munic=C3=ADpio, para qu=
+e possamos
+> > informar na Execu=C3=A7=C3=A3o Fiscal acima.
+> > =C3=80 inteira disposi=C3=A7=C3=A3o.
+> >
+> > Atenciosamente,
+> >
+> > =C3=81mon Oliveira
+> > Ag. Municipal - Mat.: 4972
+> > Fiscal de Tributos
+> > NAT/SEMAFI - Acarape-CE--
+> >
+> > N=C3=9ACLEO DE ADMINISTRA=C3=87=C3=83O TRIBUT=C3=81RIA - ACARAPE-CE
+> > _ "A maior atra=C3=A7=C3=A3o de uma cidade =C3=A9 a qualidade de vida d=
+e seus
+> > moradores." Jaime Lerner_
+>
+> Bom dia,
+>
+> Em resposta a solicita=C3=A7=C3=A3o acima informamos que SIM, h=C3=A1 um =
+servidor
+> COMISSIONADO que se chama JOS=C3=89 WAGNER RODRIGUES (ver anexo dados).
+>
+> Pedimos para que ao solicitar informa=C3=A7=C3=B5es de servidores ATIVOS =
+ou N=C3=83O
+> ATIVOS enviem tamb=C3=A9m se poss=C3=ADvel CPF pois assim erros de escrit=
+a ou
+> hom=C3=B4nimos n=C3=A3o interferiram na exatid=C3=A3o da resposta.
+>
+> Abertos para mais esclarecimentos que por ventura tornem-se
+> necess=C3=A1rios...
+>
+> Desejamos um BOM TRABALHO A TODOS!
+> --
+> Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as
+> Setor: Recursos Humanos
+> Devys Queiroz de Vasconcelos
+> (85) 992023370
+> Lucio Cesar Oliveira Silva
+> (85) 992156745
+
+
+
+--=20
+*N=C3=9ACLEO DE ADMINISTRA=C3=87=C3=83O TRIBUT=C3=81RIA - ACARAPE-CE*
+* "A maior atra=C3=A7=C3=A3o de uma cidade =C3=A9 a qualidade de vida de se=
+us moradores."
+Jaime Lerner*
+
+--000000000000d9c5f505eb000d8d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><span style=3D"color:rgb(32,31,30);font-family:Calibr=
+i,Helvetica,sans-serif;font-size:16px;margin:0px"><span style=3D"color:rgb(=
+34,34,34);font-family:Arial,Helvetica,sans-serif;font-size:small">Senhor Da=
+vys Queiroz de Vasconcelos - Gerente de Recursos Humanos=C2=A0 da PMA,=C2=
+=A0</span><div style=3D"color:rgb(34,34,34);font-family:Arial,Helvetica,san=
+s-serif;font-size:small">Boa tarde</div></span></div><div><span style=3D"co=
+lor:rgb(32,31,30);font-family:Calibri,Helvetica,sans-serif;font-size:16px;m=
+argin:0px"><br></span></div><div><font color=3D"#201f1e" face=3D"Calibri, H=
+elvetica, sans-serif"><span style=3D"font-size:16px">Confirmamos o recebime=
+nto do arquivo.</span></font></div><div><font color=3D"#201f1e" face=3D"Cal=
+ibri, Helvetica, sans-serif"><span style=3D"font-size:16px">Ciente para pr=
+=C3=B3ximas consultas.</span></font></div><div><font color=3D"#201f1e" face=
+=3D"Calibri, Helvetica, sans-serif"><span style=3D"font-size:16px">Desde j=
+=C3=A1, agradecemos.</span></font></div><div><span style=3D"color:rgb(32,31=
+,30);font-family:Calibri,Helvetica,sans-serif;font-size:16px"><br></span></=
+div><div><div style=3D"color:rgb(80,0,80)">Atenciosamente,</div><div style=
+=3D"color:rgb(80,0,80)"><br></div><div style=3D"color:rgb(80,0,80)">=C3=81m=
+on Oliveira</div><div style=3D"color:rgb(80,0,80)">Ag. Municipal - Mat.: 49=
+72</div><div style=3D"color:rgb(80,0,80)">Fiscal=C2=A0de=C2=A0Tributos</div=
+><div style=3D"color:rgb(80,0,80)">NAT/SEMAFI - Acarape-CE</div></div></div=
+><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">Em se=
+x., 14 de out. de 2022 =C3=A0s 07:37, &lt;<a href=3D"mailto:admrh@acarape.c=
+e.gov.br">admrh@acarape.ce.gov.br</a>&gt; escreveu:<br></div><blockquote cl=
+ass=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid=
+ rgb(204,204,204);padding-left:1ex">Em 2022-10-13 14:06, N=C3=BAcleo de Adm=
+. Tribut=C3=A1ria Acarape-CE escreveu:<br>
+&gt; Senhor Davys Queiroz de Vasconcelos - Gerente de Recursos Humanos=C2=
+=A0 da<br>
+&gt; PMA,<br>
+&gt; Boa tarde<br>
+&gt; <br>
+&gt; Com o intuito de atender =C3=A0s solicita=C3=A7=C3=B5es da Procuradori=
+a Municipal,<br>
+&gt; referente ao Proc. n=C2=BA=C2=A0 0002251-04.2019.8.06.0027, em nome do=
+ Senhor<br>
+&gt; Jos=C3=A9 Wagner Rodrigues, portanto, vimos solicitar deste RH a<br>
+&gt; confirma=C3=A7=C3=A3o se este Sr. faz parte do quadro de agentes munic=
+ipais,<br>
+&gt; bem como sua atual condi=C3=A7=C3=A3o perante o Munic=C3=ADpio, para q=
+ue possamos<br>
+&gt; informar na Execu=C3=A7=C3=A3o Fiscal acima.<br>
+&gt; =C3=80 inteira disposi=C3=A7=C3=A3o.<br>
+&gt; <br>
+&gt; Atenciosamente,<br>
+&gt; <br>
+&gt; =C3=81mon Oliveira<br>
+&gt; Ag. Municipal - Mat.: 4972<br>
+&gt; Fiscal de Tributos<br>
+&gt; NAT/SEMAFI - Acarape-CE--<br>
+&gt; <br>
+&gt; N=C3=9ACLEO DE ADMINISTRA=C3=87=C3=83O TRIBUT=C3=81RIA - ACARAPE-CE<br=
+>
+&gt; _ &quot;A maior atra=C3=A7=C3=A3o de uma cidade =C3=A9 a qualidade de =
+vida de seus<br>
+&gt; moradores.&quot; Jaime Lerner_<br>
+<br>
+Bom dia,<br>
+<br>
+Em resposta a solicita=C3=A7=C3=A3o acima informamos que SIM, h=C3=A1 um se=
+rvidor <br>
+COMISSIONADO que se chama JOS=C3=89 WAGNER RODRIGUES (ver anexo dados).<br>
+<br>
+Pedimos para que ao solicitar informa=C3=A7=C3=B5es de servidores ATIVOS ou=
+ N=C3=83O <br>
+ATIVOS enviem tamb=C3=A9m se poss=C3=ADvel CPF pois assim erros de escrita =
+ou <br>
+hom=C3=B4nimos n=C3=A3o interferiram na exatid=C3=A3o da resposta.<br>
+<br>
+Abertos para mais esclarecimentos que por ventura tornem-se <br>
+necess=C3=A1rios...<br>
+<br>
+Desejamos um BOM TRABALHO A TODOS!<br>
+-- <br>
+Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as<br>
+Setor: Recursos Humanos<br>
+Devys Queiroz de Vasconcelos<br>
+(85) 992023370<br>
+Lucio Cesar Oliveira Silva<br>
+(85) 992156745</blockquote></div><br clear=3D"all"><div><br></div>-- <br><d=
+iv dir=3D"ltr" class=3D"gmail_signature"><div dir=3D"ltr"><div style=3D"tex=
+t-align:center"><b><font face=3D"arial black, sans-serif">N=C3=9ACLEO DE AD=
+MINISTRA=C3=87=C3=83O TRIBUT=C3=81RIA - ACARAPE-CE</font></b></div><div sty=
+le=3D"text-align:center"><b><i><font face=3D"arial black, sans-serif">=C2=
+=A0&quot;A maior atra=C3=A7=C3=A3o de uma cidade =C3=A9 a qualidade de vida=
+ de seus moradores.&quot; Jaime Lerner</font></i></b><br></div></div></div>
+
+--000000000000d9c5f505eb000d8d--

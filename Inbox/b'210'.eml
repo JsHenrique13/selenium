@@ -1,0 +1,134 @@
+Return-Path: <ghm.informatica@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id uB4KJJWnymPXTAAAgqjM2g
+	(envelope-from <ghm.informatica@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Fri, 20 Jan 2023 11:39:17 -0300
+Return-path: <ghm.informatica@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Fri, 20 Jan 2023 11:39:17 -0300
+Received: from mail-pj1-f50.google.com ([209.85.216.50]:50955)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <ghm.informatica@gmail.com>)
+	id 1pIsY2-000585-OR
+	for admrh@acarape.ce.gov.br;
+	Fri, 20 Jan 2023 11:39:17 -0300
+Received: by mail-pj1-f50.google.com with SMTP id bj3so5847018pjb.0
+        for <admrh@acarape.ce.gov.br>; Fri, 20 Jan 2023 06:38:56 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=knlbC1QQOn+1tOqhx9Eyk91DryUgKZbl1KGkMA0KaJE=;
+        b=ay4Ei2UqYREWr8C1BC0pEwXQXnpxYojlP17Jwhroyge+0gw+b5bF3Em5SJ+SlIcVFD
+         LjuwIfGWI3JNbvVorUH2ZhglgqeCrXu9f93HgHNOggswoL7AAddDEp9r9jt1r7n0pvHk
+         dwbEvWHlZBGokrSYWm6j5pmdvs+pRO7lRSm4awWCSTxRBn7Ny2J3JQLxtzwmM9ZlSbaN
+         NYCl8m8dLP6MN5RPPFvCShcf0NRIzB9Cr3P6G7ZbdqU3DSuV750p9QLbgP95JxRLztPd
+         rSxvHt8oQnzjY9VX0RPU1WfaftGQxlPGfshTdWQd+JP+iSiqPFc4uw/QZV3xVpwdjEGM
+         ZXyA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=knlbC1QQOn+1tOqhx9Eyk91DryUgKZbl1KGkMA0KaJE=;
+        b=n2lYeymN2qyLFCfmtzII3HRfX8HL+OAa3Ib9zeWyK0rxL2wz5VvG7H82u/7Zyuvxbn
+         ZfjykP51RMAOgbkX65ma05iCq34AM3RITPr59z7cVO+GRJlDHxy7Te0q9+KABz0DuzOW
+         AKhidpi1h5hYjBtLRxvVdPv5kGcaHbSsmuNhbKk8SHYoSIzITbM0zfgSqr2ng6TWtrv3
+         VUgRZWmO2gpVzW5HDCXNzIpnDmYE6iqIJBKQTJJPYDpIebm4HxaZxVC0VYvPyx2YBle7
+         w0+ubqawKN5SSz2221bWs9i8VLgKnen3VVQPN+KuN16rDMvSYF1S5p/v2g15hc5cv1CS
+         mRmA==
+X-Gm-Message-State: AFqh2kqiC/wQZMbx509NKatGfHmUFy6mpX5frHM43uv3Dmcb6/J6g1Pr
+	1Yo1XsLNOD8EAhRJGz9ktyGDlBqxJVCTfDmKQsU4qKO4
+X-Google-Smtp-Source: AMrXdXvLE/FOXaDv4zlY4F5ty2iewLcISmJb8jibTNxsRze39jDeUOqPLSn7Ze+tqSvnFGWxsRsXmQe8gbHbZttlh9s=
+X-Received: by 2002:a17:90a:6b07:b0:22b:b70f:fa46 with SMTP id
+ v7-20020a17090a6b0700b0022bb70ffa46mr145114pjj.107.1674225514187; Fri, 20 Jan
+ 2023 06:38:34 -0800 (PST)
+MIME-Version: 1.0
+References: <d7bb53c6a617596c892273d420d259bd@acarape.ce.gov.br>
+In-Reply-To: <d7bb53c6a617596c892273d420d259bd@acarape.ce.gov.br>
+From: GHM INFORMATICA <ghm.informatica@gmail.com>
+Date: Fri, 20 Jan 2023 11:37:57 -0300
+Message-ID: <CAN+--kT9SbgpT91_iubDk=Wx=1owXLLrbE7R4tMkMoJqjNif-A@mail.gmail.com>
+Subject: Re: DIRF 2022
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="0000000000000c137c05f2b3015c"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Bom dia. O arquivo enviado não está de acordo com o leiaute
+    da DIRF. Então diante disso é necessário ver com o suporte de folha de
+    pagamento se o sistema ja está configurado e atualizado para ge [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [ghm.informatica[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+--0000000000000c137c05f2b3015c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bom dia. O arquivo enviado n=C3=A3o est=C3=A1 de acordo com o leiaute da DI=
+RF. Ent=C3=A3o
+diante disso =C3=A9 necess=C3=A1rio ver com o suporte de folha de pagamento=
+ se o
+sistema ja est=C3=A1 configurado e atualizado para gera=C3=A7=C3=A3o da DIR=
+F ano base 2022.
+
+Aguardo!
+
+Em sex., 20 de jan. de 2023 =C3=A0s 10:07, <admrh@acarape.ce.gov.br> escrev=
+eu:
+
+>
+>
+> --
+> Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as
+> Setor: Recursos Humanos
+> Devys Queiroz de Vasconcelos
+> (85) 992023370
+> Lucio Cesar Oliveira Silva
+> (85) 992156745
+
+--0000000000000c137c05f2b3015c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Bom dia. O arquivo enviado n=C3=A3o est=C3=A1 de acordo co=
+m o leiaute da DIRF. Ent=C3=A3o diante disso =C3=A9 necess=C3=A1rio ver com=
+ o suporte de folha de pagamento se o sistema ja est=C3=A1 configurado e at=
+ualizado para gera=C3=A7=C3=A3o da DIRF ano base 2022.<div><br></div><div>A=
+guardo!</div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D=
+"gmail_attr">Em sex., 20 de jan. de 2023 =C3=A0s 10:07, &lt;<a href=3D"mail=
+to:admrh@acarape.ce.gov.br">admrh@acarape.ce.gov.br</a>&gt; escreveu:<br></=
+div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;bor=
+der-left:1px solid rgb(204,204,204);padding-left:1ex"><br>
+<br>
+-- <br>
+Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as<br>
+Setor: Recursos Humanos<br>
+Devys Queiroz de Vasconcelos<br>
+(85) 992023370<br>
+Lucio Cesar Oliveira Silva<br>
+(85) 992156745</blockquote></div>
+
+--0000000000000c137c05f2b3015c--

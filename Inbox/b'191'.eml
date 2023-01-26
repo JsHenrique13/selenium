@@ -1,0 +1,77 @@
+Return-Path: <>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id YKjZMXGKUmOaLgAAgqjM2g
+	(envelope-from <>)
+	for <admrh@acarape.ce.gov.br>; Fri, 21 Oct 2022 09:02:57 -0300
+Return-path: <>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Fri, 21 Oct 2022 09:02:57 -0300
+Received: from mailnull by server2.assesi.com with local (Exim 4.95)
+	id 1olqjp-0003Pp-5v
+	for admrh@acarape.ce.gov.br;
+	Fri, 21 Oct 2022 09:02:57 -0300
+X-Failed-Recipients: acarapeprevfolha@hotmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@server2.assesi.com>
+To: admrh@acarape.ce.gov.br
+References: <ROAP284MB0111EE0FFA4BFA5844F8DC4EAD289@ROAP284MB0111.BRAP284.PROD.OUTLOOK.COM> <954472549.1473509.1666353647600@mail.yahoo.com> <bf36a12e163f3cae05c3aba1663ad087@acarape.ce.gov.br>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1666353777-eximdsn-8223634
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1olqjp-0003Pp-5v@server2.assesi.com>
+Date: Fri, 21 Oct 2022 09:02:57 -0300
+
+--1666353777-eximdsn-8223634
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  acarapeprevfolha@hotmail.com
+    host hotmail-com.olc.protection.outlook.com [104.47.12.33]
+    SMTP error from remote mail server after pipelined MAIL FROM:<admrh@acarape.ce.gov.br> SIZE=322620:
+    550 5.7.1 Unfortunately, messages from [138.128.166.178] weren't sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshooting.aspx#errors. [DB3EUR04FT007.eop-eur04.prod.protection.outlook.com]
+
+--1666353777-eximdsn-8223634
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; server2.assesi.com
+
+Action: failed
+Final-Recipient: rfc822;acarapeprevfolha@hotmail.com
+Status: 5.0.0
+Remote-MTA: dns; hotmail-com.olc.protection.outlook.com
+Diagnostic-Code: smtp; 550 5.7.1 Unfortunately, messages from [138.128.166.178] weren't sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshooting.aspx#errors. [DB3EUR04FT007.eop-eur04.prod.protection.outlook.com]
+
+--1666353777-eximdsn-8223634
+Content-type: text/rfc822-headers
+
+Return-path: <admrh@acarape.ce.gov.br>
+Received: from [::1] (port=60740 helo=server2.assesi.com)
+	by server2.assesi.com with esmtpa (Exim 4.95)
+	(envelope-from <admrh@acarape.ce.gov.br>)
+	id 1olqjk-0003ON-Iv;
+	Fri, 21 Oct 2022 09:02:52 -0300
+MIME-Version: 1.0
+Date: Fri, 21 Oct 2022 09:02:52 -0300
+From: admrh@acarape.ce.gov.br
+To: camila previdencia <camilaismaia@gmail.com>
+Cc: =?UTF-8?Q?acarapeprev_fundo_municipal_previd=C3=AAncia?=
+ <acarapeprevfolha@hotmail.com>, hugoncastro@gmail.com
+Subject: Fwd: 11 2022 PMA
+In-Reply-To: <954472549.1473509.1666353647600@mail.yahoo.com>
+References: <ROAP284MB0111EE0FFA4BFA5844F8DC4EAD289@ROAP284MB0111.BRAP284.PROD.OUTLOOK.COM>
+ <954472549.1473509.1666353647600@mail.yahoo.com>
+User-Agent: Roundcube Webmail/1.5.2
+Message-ID: <bf36a12e163f3cae05c3aba1663ad087@acarape.ce.gov.br>
+X-Sender: admrh@acarape.ce.gov.br
+Content-Type: multipart/mixed;
+ boundary="=_efa184380b86036246a38f78a1f39a97"
+X-Exim-DSN-Information: Due to administrative limits only headers are returned
+
+
+--1666353777-eximdsn-8223634--

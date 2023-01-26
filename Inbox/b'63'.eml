@@ -1,0 +1,116 @@
+Return-Path: <procuradoriapma2021@gmail.com>
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id YO+VKR5D3GHAOwAAgqjM2g
+	(envelope-from <procuradoriapma2021@gmail.com>); Mon, 10 Jan 2022 11:30:54 -0300
+Return-path: <procuradoriapma2021@gmail.com>
+Envelope-to: educacao@acarape.ce.gov.br,
+ admcontabilidade@acarape.ce.gov.br,
+ admrh@acarape.ce.gov.br
+Delivery-date: Mon, 10 Jan 2022 11:30:54 -0300
+Received: from mail-lf1-f52.google.com ([209.85.167.52]:45019)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <procuradoriapma2021@gmail.com>)
+	id 1n6vhG-0003op-6C; Mon, 10 Jan 2022 11:30:54 -0300
+Received: by mail-lf1-f52.google.com with SMTP id g26so44968507lfv.11;
+        Mon, 10 Jan 2022 06:29:53 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=/hBEG/CP5Bp7dY9sVgTnpRlnTXtHf5/H/vv/c7cx/3I=;
+        b=Bs1ND9nC7qkfb3Jk6Qi1LGLjbeiuSK3kbkShMsYRH0UGps0PPwkX/qSiSzK68XaO3f
+         aTIi3M9yZo6hvaruEm9D1+cdiyqFogCpVHo7ctWkINKbJUEajVuae3wo4IFqN6EBb3u/
+         eRAVDagaNQhrzNWlzDbCrAqrgjG3pM8qYH6bERhW7wJDdYVD6vwT6DOc0Bid2AZtjd30
+         7kCxC8iUCXy6q80Tn/Bk1guw+t5V7Ho5NA9JqBrMQQn++r9Vsr+VXVsPjYVd6G4ttDTa
+         pQb263UyTNd9DEsSE9pw3F82bG+xnQicJu2hftQGPQyHR/A3V9fthhsDzmaQe0wVVk6q
+         VeDA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=/hBEG/CP5Bp7dY9sVgTnpRlnTXtHf5/H/vv/c7cx/3I=;
+        b=a7du76d/ZqKv2o2V/kKSkXRb9Quz5Cjh18uKIyPq4UovDodl7RW328qpWdsdgp9Qmk
+         zpzbV6ZA00bpYhhwWMTXytaZujyHi13QcXCMcmJszlgJbUjMdVn+Nj2CgtTO4xRdTgL4
+         kqg2ZcmEETfmuoqNC2NHMv1p9hUnl8OuDRDIu46HTg/uED5/yHSHh/WQVtLe476she13
+         fhnq+61Fd4O7XZXXe57nakPTssle65dw1PGijmIovCFmAeyJtcp+/nJxIrYyVKTjgGNz
+         AAmla7h/R+xz3FvQSsCqz5gxp75CwBixEVBIXg4USngQRHfRqYBlyGBZRMjUaQcz999q
+         1BOg==
+X-Gm-Message-State: AOAM531pXGYGsnOBOei0r+npZo7yGSYAL2ubvMOzdIuOo4QAYfEfi5hB
+	WZKwjCH7JwZ6DhlVDXY8WAZxu642XFS5ON4opUkY5lw9IlA=
+X-Google-Smtp-Source: ABdhPJxFztvYE1ux9B9BS1zbBX7cmf1yvGrEV1Kpmjq8QlnReH3HVV5KrCb1zZzug+2QqvSG3TXoacRB2XnyKjOBX/M=
+X-Received: by 2002:a2e:a585:: with SMTP id m5mr49649453ljp.228.1641824972041;
+ Mon, 10 Jan 2022 06:29:32 -0800 (PST)
+MIME-Version: 1.0
+From: Procuradoria Geral <procuradoriapma2021@gmail.com>
+Date: Mon, 10 Jan 2022 11:29:20 -0300
+Message-ID: <CA+OO4amubcJsuBfFGQNpY92s8rxZgYaDYFpfe6OUAutA_20jUg@mail.gmail.com>
+Subject: =?UTF-8?B?QXR1YWxpemHDp8OjbyBkZSBlLW1haWw=?=
+To: Tributos Acarape <tributospma2021@gmail.com>, herbstherbezerraadv@gmail.com, 
+	acarapeprev@acarape.ce, advfernandesneto@hotmail.com, 
+	educacao@acarape.ce.gov.br, camaraacarape@hotmail.com, 
+	Silvanira LOPES ROCHA <cartorioacarape@gmail.com>, admcontabilidade@acarape.ce.gov.br, 
+	admrh@acarape.ce.gov.br, chefedegabinete2021@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000003df2c805d53b2a0e"
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Bom dia! Prezados, Estamos informando que o e-mail da Procuradoria
+    Geral de Acarape, a partir desta data, será: procuradoriapma2021@gmail.com.
+    
+ Content analysis details:   (0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [procuradoriapma2021[at]gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [procuradoriapma2021[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+X-Spam-Flag: NO
+
+--0000000000003df2c805d53b2a0e
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bom dia!
+
+Prezados,
+
+Estamos informando que o e-mail da Procuradoria Geral de Acarape, a partir
+desta data, ser=C3=A1: procuradoriapma2021@gmail.com.
+
+
+Agradecemos a compreens=C3=A3o.
+
+Maria Eliueda Queiroz Maia
+OAB-CE - 27.859
+
+Procuradora Geral do Munic=C3=ADpio
+
+--0000000000003df2c805d53b2a0e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Bom dia!=C2=A0=C2=A0<div><br></div><div>Prezados,</div><di=
+v><br></div><div>Estamos informando que o e-mail da Procuradoria Geral de A=
+carape, a partir desta data, ser=C3=A1: <a href=3D"mailto:procuradoriapma20=
+21@gmail.com">procuradoriapma2021@gmail.com</a>.</div><div><br></div><div><=
+br></div><div>Agradecemos a compreens=C3=A3o.</div><div><br></div><div>Mari=
+a Eliueda=C2=A0Queiroz Maia</div><div>OAB-CE - 27.859</div><div><br></div><=
+div>Procuradora Geral do Munic=C3=ADpio</div></div>
+
+--0000000000003df2c805d53b2a0e--

@@ -1,0 +1,198 @@
+Return-Path: <ag4367@caixa.gov.br>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id kEgvGBKY3GEACAAAgqjM2g
+	(envelope-from <ag4367@caixa.gov.br>)
+	for <admrh@acarape.ce.gov.br>; Mon, 10 Jan 2022 17:33:22 -0300
+Return-path: <ag4367@caixa.gov.br>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Mon, 10 Jan 2022 17:33:22 -0300
+Received: from mail-cpzbra01on2089.outbound.protection.outlook.com ([40.107.112.89]:6016 helo=BRA01-CPZ-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <ag4367@caixa.gov.br>)
+	id 1n71M1-0000SF-A6
+	for admrh@acarape.ce.gov.br; Mon, 10 Jan 2022 17:33:22 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=CR0Z8rYysDzQUKQpD4/eWbtClUTARnfdrIMZtpCIabXqA2kmsAL3hJbdtY+oXmfl+2Qnws0GCJvAn3HAISQ5pk1MTqFnNBgDJpzgmTbe6D7z42LUOAndVxK4OWrFZGpZjEsDoGlpx7wqGQVfkwUbBFEfIQtg52h+WV3cb0CLrsr+5uL3OqbNI7GoJ68WYBkW+rlEZUKPyl71wGzh/mL4/fVAFSiF4MWe4F4nOFeyw6Kf3dldVhgoZGX3PKj5HDhIrH8rYrDvRE8lSrQYBR1zv+7sYU/hmzEdY3e+pb+k436xkKZ3yyU7VJHkW0FjAN2XgNfkiSu5lL55ficq2S7MdQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Nqmeye+fmUto6SGdGj0oSFRjNmHYFDipF6UIMWq+MjM=;
+ b=lG3474HuqkBFaXXg8cBJPHzgf5xAPr9aZwEpIjIWjfA5aLl/dDPeCoILjaAdFUymlkUFJGJ3xWDM0AHqFYvInZve1YRYjRXAzdf6do0znDt2BXF2M9CIrPpW7BprVsjALzBnH5/doXj9qMrD2VM6JgFYO7wYXg5+hoZEmb5getm3qyeSnhkjAjTINf4h7GLY6JGVsusaWIYypb7y0HZmAwCAN/gW9f1+2//FTbhYkmcgHOdFZtMc5s5PBd1AfLkn+3GW4r8uEY4VIur1fY7POtVIWHL9JFdbjl8WxfeDzng54Q9DDMh0zVXJIIGmVJ9Z3mefURXNQCeL8jZOWD5Mew==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=caixa.gov.br; dmarc=pass action=none header.from=caixa.gov.br;
+ dkim=pass header.d=caixa.gov.br; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=caixa.gov.br;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Nqmeye+fmUto6SGdGj0oSFRjNmHYFDipF6UIMWq+MjM=;
+ b=ibQp7WJEnEhZ3j89sCZMbv6xMm/gh+FDUN2jqXDpfBR5HLj9zlrNf6SyBbx8VoWcVOiBK/k+5nY+FHgpKhAak3ayc+pg7AfSj8S12P91tEo209m36KxCLWxjJKCpbRFX+tpdDvmHDOD//Mtr5/XMR5doqWqBzZezG9ANTsv3+ew=
+Received: from CPYP284MB1301.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:b4::11)
+ by CP4P284MB1044.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:8f::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4867.7; Mon, 10 Jan
+ 2022 20:32:36 +0000
+Received: from CPYP284MB1301.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::11ab:5739:7873:57d1]) by CPYP284MB1301.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::11ab:5739:7873:57d1%4]) with mapi id 15.20.4867.012; Mon, 10 Jan 2022
+ 20:32:36 +0000
+From: =?iso-8859-1?Q?A4367CE_-_AG_Aboli=E7=E3o/CE?= <ag4367@caixa.gov.br>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+Subject: =?iso-8859-1?Q?N=E3o_lida:_AGENDAMENTO_DE_ATENDIMENTO_CEF?=
+Thread-Topic: AGENDAMENTO DE ATENDIMENTO CEF
+Thread-Index: AQHXRZTHVKqAd99dpEibkvFNEojvs6xeNvTA
+Date: Mon, 10 Jan 2022 20:32:36 +0000
+Message-ID:
+ <CPYP284MB1301BF68899ADB17F694DC93E6509@CPYP284MB1301.BRAP284.PROD.OUTLOOK.COM>
+In-Reply-To: <9b41f87965272970b92347d929742c69@acarape.ce.gov.br>
+Accept-Language: en-US
+Content-Language: pt-BR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=caixa.gov.br;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: e4f8d833-8d13-4bc4-183f-08d9d47856b9
+x-ms-traffictypediagnostic: CP4P284MB1044:EE_
+x-microsoft-antispam-prvs:
+ <CP4P284MB1044DF16FE74A16D87BAE909E6509@CP4P284MB1044.BRAP284.PROD.OUTLOOK.COM>
+x-ms-oob-tlc-oobclassifiers: OLM:1728;
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ yvddIMd4jgWXP+leTyUzzqHICIWnp3F4p1Zesj0+kftVNvaMxaVomDMgNiqNfNF/P85Ia5fJ9HCYpKzwt8qwlEfwEucdvxy8RakhuWfpfThKU9H4PnE9HLmDp57mscMXwxJd/vQJ5JHcTILkzF7b2Jv2q9EmQ0E7xRIrHjQ1X/+MctJjdA/+Oc+E1VBV5zqhUYaHO2wEbAftx+AygHnBJGD0TAwZ0ZcoUze9SwBsiGuC4UmeP+WxR41mQvGewiMv8R/Pjbc1WZivUvY2yzp9NFifT8SqDs96G0he99WifZqLfeod7Ux0KSzqujImmqmlyRFHlijjaLAUDlHkX834DDuJUx5KnLgUK7omSnJ8q6oYBzgTTzdON1wc0VVUVFVVhc8RVa9svi2UQGq8XOpFz6DoBJFvQsvzrMvvx+xPzie4cJ/EE0bVx3FA5lK4yuLix+6Ins76cHRDp1mxOgfuhQ==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:pt;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CPYP284MB1301.BRAP284.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(4636009)(366004)(621065003)(73894004)(4270600006)(224303003)(6506007)(6916009)(33656002)(2906002)(71200400001)(85182001)(10290500003)(9686003)(66946007)(64756008)(52536014)(66476007)(66446008)(122000001)(508600001)(26005)(8936002)(38100700002)(86362001)(38070700005)(316002)(186003)(7696005)(55016003)(76116006)(66556008);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?NpiYTQGaEv2LhsNtgU42ngry9SrO0sZ7PnlrnYkFLsH18+WQ2bE45j+rcV?=
+ =?iso-8859-1?Q?Brlxpo3RUqy7vhF3X1VnfqTdHGcxMcnkf6ewI7h2A+6c0kwmvis7vQsM//?=
+ =?iso-8859-1?Q?SP3Qxt63cPGiIjLcKWeJ+uyposG7ynwXorPJB9JPoB14TF7cJ8GYyB9Ax9?=
+ =?iso-8859-1?Q?WssVIgm1dAXEzXJ5TjPfv8rHFau5K9Dwpcsr5o0T5bQ68U0RTpBRirHUi4?=
+ =?iso-8859-1?Q?k/eliyhYfqPb2BjHBMK524fHRhJbfDEEKS3E0sMVlVlKW7ZbCyOOFQrIjb?=
+ =?iso-8859-1?Q?OhnsTRuJwuW06Rv4OY7Wc4kTjbaM3CB9azi1OI3Y0rOJaKvhPmGvAPUVRP?=
+ =?iso-8859-1?Q?hc8NfeDOGlIDtpAaUgcwrPGx18y6WtMirKr0NpD892U7fDVJho4DKn6fCY?=
+ =?iso-8859-1?Q?8iNdauDPOEdq5eMLRhV1oCzVLBADWySPSG79sp6K/z/EEr1ZNmZFYfCL5f?=
+ =?iso-8859-1?Q?vbosGqHgDyLEx9lTUpD6N6jIgt6eAHP9If7xOjWSuMwkQwBxUOlDTDYvjz?=
+ =?iso-8859-1?Q?tZFa9kgOlkcoAnPBGwRwnHxHIJeLou/hld9hjxLe8WGbtwGbS4pJZZpe1g?=
+ =?iso-8859-1?Q?6SpLKtOWkqh++fyegWCDfCUy9gY2ReQDj2I3v7alMxHWJhKuB+yg0n4+PF?=
+ =?iso-8859-1?Q?HgpQT5SH44z0M5HedR3TXnngGp5gd+n8LjehzyHq98J3Wf/fC6GmXrwT5I?=
+ =?iso-8859-1?Q?MCoSuDm8HmuImf43XwaC9PK3O4C2YqtxSAYsFH2jtnWPz796YBKHdCeLze?=
+ =?iso-8859-1?Q?7rE9FV+cCFynwkqin3/7tyHWB1L9NhjW7VF0+J15gvYu0QK8a918rsqbnW?=
+ =?iso-8859-1?Q?wonsfyMCsFNbo/bHT0AgJifX9taAlA6TMJHF/GoZthI2y4RyHYbx7bp7v7?=
+ =?iso-8859-1?Q?LwKnMdrso3IQC4+otSI88bTVdooqsHxPUDMPyLSyFgK2NxlIter9vprzby?=
+ =?iso-8859-1?Q?ONDzuME17d2F8a0TNpU4Ud5YTrKJXJnL0y6tnjo6NRFXLt8d1t56XTdj2K?=
+ =?iso-8859-1?Q?GTXIO5brEkG0HMZwyDd/Zc4svhezzMk1ThwxN/AZn2moUDx9ntHC8AoWCu?=
+ =?iso-8859-1?Q?M0c8qCk5FPX8XcTKYPUBC9EGrVWPNk/dAAjD7leN+2xdlQY6DLJUv382jM?=
+ =?iso-8859-1?Q?L/O3jhx5clxH+b/pGKAjp9A7dFEfnr3s9fH8zJ2H5IErJQgAnW3ILnOm3a?=
+ =?iso-8859-1?Q?HvHrrEnVufJQ7foxg/emmkc+sk1HUo6ShEyj1nALpNxP4Wg3eU4vzhzSBo?=
+ =?iso-8859-1?Q?5BZygMP/n/Ng5bo06w6g/MSv0uMmpR9/S9mSOCBULl1Jun3VuHIKmnopRW?=
+ =?iso-8859-1?Q?GT6VO/OcJJ1CQAeXi+DKUAosK2/Ij4KztZmSpe9MCS0ktCAm1yKzDa73qe?=
+ =?iso-8859-1?Q?P1y5qwYJqO2WJAAs0KsmjL2FyedIoyE9UphMAq5MtDtmhQoyLGxtKJaIh3?=
+ =?iso-8859-1?Q?aFYj9tCvb+E9z69vttVxeM2Hs+KR4UgAV6ecrwTV0XO1K8wHx+H1Vk01Am?=
+ =?iso-8859-1?Q?cSCLR5F3OSP1l83kpcRg7yA2E+e+mFTMUCHZ5iNlj52R8dL7Ws3l8mRM2O?=
+ =?iso-8859-1?Q?WBRSU4IBREA6M/Q31SIrSSqs9qbzCqhXU7I+ItXqEazoozyOi2UaNvszvr?=
+ =?iso-8859-1?Q?QqpmOWqETAnOsNl4bIPd8eSzbBB9tMIX2MjQGjDHOi+h/Mfq8G+SwrZXhy?=
+ =?iso-8859-1?Q?1ho7uvPu64JMU1Z1w3mL5HVlJjWnXrSUqjiVMdDilSddoxYMdNjYGqDB5O?=
+ =?iso-8859-1?Q?9alQ=3D=3D?=
+Content-Type: multipart/report;
+	boundary="_000_CPYP284MB1301BF68899ADB17F694DC93E6509CPYP284MB1301BRAP_";
+	report-type=disposition-notification
+MIME-Version: 1.0
+X-OriginatorOrg: caixa.gov.br
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CPYP284MB1301.BRAP284.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: e4f8d833-8d13-4bc4-183f-08d9d47856b9
+X-MS-Exchange-CrossTenant-originalarrivaltime: 10 Jan 2022 20:32:36.4052
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: ab9bba98-684a-43fb-add8-9c2bebede229
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: XvjNztFDS/YaebCKkQW33pBOIxnXp6EAOikn4Fp0W2bVAbhrL3iNCVyWJZJXEY8nkSnOaYaz08pXJXslYDCG52tb/EeRTGKy4gQ+2qY/5k4=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CP4P284MB1044
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A sua mensagem Para: A4367CE - AG Abolição/CE Assunto: Fwd:
+    AGENDAMENTO DE ATENDIMENTO CEF Enviado: segunda-feira, 10 de maio de 2021
+    09:04:31 (UTC-03:00) Brasilia foi excluída sem ser lida em segunda-feira,
+    10 de janeiro de 2022 17:31:34 (UTC-03:00) Brasilia. 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+X-Spam-Flag: NO
+
+--_000_CPYP284MB1301BF68899ADB17F694DC93E6509CPYP284MB1301BRAP_
+Content-Type: multipart/alternative;
+	boundary="_002_CPYP284MB1301BF68899ADB17F694DC93E6509CPYP284MB1301BRAP_"
+
+--_002_CPYP284MB1301BF68899ADB17F694DC93E6509CPYP284MB1301BRAP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+A sua mensagem
+
+   Para: A4367CE - AG Aboli=E7=E3o/CE
+   Assunto: Fwd: AGENDAMENTO DE ATENDIMENTO CEF
+   Enviado: segunda-feira, 10 de maio de 2021 09:04:31 (UTC-03:00) Brasilia
+
+ foi exclu=EDda sem ser lida em segunda-feira, 10 de janeiro de 2022 17:31:=
+34 (UTC-03:00) Brasilia.
+
+--_002_CPYP284MB1301BF68899ADB17F694DC93E6509CPYP284MB1301BRAP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Exchange Server">
+<!-- converted from text --><style><!-- .EmailQuote { margin-left: 1pt; pad=
+ding-left: 4pt; border-left: #800000 2px solid; } --></style>
+</head>
+<body>
+<font size=3D"2"><span style=3D"font-size:11pt;">
+<div class=3D"PlainText">A sua mensagem <br>
+<br>
+&nbsp;&nbsp; Para: A4367CE - AG Aboli=E7=E3o/CE<br>
+&nbsp;&nbsp; Assunto: Fwd: AGENDAMENTO DE ATENDIMENTO CEF<br>
+&nbsp;&nbsp; Enviado: segunda-feira, 10 de maio de 2021 09:04:31 (UTC-03:00=
+) Brasilia<br>
+<br>
+&nbsp;foi exclu=EDda sem ser lida em segunda-feira, 10 de janeiro de 2022 1=
+7:31:34 (UTC-03:00) Brasilia.</div>
+</span></font>
+</body>
+</html>
+
+--_002_CPYP284MB1301BF68899ADB17F694DC93E6509CPYP284MB1301BRAP_--
+
+--_000_CPYP284MB1301BF68899ADB17F694DC93E6509CPYP284MB1301BRAP_
+Content-Type: message/disposition-notification
+
+Final-recipient: RFC822; ag4367@caixa.gov.br
+Disposition: automatic-action/MDN-sent-automatically; deleted
+X-MSExch-Correlation-Key: 7q5i8zMTM0W8HyflDl1qiA==
+X-Display-Name: =?iso-8859-1?Q?A4367CE_-_AG_Aboli=E7=E3o/CE?=
+
+
+--_000_CPYP284MB1301BF68899ADB17F694DC93E6509CPYP284MB1301BRAP_--

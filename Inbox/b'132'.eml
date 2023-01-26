@@ -1,0 +1,103 @@
+Return-Path: <marcos.fiscalceara@crt02.gov.br>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id wGVWKWyrg2K8PAAAgqjM2g
+	(envelope-from <marcos.fiscalceara@crt02.gov.br>)
+	for <admrh@acarape.ce.gov.br>; Tue, 17 May 2022 11:04:28 -0300
+Return-path: <marcos.fiscalceara@crt02.gov.br>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Tue, 17 May 2022 11:04:28 -0300
+Received: from cpanel02.dc.grupogmaes.com ([138.122.95.44]:55678)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <marcos.fiscalceara@crt02.gov.br>)
+	id 1nqxoE-0004J3-Mp
+	for admrh@acarape.ce.gov.br; Tue, 17 May 2022 11:04:28 -0300
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=crt02.gov.br; s=default; h=Content-Transfer-Encoding:Content-Type:
+	Message-ID:References:In-Reply-To:Subject:To:From:Date:MIME-Version:Sender:
+	Reply-To:Cc:Content-ID:Content-Description:Resent-Date:Resent-From:
+	Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:List-Id:List-Help:
+	List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=n+D124yKahkRphwxiajYrzelx4RuUjgHbllT38/Ovf4=; b=LQPPEXWYidD8VefsJBAT44OYU4
+	C1BO0GrIVIKdxptRvPtXkibkDuBQKzJxqUhZkow7EheNMO89yRXTV3jqMPk3vCIz328omFFT3cvsJ
+	epO74XwKbiie9GZRO34NqH2TQV6yfYO8wpQ5M1x/L7T+zk8t0eIgG6z/TxTLqSew8QjLtHBn2QL5T
+	toK6fqYHvuDrjzO4f8rdkw/SyEly3Wd7QwGmCGsf62dNrenefDWM000XuqPSyc+aVjELygny2xaDC
+	dlbKxribyHnxgH/ZmP/8/jNSkVD2o26Gazr6LuDIGIioMLxF1rRI3chSgEd8EFhJ/yLbKWZXjc4Kj
+	yQCVNA6Q==;
+Received: from [::1] (port=44294 helo=cpanel02.dc.grupogmaes.com)
+	by cpanel02.dc.grupogmaes.com with esmtpa (Exim 4.95)
+	(envelope-from <marcos.fiscalceara@crt02.gov.br>)
+	id 1nqxOY-001spT-0F
+	for admrh@acarape.ce.gov.br;
+	Tue, 17 May 2022 10:37:49 -0300
+MIME-Version: 1.0
+Date: Tue, 17 May 2022 10:37:49 -0300
+From: marcos.fiscalceara@crt02.gov.br
+To: admrh@acarape.ce.gov.br
+Subject: Re: PEDIDO DE TEMPO
+In-Reply-To: <5ddab521bf20c300b75bcecea0f5329d@acarape.ce.gov.br>
+References: <5ddab521bf20c300b75bcecea0f5329d@acarape.ce.gov.br>
+User-Agent: Roundcube Webmail/1.4.12
+Message-ID: <71e986dc40575e61205cf1e9fdb6f3df@crt02.gov.br>
+X-Sender: marcos.fiscalceara@crt02.gov.br
+Content-Type: text/plain; charset=UTF-8;
+ format=flowed
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cpanel02.dc.grupogmaes.com
+X-AntiAbuse: Original Domain - acarape.ce.gov.br
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - crt02.gov.br
+X-Get-Message-Sender-Via: cpanel02.dc.grupogmaes.com: authenticated_id: marcos.fiscalceara@crt02.gov.br
+X-Authenticated-Sender: cpanel02.dc.grupogmaes.com: marcos.fiscalceara@crt02.gov.br
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-From-Rewrite: unmodified, already matched
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  On 2022-05-13 08:19, admrh@acarape.ce.gov.br wrote: > Bom
+   dia, > > Em resposta ao relatório de fiscalização de 13/04/2022 com prazo
+    para > resposta até 13/05/2022, informamos que nosso setor de li [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+On 2022-05-13 08:19, admrh@acarape.ce.gov.br wrote:
+> Bom dia,
+> 
+> Em resposta ao relatório de fiscalização de 13/04/2022 com prazo para
+> resposta até 13/05/2022, informamos que nosso setor de licitação por
+> uma sobrecarga de trabalho não obteve todas as informações das
+> empresas que atam em nosso município. Solicitamos assim mais 30
+> (trinta) dias.
+> 
+> Gratos pela atenção, aguardamos resposta.
+
+Bom dia!
+Ciente da vossa solicitação, venho por meio desta, prorrogar o prazo 
+para o dia 27/05/2022.
+Grato pela atenção!
+Marcos Pinheiro
+Agente fiscal
+Matrícula nº 047

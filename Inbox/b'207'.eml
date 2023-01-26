@@ -1,0 +1,114 @@
+Return-Path: <naoresponda@sinceti.net.br>
+Delivered-To: ADMRH@ACARAPE.CE.GOV.BR
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id GJl8Irldq2M1YQAAgqjM2g
+	(envelope-from <naoresponda@sinceti.net.br>)
+	for <ADMRH@ACARAPE.CE.GOV.BR>; Tue, 27 Dec 2022 18:03:53 -0300
+Return-path: <naoresponda@sinceti.net.br>
+Envelope-to: ADMRH@ACARAPE.CE.GOV.BR
+Delivery-date: Tue, 27 Dec 2022 18:03:53 -0300
+Received: from web1.sinceti.net.br ([191.232.208.216]:42577)
+	by server2.assesi.com with esmtp (Exim 4.95)
+	(envelope-from <naoresponda@sinceti.net.br>)
+	id 1pAH6y-0006Q3-MW
+	for ADMRH@ACARAPE.CE.GOV.BR;
+	Tue, 27 Dec 2022 18:03:53 -0300
+Received: from corporativo.sinceti.net.br (cft-web1.internal.cloudapp.net [10.0.2.4])
+	by web1.sinceti.net.br (Postfix) with ESMTP id EADCB43C7F
+	for <ADMRH@ACARAPE.CE.GOV.BR>; Tue, 27 Dec 2022 17:27:20 -0300 (-03)
+Date: Tue, 27 Dec 2022 17:27:20 -0300
+To: ADMRH@ACARAPE.CE.GOV.BR
+From: =?UTF-8?Q?SINCETI_-_Sistema_de_Informa=C3=A7=C3=B5es_dos_T=C3=A9cnicos_In?=
+ =?UTF-8?Q?dustriais?= <naoresponda@sinceti.net.br>
+Subject: [CFT] SINCETI - Senha de Acesso
+Message-ID: <0b896c6aa7cacb2f07cc9c424bc79945@corporativo.sinceti.net.br>
+X-Mailer: 
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Senha de Acesso CFT Conselho Federal dos Técnicos Industriais
+    Caro(a) responsável por MUNICIPIO DE ACARAPE , 
+ Content analysis details:   (0.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.7 HTML_IMAGE_ONLY_28     BODY: HTML: images with 2400-2800 bytes of
+                             words
+  0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image
+                             area
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Spam-Flag: NO
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body bgcolor="#ececec">
+		<table width="100%" bgcolor="#ececec">
+			<tbody align="center">
+				<tr>
+					<td>
+					<table width="674" border="0" bgcolor="#FFFFFF" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+						<tr>
+							<td colspan="3"><img src="https://corporativo.sinceti.net.br/public/img/banners/headermail.jpg" width="679" height="133" border="0"/></td>
+						</tr>
+						<tr>
+							<td width="56" rowspan="3">
+							<p>&nbsp;
+								
+							</p>
+							<p>&nbsp;
+								
+							</p>
+							<p>&nbsp;
+								
+							</p></td>
+							<td width="558" height="29"></td>
+							<td width="57" rowspan="3">&nbsp;</td>
+						</tr>
+						<tr>
+							<td height="31"><strong>Senha de Acesso</strong></td>
+						</tr>
+						<tr>
+							<td height="280">
+							<p>
+							<p align="center">CFT<br />Conselho Federal dos Técnicos Industriais</p>
+							<p>Caro(a) responsável por MUNICIPIO DE ACARAPE ,</p>
+							<p><br />
+							  É com grande  satisfação que estamos lhe enviando a senha de acesso aos nossos serviços  online. A sua senha pessoal é: <code>acbyd5z3y9</code><br />
+							  Acesse o  sistema através do endereço <a href="https://servicos.sinceti.net.br">https://servicos.sinceti.net.br</a> e informe os dados solicitados. <br />
+							  Sempre observe se os seus dados cadastrais estão consistentes e completos. Caso encontre  informações vazias ou inconsistentes, principalmente as relacionadas a endereço  postal, email e telefone, favor utilizar a opção &ldquo;Ferramentas-&gt;Alterar Dados  Pessoais&rdquo;, que permitirá complementar ou atualizar os seus dados.</p>
+							<p>
+							<p align="center">Atenciosamente,<br /> SUPORTE SINCETI</p>
+ 							</p>
+						 
+						  </td>
+						</tr>
+						<tr>
+							<td colspan="3"><img src="https://corporativo.sinceti.net.br/public/img/banners/footermail.jpg" width="679" height="133" border="0"/></td>
+						</tr>
+					</table></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>&nbsp;
+			
+		</p>
+	</body>
+</html>
+<br/><br/>--<br/>SINCETI - Sistema de Informações dos Técnicos Industriais<br/><br/><font color=#888888><i>Você está recebendo esta mensagem porque está cadastrado no Conselho Federal dos Técnicos Industriais.</i></font>
+

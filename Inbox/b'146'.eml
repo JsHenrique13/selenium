@@ -1,0 +1,296 @@
+Return-Path: <atendimento.sefaz@sefaz.ce.gov.br>
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id yIZbLZrLsWI2JAAAgqjM2g
+	(envelope-from <atendimento.sefaz@sefaz.ce.gov.br>); Tue, 21 Jun 2022 10:46:02 -0300
+Return-path: <atendimento.sefaz@sefaz.ce.gov.br>
+Envelope-to: admcompras@acarape.ce.gov.br,
+ admcontabilidade@acarape.ce.gov.br,
+ admfinacas@acarape.ce.gov.br,
+ admfinancas@acarape.ce.gov.br,
+ admlicitacao@acarape.ce.gov.br,
+ admrh@acarape.ce.gov.br,
+ agricultura@acarape.ce.gov.br,
+ deseconomico@acarape.ce.gov.br,
+ educacao@acarape.ce.gov.br,
+ gabinete@acarape.ce.gov.br,
+ inframeioambiente@acarape.ce.gov.br,
+ ouvidoria@acarape.ce.gov.br,
+ planejamento@acarape.ce.gov.br,
+ procuradoria@acarape.ce.gov.br,
+ saude@acarape.ce.gov.br,
+ secult@acarape.ce.gov.br,
+ stds@acarape.ce.gov.br
+Delivery-date: Tue, 21 Jun 2022 10:46:03 -0300
+Received: from [189.90.165.92] (port=51518 helo=dpost001.sefazce.corp)
+	by server2.assesi.com with esmtp (Exim 4.95)
+	(envelope-from <atendimento.sefaz@sefaz.ce.gov.br>)
+	id 1o3eCf-0001lI-JP;
+	Tue, 21 Jun 2022 10:46:02 -0300
+Received: by dpost001.sefazce.corp (Postfix, from userid 48)
+	id 67C41559A4; Tue, 21 Jun 2022 10:23:30 -0300 (-03)
+To: "Tributos Acarape" <tributospma2021@gmail.com>
+Subject: Re: Fwd: DECRETO 042_2022_0.pdf [#00241142]
+Cc: ""Bianca Sodexo"" <bianca.cardoso@srbrasil.srv.br>, =?utf-8?Q?2R_Mine?=
+ =?utf-8?Q?ra=C3=A7=C3=A3o?= <2r.mineracao@gmail.com>, "2r mineracao"
+ <2r.mineracao@bol.com.br>, "2Rmineracao" <2rmineracao@bol.com.br>, "5449
+ ADM" <5449.adm@bradesco.com.br>, "Acarape" <acarape@quimiltintas.com.br>,
+ "Acarape Enel" <acarape.enel@rgservices.com.br>, "Acarapesc"
+ <acarapesc@hotmail.com>, "Adilson Barroso"
+ <adilsonbarroso@innovacontabilidade.com>, "Adm" <adm@estrelamps.com.br>,
+ "Admcompras" <admcompras@acarape.ce.gov.br>, "Admcontabilidade"
+ <admcontabilidade@acarape.ce.gov.br>, "Admfinacas"
+ <admfinacas@acarape.ce.gov.br>, "Admfinancas"
+ <admfinancas@acarape.ce.gov.br>, "Administrativo"
+ <administrativo@gtcontroller.com.br>, "Admlicitacao"
+ <admlicitacao@acarape.ce.gov.br>, "Admrh" <admrh@acarape.ce.gov.br>,
+ "Advocacia Fernandes" <advfernandesneto@hotmail.com>, "Agricultura"
+ <agricultura@acarape.ce.gov.br>, "Alan Castro" <castro.alanr@gmail.com>,
+ "Alan Oliveirafa" <alan.oliveirafa@outlook.com>, "Alexandre Sena"
+ <alesena20@gmail.com>, "Alicia Diniz" <alicia@conceitualarquitetura.com.br>,
+ "aline carvalho" <afc990030@gmail.com>, "Alinealmeida Geo"
+ <alinealmeida.geo@hotmail.com>, "Alysson Brunof" <alysson.brunof@gmail.com>,
+ "AM LAVANDERIA" <amlavanderia@yahoo.com.br>, "Amlavandeira"
+ <amlavandeira@yhaoo.com.br>, "Amon Oliveir" <amon.oliveir@gmail.com>, "Ana
+ Claudia" <anaclaudia300792@gmail.com>, "Analuciacalcario"
+ <analuciacalcario@yahoo.com.br>, "andrea almeida" <aram_pires@yahoo.com.br>,
+ "Andressa Gomes" <aguimaraes@indracompany.com>, "Antonio Nascimento"
+ <daniel_asn@hotmail.com>, "Antonio Duarte" <apd_duarte@hotmail.com>,
+ "antonio ferreira" <lucivania_costa13@live.com>, "ANTONIO RAIMUNDO"
+ <carvalhocont13@hotmail.com>, =?utf-8?Q?Ant=C3=B4nio_Assis?=
+ <antonioassis@serviseletronica.com.br>, "Ariana" <ariana@acoforte.com.br>,
+ =?utf-8?Q?ASSISTEC_CONT=C3=81BIL?= <contabil@assistec.adm.br>, "Assistente"
+ <assistente.fiscal@famel.com.br>, "assistente"
+ <assistente.contabil@famel.com.br>, "Autoconstrucao"
+ <autoconstrucao@megafac.com.br>, "Barbara" <contab@plenaconsultoria.com.br>,
+ =?utf-8?Q?BBM_INCORPORA=C3=87OES?= <bbmcompras@gmail.com>, "BERGSON ABREU"
+ <bergson.abreu@bradesco.com.br>, =?utf-8?Q?Breno_Ara=C3=BAjo?=
+ <breno.araujo_@hotmail.com>, "Caroline Rocha" <carol.rocha@famel.com.br>,
+ =?utf-8?Q?casa_dasc=C3=B3pias?= <casadascopias161@gmail.com>, "Cassimiro
+ Pippi" <cassimiropippi@gmail.com>, "CAVALCANTE CONTABILIDADE"
+ <jonnycavalcante190@gmail.com>, "cetede pacajus" <cetedepacajus@gmail.com>,
+ "Cherlypires" <cherlypires@gmail.com>, "Claudio"
+ <claudio@gtcontroller.com.br>, "Cleirtonholandasales"
+ <cleirtonholandasales@gmail.com>, "Comercial" <comercial@alucom.com.br>,
+ "Contato" <contato@strochas.com.br>, "contato"
+ <contato@jpscontabilidade.com.br>, "contato"
+ <contato@lealadvogadosassociados.com.br>, "Contato"
+ <contato@p2oempreendimentos.com>, "ControlCenter Contabilidade"
+ <controlcentercontabilidade@hotmail.com>, "Creusay" <creusay@yahoo.com.br>,
+ "Cristianobezerralino2020" <cristianobezerralino2020@gmail.com>, "dario
+ queiroz" <dario.queiroz@hotmail.com>, "Dayanna Consulting"
+ <dayanna.rocha@flowers.com.br>, "demetrius gomes"
+ <demetrius@hhtelecom.com.br>, "Denilson Advogados"
+ <denilson.cardoso@ramaral.com>, "Deseconomico"
+ <deseconomico@acarape.ce.gov.br>, "Dg Construtora"
+ <dgconstrutora1@gmail.com>, "dheynofarias" <dheynofarias@primecontroll.com>,
+ "Diretoria Accont" <diproaccontej@gmail.com>, =?utf-8?Q?Divis=C3=A3o_Co?=
+ =?utf-8?Q?ntabilidade?= <contabilidade@unilab.edu.br>, "Edilberto Barroso"
+ <edilberto.barroso@yahoo.com.br>, "Edna Uchoa" <admjmmineracao@gmail.com>,
+ "Ednac" <ednac@hidracor.com.br>, "Educacao" <educacao@acarape.ce.gov.br>,
+ "Educomputer" <educomputer@bol.com.br>, "Elieuda Queiroz"
+ <elieuda_queiroz@hotmail.com>, "Enel Oliveira" <danila.oliveira@enel.com>,
+ "Engene Presidente" <pres.engenejr@unilab.edu.br>, "Erasmo Pinheiro"
+ <erasmo.pinheiro@cosampa.com.br>, "Erlon Lima" <erlonlima502@gmail.com>,
+ "Escolasticasousa" <escolasticasousa@yahoo.com.br>, "escon escritorioes"
+ <esconred@gmail.com>, "evaldo silva" <evaldoescon@hotmail.com>, "Evanizi
+ Goncalves" <evanizi.goncalves@infolinktelecom.com>, "Everton Mauricio"
+ <everton.eng.minas@gmail.com>, "fabia maia" <fabiamaia2009@hotmail.com>,
+ "Fabiatavares" <fabiatavares@oi.mr-consultoria.com>, =?utf-8?Q?F=C3=A1b?=
+ =?utf-8?Q?io_Almeida?= <fabioalmeida.k@gmail.com>, "Fancisca Lima"
+ <francisca.lima@hidracor.com.br>, "farmacia antonio"
+ <farmaciasanto01antonio@hotmail.com>, "Fatimadonascimentocorreia"
+ <fatimadonascimentocorreia@gmail.com>, "Fcbessa" <fcbessa@msn.com>, "Fco
+ Aguiar" <j.a_contabil@hotmail.com>, "Fcojoaguiar" <fcojoaguiar@hotmail.com>,
+ "FernanDinho MeneZes" <fer_jr_men@hotmail.com>, "Fho Fho"
+ <fho.fho@hotmail.com>, "Fjean1Adv" <fjean1adv@uol.com.br>, "Franciscf205"
+ <franciscf205@gmail.com>, "Francisco Advogados"
+ <francisco.gomes@ramaral.com>, "Francisco Kerres" <kerres10@gmail.com>,
+ "Francisco Pereira" <franciscoraphaelpereira@gmail.com>, "FRANCISCO BRITO"
+ <francisco.brito@bradesco.com.br>, "francisco wellington"
+ <fwma131@gmail.com>, "Franksuan Empresarial"
+ <franksuanmorais@ppcontabilidade.com>, "Gabinete"
+ <gabinete@acarape.ce.gov.br>, "Gabriellyrodrigues32"
+ <gabriellyrodrigues32@gmail.com>, "Galdilesio Castro"
+ <galdilesio.castro@cagece.com.br>, "Geolux Mineracao"
+ <geolux.mineracao@yahoo.com.br>, "GERARD CARDENAS"
+ <cardenasgerard15@gmail.com>, "gerenciaplena" <gerenciaplena@hotmail.com>,
+ "Gessiane Silva" <gessys700@gmail.com>, "GHM ASSESSORIA"
+ <ghm.acpd@gmail.com>, "Ghn Acpd" <ghn.acpd@gmail.com>, "Gizele Souza"
+ <gizele.souza@grupotelles.com>, "Goretti Pessoa" <goretti.jtel@gmail.com>,
+ "Grhmassessoria" <grhmassessoria@hotmail.com>, "Gustavonut2"
+ <gustavonut2@gmail.com>, "Heitormonteiro2021"
+ <heitormonteiro2021@gmail.com>, "Helena Rodrigues"
+ <helenaalmineracao@gmail.com>, =?utf-8?Q?helenaalminera=C3=A7=C3=A3o=40?=
+ =?utf-8?Q?gmail_com?= <=?utf-8?q?helenaalminera=c3=a7=c3=a3o?=@gmail.com>,
+ "Helton Warlley" <heltonwarlley@gmail.com>, "Helvecio_Catherine"
+ <helvecio_catherine@hotmail.com>, "Herbstherbezerraadv"
+ <herbstherbezerraadv@gmail.com>, "Hgs" <hgs@slgestao.com>,
+ "Hicerefrigeracao" <hicerefrigeracao@gmail.com>, "Hidracor"
+ <hidracor@hidracor.com.br>, "Hudpolpas" <hudpolpas@hotmail.com>,
+ "Inframeioambiente" <inframeioambiente@acarape.ce.gov.br>, "Iranduarte78"
+ <iranduarte78@gmail.com>, "Israel Lanches" <israellanches0@gmail.com>,
+ "Italo2533" <italo2533@hotmail.com>, "Itamar Conmax" <itamar@conmax.com.br>,
+ "Iury 56" <iury.56@hotmail.com>, "Ivania" <ivania@serviseletronica.com.br>,
+ "JAIR BATISTA" <jbjairbatista@gmail.com>, "Jairocontepcontabilidade"
+ <jairocontepcontabilidade@hotmail.com>, "Jakelinne Morais"
+ <assistentecontabil3@hidrotintas.com.br>, "Jardellbeserra"
+ <jardellbeserra@yahoo.com.br>, "Jarles Alves" <gerenciared.lc@gmail.com>,
+ "Joalison Rafael" <joalisonrafael001@gmail.com>, "Joana Sampaio"
+ <joana@locservice.com.br>, =?utf-8?Q?Jo=C3=A3o_Cruz?=
+ <joaobriosocontador@gmail.com>, "Joaquimandrade1997"
+ <joaquimandrade1997@gmail.com>, "Jogosabertos"
+ <jogosabertos@esporte.ce.gov.br>, "Jorge Ageia" <jorge.ageia@midol.com.br>,
+ "Jose Edilano" <edilanofaraujo99@gmail.com>, "Joseheloibdeoliveira
+ Heloioliveira" <jheloioliveira@yahoo.com.br>, =?utf-8?Q?Josu=C3=A9_Mesq?=
+ =?utf-8?Q?uita?= <jpmesquita1@gmail.com>, "Juliana Melo"
+ <juliana@conceitualarquitetura.com.br>, "JULIO (Internship)"
+ <julio.alen@enel.com>, "Junior Contabil" <junior_contabil@outlook.com>,
+ "Jwds Acarape" <jwds.acarape@hotmail.com>, "Kamila-Farias21"
+ <kamila-farias21@hotmail.com>, "Karina" <karina@hhtelecom.com.br>, "karine
+ maria" <karinemariacartorioacarape@gmail.com>, "Karlajesuina"
+ <karlajesuina@hotmail.com>, "karol Lima" <karol_kde@hotmail.com>, "Kedma
+ Wetzel" <acecontabilidade.sac@gmail.com>, "Keversongadelha4"
+ <keversongadelha4@gmail.com>, "KORP Cristiano"
+ <korpempreendimentos@gmail.com>, "Lauro Advogados"
+ <lauro.leite@ramaral.com>, "Lavila Pinto" <lavila.pinto@hidracor.com.br>,
+ "Leme" <leme@lemecontabil.com.br>, "Leonardo Mota"
+ <leonardo.sobreira@hidracor.com.br>, =?utf-8?Q?Leonardo_Tom=C3=A1s?=
+ <leonardo.tomas@hidracor.com.br>, "Leondira Sousa"
+ <sousaleondira@gmail.com>, "LIDIARIA MOREIRA"
+ <lidiaria.moreira@bradesco.com.br>, "Lisandrareboucasbarros"
+ <lisandrareboucasbarros@gmail.com>, "locabox Containers"
+ <financeiro@locaboxcontainers.com.br>, "LS FISCAL" <ls.sfiscal@gmail.com>,
+ "Lua Theo007" <lua.theo007@gmail.com>, "Lua Theo07" <lua.theo07@gmail.com>,
+ "LUCIA ALVES" <l.alvesfgf@gmail.com>, "Luciadasilvasoaresdossantos"
+ <luciadasilvasoaresdossantos@gmail.com>, "LUCINEIDE UNBME"
+ <lucineide.araujo@cagece.com.br>, =?utf-8?Q?Lucio_Estev=C3=A3o?=
+ <lucioestevao50@gmail.com>, "Luxcor Tintas" <luxcor.g@gmail.com>, "Mail
+ Subsystem" <mailer-daemon@googlemail.com>, "Mail System"
+ <mailer-daemon@mx3.bol.com.br>, "Mara Brilhante" <alimararubia@gmail.com>,
+ "Marcelo Castro" <marcelodecastro@innovacontabilidade.com>, "Marcelo Rios"
+ <marcelofranklinrios02@gmail.com>, "Marcia Acarape"
+ <marcia.acarape@yahoo.com.br>, "Marcioescon" <marcioescon@bol.com.br>,
+ "Marcosgeorge01" <marcosgeorge01@hotmail.com>, "Maria Negreiros"
+ <maria.negreiros@ingenieros-im3.com.br>, "Mariaescolasticad"
+ <mariaescolasticad@gmail.com>, "marijane serpa" <marijaneserpa@gmail.com>,
+ "Marilia Moreira" <mariliamoreira@serviseletronica.com.br>, "Mayara Menezes"
+ <assistentecontabil2@hidrotintas.com.br>, "Mbjrep" <mbjrep@hotmail.com>,
+ "Micaelpinheiro Adv" <micaelpinheiro.adv@outlook.com>, =?utf-8?Q?Michel?=
+ =?utf-8?Q?_Fran=C3=A7ois?= <professormichel@yahoo.com.br>, "Mif Acarape"
+ <mif.acarape@hotmail.com>, "Miguel GONDIM" <gondimmiguel@gmail.com>,
+ "Minerabem" <minerabem@livre.com>, "Mirangela Cardoso"
+ <mirangelaadv@gmail.com>, "Mlqsaude" <mlqsaude@hotmail.com>, "Monica Brasil"
+ <monica.magalhaes@geq.com.br>, "Nagela Barroso"
+ <nagelabarroso@jmacedo.com.br>, "Nagilacastro38" <nagilacastro38@gmail.com>,
+ "Naiaralima553" <naiaralima553@gmail.com>, "Natalia Martins"
+ <nataliamartinsal@gmail.com>, "Nataliam Alcino" <nataliam.alcino@gmail.com>,
+ "Nathalia Santos" <nathalia.santos@adlcon.cnt.br>, "Nayara Andrade"
+ <nayara.andrade@vistra.com>, "Negocios" <negocios@bscsolucoes.com>, "Nfe"
+ <nfe@hidracor.com.br>, "Noemia Frota" <noemiapinto@hidrotintas.com.br>,
+ "Nubia Costa" <nubia.costa@grupotelles.com>, "Odeliza Costa"
+ <odeliza.costa@hotmail.com>, "Pafernandesbns" <pafernandesbns@gmail.com>,
+ "Paloma Fox" <paloma.tomaz@industriafox.com>, "Paola Rebeca"
+ <financeiro@tgasa.com.br>, "Paralegal Conmax" <paralegal@conmax.com.br>,
+ "Patriciavirtudeo123" <patriciavirtudeo123@gmail.com>, "Patriciavirtudio123"
+ <patriciavirtudio123@gmail.com>, "paula vieira"
+ <paulavieira.pessoal@gmail.com>, =?utf-8?Q?Paulo_Tin=C3=B4co?=
+ <paulotinoco@live.com>, "Planejamento" <planejamento@acarape.ce.gov.br>,
+ =?utf-8?Q?Plant=C3=A3o_Fiscal?= <plantaofiscal@sefaz.ce.gov.br>,
+ "Ppdistribuidora15" <ppdistribuidora15@outlook.com>, "Procuradoria"
+ <procuradoria@acarape.ce.gov.br>, "Procuradoria Geral"
+ <procuradoriapma2021@gmail.com>, "Protocolo CE" <protocolo.ce@dnit.gov.br>,
+ "Quiautosveiculos" <quiautosveiculos@ig.com.br>, =?utf-8?Q?Rafaela_Tr?=
+ =?utf-8?Q?=C3=A9via?= <rafaelatrevia@gmail.com>, "Raimundofilhoadv"
+ <raimundofilhoadv@hotmail.com>, "Raquel Barboza"
+ <raquel.l.barboza@bradesco.com.br>, "Raqueloliveira18021986"
+ <raqueloliveira18021986@gmail.com>, "Rdocabralribeiro"
+ <rdocabralribeiro@gmail.com>, "Rebeca Furtado" <tributos@tgasa.com.br>,
+ "Recebimentofisico" <recebimentofisico@hidracor.com.br>, "Renan Sb1493"
+ <renan.sb1493@outlook.com>, "Renato Marques"
+ <renatomoraismarques9@gmail.com>, "Renato Pires" <renato26pires@gmail.com>,
+ "Ricardo Pontes" <ricardo.pontes@dnit.gov.br>, "Ronaldo Bezerra"
+ <ronaldo_cosme@hotmail.com>, "Ronierio Andrade"
+ <financeiro@caeiracantagalo.com>, "Samuelsilvajbl"
+ <samuelsilvajbl@gmail.com>, "Saude" <saude@acarape.ce.gov.br>, "Secretaria
+ Ambiente" <infraemeioacarape@gmail.com>, "Secult"
+ <secult@acarape.ce.gov.br>, "Sefinacarape" <sefinacarape@hotmail.com>, "Sia"
+ <sfcontac@uol.com.br>, "Silvanira ROCHA" <cartorioacarape@gmail.com>,
+ "Snalbuquerque" <snalbuquerque@gmail.com>, "Socorro Martins"
+ <socorromartins@famel.com.br>, =?utf-8?Q?Solu=C3=A7=C3=B5es_Atendimento?=
+ <atendimento@scontabeis.com.br>, "Spudf" <spudf@economia.gov.br>, "Stds"
+ <stds@acarape.ce.gov.br>, "Supermercadoaliancarh"
+ <supermercadoaliancarh@hotmail.com>, "Sylvyalyma" <sylvyalyma@hotmail.com>,
+ "Taisa Freitas" <taisa.canaa@gmail.com>, "Talita Sousa"
+ <talitasantos@serviseletronica.com.br>, "Tatiana" <tatiana@acoforte.com.br>,
+ "tendtudo gerencia" <tend.gerencia@gmail.com>, "Thiago Barroso"
+ <ouvidoria@acarape.ce.gov.br>, "Tiburcio Pizzaria"
+ <tiburciopizzaria19@gmail.com>, "Top Construtora"
+ <top.construtorabv@gmail.com>, "Trbutospma2021" <trbutospma2021@gmail.com>
+Content-Type: multipart/alternative;
+ boundary="=_7229d9bff319c30abcf95486d941d914"
+MIME-Version: 1.0
+From: "Atendimento Sefaz" <atendimento.sefaz@sefaz.ce.gov.br>
+Date: Tue, 21 Jun 2022 13:23:30 +0000
+Message-ID: <BA8zUDT-38XXm-AAAAAIqlCACsrwMATaU1xa/0-atendimento.sefaz@sefaz.ce.gov.br>
+X-Mailer: osTicket Mailer
+X-Spam-Status: No, score=3.5
+X-Spam-Score: 35
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  -- reply above this line -- PREZADO(A) CONSULENTE BOM DIA!
+    EM RESPOSTA AO QUESTIONAMENTO ENCAMINHADO AO PLANTÃO FISCAL TEMOS A INFORMAR
+    QUE O EMIAL DE V.SA., VEIO SEM O QUESTIONAMENTO(DÚVIDA) PARA SER RESPONDIDA.
+    
+ Content analysis details:   (3.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  1.5 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  2.0 RDNS_NONE              Delivered to internal network by a host with no rDNS
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+X-Spam-Flag: NO
+
+--=_7229d9bff319c30abcf95486d941d914
+Content-Transfer-Encoding: base64
+Content-Type: text/plain; charset=utf-8
+
+LS0gcmVwbHkgYWJvdmUgdGhpcyBsaW5lIC0tClBSRVpBRE8oQSkgQ09OU1VMRU5URSBCT00gRElB
+IQoKRU0gUkVTUE9TVEEgQU8gUVVFU1RJT05BTUVOVE8gRU5DQU1JTkhBRE8gQU8gUExBTlTDg08g
+RklTQ0FMIFRFTU9TIEEgSU5GT1JNQVIgUVVFIE8gRU1JQUwKREUgVi5TQS4sIFZFSU8gU0VNIE8g
+UVVFU1RJT05BTUVOVE8oRMOaVklEQSkgUEFSQSBTRVIgUkVTUE9ORElEQS4KClBMQU5Uw4NPIEZJ
+U0NBTAoKCgpBdGVuZGltZW50byBTZWZheiwK4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
+4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
+4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
+4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
+4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
+4pSA4pSA4pSA4pSACkVzcGVyYW1vcyBxdWUgZXN0YSByZXNwb3N0YSB0ZW5oYSByZXNwb25kaWRv
+IHN1ZmljaWVudGVtZW50ZSDDoHMgc3VhcyBwZXJndW50YXMuIENhc28KY29udHLDoXJpbywgbsOj
+byBlbnZpZSBvdXRybyBlbWFpbC4gRW0gdmV6IGRpc3NvLCByZXNwb25kYSBhIGVzdGUgZW1haWwu
+ClJlZi1NaWQ6IEJBOHpVRFQtMzhYWG0tQUFBQUFJcWxDQUNzcndNQVRhVTF4YS8wLWF0ZW5kaW1l
+bnRvLnNlZmF6QHNlZmF6LmNlLmdvdi5icgo=
+--=_7229d9bff319c30abcf95486d941d914
+Content-Transfer-Encoding: base64
+Content-Type: text/html; charset=utf-8
+
+PGRpdiBzdHlsZT0iZGlzcGxheTpub25lIgogICAgICAgICAgICAgICAgICAgICAgICBjbGFzcz0i
+bWlkLUJBOHpVRFQtMzhYWG0tQUFBQUFJcWxDQUNzcndNQVRhVTF4YS8wLWF0ZW5kaW1lbnRvLnNl
+ZmF6QHNlZmF6LmNlLmdvdi5iciI+LS0gcmVwbHkgYWJvdmUgdGhpcyBsaW5lIC0tPGJyLz48YnIv
+PjwvZGl2PjxoMz48YnIgLz48L2gzPiA8cD48cD48c3Ryb25nPlByZXphZG8oYSkgY29uc3VsZW50
+ZSBib20gZGlhITwvc3Ryb25nPjwvcD48cD48c3Ryb25nPkVtIHJlc3Bvc3RhIGFvIHF1ZXN0aW9u
+YW1lbnRvIGVuY2FtaW5oYWRvIGFvIFBsYW50w6NvIEZpc2NhbCB0ZW1vcyBhIGluZm9ybWFyIHF1
+ZSBvIGVtaWFsIGRlIFYuU2EuLCB2ZWlvIHNlbSBvIHF1ZXN0aW9uYW1lbnRvKGTDunZpZGEpIHBh
+cmEgc2VyIHJlc3BvbmRpZGEuPC9zdHJvbmc+PC9wPjxwPjxzdHJvbmc+UGxhbnTDo28gRmlzY2Fs
+PC9zdHJvbmc+PC9wPiA8YnIgLz48YnIgLz48L3A+IDxkaXYgc3R5bGU9ImNvbG9yOnJnYigxMjcs
+IDEyNywgMTI3KSI+QXRlbmRpbWVudG8gU2VmYXosPGJyIC8+ICA8L2Rpdj4gPGhyIC8+PHA+RXNw
+ZXJhbW9zIHF1ZSBlc3RhIHJlc3Bvc3RhIHRlbmhhIHJlc3BvbmRpZG8gc3VmaWNpZW50ZW1lbnRl
+IMOgcyBzdWFzIHBlcmd1bnRhcy4gQ2FzbyBjb250csOhcmlvLCBuw6NvIGVudmllIG91dHJvIGVt
+YWlsLiBFbSB2ZXogZGlzc28sIHJlc3BvbmRhIGEgZXN0ZSBlbWFpbC48L3A+
+--=_7229d9bff319c30abcf95486d941d914--
+

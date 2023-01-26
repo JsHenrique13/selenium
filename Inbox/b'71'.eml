@@ -1,0 +1,106 @@
+Return-Path: <teresacristinaa18@gmail.com>
+Delivered-To: Admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id kNLvJYHX7mGKdgAAgqjM2g
+	(envelope-from <teresacristinaa18@gmail.com>)
+	for <Admrh@acarape.ce.gov.br>; Mon, 24 Jan 2022 13:44:49 -0300
+Return-path: <teresacristinaa18@gmail.com>
+Envelope-to: Admrh@acarape.ce.gov.br
+Delivery-date: Mon, 24 Jan 2022 13:44:49 -0300
+Received: from mail-ua1-f53.google.com ([209.85.222.53]:44006)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <teresacristinaa18@gmail.com>)
+	id 1nC2SX-0007ts-DC
+	for Admrh@acarape.ce.gov.br; Mon, 24 Jan 2022 13:44:49 -0300
+Received: by mail-ua1-f53.google.com with SMTP id 2so32107914uax.10
+        for <Admrh@acarape.ce.gov.br>; Mon, 24 Jan 2022 08:44:28 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=rgemBcLqpYJy98WEBh00nYOnqYECMDKVJUJhMhfoz90=;
+        b=HcPdCI30AYTpSPeaDFPChdqdBJ3BEQfy3AFqJeewqdwYtkmH5j1MKn41fQhaQ5x4qV
+         8gi8fzpS+yE0Hc4OgkZ3Cx5PvWCRowpAB3r7ceQvamuJ0KwwsuQ1uJShYkaWxrmjFs1b
+         1sBM46+ftrnAAZdZAoEyHvrMSmYJqES/V4n92cF53JsziDhCYiZ5VoHT8fwnatlvrqhL
+         K5palJwMW4Eq3lEdL5kyav1U3vLGgQikm52SXlrjscUdYanvYB9uudrYcHrnHZYHtyLY
+         9gXdLpG/3CBEfrFOeCufa0boFho3Og0XXOuNiQ1gGX0zeYkeKjVjF6R3C+HyhW9X312X
+         3BBA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=rgemBcLqpYJy98WEBh00nYOnqYECMDKVJUJhMhfoz90=;
+        b=anQl7YQYzil1gz27Rx1mcd/IERavymFGbes+trSZb4IcLNb2e4ZQaVtPJjbY4MyoBc
+         vr9YIDUIWDH3khueKaL7nZNbThkWgdtDJXo6mcySIRKLr0UZjyt+wefrGeCqQWthDuNl
+         gBwIx3NqtPDJk80qrsblU4XjFe71/ThQnl1L7HFQpXqtH28ksiqtVzXqUvkjOT1bcG/4
+         Mct+oGyw2HyfoeIdEOmp+7guVDnkpu8ZmNZUyuidIoiYNIc7fGyvSKV8ATU80eq2MxrY
+         StPa74uUL3vZrizD12fbUJHWG0uG8EXdCircxBXkT8gFsoDAskCP60ov1PFEpG0I/pxM
+         qe5Q==
+X-Gm-Message-State: AOAM5326c1uuKR+LbzbHYilzc3t7gO7fD+eCH4WPg9NZ4uFC8xnxkFP+
+	DPf54nz25nHlDSLqvI7GXAygUN/QKApDhKLhaDtIzpUK
+X-Google-Smtp-Source: ABdhPJz8eqWcd0Cx8d0vU4pA5QrziIu+RZtA0QdtNlfF/zhs81AeU/uEHjGrP1k994KP1rFbF3ZivphhxrGe6gXTveY=
+X-Received: by 2002:a05:6102:2428:: with SMTP id l8mr2986394vsi.44.1643042647429;
+ Mon, 24 Jan 2022 08:44:07 -0800 (PST)
+MIME-Version: 1.0
+From: Teresa Cristina <teresacristinaa18@gmail.com>
+Date: Mon, 24 Jan 2022 13:43:54 -0300
+Message-ID: <CAGZrdwbR6L0-pe1hzm4Q5dtu-ugU+ntFWdLTbdmKhMALCkP-hw@mail.gmail.com>
+Subject: 
+To: Admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="00000000000059d69505d656adfe"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Boa tarde Gostaria de saber se deu certo o pedido de um documento
+    que mandei p corrigir, referente aos anos de 2016 e 2017 que não estavam
+    constando no sistema como trabalhados. No nome de Teresa Cristina Ribe [...]
+    
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 KAM_BLANKSUBJECT       Message has a blank Subject
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [teresacristinaa18[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [teresacristinaa18[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+X-Spam-Flag: NO
+
+--00000000000059d69505d656adfe
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Boa tarde
+
+Gostaria de  saber se deu certo o pedido  de  um documento que mandei p
+corrigir, referente aos anos de 2016 e 2017 que n=C3=A3o estavam constando =
+no
+sistema como trabalhados.
+No nome de Teresa Cristina Ribeiro Souza.
+
+--00000000000059d69505d656adfe
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><div dir=3D"auto">Boa tarde</div><div dir=3D"auto"><br></=
+div><div dir=3D"auto">Gostaria de=C2=A0 saber se deu certo o pedido=C2=A0 d=
+e=C2=A0 um documento que mandei p corrigir, referente aos anos de 2016 e 20=
+17 que n=C3=A3o estavam constando no sistema como trabalhados.</div><div di=
+r=3D"auto">No nome de Teresa Cristina Ribeiro Souza.</div></div>
+
+--00000000000059d69505d656adfe--

@@ -1,0 +1,215 @@
+Return-Path: <seg6912ce@caixa.gov.br>
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id kOO0HYTXAmJgFwAAgqjM2g
+	(envelope-from <seg6912ce@caixa.gov.br>); Tue, 08 Feb 2022 17:50:12 -0300
+Return-path: <seg6912ce@caixa.gov.br>
+Envelope-to: admfinancas@acarape.ce.gov.br,
+ admrh@acarape.ce.gov.br
+Delivery-date: Tue, 08 Feb 2022 17:50:12 -0300
+Received: from mail-roabra01on2065.outbound.protection.outlook.com ([40.107.111.65]:46625 helo=BRA01-ROA-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <seg6912ce@caixa.gov.br>)
+	id 1nHXRD-0001Wt-GK; Tue, 08 Feb 2022 17:50:12 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=kMs8X8CFavaoyTbO1FUAHa4XdaaSdha8RTNkEnQIxTN/XLPStZyMohhCr/el3H7RDDLTwWDTaqo0f3d+xwpJHgJ+UZR0MeJ2gvtZLT6Vyyy5C1492hInpzAQS87zgv8hr28xmN1StybV/brwuy8FasE4Iego0eYZmShRRLlVZ/tl5fqk4k1irui8IAIn6C8xOPUR6ZmL4NDNqyOX/ce7CM6MaQus6iaIf7tcqEp2jNn0nwGoM6Ed8a4R4XTZyrYUS2VEXzJxG8LQiY/DR2xmGLumuYl2FfJgpRQPPBq710inLkL6Epl79iH9c1esbH+9Qw8pU5RrWkYg0k4CtkY8CA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=4wwsknKuycybIgqt9D1Niz7blw2YyrpEgpB3CBzTRbk=;
+ b=EJsuCI+hCpA0QDnYV2dqkH0f3zxxoWPIBRGAQK9MJPQgEX8+5znMAdE7Cf0OIfhgyOloJ+O3GBFS5IbifYDH96MeGD/+OElxUOZom0tSAAhEBjH6cnJM9NW2I+qblNGT6SBZXtzmkofVJkFyLtwJu1CFyKNtziYRgO1OnOaT3imVteAbsPVGDYDQiISorWR9pRGV8Rv9UOZP3qZBiKeoGxjWebAcXdGdsNWJis1IY3nJhZUuKNPvIBDgeopWiOGjp8LIdcUdmiUoTupDi59qIL/wr06TOVDka/kgvIP/MVObfTyPYZw1Mx50LcE3qNa2mBdnBHsDrutPgIYMf+zP2A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=caixa.gov.br;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=4wwsknKuycybIgqt9D1Niz7blw2YyrpEgpB3CBzTRbk=;
+ b=LXWAvFVkhLz2hiO8/Gp+UXeaEFdhHorD9u0k+391SUb5ahGeac7Q274MNLH5P9KYt09Rzs90vcBBnGSBHbfK4YEmRkdGlIpfo3FnmGfgtQj8Qtk5VI4IuHTM+e6/HShyS3WFNdrzlFjufZUKGYJIAvXct/KiNW/IwVP+AX3V1Gc=
+Received: from RIZP284MB1116.BRAP284.PROD.OUTLOOK.COM (2603:10d6:10:55::9) by
+ CP5P284MB1696.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:f2::8) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4951.12; Tue, 8 Feb 2022 20:49:06 +0000
+Received: from RIZP284MB1116.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::8968:e09:99f9:ef15]) by RIZP284MB1116.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::8968:e09:99f9:ef15%5]) with mapi id 15.20.4951.018; Tue, 8 Feb 2022
+ 20:49:06 +0000
+From: SEG6912CE - SE Governo Ceara/CE <seg6912ce@caixa.gov.br>
+To: "'rppsitaprev@gmail.com'" <rppsitaprev@gmail.com>,
+	"'contabilidade@previjuno.com'" <contabilidade@previjuno.com>,
+	"'investimento.ipme@gmail.com'" <investimento.ipme@gmail.com>,
+	"'vicosaprev.diretoria@hotmail.com'" <vicosaprev.diretoria@hotmail.com>,
+	"'ipmm2011@hotmail.com'" <ipmm2011@hotmail.com>,
+	"'thiagocoelhobezerra@gmail.com'" <thiagocoelhobezerra@gmail.com>,
+	"'fumseghorizonte@yahoo.com.br'" <fumseghorizonte@yahoo.com.br>,
+	"'pacatubaprev@pacatuba.ce.gov.br'" <pacatubaprev@pacatuba.ce.gov.br>,
+	"'previcrato@gmail.com'" <previcrato@gmail.com>, "'ipm@caucaia.ce.gov.br'"
+	<ipm@caucaia.ce.gov.br>, "'fmps@itaitinga.ce.gov.br'"
+	<fmps@itaitinga.ce.gov.br>, "'itaitingaprev2018@gmail.com'"
+	<itaitingaprev2018@gmail.com>, "'ipuprev@hotmail.com'" <ipuprev@hotmail.com>,
+	"'pacajusprev@gmail.com'" <pacajusprev@gmail.com>,
+	"'presidencia@pacajusprev.com.br'" <presidencia@pacajusprev.com.br>,
+	"'acopiaraprev@yahoo.com.br'" <acopiaraprev@yahoo.com.br>,
+	"'ipesq.prev@gmail.com'" <ipesq.prev@gmail.com>, "'ipmocara@gmail.com'"
+	<ipmocara@gmail.com>, "'amontadaprev@hotmail.com'"
+	<amontadaprev@hotmail.com>, "'vonbrawnceris@yahoo.com.br'"
+	<vonbrawnceris@yahoo.com.br>, "'irauprev@gmail.com'" <irauprev@gmail.com>,
+	"'ipmprevparaipaba@yahoo.com.br'" <ipmprevparaipaba@yahoo.com.br>,
+	"'capesi@hotmail.com'" <capesi@hotmail.com>, "'prevsol@solonopole.ce.gov.br'"
+	<prevsol@solonopole.ce.gov.br>, "'previsanrpps@gmail.com'"
+	<previsanrpps@gmail.com>, "'everbol@hotmail.com'" <everbol@hotmail.com>,
+	"'ipremnprev@yahoo.com.br'" <ipremnprev@yahoo.com.br>,
+	"'ipremaararipe@gmail.com'" <ipremaararipe@gmail.com>,
+	"'previmil@hotmail.com'" <previmil@hotmail.com>,
+	"'rppschorozinho@outlook.com'" <rppschorozinho@outlook.com>,
+	"'previnovaolinda@yahoo.com.br'" <previnovaolinda@yahoo.com.br>,
+	"'previpalmacia@gmail.com'" <previpalmacia@gmail.com>,
+	"'ipasa@altosanto.ce.gov.br'" <ipasa@altosanto.ce.gov.br>,
+	"'gsprevpmgs@gmail.com'" <gsprevpmgs@gmail.com>, "'ipmt2021@gmail.com'"
+	<ipmt2021@gmail.com>, "'ipmpacotice@hotmail.com'" <ipmpacotice@hotmail.com>,
+	"'cprevcar@yahoo.com.br'" <cprevcar@yahoo.com.br>, "'slcprev@gmail.com'"
+	<slcprev@gmail.com>, "'icaprevicapui@hotmail.com'"
+	<icaprevicapui@hotmail.com>, "'fmssaracati@aracati.ce.gov.br'"
+	<fmssaracati@aracati.ce.gov.br>, "'fmss.cap@hotmail.com'"
+	<fmss.cap@hotmail.com>, "'guaraprev2017@hotmail.com'"
+	<guaraprev2017@hotmail.com>, "'tejuprev@gmail.com'" <tejuprev@gmail.com>,
+	"'previcruz@hotmail.com'" <previcruz@hotmail.com>,
+	"'institutojprev@outlook.com'" <institutojprev@outlook.com>,
+	"'rpps@fmssipueiras.com.br'" <rpps@fmssipueiras.com.br>,
+	"'ipmccaninde@gmail.com'" <ipmccaninde@gmail.com>, "'quiprev.rpps@gmail.com'"
+	<quiprev.rpps@gmail.com>, "'ipm@boaviagem.ce.gov.br'"
+	<ipm@boaviagem.ce.gov.br>, "'admfinancas@acarape.ce.gov.br'"
+	<admfinancas@acarape.ce.gov.br>, "'admrh@acarape.ce.gov.br'"
+	<admrh@acarape.ce.gov.br>, "'aracoiabaprevidencia@gmail.com'"
+	<aracoiabaprevidencia@gmail.com>, "'capesb.beberibe@hotmail.com'"
+	<capesb.beberibe@hotmail.com>, "'iprevibicuitinga@outlook.com'"
+	<iprevibicuitinga@outlook.com>, "'fundomunicipaldeprevidencia@gmail.com'"
+	<fundomunicipaldeprevidencia@gmail.com>, "'aiuabaprev@gmail.com'"
+	<aiuabaprev@gmail.com>, "'cariprev_2017@hotmail.com'"
+	<cariprev_2017@hotmail.com>, "'edilsonfilgueiras1@hotmail.com'"
+	<edilsonfilgueiras1@hotmail.com>, "'previdencia@itapiuna.ce.gov.br'"
+	<previdencia@itapiuna.ce.gov.br>, "'itaremaprev@gmail.com'"
+	<itaremaprev@gmail.com>, "'sec.prevsocial@palhano.ce.gov.br'"
+	<sec.prevsocial@palhano.ce.gov.br>, "'potiprev@hotmail.com'"
+	<potiprev@hotmail.com>, "'redencaoprev@redencao.ce.gov.br'"
+	<redencaoprev@redencao.ce.gov.br>
+CC: Alexandre Guilherme da Silva Barbosa <alexandre.s.barbosa@caixa.gov.br>,
+	Pedro Bruno Lenz Cesar <pedro.cesar@caixa.gov.br>, Dilma Maria Ribeiro
+ Marcolino <dilma.marcolino@caixa.gov.br>, Ciro Augusto Miguel
+	<ciro.miguel@caixa.gov.br>, Luan Augusto Silveira da Costa
+	<luan.costa@caixa.gov.br>
+Subject:
+ =?iso-8859-1?Q?Cancelar:_Convite_Reuni=E3o_-_10/02/2022_11:00_-_Informe_R?=
+ =?iso-8859-1?Q?PPS_|__Estrat=E9gia_dos_Fundos_de_V=E9rtice_-_Fundos_CAIXA?=
+ =?iso-8859-1?Q?_com_Vencimento_=DAnico_de_NTN-B_-_FI_Brasil_2023_-_FI_Bra?=
+ =?iso-8859-1?Q?sil_2024_IV_-_FI_Brasil_2030_II?=
+Thread-Topic:
+ =?iso-8859-1?Q?Convite_Reuni=E3o_-_10/02/2022_11:00_-_Informe_RPPS_|__Est?=
+ =?iso-8859-1?Q?rat=E9gia_dos_Fundos_de_V=E9rtice_-_Fundos_CAIXA_com_Venci?=
+ =?iso-8859-1?Q?mento_=DAnico_de_NTN-B_-_FI_Brasil_2023_-_FI_Brasil_2024_I?=
+ =?iso-8859-1?Q?V_-_FI_Brasil_2030_II?=
+Thread-Index: AQHYHS1O3ArSnLmIJEKs4zSC8Kwc9g==
+X-CallingTelephoneNumber: IPM.Note
+X-VoiceMessageDuration: 1041
+X-FaxNumberOfPages: 0
+Date: Tue, 8 Feb 2022 20:49:06 +0000
+Message-ID:
+ <RIZP284MB1116532C09CBACFF8948DFBBC22D9@RIZP284MB1116.BRAP284.PROD.OUTLOOK.COM>
+Accept-Language: pt-BR, en-US
+Content-Language: pt-BR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=caixa.gov.br;
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 08da7679-9778-46d0-b0a9-08d9eb4472c6
+x-ms-traffictypediagnostic: CP5P284MB1696:EE_
+x-microsoft-antispam-prvs:
+ <CP5P284MB16968865E73D68CC2F57E0BF9D2D9@CP5P284MB1696.BRAP284.PROD.OUTLOOK.COM>
+x-ms-oob-tlc-oobclassifiers: OLM:1051;
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ lAKYdGsLWna2EO/sZp2A4d2ky4UOsD0FEcZLWT9nyA7hdUzOPJYFCvsK7a+swP5mxTITDkR2DO6z9PSvm/lEP4SERl19oxkYpC3tkdChFmnRpwU7H0jXvjrXU7kO6mG8c88qKqmlAxe1AavUBAuT6vTy/13XSY324x/kPuvOY2RA+iW4/C4UacavttvU4X1Zy0U1wY0SKby9fylZCzWS0/jH5q0XM+YtxCvMyKmcPyvU9+z2lHKKkLvDSYgRlWfhoAFdBTKiimUncstxYhs7nt0D5zTh1pjATcljUNHZ5LCT1cMbRnTfhq3dWHnEqfrr9jbaJrL6vJzQIwXTPI0iwcoDYl7g7Mp1Mm5l+FXwPYkhvfTABZq89DjH5lRZf4fqA2E442pYfOv4p2wcAAd7pr1eZSIkUmE+v290uU1VriDGi4614dG8/cnCkEavUcQA2xKK1zDqSNmDe9WQ6b48mefkwWK9GcFdUJvKDpuaQmSDvw1VCYqPYBT4hwzdjSh9mWZoVCCZc1MtEnsMXWBajijYOf8u9bK+0B1i7RnZPFsyfDgAyxWUI4cWdVVl3wVnfPFBgVBnZZNnV97+D5ZsowTrfvKgmy5pdmPCADxmLFm/XZTMAD/dCrR1xG6o53B8Frko0mVM1KjU9NeD0wweokvflQFDre/h51MmjBEo0guxehqMLL0VJOGm7eNbyrzyAxR/Um9vmN76D49XhBC942/gXAHAHUQ6hnTL7PBoa/UQQWSercUTaKN32j5HprKa
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:pt;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:RIZP284MB1116.BRAP284.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230001)(4636009)(366004)(7406005)(10290500003)(1191002)(5660300002)(54906003)(2906002)(7366002)(7416002)(71200400001)(38070700005)(33656002)(316002)(110136005)(186003)(508600001)(66946007)(107886003)(38100700002)(76116006)(122000001)(921005)(26005)(9686003)(6506007)(7696005)(224303003)(558084003)(86362001)(66556008)(4326008)(66446008)(66476007)(52536014)(55016003)(8936002)(64756008)(491001);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?zI6LHKlshhrIgJaoqY0Li9lUk3kVTdkmVpXIEb/xInSt1qkf764BjgL6fq?=
+ =?iso-8859-1?Q?nJVTvjKfkl3HTwnQF37tR8qDH1luqFChvMPWHoF8EcbbQiG4lApMzc9OdT?=
+ =?iso-8859-1?Q?d2gaTE0BNqYvqoQtQJw6CrlOqH+fSHdl7Smxv8HIdKpDr28gy3L9ZsQOJs?=
+ =?iso-8859-1?Q?/v0DXDQvCu3aotR94o9CIE9h9UlZ35o3aCgVcJZXR4OiNoBc76Hr2UKybx?=
+ =?iso-8859-1?Q?AWD/L7YKPYK1b2mZ1tTSfh+hR/aQKPxogVQbqXkLrvmPEvlzP3hn6XlPo3?=
+ =?iso-8859-1?Q?kTdK6MWrRPvjwjJqiuvnGzHPhgXLmYbbebpo4MtFcdyBKsHB4e4kEM61TC?=
+ =?iso-8859-1?Q?SgZQZDnrDiUDlTV7I8+k59Tz4N3EHLro3DjFq6VK9FpS9qp4ehFuVBFYLF?=
+ =?iso-8859-1?Q?xgjyPnO4XUXXf8IzRP/+ovqIj90VdmYQCA5pkNXff64n2K/L1qzxW5PxWn?=
+ =?iso-8859-1?Q?nuXB/h2+5a82hrNxA2SVQhTZhpYXCX/SuemhwKy0bRRoBbXL9g6f2jxj8S?=
+ =?iso-8859-1?Q?tWKfR1I4No2RQevflOW1tWWPexjTZERiKHkD/HHsEZokxjeX9hNpgGOYQf?=
+ =?iso-8859-1?Q?QjjjPzHVXm2zyRTTEpYB/sZA5JcENqQnS3cMrfR//AuCUDK/p8gxv++Epo?=
+ =?iso-8859-1?Q?tuYNJc+inP1TnPY6k/ms/UxjGIFkekjZwHMa07LmeZZ3IuDaUF3cWO1wqj?=
+ =?iso-8859-1?Q?U2u8ifmgwgNjy/1gMuVhKpFlbAAxFnos8scwQt3yDLYYV86alLXeQm8qOB?=
+ =?iso-8859-1?Q?WDjPtRycWMS71bZiDVhfGAFq+2hMJ7Bc36djx6EUz97CUSBWbnfdeaF2ED?=
+ =?iso-8859-1?Q?rwv7EoeOsK34Tl2kldcb2PR7c9KJ69VTntn4tUtgsbPcDFfIsso33VjdQo?=
+ =?iso-8859-1?Q?sN2l5gGpA9PBK78WofCvkbs4ORpHiTuFsFDkHH8d0D6cTmYYq8avhhpMtN?=
+ =?iso-8859-1?Q?Qbncid68lgaKG3gtLTsCq8UfykeKL+Xfcz3nsJkSxKmGy2GdS6mErsAKxM?=
+ =?iso-8859-1?Q?V0RQhWm7zwtMhKzLvQh6tl1KXX8uHoaU2If0o+4VD7fWIX3K+jivtZQUOh?=
+ =?iso-8859-1?Q?eWx5UyXY9gDMOzcbCU23FS157lPvDslBnlcgs2agmX9kgQLI5uTonINoo7?=
+ =?iso-8859-1?Q?mb7xvERYa5dQMz2erpxoI0vSddmIim/OGN1LyBjXBv3fVAOYIHPTObbYu0?=
+ =?iso-8859-1?Q?I7ajLdFtITggeIy7hHAZZRtQ29wnW05+uqiYL0HUszYJQQW0K1/ckwFzvE?=
+ =?iso-8859-1?Q?f50u8HzfN9px/rj3b3mDBU/V6eU4Se9LXmw7vPJcJPmI8iI32QfaNNDO7Q?=
+ =?iso-8859-1?Q?UTMPwPNx5nbW87cUxandciPwq71l42XqfFpRKqYVdNY5rN4c7vwDYf/Pt+?=
+ =?iso-8859-1?Q?BAH8ntjaJoT+l6OW47PjMmcExJ1RRjQB+QY4UmS3w4vc29u+fiRvbjQP3I?=
+ =?iso-8859-1?Q?gPupmnPgbJi4qIgrU/MLPRCy3Z6Ozj9AXnokuyMd7cQ5joDLCIv3g+uglR?=
+ =?iso-8859-1?Q?TkyZVxsVnJ2qMdAGZP5Xe+iVpz19IXS4o7Wq34+IWdQyRNTZb7L0dw2+CE?=
+ =?iso-8859-1?Q?J8yi413XtIclCiZzTiLCuP1Uj6s+zzgqX0ryfDBUyjq7Wr9dXCw6jOU8kA?=
+ =?iso-8859-1?Q?KrX1Zt5FhZXY6IaVeRKidWuxGXDNvXUj2wxRYAtVDkeZ3h9aKUdfkOKyCm?=
+ =?iso-8859-1?Q?06r+aqUY5Idvhj+3Kx9rxiAgW0+Yd6qSisynyFF8uFRyMcNlfUYrq5KKYe?=
+ =?iso-8859-1?Q?kbIA=3D=3D?=
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-OriginatorOrg: caixa.gov.br
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: RIZP284MB1116.BRAP284.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 08da7679-9778-46d0-b0a9-08d9eb4472c6
+X-MS-Exchange-CrossTenant-originalarrivaltime: 08 Feb 2022 20:49:06.3844
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: ab9bba98-684a-43fb-add8-9c2bebede229
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: i0lm46ww2KRIVGwiHMO041zCwpix/STR/ZsNzy0ei/osTy8ioiK10gMMNwq2+0bh2nzj2aNohEECA4qGLZM28HgX9SSB0uz+SMxeXU3WGw0=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CP5P284MB1696
+X-Spam-Status: No, score=-0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  SEG6912CE - SE Governo Ceara/CE deseja cancelar a mensagem
+    "Convite Reunião - 10/02/2022 11:00 - Informe RPPS | Estratégia dos Fundos
+    de Vértice - Fundos CAIXA com Vencimento Único de NTN-B - FI Brasi [...] 
+ Content analysis details:   (-0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.2 KAM_MANYTO             Email has more than one To Header or more than 25
+                             recipients
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+SEG6912CE - SE Governo Ceara/CE deseja cancelar a mensagem "Convite Reuni=
+=E3o - 10/02/2022 11:00 - Informe RPPS |  Estrat=E9gia dos Fundos de V=E9rt=
+ice - Fundos CAIXA com Vencimento =DAnico de NTN-B - FI Brasil 2023 - FI Br=
+asil 2024 IV - FI Brasil 2030 II".=

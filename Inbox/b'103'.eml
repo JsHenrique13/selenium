@@ -1,0 +1,194 @@
+Return-Path: <wiatan@hotmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id uM7hHlrFNGKlaAAAgqjM2g
+	(envelope-from <wiatan@hotmail.com>)
+	for <admrh@acarape.ce.gov.br>; Fri, 18 Mar 2022 14:46:02 -0300
+Return-path: <wiatan@hotmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Fri, 18 Mar 2022 14:46:02 -0300
+Received: from mail-roabra01olkn2058.outbound.protection.outlook.com ([40.92.96.58]:34433 helo=BRA01-ROA-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <wiatan@hotmail.com>)
+	id 1nVGfp-0006v6-Sg
+	for admrh@acarape.ce.gov.br; Fri, 18 Mar 2022 14:46:02 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=LuZ0bbWhSkZBVQ04dKpBZWHleWIhKAqX7rhagXn3Sp1C/2nJoTBHD77S+Hm1zO+3bx+UCKfIDNgMiwPJSi0LKSykGx6zTAdYQ0fSIu8RBIYBaongIb2KJNVV9KUklbNZh2o07uZeTHZPBLy1FG4v6fEuT57Xb0LYIYjA0lRyyQFxanfmDKWp0vN77ZSE84OJpOZIzNePabPrfW1mvFh6ywJFi/UXNrHl1RQYLvCtQFYs5qPwRJ786F0WSO2O5Kui84H4galLeSuighSIsdAN3w1nyP6kofN4XBDplhAMFZU/AT7nn2LCtVIlTcsCXkyU6y/EDeerF5S/NWF4SL1x7A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=6T9JFx9YtcOZbdcg3lwoGUIZJlvlSaNBT08UUvozjhg=;
+ b=kfJy1I4l4t9rEK22SbRADpoEABRs7Ct42QLEvlYm/sNXWWwozpTgjfH38FUklOXn4ffvIAc7e/59LxV5h8opFMenigdcz+PeUvsnGAn78Fp72eaYTpL8agL9TPPkYZRTJ6SrrYOrG0/2SiXM1/Ch6yPKKMwHG+KpLeRhVha4aG/4O/hBPjht4u3U3M9i3MjsZHb2wANUrnSVIm85njspyt7eEP1XXfIV4B1YlPe8LstUEZBFD8Hgqs+OcFdDtsxvD8Q6KKhtsLom8IKuvkj0lY0Gdh3NtaUePSZEQ4HQ4scpbqxz63xbg1i/S5clszKnxR5yvUdrkUeJmuHvV+4g5Q==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=6T9JFx9YtcOZbdcg3lwoGUIZJlvlSaNBT08UUvozjhg=;
+ b=Xr7zaNzxKiiS/bZoiEGvhR460/snepfEqPxez7OaWWQSVNiHgqgylgl5MeibgOQkFB99wXt4zhUrGhhIKcUdcnxWnmUcPr0STjOrRKnJ7Dl9N0bMmlMGM4M5Z0UAenNmD6YrGNFKIUfiPYdM+XNdmYVbEL2jU1NRRXb0tNEvozp5r+jVKtghP4Th5HRqR/rDbyVz8iRwtBwLrWtblz915CwCAPpcKRjlLzy7e4KrAqvF2LqZi5EjJniKVljwDM437fz4WM7Bbdp1bwX8Rq9oRzrHeeRXyRB+vi43knCtBcslsCqO3JoMobeS2sqMYpYli1VQFmiQ15KiqJ/vB/grvA==
+Received: from CP6P284MB1802.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:115::9)
+ by ROAP284MB1021.BRAP284.PROD.OUTLOOK.COM (2603:10d6:10:4b::6) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5081.15; Fri, 18 Mar 2022 17:45:18 +0000
+Received: from CP6P284MB1802.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::ccc8:d874:fbd7:939c]) by CP6P284MB1802.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::ccc8:d874:fbd7:939c%6]) with mapi id 15.20.5081.017; Fri, 18 Mar 2022
+ 17:45:18 +0000
+From: wiatan abreu <wiatan@hotmail.com>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+Subject: =?iso-8859-1?Q?RE:_SIOPE_6=BA_BIMESTRE_REVISADO?=
+Thread-Topic: =?iso-8859-1?Q?SIOPE_6=BA_BIMESTRE_REVISADO?=
+Thread-Index: AQHYOu8LriL2KtrIoUK+6lGPGLN/qqzFafVe
+Date: Fri, 18 Mar 2022 17:45:18 +0000
+Message-ID:
+ <CP6P284MB1802D21769ECDD47732CE4BCCB139@CP6P284MB1802.BRAP284.PROD.OUTLOOK.COM>
+References: <94545a72b175d7ada3fd2afa3bad811e@acarape.ce.gov.br>
+In-Reply-To: <94545a72b175d7ada3fd2afa3bad811e@acarape.ce.gov.br>
+Accept-Language: pt-BR, en-US
+Content-Language: pt-BR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+suggested_attachment_session_id: 68c1d128-11a8-d069-aa24-6f6a58801e0f
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [EvCNevEqN1sKNKRamePBnCBTwUIsICUI]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: ff3ebce7-a3c5-4171-7ac6-08da09071138
+x-ms-traffictypediagnostic: ROAP284MB1021:EE_
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ JaSm9ePOGW6lnfzwL9N+smRcnVXRs+Q18H/FTZRBUS4aC6WxXe5Tk/1A0uc6hBtcE5GYphWWH32J/snkwtpMwZNbgl5yqxJ/5MYKBG572II6x1gDcfAmDzHMXkojxRHvpm7c8n4vRm0onlaXySff697Medk+imZ4j2uFp6QJKtRqUHLsCSTyULaWlqWueQUR0xzTupSyO5D/DY96Bw8Ex4goQpwBGOZsWPh2aHJ4vc0A8K6vuMUJYGJ7urIuA+maD54buLbkeiYpuN3P3zTPLX8AHyZ4Fmzgt7wFeEN1tJZv0JCu5dfkH0HTjWede4Hy0Cd43pbkR7ZTI+2J1o41K3VGiSESPsKKHRs1VaAZUNcQCJ2EpriBUvDn18PT873z4jIB2py8IvHvKYWbWg1fI759HA2q1bszFN6flWfVybF4WKIAjGUkHq18p0tw6acyjGfugVcihm7O8hKLQzJiaz/skKFSlMFI1FEgbUUSPdngmjm3rCf6MHTakEXPjVH8U8X0UlVpkVAX0QUhdn2IVe9hD+NrGWERr7TPVc4eggai8khwmBYvEpvHqIyWmAL0lOcxHWnEmd7IoI1Hv7nLfw==
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?ZP1NLBAH4pZUpldNcCsSIhWnE0YcahiISZ6dYmkd1r56oJBG4bkCt19NeU?=
+ =?iso-8859-1?Q?aeIhndXUnLdkfXFUpNYFyXGembuMARtbDMqR3Z6jdApuzJPRfUO+obgviD?=
+ =?iso-8859-1?Q?xz1ovdBRFEHuCLFugcqu5a0vQQmIKd3IAtWqDLGmGTYsTtiblN1gyPbV1y?=
+ =?iso-8859-1?Q?RFITSm66RKWCEE3IqIHoLoaOKzr5HU9FerWNbCT6MRc45ocN0wV+HhFtZB?=
+ =?iso-8859-1?Q?e1pCETSFz1YoCyPU0gC1SoJ6BQ6RUE3768i4W1kYWxsnEn8OdBBAP45fPW?=
+ =?iso-8859-1?Q?Vdli/7EFEHFYUBVSKU/oqbA5d0EmGsRTqAroYTucilm5tIyaGgu8iBqKw9?=
+ =?iso-8859-1?Q?A6I4n5XZlp6pmu8IJbmK6ilwyaP5oUT1kadQaSyj6+Kmq2FmnsBEv92yGf?=
+ =?iso-8859-1?Q?ly+9d4i8jUdoYGXY1vt0sn8eo5xQT3SVELyXHz6RDKtobaM45VcKBYyB4I?=
+ =?iso-8859-1?Q?/XNMTdFaJEMLLlX4HypPn4eFNG6kvxCxYwcV5phCDYD7iClSOsYxcPP92x?=
+ =?iso-8859-1?Q?aGvkRtSedhLjThvvJxZZIxO2paBY39fsnUpkDDJ0/ZLCALM820E+9+yfb1?=
+ =?iso-8859-1?Q?x+sx6L4MGVUxo0JO9ZB17wNiuAg43b+CJGSoSB2juuiVRa+jR9hh/ZnSxB?=
+ =?iso-8859-1?Q?j4lY267BsTTb6TnAsGDAIRu28PzlktBbGGF2bRkTq890mGm5mdtrLbO8yf?=
+ =?iso-8859-1?Q?+bjwVOMMLpR5TvwhBK0gZ5woy1dyggK4qSlro3yqtyGVTbvWneO3s6eSzD?=
+ =?iso-8859-1?Q?c27lEMdU6vwDCXDo5kFJ3iIJymsL60FxzPOPImv1/glHyYtWJgNgZ+HVxz?=
+ =?iso-8859-1?Q?ss8J4DaYK1i87mg4MgpislNq0u/1lhKcG66PObSKCzt2oyQ7EvvqIYMi+Q?=
+ =?iso-8859-1?Q?xep0Le8MUEP1ecvfHDe6KGXAfkaO8u99EdZp9BRAbCgfXpgOGdSwO+sBhC?=
+ =?iso-8859-1?Q?eFRpaxWmOkmWUWpgU3r1OPRWuOR07ZH9Y4f5ACJbTlo7PbAldJBwneMkVD?=
+ =?iso-8859-1?Q?IdmTKTFL80hVsnn/V3IXpO1H903XLlc2r4L2K4XDdU4pKutCgjOYcj1oAU?=
+ =?iso-8859-1?Q?76b9jRO2HBHKQWLNscEcYXf6BLUvASJ8Z0GoxFK9lw7WPBeNhMEgMsNBcP?=
+ =?iso-8859-1?Q?b9BG6jgoNh1k5X9bDd6bI6YJaYCQdPfI5QAAH3E0hQ4jARUZOS?=
+Content-Type: multipart/alternative;
+	boundary="_000_CP6P284MB1802D21769ECDD47732CE4BCCB139CP6P284MB1802BRAP_"
+MIME-Version: 1.0
+X-OriginatorOrg: sct-15-20-4755-11-msonline-outlook-7dc52.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CP6P284MB1802.BRAP284.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: ff3ebce7-a3c5-4171-7ac6-08da09071138
+X-MS-Exchange-CrossTenant-originalarrivaltime: 18 Mar 2022 17:45:18.3900
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: ROAP284MB1021
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  arquivo está vazio De: admrh@acarape.ce.gov.br Enviado: sexta-feira,
+    18 de março de 2022 17:38 Para: WIATAN CONTADOR Cc: Finanças Acarape ; contabilidade
+    Assunt [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [wiatan[at]hotmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+--_000_CP6P284MB1802D21769ECDD47732CE4BCCB139CP6P284MB1802BRAP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+arquivo est=E1 vazio
+________________________________
+De: admrh@acarape.ce.gov.br <admrh@acarape.ce.gov.br>
+Enviado: sexta-feira, 18 de mar=E7o de 2022 17:38
+Para: WIATAN CONTADOR <wiatan@hotmail.com>
+Cc: Finan=E7as Acarape <admfinancas@acarape.ce.gov.br>; contabilidade <admc=
+ontabilidade@acarape.ce.gov.br>
+Assunto: SIOPE 6=BA BIMESTRE REVISADO
+
+
+
+--
+Secretaria de Administra=E7=E3o e Finan=E7as
+Setor: Recursos Humanos
+Devys Queiroz de Vasconcelos
+(85) 992023370
+John Lennon Duarte da Silva
+(85) 982115157
+
+--_000_CP6P284MB1802D21769ECDD47732CE4BCCB139CP6P284MB1802BRAP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0);" class=3D"elementToProof">
+arquivo est=E1 vazio</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>De:</b> admrh@acarape.ce.gov.br=
+ &lt;admrh@acarape.ce.gov.br&gt;<br>
+<b>Enviado:</b> sexta-feira, 18 de mar=E7o de 2022 17:38<br>
+<b>Para:</b> WIATAN CONTADOR &lt;wiatan@hotmail.com&gt;<br>
+<b>Cc:</b> Finan=E7as Acarape &lt;admfinancas@acarape.ce.gov.br&gt;; contab=
+ilidade &lt;admcontabilidade@acarape.ce.gov.br&gt;<br>
+<b>Assunto:</b> SIOPE 6=BA BIMESTRE REVISADO</font>
+<div>&nbsp;</div>
+</div>
+<div class=3D"BodyFragment"><font size=3D"2"><span style=3D"font-size:11pt;=
+">
+<div class=3D"PlainText"><br>
+<br>
+-- <br>
+Secretaria de Administra=E7=E3o e Finan=E7as<br>
+Setor: Recursos Humanos<br>
+Devys Queiroz de Vasconcelos<br>
+(85) 992023370<br>
+John Lennon Duarte da Silva<br>
+(85) 982115157</div>
+</span></font></div>
+</body>
+</html>
+
+--_000_CP6P284MB1802D21769ECDD47732CE4BCCB139CP6P284MB1802BRAP_--

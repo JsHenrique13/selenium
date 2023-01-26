@@ -1,0 +1,182 @@
+Return-Path: <cristina.j.santos@caixa.gov.br>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id 4HvAC0SBKGPvWAAAgqjM2g
+	(envelope-from <cristina.j.santos@caixa.gov.br>)
+	for <admrh@acarape.ce.gov.br>; Mon, 19 Sep 2022 11:48:36 -0300
+Return-path: <cristina.j.santos@caixa.gov.br>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Mon, 19 Sep 2022 11:48:36 -0300
+Received: from mail-roabra01on2048.outbound.protection.outlook.com ([40.107.111.48]:11296 helo=BRA01-ROA-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <cristina.j.santos@caixa.gov.br>)
+	id 1oaI4Y-0005uq-D6
+	for admrh@acarape.ce.gov.br;
+	Mon, 19 Sep 2022 11:48:36 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=AEFOpf0w5lEePLbUXIwm1d8UU+RuyL3UPE7P+zLvnhwO0ISyPKGiD7/ObxZhYqTS9MthjvmCI/yoLfv07xU3TaLd8ib1EOxXNG6dbURhISuBFCiVa9dnVCdIzBoJcXfr5GlU11uMJEDNF2cPaLwh7Lb2W7lXmtbTfmHex/cJWbv98b/T84Q1llOBzUotYSIG9h5BUvmmSJRaCFuhdYigY+DGlr7nqyouEub3NnOoVt+7cOHe09Oy8TM4nLCW/W5d9EL6iS7ZNaE58r384Ye07GF3NtHj5/3Rva+YQK8m24xHLEv3Vt6LuMQuYdUypgx9fDEaEjO1cM7fBrKLVWVopA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=mTTDMlYg7AS/bwCK+TMfTGYD+bt+Y5Ow8NuLo8pJVs8=;
+ b=Xvmgko1L/SRfEqsbFTMfdwMNsRU83giqCzO8g4EqJj5ggjH/nGLujeWGeiQfWmDgtEMbXuG6CirMNV8qVrjB5dRotvQj6Ca4MhGVl+uvCcXZu3Njq8cFVK0Byw4/85M1xhrtJICZ4wv3c/ghOxvmE1NASWjxUDIG/1Fg2r+hLiKLn67SVTOqh19oEGOqBh2PDuCc+7sY4zMptFwVxa+czu8wsf8c3ue/WYLafN06+rw92uDu93B+pcPDhDWvoH3d242g6IY9KojJg/G93EWmXSQiMUFrK7bxpx6CXBdXYHBC4bE15qHSAtHYwoNbAeHy2TrkBp4uj5mPstmQhdK/qQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=caixa.gov.br; dmarc=pass action=none header.from=caixa.gov.br;
+ dkim=pass header.d=caixa.gov.br; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=caixa.gov.br;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=mTTDMlYg7AS/bwCK+TMfTGYD+bt+Y5Ow8NuLo8pJVs8=;
+ b=l+E64pFkYsR4IgptrIx/MZjw56Wx+ewhStSz2bRWQ2KRFCE1wkChj0nKo1whkM2aWbDBlPc9ur3HgTvfJq5xB5/bxFDyslzoVGos/sMaPInE/hbqHsQDhgCIpuYngpkFXZ60XHqB+1fZKQJBsH5jojgdxa5ZFpmA0DLvma8E5ZB9wPpB8ECyBSBkWIRFr2sdjA458VpUwUnhOEgAYF5c4bR+ov0pZ46xqNifbuy9t4OTxagIAL5doHeIew2B+g0eplWdAaaUQHDlIHLj11ptfU/+RDwVRm2XQImq8q5Zcq9skr75Rs+YYKAvXDMYeIpyCEdArSRZ0jmK0cqbsser1g==
+Received: from ROAP284MB0751.BRAP284.PROD.OUTLOOK.COM (2603:10d6:10:3a::7) by
+ CP6P284MB1623.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:112::7) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5632.16; Mon, 19 Sep 2022 14:47:49 +0000
+Received: from ROAP284MB0751.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::c874:1ebb:123c:242a]) by ROAP284MB0751.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::c874:1ebb:123c:242a%5]) with mapi id 15.20.5632.021; Mon, 19 Sep 2022
+ 14:47:49 +0000
+From: Cristina de Jesus Santos <cristina.j.santos@caixa.gov.br>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>, Claudemir dos Santos
+ Lima <claudemir.lima@caixa.gov.br>
+CC: A4367CE04 - Convenentes <ag4367ce04@caixa.gov.br>
+Subject: RES: CEF AGOSTO
+Thread-Topic: CEF AGOSTO
+Thread-Index: AQHYu7bD2gqbOE40C0KBO/eI30lyM63m82wAgAAChYA=
+Date: Mon, 19 Sep 2022 14:47:49 +0000
+Message-ID:
+ <ROAP284MB0751C286AD440D7E210A8E17814D9@ROAP284MB0751.BRAP284.PROD.OUTLOOK.COM>
+References: <33b4af5659f6c29039b9a15d8b960308@acarape.ce.gov.br>
+ <85b055991c94ed1ca28b9218a8a36a7c@acarape.ce.gov.br>
+In-Reply-To: <85b055991c94ed1ca28b9218a8a36a7c@acarape.ce.gov.br>
+Accept-Language: en-US
+Content-Language: pt-BR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels: MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Enabled=true;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_SetDate=2022-09-19T14:47:46Z;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Method=Privileged;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Name=_PUBLICO;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_SiteId=ab9bba98-684a-43fb-add8-9c2bebede229;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_ActionId=653f9265-e491-44eb-a65d-cd35d5197c7a;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_ContentBits=1
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=caixa.gov.br;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: ROAP284MB0751:EE_|CP6P284MB1623:EE_
+x-ms-office365-filtering-correlation-id: d10f5ea2-7b37-4360-2415-08da9a4dec8a
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ dVD0EbZKxrZQzN4usT9V+XkKGhGI8eaFuCjO0N8xI4TbrWxsNkZjmVK6Po95atf54V//nivjn8mGM56jb6jETK75SJQXZ/8wMd+5SARigMKZvjnNcV/j+Vx8g+Df789wgy976y+VjZMVhUrEoLnipg1BsDJmq/Q0b08x7W4PI1A976c+9UtXLpeF9Cwioh23F4sLncInDBcMTONPwdDk4xf7vz4dChLQvvVW9iC0MTCjTZayG6Z0zs35y4ZMNVcp31GuVspTUnq2gn0aAT2o2m3Znh7Nzryat0PqerBIbnLdLRqVkRoPXWelKnNj/KelxADW0Egay7g7SnikfW86AZSUSW7mfhL+AY+glLHV06DWSmilwLkLfMIHbSf6beTig6bZBo7LRMRjqGKYdSoOrKlK7S1ynBBuOi81I4PSDsHIFE4vAOdsBTUwKlHFo6tPLjDJXATdnDvvTCVcV6iC35toP9kWH7+FqA6XI6pEeEJRRsWFPdPkfUxlOKQbCIA1skshJSVwDoLyfUzys1dUD+CoXVbGC/Cc3ecW28+TkxKhjyHGbQKdkpj5S418BuafNnDVzOhLphGBMjKQayCq1i6MTAZVm/HN7O1Q6SzmCC79ctmk4W2Hlev8taFR1Sv/RlF8t6SNdNFoyTlgFE6WVIFwoT15YRA1Lbtf4c0sXq3LYobGvIRQY2BDxSEX1bReShhBuSyuwQM1kBqRY/o7XrHfdV310BVjdKJa6RYnI4y6ApGmhXTNBuGTMLeCr5B4dQG6Eo7zZa5TZGk8Z/c7Lg==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:pt;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:ROAP284MB0751.BRAP284.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230022)(4636009)(39860400002)(346002)(396003)(366004)(376002)(136003)(451199015)(10290500003)(71200400001)(41300700001)(107886003)(66556008)(7696005)(186003)(6506007)(2906002)(9686003)(26005)(478600001)(55016003)(6636002)(66946007)(316002)(76116006)(7116003)(4326008)(8936002)(52536014)(110136005)(5660300002)(66574015)(66446008)(64756008)(8676002)(122000001)(38100700002)(66476007)(38070700005)(83380400001)(33656002)(86362001);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?utf-8?B?L012dHlwMGN4ZEFrNTBQOGRLdFZpcHhJa2xQUzI2SkpaanlSMDdOdFB0YTZJ?=
+ =?utf-8?B?RkZ3N1A2UG53ajlFZE92MER4WFlUV1gzdzN0N2M5ZlRLaG5MRDBZRHV2U0V0?=
+ =?utf-8?B?VFZjSkhpaU8zWWY2MDZiWXM1d2ExT01ZSUhLSnZSakxaQWdwbE5NREJMY05p?=
+ =?utf-8?B?OGFISURlakUzR1hhTEN3Q1NpM2ZPTU5ydjhGZGNmRlFjdXhMOTg0SkgySjh6?=
+ =?utf-8?B?ZU9IZThINjFxdUtUZVNmYTFHWVpMRUswMmh1a2VyMTdMWUorckxLNmF6MEpR?=
+ =?utf-8?B?ZWhTbGNWZ1Y0Vmt4K21YcUJxYnp4MlJMcUtkc2ZjdXlNejM3Si9HK2RjSmlN?=
+ =?utf-8?B?SW01MHJ5T2R1ZU5pd296cDNBVmprS2l4SFB1eDNzclNIRmRwQ1JudjJXWDhW?=
+ =?utf-8?B?VmVvTUpNbHVtL3FJV2lEeU9IV2Z3dUpHZnBLZWI0T01oVE9LMmlVRFdGRjE4?=
+ =?utf-8?B?R3hDdmN2b0x2VUcreWkwdXgrenJHaldUY3g2eGw5d05UdkhIbkNkUVQ2WHVt?=
+ =?utf-8?B?d1Azek8rbFovcXBsazR1R2FOQXhSMGpIdFVDNmc1ckhHMFNJTEJyKzZWMG9y?=
+ =?utf-8?B?RlZRdnVjVTlEVUVEODBtN1B5Z3hCdTlsaXdwNjR5YmR4dHp3RzFhRXBXTS93?=
+ =?utf-8?B?YTdxTVkzUU80eU45c2VQL3dETGMvaWw2MkpRcUVyYVBvRklETlVZTHBvWVRw?=
+ =?utf-8?B?L1JaS05UV085bW1IaEM3aXBFWnFDUllPQXZVTnJhV2NRZWFSTzBYNllaV0lF?=
+ =?utf-8?B?Yzlud0VBbk1UK3dQcTZ4TFZXZzJEU2dyZmU4R3FFVU5yaWI4dTM2RU8wcmNW?=
+ =?utf-8?B?VllGOTU2aGFrY3hkZDMrS1Q5cFdrbmZYRU81Rk5UUXR3WXYrcDFWY2VmaE9p?=
+ =?utf-8?B?a1BGM3NJY002WGhGMkdWZTd4UzlOMDErQ3lmNFIyaVBRRHNQR1hRdGMyWjJx?=
+ =?utf-8?B?UlZBK09hM2Q1ZjJUMys5emtmZUZMbmhLSlVPdnZyUHhRNVRVV3oyNXhTcVJk?=
+ =?utf-8?B?eThXMm1oaXVJVHlaU0NYYllEWGhEMEJtYWpCNVN5STJxRjYwejhnRkxGRkY5?=
+ =?utf-8?B?UTFDc1FtM29sU1hIMkxxL1RJUDVwb3RRcmgySUtSTERXNzQyZXhHSy9leGJU?=
+ =?utf-8?B?QUtJMGNBNVBCYjlVMk1Gb3JudU1GRFlXYzNEZ3pJYXF2RHdFK0NEdEExWFJ6?=
+ =?utf-8?B?N3Q3QTVWaWhkV2o4RHUvaDFBK2pyQkpiU25iZ2tFQWhDSyt4djNDTGh2L3Rj?=
+ =?utf-8?B?a2xzSVd4cDY2ZnRFc0MrbGowcTNRZGx5aTE1ZnJaMDd1V002aXh6SW14TUlo?=
+ =?utf-8?B?SExsRjZEVFNLYnhYWFB0LzkyeWJpemY2eWduTDdLT2R2VUNlZWtSaVJhU24y?=
+ =?utf-8?B?UkRJcE11RHZYZ1RJZHdBRUJDTzI3OXJlKzRya0ROMXR0YnZBNlpoV1IzbTFk?=
+ =?utf-8?B?U1NwY1M1RkVYWTQ3cFZtc1drdXNFUnZKWUtGaHYzZGVXQkwwcDQ5aXpaVWxm?=
+ =?utf-8?B?V21iQ2Z5V3RNa2V6d0dZVndwQlB2V0E1aWo5WVYwMlczZkRuQzJYazh4Yjcx?=
+ =?utf-8?B?MDNoendTTktiS0RKSm05SkIzTlRhMnhxamc4bkw0ZVBVOURjbEFram04N0dZ?=
+ =?utf-8?B?dnhYd3BrTXdUN1JxY0lELzA0RUt0anFFQjdqQUJMTjE4aHlLMGl0YnUxc1p3?=
+ =?utf-8?B?WFlWeFdpd2xtRzBKMnV5N3oxM3lTUkJSeEozSmI4WkxOZ095d0QvNDJyU2N6?=
+ =?utf-8?B?ZEtVVWRTYzJCMitNL3pyczhYS2pKYUZDRjluc0NRRTFXSnIyVXgrWHZmbk5r?=
+ =?utf-8?B?dFRkQzk4S1ZqdDhERndjQUEvYWliSCtFK1hOaEtWUzY4SkZXY3Q0b3E3aGtZ?=
+ =?utf-8?B?K2pMblh2VGlCV2dnU3dmUWo3TmxST01RbFhWY1ZYdzVnSWg0SHNvVVlheEpa?=
+ =?utf-8?B?dzBDdU1PWHdlbDhVaVdqWXFqU3l4SklsTDFCOTlqOWtHNzRoMVpZRjdpWmw0?=
+ =?utf-8?B?MFVwYko0OXhkVVRnSUtyOHFIclM2M0JyanM5aGt2cW51WE9YKzRxNGJncjlN?=
+ =?utf-8?B?aVJ6bytvZjllenMraVJUbnFVeUNNeFh1cCs0OVhDanArTU44NFBtMUZiRzQy?=
+ =?utf-8?B?TUxmaUxISzc1NmQ5ZVNmcGVtKyswV1dseEllb3pzNVFqOTh5M0N2V2FsaGRR?=
+ =?utf-8?B?NkE9PQ==?=
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-OriginatorOrg: caixa.gov.br
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: ROAP284MB0751.BRAP284.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: d10f5ea2-7b37-4360-2415-08da9a4dec8a
+X-MS-Exchange-CrossTenant-originalarrivaltime: 19 Sep 2022 14:47:49.7669
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: ab9bba98-684a-43fb-add8-9c2bebede229
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: 4NlysTaQ0rtPDeTyp0yptv0jnUAQmyZv4tEgVlNNbDXX8x4VmMxJcsU/QrATC6XCr9Axw0o8FgZy5nJat4Q9OymjFxXYzkjDV0r4nqIwd4Y=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CP6P284MB1623
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  E-mail classificado como #PUBLICO Prezados, Solicito o envio
+    de ofício solicitando as referidas devoluções. 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.0 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+RS1tYWlsIGNsYXNzaWZpY2FkbyBjb21vICNQVUJMSUNPDQoNClByZXphZG9zLA0KDQoNClNvbGlj
+aXRvIG8gZW52aW8gZGUgb2bDrWNpbyBzb2xpY2l0YW5kbyBhcyByZWZlcmlkYXMgZGV2b2x1w6fD
+tWVzLg0KDQoNCg0KQXRlbmNpb3NhbWVudGUsDQoNCkNyaXN0aW5hIGRlIEplc3VzIFNhbnRvcw0K
+R2VyZW50ZSBHZXJhbCBFRQ0KQ0FJWEEg4oCTwqA0MzY3LSBBZy4gQWJvbGnDp8Ojby9DRQ0KLyg4
+NSkgMzMzMi02NDAwDQoNCi0tLS0tTWVuc2FnZW0gb3JpZ2luYWwtLS0tLQ0KRGU6IGFkbXJoQGFj
+YXJhcGUuY2UuZ292LmJyIDxhZG1yaEBhY2FyYXBlLmNlLmdvdi5icj4gRW52aWFkYSBlbTogc2Vn
+dW5kYS1mZWlyYSwgMTkgZGUgc2V0ZW1icm8gZGUgMjAyMiAxMTozOA0KUGFyYTogQ2xhdWRlbWly
+IGRvcyBTYW50b3MgTGltYSA8Y2xhdWRlbWlyLmxpbWFAY2FpeGEuZ292LmJyPg0KQ2M6IENyaXN0
+aW5hIGRlIEplc3VzIFNhbnRvcyA8Y3Jpc3RpbmEuai5zYW50b3NAY2FpeGEuZ292LmJyPjsgQTQz
+NjdDRTA0IC0gQ29udmVuZW50ZXMgPGFnNDM2N2NlMDRAY2FpeGEuZ292LmJyPg0KQXNzdW50bzog
+RndkOiBDRUYgQUdPU1RPDQoNCg0KDQotLS0tLS0tLSBNZW5zYWdlbSBvcmlnaW5hbCAtLS0tLS0t
+LQ0KQXNzdW50bzogQ0VGIEFHT1NUTw0KRGF0YTogMjAyMi0wOC0yOSAxMTo0Nw0KRGU6IGFkbXJo
+QGFjYXJhcGUuY2UuZ292LmJyDQpQYXJhOiBjbGF1ZGVtaXIgPGNsYXVkZW1pci5saW1hQGNhaXhh
+Lmdvdi5icj4NCkPDs3BpYTogQ0VGIDxhZzQzNjdAY2FpeGEuZ292LmJyPiwgRmluYW7Dp2FzIEFj
+YXJhcGUgPGFkbWZpbmFuY2FzQGFjYXJhcGUuY2UuZ292LmJyPg0KDQpCb2EgdGFyZGUsDQoNCkNv
+bmZvcm1lIGZpY2hhcyBmaW5hbmNlaXJhcyBlbSBhbmV4byB2ZXJpZmljYW1vcyBxdWUgNCBzZXJ2
+aWRvcmVzIE7Dg08gREVWRVJJQU0gdGVyZW0gZGVzY29udG9zIGRlIGVtcHLDqXN0aW1vIGVzdGUg
+bcOqcyBlIHNvbGljaXRhbW9zIGEgZGV2b2x1w6fDo28gYW9zIG1lc21vcyBhc3NpbSBxdWUgc2Vq
+YSBkZXBvc2l0YWRvIHBvciBwYXJ0ZSBkbyBtdW5pY8OtcGlvLi4uLg0KDQpQYXJhIHBvZGVyIGVu
+dHJlZ2FyIGEgZm9saGEgbmEgZGF0YSBwcmV2aXN0YSB0aXZlIHF1ZSByb2RhciBvIGFycXVpdm8g
+ZGEgY29tcGV0w6puY2lhIDA3IChjb21wZXTDqm5jaWEgMDggcmVjZWJpZG8gaG9qZSkuDQoNClNv
+bGljaXRvIG8gYXJxdWl2byBjb21wZXTDqm5jaWEgMDkgYXTDqSBvIGRpYSAxNSBkZSBzZXRlbWJy
+by4NCg0KTm8gbWFpcyBhZ3JhZGVjaWRvIHBlbG8gcmV0b3JubyBkZSBmw6lyaWFzIGFtaWdvIENs
+YXVkZW1pciwgdGVuaGFtb3MgdW1hIMOzdGltYSBzZW1hbmEhDQoNCi0tDQpTZWNyZXRhcmlhIGRl
+IEFkbWluaXN0cmHDp8OjbyBlIEZpbmFuw6dhcw0KU2V0b3I6IFJlY3Vyc29zIEh1bWFub3MNCkRl
+dnlzIFF1ZWlyb3ogZGUgVmFzY29uY2Vsb3MNCig4NSkgOTkyMDIzMzcwDQpMdWNpbyBDZXNhciBP
+bGl2ZWlyYSBTaWx2YQ0KKDg1KSA5OTIxNTY3NDUNCg==

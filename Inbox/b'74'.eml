@@ -1,0 +1,93 @@
+Return-Path: <vaniavalbuquerque23@gmail.com>
+Delivered-To: Admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id KwLdFIsF8GFTPwAAgqjM2g
+	(envelope-from <vaniavalbuquerque23@gmail.com>)
+	for <Admrh@acarape.ce.gov.br>; Tue, 25 Jan 2022 11:13:31 -0300
+Return-path: <vaniavalbuquerque23@gmail.com>
+Envelope-to: Admrh@acarape.ce.gov.br
+Delivery-date: Tue, 25 Jan 2022 11:13:31 -0300
+Received: from mail-qv1-f52.google.com ([209.85.219.52]:33634)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <vaniavalbuquerque23@gmail.com>)
+	id 1nCMZf-00046C-0v
+	for Admrh@acarape.ce.gov.br; Tue, 25 Jan 2022 11:13:31 -0300
+Received: by mail-qv1-f52.google.com with SMTP id t7so25318033qvj.0
+        for <Admrh@acarape.ce.gov.br>; Tue, 25 Jan 2022 06:13:11 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=5L9JuKHzNBZTlf+SWm5b+oYK79TfQJ2SlbsR+e/qiM4=;
+        b=Rord7fbRKkAv61PxOFmxA7yhx8URX9ChPWxe/EyctnHv2kN6bGJmA13LrkPMJpd77Z
+         JCVv3UtJ7C9dz8R2Aa8vR4ZoVT31vTYy4k+dcCT+ZfBNCKUYt6WyYHqlMIySUz0Aqb9m
+         wLvNjvbYwBzQa+2+HOwcNo4ejAX6PlKs/hHPhl+EelXp7gPRBeb/2DNhyqC/lMdk+IkT
+         EEEYJf1mZBZWbrNkRjHXfRHc8C/3peF433jttQqho7I9ZzTS7v1Xt2jTA3VfLQ7KBC8p
+         6eoeRe0pKfioT3Obp2jeqHvDqMkg5+74/wrRsrZ5ziQzh8PwnDEdWo0vkw17rI1wc499
+         kfSw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=5L9JuKHzNBZTlf+SWm5b+oYK79TfQJ2SlbsR+e/qiM4=;
+        b=Gfp7Ry+uI4q4qBStNY2aU91FZTsyXpELdNbOzquPaQ9TOW/jHIGXOK4r93R4qeabc2
+         ScC5KGnN7NGsmKTRONrBTB7lw6pQInZh1DEE6gRVzObOl2LeG9cW9KqMeaUYJHExycnx
+         s3ODtGpDdOqNoskU5iaifkN7KcGCM838TYgJGLZU7g4k4q3PJOBSKmD+93jxby4xupUN
+         6p+0LDhRPwLl5eGBoagahsEqPNQHy8HxnkuwUhM1qZ0Z/Eqa6Ofxr29sqzhwWkaRdO5B
+         S1FUK/W4A7LaJ0oku9+drL8dl62pXRbkN1mPel82sCRNkYCmzLbO2aH9R8CNyF3afK9M
+         Kkfw==
+X-Gm-Message-State: AOAM532epr+LblOmpBzwOySNk/3DpsPKj/80WlXiPyAPiBmNmfF56g+z
+	gptaJbFz/bUfArdxKjZC298oO8ooB0kDjIVBGyPzI8d5
+X-Google-Smtp-Source: ABdhPJzjA/uR8rDpg3SMwdFsXejn+vlj3/5EYSJ/RXW/OVKUMVWkP+xBZ6fCqOSTRC7Dw8cE97rn+yJ28WfNO8DksZs=
+X-Received: by 2002:a05:6214:19c7:: with SMTP id j7mr18403795qvc.53.1643119969215;
+ Tue, 25 Jan 2022 06:12:49 -0800 (PST)
+MIME-Version: 1.0
+From: Vania Valbuquerque <vaniavalbuquerque23@gmail.com>
+Date: Tue, 25 Jan 2022 11:12:37 -0300
+Message-ID: <CACr0EzExAv2_SRm-BbmnGViKvp9_8Lv5d25K5YKS=sqBzGeiKw@mail.gmail.com>
+Subject: =?UTF-8?Q?Hist=C3=B3rico_por_tempo_de_servi=C3=A7o=2E?=
+To: Admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="00000000000016a90205d668ae9e"
+X-Spam-Status: No, score=3.8
+X-Spam-Score: 38
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  
+ Content analysis details:   (3.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [vaniavalbuquerque23[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [vaniavalbuquerque23[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+  1.8 FSL_BULK_SIG           Bulk signature with no Unsubscribe
+X-Spam-Flag: NO
+
+--00000000000016a90205d668ae9e
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--00000000000016a90205d668ae9e
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--00000000000016a90205d668ae9e--

@@ -1,0 +1,373 @@
+Return-Path: <alex.guimaraes@caixa.gov.br>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id eEpCI/JoPGLuDgAAgqjM2g
+	(envelope-from <alex.guimaraes@caixa.gov.br>)
+	for <admrh@acarape.ce.gov.br>; Thu, 24 Mar 2022 09:49:54 -0300
+Return-path: <alex.guimaraes@caixa.gov.br>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Thu, 24 Mar 2022 09:49:54 -0300
+Received: from mail-roabra01on2068.outbound.protection.outlook.com ([40.107.111.68]:26721 helo=BRA01-ROA-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <alex.guimaraes@caixa.gov.br>)
+	id 1nXMuW-0002yj-Sq
+	for admrh@acarape.ce.gov.br; Thu, 24 Mar 2022 09:49:54 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=bebQHcTZgN2WSqrco3yjAPP/sE2TMX9CFLNFg1Nbgby5NZifKEOsszLDfwM/cNqmB43Jx6kztG8g41e3+TkA4sefplY8VqsjRIombH2zmdo5XxKCsFwXwt8GFRDIQOJHRlNKSUHt/RGm4qUQYWum1YNxg9TkvoSVE0uc//U1fkeZAmRodcbuPrrBYlOeGpDJbzYqnb3FdOxZ7hzWKeta+BWQsNlpLjCw4mAzvSQQaIr6QFjdPg/PIx0awnB/tG7c3s+L17mXPBMfmObv/ENZD+gX5wF3IhmXFaWsN5MP9/h7T+273YjWj5cNxc1P3xLwLm5aZzGtQCPPepCmBBRhdw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=yRuyvSdhIKdz0ZD8OtJs/4N7vRcYVC09iVHKGcmemx8=;
+ b=N+Hh3B2R3D1nkGPjFORyVym9KFIMUJInW77xnbjwZdtipvbcxdn64f8jUQDlY4c44o72iHj3eQLL+GbHFlrHb/h2+v+V6BxB1ftoYNiXkR8/VtNpc7qCvHvommkW0NhjWsvs6WwFHgAaIVgiMZRFvjkTB4zW6Iyhyjx18ez9wCvzetZrDr3ugv2+F/y87raPJiOdD6vBuf9VGDjiYO36XHGRAieeFXlaBAks07Rm7GjMFMA3VdWuw5Qf2YPE/ZjeKFatzUk9wQ8J2/sMfP1tIoo2VVKc6pSj14DqivCUAD4YD5Eb8hiOvfrWumySvs6ltoM/Y5j3WT+3wg8nlRA5Tw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=caixa.gov.br; dmarc=pass action=none header.from=caixa.gov.br;
+ dkim=pass header.d=caixa.gov.br; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=caixa.gov.br;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=yRuyvSdhIKdz0ZD8OtJs/4N7vRcYVC09iVHKGcmemx8=;
+ b=cs4jEN7tQIGn1kxqpvAiVdol8SSfLLz3vRAV6jLMBp8+1+/9444lxwQ+cHto+N9nrfC4RPtCVd13z4wfhLyKsxSPoEyTQ8prtYCeiFU+cf+DctEz8oEXT0GqsV2C/AqAKz/kYs7+KK1weXmlq8J6wbCIiOJj9AI7wAeUZscw7Nt+8CLjylvAaDhQWpclbbfjweQZOe313HetBZJ2q3LPHiR46+Vd4KQ/L22yu2TMBPc9gZRXWrYrPBPvf7Cr3WlnH2BbF7KIFRBSpwN7ziK9c0TMd6wuEgO+tY0D7duAMSMJOI+iTpFDITzyrY13vkWcU/sTjaKSii1z7HAJZvNCoA==
+Received: from FRBP284MB0713.BRAP284.PROD.OUTLOOK.COM (2603:10d6:203:3b::5) by
+ CP4P284MB1027.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:8d::14) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5102.16; Thu, 24 Mar 2022 12:49:09 +0000
+Received: from FRBP284MB0713.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::44b3:859e:edbf:cc0f]) by FRBP284MB0713.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::44b3:859e:edbf:cc0f%8]) with mapi id 15.20.5102.019; Thu, 24 Mar 2022
+ 12:49:09 +0000
+From: Alex da Silva Guimaraes <alex.guimaraes@caixa.gov.br>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+Subject: =?iso-8859-1?Q?CONTAS_SAL=C1RIO?=
+Thread-Topic: =?iso-8859-1?Q?CONTAS_SAL=C1RIO?=
+Thread-Index: Adg/fW3LPGlDNXT/StySN8zUjv3OQg==
+Date: Thu, 24 Mar 2022 12:49:09 +0000
+Message-ID:
+ <FRBP284MB07137092F67ED65F0D3CD3AFAA199@FRBP284MB0713.BRAP284.PROD.OUTLOOK.COM>
+Accept-Language: pt-BR, en-US
+Content-Language: pt-BR
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels: MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Enabled=true;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_SetDate=2022-03-24T12:49:06Z;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Method=Privileged;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Name=_PUBLICO;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_SiteId=ab9bba98-684a-43fb-add8-9c2bebede229;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_ActionId=efd0b921-969e-41ec-9b2f-b882178454e8;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_ContentBits=1
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=caixa.gov.br;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: a464b057-7dfa-4750-5410-08da0d94b083
+x-ms-traffictypediagnostic: CP4P284MB1027:EE_
+x-ms-exchange-atpmessageproperties: SA|SL
+x-microsoft-antispam-prvs:
+ <CP4P284MB10271045707CCF5A8070D145AA199@CP4P284MB1027.BRAP284.PROD.OUTLOOK.COM>
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ 4GjK2YvIuYD5Ei//8NGtZa/Mhbs1PFY3X0T+STWCIy96Hmh1kPUiA1buS90zjmVr4rov5hYj/iuWRPLdrvMZ+Lk93HZVt4V05m9OHAM2fCzC9s8wwY18RhyQv6lA7Yx2UKftSCemWfJ4w6eF+aHWHdngGr+NOemw3UOvX5hvga0gHONtdZj4UwHJJshTsceB6PTy4kq9VfPXv3vh/tmMDLj90qmNmSEcGoX+i2iDVBqeBRoGSDks+V4soMx2ku8ykXnQXEL06DvWYRIdfGnkoRLLtgBa6QaxPB73hitYWCYpVsa/TLRe0OybbVTZWPor9SWZzETC2liTuhWooTFajdwhjehdf3qDTlV9J2BFeQDD8/OtNJjUWzI21xmggAkpCb3eYAE5tPeFzPc+1CGWwVU5M9hEO5/MmKrHMP464fuCyQnIutrAncwR7qpkHQ4m/hIHz+8B+OEHL36PQzXc8E/jr0h4JzR6e3+ypmqBJtMCIFSxoywBHImG7ENS5vJwdb6Zo8vL97p0fVMPwOnmcT4fHGdOsyDaRMpZV9UWrrpUx0Z8AvY6focbD7LbynF22VEHjkpxrnQKgVzS9T6C71B3811YF0TQSlE/fxYs3q5/0/XJgH7QRp9TWq/lEMh565/puOFB4n5/35r/nUfdNRt4PxzJs7+7rQnSR8ulSqM=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:pt;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:FRBP284MB0713.BRAP284.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230001)(4636009)(366004)(5660300002)(316002)(19627235002)(9686003)(122000001)(38100700002)(2906002)(86362001)(71200400001)(508600001)(10290500003)(6506007)(7696005)(33656002)(6916009)(558084003)(38070700005)(26005)(186003)(66574015)(224303003)(99936003)(66946007)(8936002)(66476007)(76116006)(66446008)(64756008)(66556008)(52536014)(55016003);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?yWu7tTObhXOkvhUuLH96W6Rr1UfimVRv5KIxBcj17OjA6kps+kB7dTmfu2?=
+ =?iso-8859-1?Q?1cD+nhLBFcxlv3g2qWpjg2av+qvYnBZoNKJ+OfvN7EmJfrGdjRXrvTKfN+?=
+ =?iso-8859-1?Q?aGKL1xvaSfTwnUltR/S/p/RYfu2H41bOe9bofwUBByh9dVxU6PWbT/11oz?=
+ =?iso-8859-1?Q?OGRF/TZNL9+4VErMA7c3ozjLIzncQu2Y40G6dNzodNAQ2XGf62BjTt+vH1?=
+ =?iso-8859-1?Q?WrKBQAbb9ZNcYiePeIQ+Pd4Js1olyvw0DwubRkTY7DQYPax1+1Y3URpmgo?=
+ =?iso-8859-1?Q?Qj3D5TXKgwfS3G2s0bd9UbIMGju/9iQ1S40GGcwyrbCrjgUN7ae3EE6tu7?=
+ =?iso-8859-1?Q?RquswJUi6a8VaKS2pmQLNBUYyRgRwSQzgeGKySNGX3SLoq7kffZ1B+EWXb?=
+ =?iso-8859-1?Q?if+OxqELWoHMFNYvT+a6mMLRABn8sPJ21nUo7WjCgFi3VoOuv2gsKEgsJb?=
+ =?iso-8859-1?Q?Ku4gQl3oA5nr8956n48zcBXrw+Fy9+zvqa0DKLgyJxzhpQ9G6zmiXMqJPN?=
+ =?iso-8859-1?Q?N1QnREqaSHV4rR1Tq5LFArIH3SyN4mRUH+fNW6zEBTynZiQIZ5HwNjZIE2?=
+ =?iso-8859-1?Q?KdBGmhSUFDtpAClQ7aPvDetVDij6Dq7w7URzZflYueHCxXsKKfiKnGhl24?=
+ =?iso-8859-1?Q?VQ+JMNhIfG91C8ARM2wbMD2an1G/YQWjMnXKWcsxidvLfpR3mlzVyLLjJC?=
+ =?iso-8859-1?Q?S4T54o+QON5pynL/HX96EpUGl4T68/8KJAWOHOadP5BkysLug4xeuwSPX4?=
+ =?iso-8859-1?Q?It14H6nku7GLbTKITWlyaAQ2hGqWVAN4L7AeUxBqmmrKlFtIWvoaegAgtG?=
+ =?iso-8859-1?Q?jHTFZElO6zK/ljAiZ7E+J5QqmHNnCEn/WRG1h79zXMnrEs+OwSx9a3Y9GW?=
+ =?iso-8859-1?Q?n/g88Kmo/kxc3vF9RmEX6kY02sR1tjmF6pSsCttcjR7eXbuAbXw+gm/TSi?=
+ =?iso-8859-1?Q?G+LaaxLEvzMfduQG9i/vYRuPh4hLh7cNFlj5gGkoWcf4tPWeuV++MvLOCD?=
+ =?iso-8859-1?Q?6z8+dMItmedBeGczOgLmea0PolJ5x33uL9hWwLZMZF9PyhEMkKNL+BAE/b?=
+ =?iso-8859-1?Q?gTkcSdnUnt6G3OxmfgnsvaKunu4jALQbdA7n1vuMkpQWzpO596nj0INpzL?=
+ =?iso-8859-1?Q?0UWSUhlKJk6+XRzLiIkWGTcc5h0top73Vu+pXISLG15zcd3owYB3tothF2?=
+ =?iso-8859-1?Q?zqj90hrGfsgwYq+uYxAY96ntPupBJRyC6TvOyq564zKCzP6GVB6kk4eHTn?=
+ =?iso-8859-1?Q?64oVMkZYgqR2aYhsSfXOHuZKNNQKpHUhfduqX/Qfv5lE2vCDC301gtRMYw?=
+ =?iso-8859-1?Q?Ajl2BCoAdWWKhQ6HYOWFrXecSa8fC3SO7pPtLj/4TQySPSAMCOO6BBQD4V?=
+ =?iso-8859-1?Q?yqILoTfy8N5zHiMWrpQqQHGkc3EB43ou715rNPWAepYKSzcFIDHeYsIrXi?=
+ =?iso-8859-1?Q?MAVulbrJdDgybHO2Tw6qIKGpKBeZT+Fw36vQVLGrPveOGqNVCSAjqmkDHW?=
+ =?iso-8859-1?Q?uMoiX4uTIj4KCPNB8QfzFWUR3sxwiEuKOOtd2zTKEzwYf9T9BEf6HC0ZnS?=
+ =?iso-8859-1?Q?0aMdbLtkIXZb2nsVNnNEhBFFEPws89z+ZG8+aB5gBr56jMLs2Omq7XeeNb?=
+ =?iso-8859-1?Q?aBx2jwdjbO9cYXxZJPzKFOUB6WHK+mcXA7ExvwxowybIiff5WzqaYqfIfR?=
+ =?iso-8859-1?Q?oXhGvbTi7kh98Y+4e0VcMMfiaBhJFT09nKg8RE968rhQX1z8AKPA69XsrH?=
+ =?iso-8859-1?Q?xPAAhOEbm9jbdcxxTHbGNqzzNEtDkII2nYd6dnfrsrLLM6fNmDfJGcD+IR?=
+ =?iso-8859-1?Q?zsxe6b0ACYm/WhSwgmuuGpnz+XEttKs=3D?=
+Content-Type: multipart/mixed;
+	boundary="_004_FRBP284MB07137092F67ED65F0D3CD3AFAA199FRBP284MB0713BRAP_"
+MIME-Version: 1.0
+X-OriginatorOrg: caixa.gov.br
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: FRBP284MB0713.BRAP284.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: a464b057-7dfa-4750-5410-08da0d94b083
+X-MS-Exchange-CrossTenant-originalarrivaltime: 24 Mar 2022 12:49:09.2345
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: ab9bba98-684a-43fb-add8-9c2bebede229
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: vjcjMTVVEUwXz+CRv/KHjUQ9nWJmkoEVpNk5lI+HZ+jVCKcCur57um1wefv8wLFe9S+gXoyTssPrF/qsktBbukBpWqIUPd2wLFWi06vrS68=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CP4P284MB1027
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  E-mail classificado como #PUBLICO Segue em anexo as contas-salário
+    de da Prefeitura de Acarape. E-mail classificado como #PUBLICO 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+--_004_FRBP284MB07137092F67ED65F0D3CD3AFAA199FRBP284MB0713BRAP_
+Content-Type: multipart/alternative;
+	boundary="_000_FRBP284MB07137092F67ED65F0D3CD3AFAA199FRBP284MB0713BRAP_"
+
+--_000_FRBP284MB07137092F67ED65F0D3CD3AFAA199FRBP284MB0713BRAP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+E-mail classificado como #PUBLICO
+
+Segue em anexo as contas-sal=E1rio de da Prefeitura de Acarape.
+
+
+--_000_FRBP284MB07137092F67ED65F0D3CD3AFAA199FRBP284MB0713BRAP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EstiloDeEmail17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"PT-BR" link=3D"#0563C1" vlink=3D"#954F72">
+<p class=3D"msipheadere7d5a1b3" align=3D"Left" style=3D"margin:0"><span sty=
+le=3D"font-size:10.0pt;font-family:Arial;color:#008000">E-mail classificado=
+ como #PUBLICO</span></p>
+<br>
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Segue em anexo as contas-sal=E1rio de da Prefeitura =
+de Acarape.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_FRBP284MB07137092F67ED65F0D3CD3AFAA199FRBP284MB0713BRAP_--
+
+--_004_FRBP284MB07137092F67ED65F0D3CD3AFAA199FRBP284MB0713BRAP_
+Content-Type: application/vnd.ms-excel;
+	name="=?iso-8859-1?Q?CONTAS_SAL=C1RIO_ACARAPE_160322.xls?="
+Content-Description: =?iso-8859-1?Q?CONTAS_SAL=C1RIO_ACARAPE_160322.xls?=
+Content-Disposition: attachment;
+	filename="=?iso-8859-1?Q?CONTAS_SAL=C1RIO_ACARAPE_160322.xls?="; size=7417;
+	creation-date="Wed, 16 Mar 2022 18:36:20 GMT";
+	modification-date="Thu, 24 Mar 2022 12:49:08 GMT"
+Content-Transfer-Encoding: base64
+
+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
+AKQaAAAAAA==
+
+--_004_FRBP284MB07137092F67ED65F0D3CD3AFAA199FRBP284MB0713BRAP_--

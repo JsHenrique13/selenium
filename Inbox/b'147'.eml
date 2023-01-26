@@ -1,0 +1,756 @@
+Return-Path: <>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id SG//HJUBsmKlMAAAgqjM2g
+	(envelope-from <>)
+	for <admrh@acarape.ce.gov.br>; Tue, 21 Jun 2022 14:36:21 -0300
+Return-path: <>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Tue, 21 Jun 2022 14:36:21 -0300
+Received: from mail-bn7nam10olkn2083.outbound.protection.outlook.com ([40.92.40.83]:63840 helo=NAM10-BN7-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	id 1o3hnW-0003Ad-Sc
+	for admrh@acarape.ce.gov.br;
+	Tue, 21 Jun 2022 14:36:21 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=RIQFSK75oF86iTBE8khw0c2FQzi1kUFhtrVBVYRflerOyhzE25jhu4ZGasPjnKdgK+Hw0DtrJDmqUbq/n/t5mijYopy5Bzptpd7PvYJYwSuenPU9eJFzyuV+WN0ud5P0Q95EYD8xsiL2VGiyLxy97P1gLvS3j8eNfO7Gf8r57E2bFb0VCWzXxpBU206skFUmoCN6Fn7k7unp9bLlZIxgUAOsNTAEuyCp2/46PfZesvMglwVAR1CVXTQLJFxG8tBskjOMS9xQ86PH1BB8f4uQw9UBpXDwFicQXU5QLBc5hq0rT/jag704plNcUK3PueaN1pM5fmQZKPFjwzVTI/NXJw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=zeGQiE4VP9Cr93kGDWQdyzgufNfdLEG0mh+9lbt1sXY=;
+ b=YnBlw+4R892whHT4+Je9HJJHFz5sktdP3egB2MMf64xHbXdV1EqJyfJ4o4qq42E23TlxDVcwIrEgvlxA78fnJt8dIo45Ji+4pei7+CNTiHfr8rqu11MxgF/UXVIRSo7jyOHC+ryllCsggTiPMI8EaoWW4+4OLjyvfHWiOoSk4ovnsvnAguxYD0NA8anBKQH7pb+oy0h0THXQ+axg5HRSpKeUVodM8FpEDzS2DV8QqZs36BJkG8lkI1SFatoyLouPswzfDLiAfgQIYdsF3p2tWv3TJBbdmX8k/kxWYcH5XUghTQC1yFV2xSMJrT59NxIFqy+CBDj5UYNV8fGg6R1p+A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+MIME-Version: 1.0
+From: <postmaster@outlook.com>
+To: <admrh@acarape.ce.gov.br>
+Date: Tue, 21 Jun 2022 17:35:35 +0000
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="352e5156-2d06-47e4-b0ef-ad42d88a8a18"
+X-MS-Exchange-Message-Is-Ndr:
+Content-Language: en-US
+Message-ID:
+ <b1a23afa-cfe7-4078-bb73-111a06664167@DM6PR11MB4187.namprd11.prod.outlook.com>
+In-Reply-To: <20aebbc5834d40c64976ce7d7169b94d@acarape.ce.gov.br>
+References: <20aebbc5834d40c64976ce7d7169b94d@acarape.ce.gov.br>
+Subject: =?iso-8859-1?Q?Undeliverable:_SOLICITA=C7=C3O_DE_PARECER?=
+Auto-Submitted: auto-replied
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DM6PR11MB4187:EE_
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+	tU8Ycvyx80vMNtNc+E0hkKGpYXkiYxQl0ce0+w26GtxPhVsk3GCbCcdj3JSdmwyHCpxgsi7j37WOM4w4qxMxL1ARMWT4JlyjbTHQqvsB61yz9deoUhVqA0jJmiTyxmOoLzkyMsZbD6Lrc15Ppxo49/j5iy5pYiyDTR/9yqqdv/3NRQZHGBGpEnTmvlJlwHymzjuEQThLy6v+vuaig4SS+XOaclRfhU7Aq5DoV8jNgP2RYY3iYw54QeEfxuj7QhOqCN1rIATwgoUDHD+591Krm5fCbGQx1TqrqubYWsT9cR9j4zbxpa+doHN9aG2KbB2pspRO19IvDgqqdbsXIWWa5OS3fd/naFxnfVByrixOopcDXKcHBOErfodcQ2APKMQ/PXSlCtKR3k1Eb8qav09xzdY7U/PSQakxS94eo9kH4apxx/u3z70cejHwMDGB2c8lX35CAeLK1KPpa3CbGwVuQrJb4Yfco9Tlg89Th+TfesNKrm6lxdXlI5dRpRvSi5Ogj+i/tzFurjAiWEOhefTdhkUd2lA2SVjF3c8nicAO0TMsAmB16MIei5JszMnqrgZviwisHTXD6WIPzeXnxVIzDY1GPxymacDNDU/mdAjAGE6IGBeub8LluR6hTaqe3VLo
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+	R4wr28zAP6X4eS7TBHLJejSSmHhbfXdkOGrOFjWb/wogtoeK3Jb6Uz7mWRUvLz5uaY87usdmgbYBRCpoUD+Lzb5lvPRIeZtI00RljIu3LAqxtvXnWVdXLCsL/7w6jIe9xSitYXkz8JXdCjqECsBGB4W+9TcrrphzoQrdi7gyPDzQYrOd7ltFvn8OG80hD5Io
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Jun 2022 17:35:35.0447
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-AuthSource: DM6PR11MB4187.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+	75ea5158-99cb-48cb-602a-08da53ac72b7
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR11MB4187
+X-Spam-Status: No, score=1.2
+X-Spam-Score: 12
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Delivery has failed to these recipients or groups: advfernandesneto
+    (advfernandesneto@hotmail.com)<mailto:advfernandesneto@hotmail.com> Your
+   message is too large to send. To send it, make the message smaller, for example,
+    by removing attachments. 
+ Content analysis details:   (1.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  1.0 FORGED_SPF_HELO        No description available.
+X-Spam-Flag: NO
+
+--352e5156-2d06-47e4-b0ef-ad42d88a8a18
+Content-Type: multipart/alternative; differences=Content-Type;
+	boundary="ad7ff8e1-c98b-4429-971e-31a4dd6edf1e"
+
+--ad7ff8e1-c98b-4429-971e-31a4dd6edf1e
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Delivery has failed to these recipients or groups:
+
+advfernandesneto (advfernandesneto@hotmail.com)<mailto:advfernandesneto@hot=
+mail.com>
+Your message is too large to send. To send it, make the message smaller, fo=
+r example, by removing attachments.
+
+
+The maximum message size that's allowed is 36 MB. This message is 41 MB.
+
+
+
+
+
+
+
+
+Diagnostic information for administrators:
+
+Generating server: DM6PR11MB4187.namprd11.prod.outlook.com
+
+advfernandesneto@hotmail.com
+Remote Server returned '550 5.2.3 RESOLVER.RST.RecipSizeLimit; message too =
+large for this recipient'
+
+Original message headers:
+
+Received: from DM5PR08CA0035.namprd08.prod.outlook.com (2603:10b6:4:60::24)=
+ by
+ DM6PR11MB4187.namprd11.prod.outlook.com (2603:10b6:5:19e::32) with Microso=
+ft
+ SMTP Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA=
+384) id
+ 15.20.5353.20; Tue, 21 Jun 2022 17:34:24 +0000
+Received: from DM6NAM11FT004.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:4:60:cafe::9b) by DM5PR08CA0035.outlook.office365.com
+ (2603:10b6:4:60::24) with Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5353.20 via Front=
+end
+ Transport; Tue, 21 Jun 2022 17:34:24 +0000
+Authentication-Results: spf=3Dpass (sender IP is 138.128.166.178)
+ smtp.mailfrom=3Dacarape.ce.gov.br; dkim=3Dnone (message not signed)
+ header.d=3Dnone;dmarc=3Dbestguesspass action=3Dnone header.from=3Dacarape.=
+ce.gov.br;
+Received-SPF: Pass (protection.outlook.com: domain of acarape.ce.gov.br
+ designates 138.128.166.178 as permitted sender)
+ receiver=3Dprotection.outlook.com; client-ip=3D138.128.166.178;
+ helo=3Dserver2.assesi.com; pr=3DC
+Received: from server2.assesi.com (138.128.166.178) by
+ DM6NAM11FT004.mail.protection.outlook.com (10.13.172.217) with Microsoft S=
+MTP
+ Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) =
+id
+ 15.20.5353.14 via Frontend Transport; Tue, 21 Jun 2022 17:34:23 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:AE2F1482DC93E7833EA4DD8BD7881BB=
+390B89B85911A82A24FCE8780ACD8A637;UpperCasedChecksum:FDC01D84926FC3EC7C46BC=
+32C7CDA3130E6121AF983346E10E196D38566D255B;SizeAsReceived:1273;Count:21
+Received: from [::1] (port=3D47880 helo=3Dserver2.assesi.com)
+        by server2.assesi.com with esmtpa (Exim 4.95)
+        (envelope-from <admrh@acarape.ce.gov.br>)
+        id 1o3hlb-0002zc-Ek;
+        Tue, 21 Jun 2022 14:34:20 -0300
+MIME-Version: 1.0
+Date: Tue, 21 Jun 2022 14:34:19 -0300
+From: admrh@acarape.ce.gov.br
+To: Procuradoria Acarape <procuradoriapma2021@gmail.com>
+CC: advfernandesneto <advfernandesneto@hotmail.com>, =3D?UTF-8?Q?Finan?=3D
+ =3D?UTF-8?Q?=3DC3=3DA7as_Acarape?=3D <admfinancas@acarape.ce.gov.br>
+Subject: =3D?UTF-8?Q?SOLICITA=3DC3=3D87=3DC3=3D83O_DE_PARECER?=3D
+User-Agent: Roundcube Webmail/1.4.12
+Message-ID: <20aebbc5834d40c64976ce7d7169b94d@acarape.ce.gov.br>
+X-Sender: admrh@acarape.ce.gov.br
+Content-Type: multipart/mixed;
+ boundary=3D"=3D_67a338829508b5c5edb0333a3c175add"
+X-AntiAbuse: This header was added to track abuse, please include it with a=
+ny abuse report
+X-AntiAbuse: Primary Hostname - server2.assesi.com
+X-AntiAbuse: Original Domain - hotmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - acarape.ce.gov.br
+X-Get-Message-Sender-Via: server2.assesi.com: authenticated_id: admrh@acara=
+pe.ce.gov.br
+X-Authenticated-Sender: server2.assesi.com: admrh@acarape.ce.gov.br
+X-Source:
+X-Source-Args:
+X-Source-Dir:
+X-IncomingHeaderCount: 21
+Return-Path: admrh@acarape.ce.gov.br
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-PublicTrafficType: Email
+X-MS-UserLastLogonTime: 6/21/2022 5:16:42 PM
+X-MS-Office365-Filtering-Correlation-Id: 2b901053-d29e-4b7a-c67e-08da53ac48=
+02
+X-MS-TrafficTypeDiagnostic: DM6PR11MB4187:EE_
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 138.128.166.178
+X-SID-PRA: ADMRH@ACARAPE.CE.GOV.BR
+X-SID-Result: PASS
+
+
+--ad7ff8e1-c98b-4429-971e-31a4dd6edf1e
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<Head></head><body>
+<p><b><font color=3D"#000066" size=3D"3" face=3D"Arial">Delivery has failed=
+ to these recipients or groups:</font></b></p>
+<font color=3D"#000000" size=3D"2" face=3D"Tahoma"><p><a href=3D"mailto:adv=
+fernandesneto@hotmail.com">advfernandesneto (advfernandesneto@hotmail.com)<=
+/a><br>
+</font>
+<font color=3D"#000000" size=3D"3" face=3D"Arial">Your message is too large=
+ to send. To send it, make the message smaller, for example, by removing at=
+tachments.<br>
+</font>
+<font color=3D"#000000" size=3D"2" face=3D"Tahoma"><br>
+<br>
+The maximum message size that's allowed is 36 MB. This message is 41 MB.<br=
+>
+<br>
+</p>
+</font>
+<br><br><br><br><br><br>
+<font color=3D"#808080" size=3D"2" face=3D"Tahoma"><p><b>Diagnostic informa=
+tion for administrators:</b></p>
+<p>Generating server: DM6PR11MB4187.namprd11.prod.outlook.com<br>
+</p>
+<p>advfernandesneto@hotmail.com<br>
+Remote Server  returned '550 5.2.3 RESOLVER.RST.RecipSizeLimit; message too=
+ large for this recipient'<br>
+</p>
+<p>Original message headers:</p>
+<pre>Received: from DM5PR08CA0035.namprd08.prod.outlook.com (2603:10b6:4:60=
+::24) by
+ DM6PR11MB4187.namprd11.prod.outlook.com (2603:10b6:5:19e::32) with Microso=
+ft
+ SMTP Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA=
+384) id
+ 15.20.5353.20; Tue, 21 Jun 2022 17:34:24 +0000
+Received: from DM6NAM11FT004.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:4:60:cafe::9b) by DM5PR08CA0035.outlook.office365.com
+ (2603:10b6:4:60::24) with Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5353.20 via Front=
+end
+ Transport; Tue, 21 Jun 2022 17:34:24 +0000
+Authentication-Results: spf=3Dpass (sender IP is 138.128.166.178)
+ smtp.mailfrom=3Dacarape.ce.gov.br; dkim=3Dnone (message not signed)
+ header.d=3Dnone;dmarc=3Dbestguesspass action=3Dnone header.from=3Dacarape.=
+ce.gov.br;
+Received-SPF: Pass (protection.outlook.com: domain of acarape.ce.gov.br
+ designates 138.128.166.178 as permitted sender)
+ receiver=3Dprotection.outlook.com; client-ip=3D138.128.166.178;
+ helo=3Dserver2.assesi.com; pr=3DC
+Received: from server2.assesi.com (138.128.166.178) by
+ DM6NAM11FT004.mail.protection.outlook.com (10.13.172.217) with Microsoft S=
+MTP
+ Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) =
+id
+ 15.20.5353.14 via Frontend Transport; Tue, 21 Jun 2022 17:34:23 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:AE2F1482DC93E7833EA4DD8BD7881BB=
+390B89B85911A82A24FCE8780ACD8A637;UpperCasedChecksum:FDC01D84926FC3EC7C46BC=
+32C7CDA3130E6121AF983346E10E196D38566D255B;SizeAsReceived:1273;Count:21
+Received: from [::1] (port=3D47880 helo=3Dserver2.assesi.com)
+	by server2.assesi.com with esmtpa (Exim 4.95)
+	(envelope-from &lt;admrh@acarape.ce.gov.br&gt;)
+	id 1o3hlb-0002zc-Ek;
+	Tue, 21 Jun 2022 14:34:20 -0300
+MIME-Version: 1.0
+Date: Tue, 21 Jun 2022 14:34:19 -0300
+From: admrh@acarape.ce.gov.br
+To: Procuradoria Acarape &lt;procuradoriapma2021@gmail.com&gt;
+CC: advfernandesneto &lt;advfernandesneto@hotmail.com&gt;, =3D?UTF-8?Q?Fina=
+n?=3D
+ =3D?UTF-8?Q?=3DC3=3DA7as_Acarape?=3D &lt;admfinancas@acarape.ce.gov.br&gt;
+Subject: =3D?UTF-8?Q?SOLICITA=3DC3=3D87=3DC3=3D83O_DE_PARECER?=3D
+User-Agent: Roundcube Webmail/1.4.12
+Message-ID: &lt;20aebbc5834d40c64976ce7d7169b94d@acarape.ce.gov.br&gt;
+X-Sender: admrh@acarape.ce.gov.br
+Content-Type: multipart/mixed;
+ boundary=3D&quot;=3D_67a338829508b5c5edb0333a3c175add&quot;
+X-AntiAbuse: This header was added to track abuse, please include it with a=
+ny abuse report
+X-AntiAbuse: Primary Hostname - server2.assesi.com
+X-AntiAbuse: Original Domain - hotmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - acarape.ce.gov.br
+X-Get-Message-Sender-Via: server2.assesi.com: authenticated_id: admrh@acara=
+pe.ce.gov.br
+X-Authenticated-Sender: server2.assesi.com: admrh@acarape.ce.gov.br
+X-Source:
+X-Source-Args:
+X-Source-Dir:
+X-IncomingHeaderCount: 21
+Return-Path: admrh@acarape.ce.gov.br
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-PublicTrafficType: Email
+X-MS-UserLastLogonTime: 6/21/2022 5:16:42 PM
+X-MS-Office365-Filtering-Correlation-Id: 2b901053-d29e-4b7a-c67e-08da53ac48=
+02
+X-MS-TrafficTypeDiagnostic: DM6PR11MB4187:EE_
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 138.128.166.178
+X-SID-PRA: ADMRH@ACARAPE.CE.GOV.BR
+X-SID-Result: PASS
+</pre>
+</font>
+</body>
+</html>=
+
+--ad7ff8e1-c98b-4429-971e-31a4dd6edf1e--
+
+--352e5156-2d06-47e4-b0ef-ad42d88a8a18
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;DM6PR11MB4187.namprd11.prod.outlook.com
+Received-From-MTA: dns;server2.assesi.com
+Arrival-Date: Tue, 21 Jun 2022 17:34:24 +0000
+
+Final-Recipient: rfc822;advfernandesneto@hotmail.com
+Action: failed
+Status: 5.2.3
+Diagnostic-Code: smtp;550 5.2.3 RESOLVER.RST.RecipSizeLimit; message too large for this recipient
+X-Display-Name: advfernandesneto
+
+
+--352e5156-2d06-47e4-b0ef-ad42d88a8a18
+Content-Type: text/rfc822-headers
+
+Received: from DM5PR08CA0035.namprd08.prod.outlook.com (2603:10b6:4:60::24) by
+ DM6PR11MB4187.namprd11.prod.outlook.com (2603:10b6:5:19e::32) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5353.20; Tue, 21 Jun 2022 17:34:24 +0000
+Received: from DM6NAM11FT004.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:4:60:cafe::9b) by DM5PR08CA0035.outlook.office365.com
+ (2603:10b6:4:60::24) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5353.20 via Frontend
+ Transport; Tue, 21 Jun 2022 17:34:24 +0000
+Authentication-Results: spf=pass (sender IP is 138.128.166.178)
+ smtp.mailfrom=acarape.ce.gov.br; dkim=none (message not signed)
+ header.d=none;dmarc=bestguesspass action=none header.from=acarape.ce.gov.br;
+Received-SPF: Pass (protection.outlook.com: domain of acarape.ce.gov.br
+ designates 138.128.166.178 as permitted sender)
+ receiver=protection.outlook.com; client-ip=138.128.166.178;
+ helo=server2.assesi.com; pr=C
+Received: from server2.assesi.com (138.128.166.178) by
+ DM6NAM11FT004.mail.protection.outlook.com (10.13.172.217) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5353.14 via Frontend Transport; Tue, 21 Jun 2022 17:34:23 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:AE2F1482DC93E7833EA4DD8BD7881BB390B89B85911A82A24FCE8780ACD8A637;UpperCasedChecksum:FDC01D84926FC3EC7C46BC32C7CDA3130E6121AF983346E10E196D38566D255B;SizeAsReceived:1273;Count:21
+Received: from [::1] (port=47880 helo=server2.assesi.com)
+	by server2.assesi.com with esmtpa (Exim 4.95)
+	(envelope-from <admrh@acarape.ce.gov.br>)
+	id 1o3hlb-0002zc-Ek;
+	Tue, 21 Jun 2022 14:34:20 -0300
+MIME-Version: 1.0
+Date: Tue, 21 Jun 2022 14:34:19 -0300
+From: admrh@acarape.ce.gov.br
+To: Procuradoria Acarape <procuradoriapma2021@gmail.com>
+Cc: advfernandesneto <advfernandesneto@hotmail.com>, =?UTF-8?Q?Finan?=
+ =?UTF-8?Q?=C3=A7as_Acarape?= <admfinancas@acarape.ce.gov.br>
+Subject: =?UTF-8?Q?SOLICITA=C3=87=C3=83O_DE_PARECER?=
+User-Agent: Roundcube Webmail/1.4.12
+Message-ID: <20aebbc5834d40c64976ce7d7169b94d@acarape.ce.gov.br>
+X-Sender: admrh@acarape.ce.gov.br
+Content-Type: multipart/mixed;
+ boundary="=_67a338829508b5c5edb0333a3c175add"
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server2.assesi.com
+X-AntiAbuse: Original Domain - hotmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - acarape.ce.gov.br
+X-Get-Message-Sender-Via: server2.assesi.com: authenticated_id: admrh@acarape.ce.gov.br
+X-Authenticated-Sender: server2.assesi.com: admrh@acarape.ce.gov.br
+X-Source:
+X-Source-Args:
+X-Source-Dir:
+X-IncomingHeaderCount: 21
+Return-Path: admrh@acarape.ce.gov.br
+X-MS-Exchange-Organization-OriginalArrivalTime: 21 Jun 2022 17:34:23.2874
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Jun 2022 17:34:23.3968
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 2b901053-d29e-4b7a-c67e-08da53ac4802
+X-MS-Exchange-Organization-OriginalClientIPAddress: 138.128.166.178
+X-MS-Exchange-Organization-OriginalServerIPAddress: 10.13.172.217
+X-MS-Exchange-Organization-ConsumerRecipientData-ChunkCount: 1
+X-MS-Exchange-Organization-ConsumerRecipientData-0:
+ YWR2ZmVybmFuZGVzbmV0b0Bob3RtYWlsLmNvbTs7ZWUyY2JlMWEtMTc5Mi00OTVkLWJlZGYtMGZjOTJkZTI4MWJlOztuYW1wcmQxMS5wcm9kLm91dGxvb2suY29t
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-TargetResourceForest: namprd11.prod.outlook.com
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Organization-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-Organization-AttributedMailSource: Internet [138.128.166.178]
+X-MS-Exchange-Organization-RecipientDatabaseId:
+ ee2cbe1a-1792-495d-bedf-0fc92de281be
+X-MS-Exchange-Organization-Cross-Premises-Headers-Processed:
+ DM6NAM11FT004.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-ConnectingIP: 138.128.166.178
+X-MS-Exchange-Organization-ConnectingEHLO: server2.assesi.com
+X-MS-Exchange-Organization-AS-LastExternalIp: 138.128.166.178
+X-MS-Exchange-Organization-Originating-Country: US
+X-MS-Exchange-Organization-CompAuthRes: pass
+X-MS-Exchange-Organization-CompAuthReason: 109
+X-MS-Exchange-Organization-SpoofDetection-Frontdoor-DisplayDomainName:
+ acarape.ce.gov.br
+X-MS-Exchange-Organization-TransportTrafficType: Email
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-OrderedPrecisionLatencyInProgress:
+ LSRV=DM5PR08CA0035.namprd08.prod.outlook.com:TOTAL-FE=0.015|;2022-06-21T17:34:24.573Z
+X-MS-Exchange-Organization-MessageLatency:
+ SRV=DM6NAM11FT004.eop-nam11.prod.protection.outlook.com:TOTAL-FE=1.269|SMR-PEN=1.244(RENV=0.038(SMRRC=0.037(SMRRC-Protocol
+ Filter Agent=0.034))|REOH=1.205 (SMREH=1.139(SMREH-Protocol Filter
+ Agent=1.138)))|SMS=0.020
+X-MS-Exchange-Forest-ArrivalHubServer: DM6PR11MB4187.namprd11.prod.outlook.com
+X-MS-Exchange-Organization-AuthSource:
+	DM6NAM11FT004.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-FromEntityHeader: Internet
+X-MS-Exchange-Organization-MessageScope: 61c2973b-579e-463f-8777-c9b124afca53
+X-MS-Exchange-Forest-MessageScope: 61c2973b-579e-463f-8777-c9b124afca53
+X-MS-UserLastLogonTime: 6/21/2022 5:16:42 PM
+X-MS-Exchange-Organization-Antispam-ProtocolFilterHub-ScanContext:
+	ProtocolFilterHub:SmtpOnEndOfData;
+X-MS-Exchange-Organization-P1DomainNew: True
+X-MS-Exchange-Organization-MarkAsSpamConsumer: true
+X-MS-Office365-Filtering-Correlation-Id: 2b901053-d29e-4b7a-c67e-08da53ac4802
+X-MS-Exchange-Organization-P2SenderPII:
+	<PII:H101(2UY6L8YJyIhldtwUR1xiel7yxIOvXTtIV4NJZ0cVV+Q=)>@acarape.ce.gov.br
+X-MS-Exchange-Organization-Auth-DmarcStatus: Pass
+X-MS-Exchange-Organization-PFAHub-Total-Message-Size: 43814533
+X-MS-Exchange-Organization-OriginalSize: 43814533
+X-MS-TrafficTypeDiagnostic: DM6PR11MB4187:EE_
+X-MS-Exchange-Organization-Transport-Properties: DeliveryPriority=Low
+X-MS-Exchange-Organization-IncludeInSla:
+	False:FlexTransport:ConsumerMsgsAboveSizeThreshold
+X-MS-Exchange-Organization-Prioritization:
+	2:FlexTransport:ConsumerMsgsAboveSizeThreshold
+X-MS-Exchange-Organization-HygienePolicy: Standard
+X-MS-Exchange-Organization-ReplicationInfo:
+	ReplicaId=4761021a-6447-acf6-7e6d-b748ac53da08;ReplicatingServerFqdn=BY5PR11MB4183.namprd11.prod.outlook.com
+X-MS-Exchange-Forest-Language: pt
+X-MS-Exchange-Forest-IndexAgent-0:
+	AQ0CcHQBH6EaW3sNCiAgIkF0dGFjaG1lbnRJbmRleCI6IDAsDQogIC
+ JBdHRhY2htZW50UHJvcGVydGllcyI6IHsNCiAgICAiYXR0YWNobWVu
+ dEV4dGVuc2lvbiI6ICJyYXIiLA0KICAgICJhdHRhY2htZW50VXJscy
+ I6IFtdLA0KICAgICJhdHRhY2htZW50SW5uZXJGaWxlcyI6IFsNCiAg
+ ICAgIHsNCiAgICAgICAgIkZpbGVOYW1lIjogIldoYXRzQXBwIEltYW
+ dlIDIwMjItMDYtMjEgYXQgMTMuMjMuMDQuanBlZyIsDQogICAgICAg
+ ICJGaWxlRm9ybWF0IjogImpwZWciLA0KICAgICAgICAiRmlsZUV4dG
+ Vuc2lvbiI6ICJqcGVnIg0KICAgICAgfSwNCiAgICAgIHsNCiAgICAg
+ ICAgIkZpbGVOYW1lIjogIkZJQ0hBIEZJTkFOQ0VJUkFfQUxFWEFORF
+ JFIFBJTkhFSVJPLnBkZiIsDQogICAgICAgICJGaWxlRm9ybWF0Ijog
+ InBkZiIsDQogICAgICAgICJGaWxlRXh0ZW5zaW9uIjogInBkZiINCi
+ AgICAgIH0sDQogICAgICB7DQogICAgICAgICJGaWxlTmFtZSI6ICJX
+ aGF0c0FwcCBJbWFnZSAyMDIyLTA2LTIxIGF0IDEzLjMxLjUzLmpwZW
+ ciLA0KICAgICAgICAiRmlsZUZvcm1hdCI6ICJqcGVnIiwNCiAgICAg
+ ICAgIkZpbGVFeHRlbnNpb24iOiAianBlZyINCiAgICAgIH0sDQogIC
+ AgICB7DQogICAgICAgICJGaWxlTmFtZSI6ICJXaGF0c0FwcCBJbWFn
+ ZSAyMDIyLTA2LTIxIGF0IDEzLjQ4LjQ2LmpwZWciLA0KICAgICAgIC
+ AiRmlsZUZvcm1hdCI6ICJqcGVnIiwNCiAgICAgICAgIkZpbGVFeHRl
+ bnNpb24iOiAianBlZyINCiAgICAgIH0sDQogICAgICB7DQogICAgIC
+ AgICJGaWxlTmFtZSI6ICJXaGF0c0FwcCBJbWFnZSAyMDIyLTA2LTIx
+ IGF0IDEzLjQ4LjU4LmpwZWciLA0KICAgICAgICAiRmlsZUZvcm1hdC
+ I6ICJqcGVnIiwNCiAgICAgICAgIkZpbGVFeHRlbnNpb24iOiAianBl
+ ZyINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJGaWxlTmFtZS
+ I6ICJGSUNIQSBGSU5BTkNFSVJBX0FVUklDRUxJTyBCQVRJU1RBLnBk
+ ZiIsDQogICAgICAgICJGaWxlRm9ybWF0IjogInBkZiIsDQogICAgIC
+ AgICJGaWxlRXh0ZW5zaW9uIjogInBkZiINCiAgICAgIH0sDQogICAg
+ ICB7DQogICAgICAgICJGaWxlTmFtZSI6ICJGSUNIQSBGSU5BTkNFSV
+ JBX0ZSQU5DSVNDTyBTQUxWSU5PLnBkZiIsDQogICAgICAgICJGaWxl
+ Rm9ybWF0IjogInBkZiIsDQogICAgICAgICJGaWxlRXh0ZW5zaW9uIj
+ ogInBkZiINCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJGaWxl
+ TmFtZSI6ICJGSUNIQSBGSU5BTkNFSVJBIDIwMTZfU0FMVklOTyBHT0
+ 1FUy5qcGVnIiwNCiAgICAgICAgIkZpbGVGb3JtYXQiOiAianBlZyIs
+ DQogICAgICAgICJGaWxlRXh0ZW5zaW9uIjogImpwZWciDQogICAgIC
+ B9LA0KICAgICAgew0KICAgICAgICAiRmlsZU5hbWUiOiAiV2hhdHNB
+ cHAgSW1hZ2UgMjAyMi0wNi0yMSBhdCAxNC4xMy40OC5qcGVnIiwNCi
+ AgICAgICAgIkZpbGVGb3JtYXQiOiAianBlZyIsDQogICAgICAgICJG
+ aWxlRXh0ZW5zaW9uIjogImpwZWciDQogICAgICB9LA0KICAgICAgew
+ 0KICAgICAgICAiRmlsZU5hbWUiOiAiRklDSEEgRklOQU5DRUlSQSAy
+ MDIyX0pPU0UgVkFMTUlSIERJQVMucGRmIiwNCiAgICAgICAgIkZpbG
+ VGb3JtYXQiOiAicGRmIiwNCiAgICAgICAgIkZpbGVFeHRlbnNpb24i
+ OiAicGRmIg0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgIkZpbG
+ VOYW1lIjogIldoYXRzQXBwIEltYWdlIDIwMjItMDYtMjEgYXQgMTQu
+ MTguMTkuanBlZyIsDQogICAgICAgICJGaWxlRm9ybWF0IjogImpwZW
+ ciLA0KICAgICAgICAiRmlsZUV4dGVuc2lvbiI6ICJqcGVnIg0KICAg
+ ICAgfSwNCiAgICAgIHsNCiAgICAgICAgIkZpbGVOYW1lIjogIldoYX
+ RzQXBwIEltYWdlIDIwMjItMDYtMjEgYXQgMTQuMjIuMjguanBlZyIs
+ DQogICAgICAgICJGaWxlRm9ybWF0IjogImpwZWciLA0KICAgICAgIC
+ AiRmlsZUV4dGVuc2lvbiI6ICJqcGVnIg0KICAgICAgfSwNCiAgICAg
+ IHsNCiAgICAgICAgIkZpbGVOYW1lIjogIkZJQ0hBIEZJTkFOQ0VJUk
+ EgMjAyMl9USElBR08gU09BUkVTLnBkZiIsDQogICAgICAgICJGaWxl
+ Rm9ybWF0IjogInBkZiIsDQogICAgICAgICJGaWxlRXh0ZW5zaW9uIj
+ ogInBkZiINCiAgICAgIH0NCiAgICBdLA0KICAgICJkZXRlY3RlZEZv
+ cm1hdCI6ICJyYXIiLA0KICAgICJhdHRhY2htZW50TmFtZSI6ICJkb2
+ N1bWVudGHDp8OjbyIsDQogICAgImF0dGFjaG1lbnRUeXBlIjogIlN0
+ cmVhbUF0dGFjaG1lbnQiDQogIH0NCn0sDQp7DQogICJBdHRhY2htZW
+ 50SW5kZXgiOiAxLA0KICAiQXR0YWNobWVudFByb3BlcnRpZXMiOiB7
+ DQogICAgImF0dGFjaG1lbnRFeHRlbnNpb24iOiAicGRmIiwNCiAgIC
+ AiYXR0YWNobWVudFVybHMiOiBbXSwNCiAgICAiYXR0YWNobWVudElu
+ bmVyRmlsZXMiOiBbXSwNCiAgICAiZGV0ZWN0ZWRGb3JtYXQiOiAicG
+ RmIiwNCiAgICAiYXR0YWNobWVudE5hbWUiOiAic29saWNpdGHDp8Oj
+ byBkZSBwYXJlY2VyIiwNCiAgICAiYXR0YWNobWVudFR5cGUiOiAiU3
+ RyZWFtQXR0YWNobWVudCINCiAgfQ0KfSwNCnsNCiAgIkF0dGFjaG1l
+ bnRJbmRleCI6IDIsDQogICJBdHRhY2htZW50UHJvcGVydGllcyI6IH
+ sNCiAgICAiYXR0YWNobWVudEV4dGVuc2lvbiI6ICJwZGYiLA0KICAg
+ ICJhdHRhY2htZW50VXJscyI6IFtdLA0KICAgICJhdHRhY2htZW50SW
+ 5uZXJGaWxlcyI6IFtdLA0KICAgICJkZXRlY3RlZEZvcm1hdCI6ICJw
+ ZGYiLA0KICAgICJhdHRhY2htZW50TmFtZSI6ICJMRUlTIE1VTklDSV
+ BBSVNfMTA3XzE5OTNfMDAwMDAwMSIsDQogICAgImF0dGFjaG1lbnRU
+ eXBlIjogIlN0cmVhbUF0dGFjaG1lbnQiDQogIH0NCn0sDQp7DQogIC
+ JBdHRhY2htZW50SW5kZXgiOiAzLA0KICAiQXR0YWNobWVudFByb3Bl
+ cnRpZXMiOiB7DQogICAgImF0dGFjaG1lbnRFeHRlbnNpb24iOiAicG
+ RmIiwNCiAgICAiYXR0YWNobWVudFVybHMiOiBbXSwNCiAgICAiYXR0
+ YWNobWVudElubmVyRmlsZXMiOiBbXSwNCiAgICAiZGV0ZWN0ZWRGb3
+ JtYXQiOiAicGRmIiwNCiAgICAiYXR0YWNobWVudE5hbWUiOiAiTEVJ
+ UyBNVU5JQ0lQQUlTXzI1MV8yMDAxXzAwMDAwMDEiLA0KICAgICJhdH
+ RhY2htZW50VHlwZSI6ICJTdHJlYW1BdHRhY2htZW50Ig0KICB9DQp9
+ LA0Kew0KICAiQXR0YWNobWVudEluZGV4IjogNCwNCiAgIkF0dGFjaG
+ 1lbnRQcm9wZXJ0aWVzIjogew0KICAgICJhdHRhY2htZW50RXh0ZW5z
+ aW9uIjogInBkZiIsDQogICAgImF0dGFjaG1lbnRVcmxzIjogW10sDQ
+ ogICAgImF0dGFjaG1lbnRJbm5lckZpbGVzIjogW10sDQogICAgImRl
+ dGVjdGVkRm9ybWF0IjogInBkZiIsDQogICAgImF0dGFjaG1lbnROYW
+ 1lIjogIkxFSVMgTVVOSUNJUEFJU182Ml8xOTkwXzAwMDAwMDEiLA0K
+ ICAgICJhdHRhY2htZW50VHlwZSI6ICJTdHJlYW1BdHRhY2htZW50Ig
+ 0KICB9DQp9XQABNhYAAA8AAAMfiwgAAAAAAAQA7VtLb9tYlqb8tmWn
+ gEFPNwYDDC4aCJAANMP3ozYDxpITFWzLLdnuxmwCxmYSFWzRrUeqpr
+ azKPQA8wdmV5hFoQboVe1mOf5j8517SIqSLVFyXlU9USzeq8vLex73
+ PD4eMj//+WkSiUHUu4jVna2drf3obdITF1FPxN3z6KrTfRNdxd1BIq
+ JEXCTnQ/7x+35y2TnvDKKbH2/+CydicR314vO493sRX4moG3+baLTa
+ 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
+X-MS-Exchange-Forest-IndexAgent: 1 9062
+X-MS-Exchange-Forest-EmailMessageHash:
+	54D9199A,61DA4DAF,BA40E5EF,FD637F9C,6FFBC8C9,28B0528C
+X-MS-Exchange-Organization-Antispam-PreContentFilter-PolicyLoadTime:
+	PSOSUB:1;PSOSUBLOAD:0;PSOSUBRUN:0;PSOSUBCOUNT:0;
+X-MS-Exchange-Organization-MessageFingerprint:
+	BFE2DBA2.92E6D66A.8BD37383.9C477092.200AC
+X-MS-Exchange-Organization-AttachmentDetails:
+	0:IPcE3oXTp/RH8fzSMLOYTVBQ5mtKMAjPDWoS1B3+3Ss=:U::ZG9jdW1lbnRhw6fDo28ucmFy::#:True:::N:::N::N:None:;1:CBrEUTSD4tGMl22hptKzF8lJZOKsE760r4jcjmorKU8=:U::c29saWNpdGHDp8OjbyBkZSBwYXJlY2VyLnBkZg==::#:True:::N:::N::N:None:;2:ztwsNyd1SX6TY3QCm+04a+nFgZZXR1xY2lI2UNlNTiE=:U::TEVJUyBNVU5JQ0lQQUlTXzEwN18xOTkzXzAwMDAwMDEucGRm::#:True:::N:::N::N:None:;3:f6+6sEzm+6R/OdI9PxOSntkk76Uf0nFaFaaXA3gIweE=:U::TEVJUyBNVU5JQ0lQQUlTXzI1MV8yMDAxXzAwMDAwMDEucGRm::#:True:::N:::N::N:None:;4:G72FayW3emkXOUmG3TGcpWTm0tbY0Asr+DXWZ97UlLw=:U::TEVJUyBNVU5JQ0lQQUlTXzYyXzE5OTBfMDAwMDAwMS5wZGY=::#:True:::N:::N::N:None:
+X-MS-Exchange-Organization-AttachmentDetailsInfo-ChunkCount: 1
+X-MS-Exchange-Organization-AttachmentDetailsInfo-0:
+	=?utf-8?B?W3siSUQiOjAsIkZTIjoxNzExNTgzLCJIRkgiOiJJUGNFM29YVHAvUkg4ZnpT?=
+ =?utf-8?B?TUxPWVRWQlE1bXRLTUFqUERXb1MxQjMrM1NzPSIsIkZFIjoicmFyIiwiQUYi?=
+ =?utf-8?B?OjUxMiwiQUZUIjoiezc4NDpcImRvY3VtZW50YcOnw6NvLnJhclwifSJ9LHsi?=
+ =?utf-8?B?SUQiOjEsIkZTIjozNzkzODAsIkhGSCI6IkNCckVVVFNENHRHTWwyMmhwdEt6?=
+ =?utf-8?B?RjhsSlpPS3NFNzYwcjRqY2ptb3JLVTg9IiwiRkUiOiJwZGYiLCJBRiI6NTEy?=
+ =?utf-8?B?LCJBRlQiOiJ7Nzg0Olwic29saWNpdGHDp8OjbyBkZSBwYXJlY2VyLnBkZlwi?=
+ =?utf-8?B?fSJ9LHsiSUQiOjIsIkZTIjozOTE3MzgzLCJIRkgiOiJ6dHdzTnlkMVNYNlRZ?=
+ =?utf-8?B?M1FDbSswNGErbkZnWlpYUjF4WTJsSTJVTmxOVGlFPSIsIkZFIjoicGRmIiwi?=
+ =?utf-8?B?QUYiOjUxMiwiQUZUIjoiezc4NDpcIkxFSVMgTVVOSUNJUEFJU18xMDdfMTk5?=
+ =?utf-8?B?M18wMDAwMDAxLnBkZlwifSJ9LHsiSUQiOjMsIkZTIjoxNzk5NzAyNywiSEZI?=
+ =?utf-8?B?IjoiZjYrNnNFem0rNlIvT2RJOVB4T1NudGtrNzZVZjBuRmFGYWFYQTNnSXdl?=
+ =?utf-8?B?RT0iLCJGRSI6InBkZiIsIkFGIjo1MTIsIkFGVCI6Ins3ODQ6XCJMRUlTIE1V?=
+ =?utf-8?B?TklDSVBBSVNfMjUxXzIwMDFfMDAwMDAwMS5wZGZcIn0ifSx7IklEIjo0LCJG?=
+ =?utf-8?B?UyI6ODAwNjMxOSwiSEZIIjoiRzcyRmF5VzNlbWtYT1VtRzNUR2NwV1RtMHRi?=
+ =?utf-8?B?WTBBc3IrRFhXWjk3VWxMdz0iLCJGRSI6InBkZiIsIkFGIjo1MTIsIkFGVCI6?=
+ =?utf-8?B?Ins3ODQ6XCJMRUlTIE1VTklDSVBBSVNfNjJfMTk5MF8wMDAwMDAxLnBkZlwi?=
+ =?utf-8?Q?}"}]?=
+X-MS-Exchange-Organization-FeatureTable:
+	{758:"B3E2D7A2.92E4D66A.83D37383.DC47B092.2009B"}
+X-MS-Exchange-Organization-Antispam-PreContentFilter-ScanContext:
+	CategorizerOnSubmitted;
+X-MS-Exchange-Organization-AVScannedByV2: true
+X-MS-Exchange-Organization-AVScanComplete: true
+X-MS-Exchange-Organization-IsAnyAttachmentAtpSupported: true
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 138.128.166.178
+X-SID-PRA: ADMRH@ACARAPE.CE.GOV.BR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-Cross-Session-Cache:
+	=?utf-8?B?MDBDSVA9MTM4LjEyOC4xNjYuMTc4O0VJUEMwPTIwMDQsMjA1NSw5NTAsOTUx?=
+ =?utf-8?B?LDIwMDUsMjAwNiwyMDA3LDIwMDgsMjAwOSwyMDEwLDIwMTEsMjAxMiwyMDEz?=
+ =?utf-8?B?LDIwMTQsMjAwMCwyMDUwLDIwNTEsMjA1Miw5NTIsOTAyLDIwNTQsMjAxNiw5?=
+ =?utf-8?B?MDMsOTAxLDkwNSwyMDAzLDIwMDEsMzAwMCw5MDQsMTc3MywyMDAyLDk2Nyw1?=
+ =?utf-8?B?MzEsMjA1OCwyMDU5LDIwNjAsMjAxNyw1MDgwLDUwMDEsNTA1Nyw1MDU4LDUw?=
+ =?utf-8?B?NTYsNTA1NCw1MDUxLDUwNTIsOTA2LDUwMTAsNTA1NSw1MDUzLDUwNTksNTAx?=
+ =?utf-8?B?MSw1MDAyLDUwMDMsNTAwNSw1MDcwO01JUEMwPTIwMTY7SVBDbkNudD0xO1NM?=
+ =?utf-8?B?PTE7RU1TTD0xO1NDTD0wO0JMPTA7Ukw9MTtQSUQ9MDtFWFBJRD07U1JJUFI9?=
+ =?utf-8?B?MTM4LjEyOC4xNjYuMTc2LzI5O0lQUkxrdXA9MTM4LjEyOC4xNjYuMTc2LzI5?=
+ =?utf-8?B?O1NSSVBDbnQ9ODtTUkhMPTUwMDA7U1JETD0zMDAwMDtTUlJITD0xMDAwMDtT?=
+ =?utf-8?B?UlJETD0yNDAwMDA7U1JlcERWPTEuMC4wLjA7SFQzMj01MDtEVDMyPTYwMDtI?=
+ =?utf-8?B?VDI0PS0xO0RUMjQ9LTE7SFQyNT0xMDA7RFQyNT0yNTA7SFQyNj0yMDA7RFQy?=
+ =?utf-8?B?Nj01MDA7SFQyOT0xMDA7RFQyOT0xMjAwO1NSSVBTPTEwO1NSSVBDdD0xMDtT?=
+ =?utf-8?B?UkNscz1NZWRpdW1EYXJrR3JheTtTUkNsc0lkPTU1O1NSTVQ9MTtTUk1mTD04?=
+ =?utf-8?B?MDtTUlJjcEw9NTA7U1JUeXBlPUdyYXk7U1JQMUFnZT0xODE7U1JQMUlzT3Jn?=
+ =?utf-8?B?PTE7U1JSbHBDbnQ9MTtTUlJlcFNjPTU7U0FVVEhPUD0xO0NJUENSWT1VUztN?=
+ =?utf-8?B?WD0wNztQVFI9MDBzZXJ2ZXIyLmFzc2VzaS5jb207U1BGPWIwMTExWVdSdGNt?=
+ =?utf-8?B?aEFZV05oY21Gd1pTNWpaUzVuYjNZdVluST07REtJTT07RE1BUkM9MDdZV05o?=
+ =?utf-8?B?Y21Gd1pTNWpaUzVuYjNZdVluST1cOztBVVRIUkVTPVtteC5taWNyb3NvZnQu?=
+ =?utf-8?B?Y29tLDFdezUsMSxVQUJoQUhNQWN3QT0sY3dCbEFHNEFaQUJsQUhJQUlBQkpB?=
+ =?utf-8?B?RkFBSUFCcEFITUFJQUF4QURNQU9BQXVBREVBTWdBNEFDNEFNUUEyQURZQUxn?=
+ =?utf-8?B?QXhBRGNBT0FBPSxjd0J0QUhRQWNBQXVBSElBWXdCd0FIUUFWQUJ2QUVRQWJ3?=
+ =?utf-8?B?QnRBR0VBYVFCdUFBPT18YUFCdkFIUUFiUUJoQUdrQWJBQXVBR01BYndCdEFB?=
+ =?utf-8?B?PT0sY3dCdEFIUUFjQUF1QUUwQVlRQnBBR3dBUmdCeUFHOEFiUUE9fFlRQmpB?=
+ =?utf-8?B?R0VBY2dCaEFIQUFaUUF1QUdNQVpRQXVBR2NBYndCMkFDNEFZZ0J5QUE9PX17?=
+ =?utf-8?B?OSwxNyxRZ0JsQUhNQWRBQkhBSFVBWlFCekFITUFVQUJoQUhNQWN3QT0sLFlR?=
+ =?utf-8?B?QmpBSFFBYVFCdkFHNEF8VGdCdkFHNEFaUUE9LGFBQmxBR0VBWkFCbEFISUFM?=
+ =?utf-8?B?Z0JtQUhJQWJ3QnRBQT09fFlRQmpBR0VBY2dCaEFIQUFaUUF1QUdNQVpRQXVB?=
+ =?utf-8?B?R2NBYndCMkFDNEFZZ0J5QUE9PX17Miw3LFRnQnZBRzRBWlFBPSxiUUJsQUhN?=
+ =?utf-8?B?QWN3QmhBR2NBWlFBZ0FHNEFid0IwQUNBQWN3QnBBR2NBYmdCbEFHUUF9ezEy?=
+ =?utf-8?B?LDcsVGdCdkFHNEFaUUE9LE1BQT19O1NwZlJlc3VsdD0xO0RraW1TdGF0dXM9?=
+ =?utf-8?B?NztEa2ltU1M9MDtEbWFyY1N0YXR1cz0yO0RtYXJjQWN0aW9uPTA7QVJDUkVT?=
+ =?utf-8?B?PXYxMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA7?=
+ =?utf-8?B?QXJjT3ZlcnJpZGVEbWFyY0ZhaWx1cmU9MDtDQXV0aEV4cD10cnVlO1NFTkRF?=
+ =?utf-8?B?UkFVVEg9UEFTUztTQVVUSD1QQVNTO1NBVVRIQUxHTz1TUEZBO1BSZVJDPTE7?=
+ =?utf-8?B?QVRDSEM9NTtSRlN0YXR1cz0wO0NNQ1NWMj0zNzM3O0NNQ1BWPTA7RG9tYWlu?=
+ =?utf-8?B?QWdlUHJhU2VuZGVyPTA7RG9tYWluQWdlUDFTZW5kZXI9MDtEb21haW5BZ2VQ?=
+ =?utf-8?B?MlNlbmRlcj0wO0lzQW55QXR0YWNobWVudEF0cFN1cHBvcnRlZD10cnVlO1VS?=
+ =?utf-8?B?TENfQkU9MDtVUkxDX0JFQz0wO1VSTENfQUU9MDtGQ19EQkc9MjU2O0ZQUj1C?=
+ =?utf-8?B?RkUyREJBMi45MkU2RDY2QS44QkQzNzM4My45QzQ3NzA5Mi4yMDBBQztURE5B?=
+ =?utf-8?B?PUIzRTJEN0EyLjkyRTRENjZBLjgzRDM3MzgzLkRDNDdCMDkyLjIwMDlCO1NT?=
+ =?utf-8?B?VmJyVD07U1NWYnJXdD07U1NTbmRyQ0xJZD07U1NDRlQ9O1NTR0ZTQ0xQPTtT?=
+ =?utf-8?B?U1ZiclNDTD07U1NWYnJQPTtTU1JlcElQQ0w9O1NTUmVwVHlwZT07U1NDYXQ9?=
+ =?utf-8?B?O1NTU25kcklkPTtTU1VSTEhvc3RJUFY9O1NTVVM9O1NTTGlua3M9O1NTQUJM?=
+ =?utf-8?B?PTtJTlNTU3RhdHVzPS05MjIzMzcyMDM2ODU0Nzc1ODA4?=
+X-MS-Exchange-Organization-ExternalRoutingTopologyAnalysis:
+X-MS-Exchange-Organization-RMS-PersistedConsumerOrg:
+	00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Organization-Recipient-Limit-Verified: True
+X-MS-Exchange-Organization-TotalRecipientCount: 1
+
+--352e5156-2d06-47e4-b0ef-ad42d88a8a18--

@@ -1,0 +1,235 @@
+Return-Path: <acarapeprevfolha@hotmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id sJ4SCA538mJzJAAAgqjM2g
+	(envelope-from <acarapeprevfolha@hotmail.com>)
+	for <admrh@acarape.ce.gov.br>; Tue, 09 Aug 2022 12:02:38 -0300
+Return-path: <acarapeprevfolha@hotmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Tue, 09 Aug 2022 12:02:38 -0300
+Received: from mail-co1nam11olkn2090.outbound.protection.outlook.com ([40.92.18.90]:13792 helo=NAM11-CO1-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <acarapeprevfolha@hotmail.com>)
+	id 1oLQkf-0002Si-RM
+	for admrh@acarape.ce.gov.br;
+	Tue, 09 Aug 2022 12:02:38 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=dRUv3KUHT2pZYp06RdRG1gUeHwrN7+G/CiHygTjfmcST0bZ32anyOYvpAiXtMCLh8193Zdt9kLNvqeBsvhm76nEX9I/Eo8P89ZtCTnrDb3HpSSiufwjsuPTu+lDNE9ddBDi6ZdcmAbt7ONUPfH6B18ZnAAjpx2gmHF58+QMHKQw+u/0P07WixW8UcAVEt2NBVx6SvjjTNK7Ngw4WSpN2uxG1vyltkQBWLBhYZGhv7vnS2lrrq58rMJ8ycjv9TpKzYm+9NGpFy/vE+8IJNhi4RJM41BSEDqjZtrtwz9bWpl8UseAyAQdrdYrZu75F2QXKnsKExC/Kk1NWhrufh5PlKA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=bBGKgeuDqDA9vjW6MuVkoac97z9grNsqkzf7+tEp5V0=;
+ b=i8+eezx8Y5Q8S/vNZm1zIu+n9paMWp0cETSSMDHQkehSgiwa3tc29aGxbPFo6Q4VtNgSamKhRgftEY3EAs+Z6X6zR0nOIhJHUekNgUfWzy2F+oUdUY16gPrEalc2bxUsHoM9prhqv37GSZMhY7iSOhk06iXD52pAUZxmzKzU6XwdaAZvGHOurmkEPwpTpALiSeIVgoiOgsudq9T+r3Me1NmKyz87yUE6/r3rlceYop7gU0OyohwSsLz/mfQiyPCrkGK/h+Q97cL/l8K0LqwaYtOGJQP8/KQ6MVnJlQKOzLTEZCPicXefR9fbt6Gb+nkLXElAvWMsobW5a/maHOTfxA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=bBGKgeuDqDA9vjW6MuVkoac97z9grNsqkzf7+tEp5V0=;
+ b=TjQLc/E1ShXdVzP/v8a8fMOw3s+MdlfOZrW0/4uG50EzBDzZU2y9cFkE5MxY/YfdD7DrsosderjRwEdVv5l+x79ZNU0IRqxmIsQxO5Q8pWYtNwhpjTSeziZ6pbj3fmnW92TSvnvUqHIOTcc9MgOk2Ox1Ggxdxty8tVzRwbU3P6ezw61DcWU6lSHEbmzOFrCfXEMXlpmUe6cv3fDbZaKFBAtluWoDV4UHzey0/i8HJN+BW81fCtuk40sFNZPDRF2EuHf889r79FfTrVsrLLVh/Z7nCuiNTUX/9/u6JsrHk1PgRNDDiuoPJcjjxyaTL4c3RqG8/sREu2iE9yn1DMuhaA==
+Received: from DM6PR01MB4587.prod.exchangelabs.com (2603:10b6:5:36::30) by
+ DM6PR01MB5099.prod.exchangelabs.com (2603:10b6:5:59::18) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5504.18; Tue, 9 Aug 2022 15:01:54 +0000
+Received: from DM6PR01MB4587.prod.exchangelabs.com
+ ([fe80::6cc9:e350:c712:25a]) by DM6PR01MB4587.prod.exchangelabs.com
+ ([fe80::6cc9:e350:c712:25a%2]) with mapi id 15.20.5504.020; Tue, 9 Aug 2022
+ 15:01:53 +0000
+From: =?iso-8859-1?Q?acarapeprev_fundo_municipal_previd=EAncia?=
+	<acarapeprevfolha@hotmail.com>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+Subject: ACARAPEPREV SIM JULHO DE 2022
+Thread-Topic: ACARAPEPREV SIM JULHO DE 2022
+Thread-Index: AQHYrADkv9kQeyuk5U26n0tEdoPeCw==
+Date: Tue, 9 Aug 2022 15:01:53 +0000
+Message-ID:
+ <DM6PR01MB4587F41AEDA1A83E3C48E18DD7629@DM6PR01MB4587.prod.exchangelabs.com>
+Accept-Language: pt-BR, en-US
+Content-Language: pt-BR
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels:
+x-tmn:
+ [agXvJsvA3HSX83o/7KuujODL1HaGIj4usRqmRCWKDrAhvOtlSc3Qt/H3HbyXTn/t76aDCXQTDmg=]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 2f5569ee-81f8-4e0c-1c49-08da7a1818b5
+x-ms-traffictypediagnostic: DM6PR01MB5099:EE_
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ Z/KPn8dxbBB0AXJgzMLSnzRcUmfB7PcoSnrc2zCI3zPbi0UG4ee1GB3X8tZZ5Z6Fmf7XkYnigpDI9+Cletguij87b64zUmdKN3rl2vxqH7L1WFnxVw/NSVQyeqU8Rf9Fk/6WWFEBQ0bxwh8pdPHfeJ8AtkyXe2GYA9uvB8hzeGKSOkx+WfkdZ8bLXSo/zPLQLmXfqE4llNxIZRGJxLEiUhhP7COpxmN/1ytNmVlENVbAT0pmshZ+wPLkANa4SUC2JBipBvvexGH+izE/bCqTh72uKAwz3lianKrAlnPaYczbGTVKpmqMcrlqQCufVDJPbEN/cKPu92gsXOcz1L8aVw==
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?7CJW8eb+P/VYLVOFrXgpY+QQYxonxGe2KKG5Fe/exMPtjBoRvlj3CH1wRp?=
+ =?iso-8859-1?Q?xMh2Kf25lQvoENC6JeOmCs00n11fvBuce2HtOVEKwXMVX0bktE02XO/d8G?=
+ =?iso-8859-1?Q?oqGLb6jBZMxHM02CDOk3pmgZw6icActVzDB9rGg/gC/1Pgv0jbLKOvdsNl?=
+ =?iso-8859-1?Q?pY1Sf672cy+bBTjW2l0QjQMtBGarC8wro6ft7n1T//t+HGycO68EGfnjnV?=
+ =?iso-8859-1?Q?T2x5GSofjzoVFm+WRc3nDrJ/hxYFYFIfkUbQKbOPMXeNV5NPL1VErLXJnB?=
+ =?iso-8859-1?Q?SIwdPE0suYzJmSWzmlUgfsBnh+Cbh9XPcLMUqc6l1MUiDnAQa4/g9JJFmG?=
+ =?iso-8859-1?Q?YBITR2btbUSgF6mMgFdo6G46EtU/gC2fOsM76S56a1nfUZoWRcRQ3MkHFR?=
+ =?iso-8859-1?Q?6OHKzRJA5OI5mPWl+9NZKPlr6aD8NDhg2v0XI7eowxcAn8LhdCZ6oHjsLn?=
+ =?iso-8859-1?Q?b/fVdYADUY4OjOb0HEeJNLEfxclOaChzyJbnQ3lJFjTsbtS6NEhF0OjHUp?=
+ =?iso-8859-1?Q?l3De2LRzntV1QW0e9nowEgtgTwZ456lzqdH3ukNgZMKB/suj2TytWZaf6U?=
+ =?iso-8859-1?Q?nnCYhZ3y2QijD3VnU/qB14XMVY5x6tRK5LmV3boOKTRYHN4v7GO69fPECz?=
+ =?iso-8859-1?Q?sW2EBeZp5VzDOllrGWI1sU93B1DXTbjBFvLJpGuMN66TT4gJSLwUAzrcyw?=
+ =?iso-8859-1?Q?AbzD5UOupsKTJb5TLFwI0G+JsziyaEDb5othsQrGl8vXEKJgPnHtwODLIm?=
+ =?iso-8859-1?Q?SPirHD0RtjAlJVrA/JCTheDoGRD5b6b/OGbrctNDMRatHFs+uWKE35DmY0?=
+ =?iso-8859-1?Q?m4FrzO9Gs6YlL09t1cT0AsStn+1HYGucNrkOsG1isGSrxGQJ/s1PqBsqon?=
+ =?iso-8859-1?Q?BRxFUYcorixX6LwNUDkx6HJxGe0oIUGOT/mAZ77N0hoC3QKwV2oPh0xIpV?=
+ =?iso-8859-1?Q?jORHJCVWChEdZAVLQMdTVAo4ZcOMSXoNlW7b2yFMmBBpRSMeULJegYRJUG?=
+ =?iso-8859-1?Q?YCP+jv5anTJ1JqNVFQW+Md/XOh3ZUSsC3jishON3tpz7LzDOOQq1HtggVZ?=
+ =?iso-8859-1?Q?MeYFJ59lopCEek6DruuvkYypCWl0gtc9jakjJuLhthGq46GmF31pJkL7gT?=
+ =?iso-8859-1?Q?+/3+CiUIASbisKshHAn0Ckh21d0DZ0JfHncen7v0raQVVwL42ZdpjOGAdQ?=
+ =?iso-8859-1?Q?tpT09hTHItJdzwBF20HUPu3CD9SjOsBY2a+Sa5WFjFtgrMlUq62YYdSPhR?=
+ =?iso-8859-1?Q?hD6+sCq5b+HrawZXk7JynyZsu24YaRsmZd6Zjg7QtH4OReYNaC5oIOmavH?=
+ =?iso-8859-1?Q?M/PWejRGe7u0EKjwJyRPzCJsJlsP//RHjGy7mpIcvbgL5TUbRLt5+OCJeI?=
+ =?iso-8859-1?Q?dJ+JXD2Nokzo2oUTTE1i0SPKY53qTDl3rKcWTALe+gNRRyCSgmXQI=3D?=
+Content-Type: multipart/mixed;
+	boundary="_004_DM6PR01MB4587F41AEDA1A83E3C48E18DD7629DM6PR01MB4587prod_"
+MIME-Version: 1.0
+X-OriginatorOrg: sct-15-20-4755-11-msonline-outlook-24fb5.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: DM6PR01MB4587.prod.exchangelabs.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2f5569ee-81f8-4e0c-1c49-08da7a1818b5
+X-MS-Exchange-CrossTenant-originalarrivaltime: 09 Aug 2022 15:01:53.8516
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR01MB5099
+X-Spam-Status: No, score=2.9
+X-Spam-Score: 29
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  
+ Content analysis details:   (2.9 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [acarapeprevfolha[at]hotmail.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+--_004_DM6PR01MB4587F41AEDA1A83E3C48E18DD7629DM6PR01MB4587prod_
+Content-Type: multipart/alternative;
+	boundary="_000_DM6PR01MB4587F41AEDA1A83E3C48E18DD7629DM6PR01MB4587prod_"
+
+--_000_DM6PR01MB4587F41AEDA1A83E3C48E18DD7629DM6PR01MB4587prod_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+--_000_DM6PR01MB4587F41AEDA1A83E3C48E18DD7629DM6PR01MB4587prod_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+</body>
+</html>
+
+--_000_DM6PR01MB4587F41AEDA1A83E3C48E18DD7629DM6PR01MB4587prod_--
+
+--_004_DM6PR01MB4587F41AEDA1A83E3C48E18DD7629DM6PR01MB4587prod_
+Content-Type: application/octet-stream; name="072022.rar"
+Content-Description: 072022.rar
+Content-Disposition: attachment; filename="072022.rar"; size=3474;
+	creation-date="Tue, 09 Aug 2022 15:01:47 GMT";
+	modification-date="Tue, 09 Aug 2022 15:01:53 GMT"
+Content-Transfer-Encoding: base64
+
+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
+
+--_004_DM6PR01MB4587F41AEDA1A83E3C48E18DD7629DM6PR01MB4587prod_--

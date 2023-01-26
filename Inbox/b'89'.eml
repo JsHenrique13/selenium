@@ -1,0 +1,259 @@
+Return-Path: <tributospma2021@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id SJzGBM2TC2IzEAAAgqjM2g
+	(envelope-from <tributospma2021@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Tue, 15 Feb 2022 08:51:41 -0300
+Return-path: <tributospma2021@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Tue, 15 Feb 2022 08:51:41 -0300
+Received: from mail-lj1-f181.google.com ([209.85.208.181]:34507)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <tributospma2021@gmail.com>)
+	id 1nJwMu-00010B-1n
+	for admrh@acarape.ce.gov.br; Tue, 15 Feb 2022 08:51:40 -0300
+Received: by mail-lj1-f181.google.com with SMTP id r20so756773ljj.1
+        for <admrh@acarape.ce.gov.br>; Tue, 15 Feb 2022 03:51:19 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=Kuz4ecydcSNSmU/oruVdmXP03kwAfGUH4R0ihaWmkvA=;
+        b=bw/P68M2XFHEzriJddeqp9io0+CSh+hDpDPgx8SSyE46EYcuk871NC+aiLaRhMWGju
+         qoAegLdGz0C/V9oxYx/Pv7vpLTwrYOe/snyPrAFUwm8JT6RWZby/nR8UuHCc1rQH3H6m
+         7f2baKBS6+eD5aa1DX1rub7LQtap3VGlu8TgnxfWg2qujcUfH4co+fcozztl9zaYiDH3
+         obUwboUEuF9L+CmE+EY/jXHc6USHNMrTr22enI7L6S22yKbNll3UHBb0Z58ytK/UgJvY
+         sLDNELWWzwNPPKJUcPj718BbYP9KaaGrluHQf4Wk9Ef18mJfI2jQyydsu7YwF4qTKpvU
+         3gqg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=Kuz4ecydcSNSmU/oruVdmXP03kwAfGUH4R0ihaWmkvA=;
+        b=dH9vt7ZsFDuhDk0WeHiy5QnB1MhG14u5kphsww1xacqD6ECk4MJIhg/m6h77v6aqse
+         Ho5Kig/UKX4exRuJ1Zd6JSwdeixlzUpdgsv7bn+pmxTk+9UCuVk+hhzFWtb9URa3DDzu
+         4gFMEkoDsgZF8JGtqFcALCrzOrLcm7P4p06LJoEwi8l4EIIfV73PN8zNeey34Omr1aOx
+         ZA44+iAD/RBCrInYoo2DvTe3PjAA+xiykJcnt8P90H6W6e50hp273T3RPSsianqgGkV0
+         3t261iUuL7iXOnlF4PIUiAqVJRdlmHW8WCgDqUOb5AWaw2Z7C57jhoybwGFInwVnWx9U
+         0QEw==
+X-Gm-Message-State: AOAM53132foqj+q8HiYtnpXFlWuq/nkUmR2z+bB+WdHZwfxUWDDUmjx/
+	nzi/Bci3Q6eXJ46Bc+yvpiI+ulC6rMBlgCrpqCh05VWfhuRk6Q==
+X-Google-Smtp-Source: ABdhPJxWXm9VfvfXCko1pGNw6LNkFlWOTwFnFTlPNFF3UHhn7TXYDpKmmiBd45YT6GkHDWDkV09H7lk7d37VMGa3MNI=
+X-Received: by 2002:a05:651c:2107:: with SMTP id a7mr2260614ljq.109.1644925856502;
+ Tue, 15 Feb 2022 03:50:56 -0800 (PST)
+MIME-Version: 1.0
+References: <CAPavgQ5OS9C3OAra8S4E-VJmxbnZwomjNay5Hs9FiDRn1_ayyg@mail.gmail.com>
+ <dc84bfe9f498ffe3b66137fe19a0be1b@acarape.ce.gov.br>
+In-Reply-To: <dc84bfe9f498ffe3b66137fe19a0be1b@acarape.ce.gov.br>
+From: Tributos Acarape <tributospma2021@gmail.com>
+Date: Tue, 15 Feb 2022 08:50:45 -0300
+Message-ID: <CAPavgQ6AYooEc1Um5LEcW4LyEDLf04hmREWz9K7LFcut3wpvvw@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IFNSLiBEQVZZUyBWQVNDT05DRUxPUyAtIFNPTElDSVRBw4fDg08gREUgSU5GT1JNQQ==?=
+	=?UTF-8?B?w4fDlUVT?=
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="0000000000005bd58905d80d2505"
+X-Spam-Status: No, score=0.5
+X-Spam-Score: 5
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Prezados Senhores, Bom dia Arquivos recebidos com sucesso
+   e agradecemos o retorno. Estamos à disposição para maiores informações.
+    Atenciosamente, Ámon Oliveira Ag. Municipal SEFIN/NAT - Acarape-CE *Cuide
+    de sua saúde e de quem você ama > * Use máscara / Salve vidas * / Lave
+    suas mãos / Mantenha uma distância segura!!! * 
+ Content analysis details:   (0.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [tributospma2021[at]gmail.com]
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [tributospma2021[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+--0000000000005bd58905d80d2505
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Prezados Senhores,
+Bom dia
+
+Arquivos recebidos com sucesso e agradecemos o retorno.
+Estamos =C3=A0 disposi=C3=A7=C3=A3o para maiores informa=C3=A7=C3=B5es.
+Atenciosamente,
+
+=C3=81mon Oliveira
+Ag. Municipal
+SEFIN/NAT - Acarape-CE
+*Cuide de sua sa=C3=BAde e de quem voc=C3=AA ama > *
+Use m=C3=A1scara /
+Salve vidas
+* /  Lave suas m=C3=A3os / Mantenha uma dist=C3=A2ncia segura!!! *
+
+Em ter., 15 de fev. de 2022 =C3=A0s 07:25, <admrh@acarape.ce.gov.br> escrev=
+eu:
+
+> Em resposta a solicita=C3=A7=C3=A3o do TRIBUTOS MUNICIPAL, Sr. =C3=81mon =
+Oliveira,
+> segue anexos fichas com dados constantes em nosso banco de dados...
+>
+> N=C3=83O ENCONTRADO, Sr Alexandre Coutinho de S=C3=A1...
+>
+> Atenciosamente,
+>
+> Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as
+> Setor: Recursos Humanos
+> Devys Queiroz de Vasconcelos
+> (85) 992023370
+> John Lennon Duarte da Silva
+> (85) 982115157
+>
+> Em 2022-02-14 11:12, Tributos Acarape escreveu:
+> > Davys Queiroz de Vasconcelos - Gerente de Recursos Humanos,
+> > Bom dia
+> >
+> > Tendo em vista o recebimento de processo do TCE, bem como outros
+> > processos que em andamento, vinho solicitar informa=C3=A7=C3=B5es sobre=
+ alguns
+> > ex-secret=C3=A1rios/as e funcion=C3=A1rios/as deste munic=C3=ADpio, par=
+a
+> > realizarmos as devidas altera=C3=A7=C3=B5es e notifica=C3=A7=C3=B5es do=
+s mesmos:
+> >
+> >       * CONTATOS (Celular, telefone e e-mail): GERALDO ALEXANDRE DE
+> > OLIVEIRA, ANT=C3=94NIA RITA  FERREIRA E SILVA, JOANA DARC SANTOS ALVES,
+> > JOANA DARC MESQUITA LOPES E ROMILDO DA SILVA SOUSA.
+> >       * CPF E RG:  ALEXANDRE COUTINHO DE S=C3=81.
+> >
+> > Favor confirmar recebimento.
+> > Outrossim, encaminhamos c=C3=B3pia =C3=A0 Procuradoria Geral Municipal =
+para
+> > conhecimento.
+> > Estamos =C3=A0 disposi=C3=A7=C3=A3o para maiores informa=C3=A7=C3=B5es.
+> >
+> > Atenciosamente,
+> >
+> > =C3=81mon Oliveira
+> > Ag. Municipal
+> > SEFIN/NAT - Acarape-CE
+> >
+> > Cuide de sua sa=C3=BAde e de quem voc=C3=AA ama >
+> > Use m=C3=A1scara /
+> > Salve vidas /  Lave suas m=C3=A3os / Mantenha uma dist=C3=A2ncia segura=
+!!!
+>
+> --
+>
+
+--0000000000005bd58905d80d2505
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Prezados Senhores,=C2=A0<div>Bom dia</div><div><br></div><=
+div><font face=3D"arial, sans-serif">Arquivos recebidos com=C2=A0sucesso e =
+agradecemos o retorno.</font></div><div><font face=3D"arial, sans-serif">Es=
+tamos =C3=A0 disposi=C3=A7=C3=A3o para maiores informa=C3=A7=C3=B5es</font>=
+.<br></div><div><div id=3D"gmail-m_-3214136223181584291gmail-m_311157803850=
+9631263gmail-m_-8417971129890747003gmail-m_920132417569703604m_-17708654745=
+62966390gmail-m_4902750870110191247gmail-m_7142127302237237091gmail-m_-1826=
+839327661193039gmail-m_-254135181702759503gmail-m_-4664973943403654429gmail=
+-:1dp" style=3D"font-size:0.875rem;direction:ltr;margin:8px 0px 0px;padding=
+:0px;font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif"><div id=3D"=
+gmail-m_-3214136223181584291gmail-m_3111578038509631263gmail-m_-84179711298=
+90747003gmail-m_920132417569703604m_-1770865474562966390gmail-m_49027508701=
+10191247gmail-m_7142127302237237091gmail-m_-1826839327661193039gmail-m_-254=
+135181702759503gmail-m_-4664973943403654429gmail-:1dq" style=3D"overflow:hi=
+dden;font-variant-numeric:normal;font-variant-east-asian:normal;font-stretc=
+h:normal;font-size:small;line-height:1.5;font-family:Arial,Helvetica,sans-s=
+erif"><div dir=3D"ltr"><div>Atenciosamente,<br></div><div><br></div><div>=
+=C3=81mon Oliveira</div><div>Ag. Municipal</div><div>SEFIN/NAT - Acarape-CE=
+</div><div><div><span style=3D"background-color:rgb(0,255,0)"><b>Cuide de s=
+ua sa=C3=BAde e de quem voc=C3=AA ama &gt;=C2=A0</b><div style=3D"font-weig=
+ht:bold;color:black;white-space:nowrap;padding:8px 5px 0px;display:inline-b=
+lock;font-family:arial,sans-serif;text-align:center">Use m=C3=A1scara /</di=
+v><div style=3D"color:black;font-weight:bold;padding:8px 5px 0px;white-spac=
+e:nowrap;display:inline-block;font-family:arial,sans-serif;text-align:cente=
+r">Salve vidas</div><b><span style=3D"color:black;font-family:arial,sans-se=
+rif;text-align:center">=C2=A0/=C2=A0=C2=A0</span><span style=3D"color:black=
+;font-family:arial,sans-serif;text-align:center">Lave suas m=C3=A3os /=C2=
+=A0</span><span style=3D"color:black;font-family:arial,sans-serif;text-alig=
+n:center">Mantenha uma dist=C3=A2ncia segura</span>!!!=C2=A0</b></span></di=
+v></div></div></div></div></div></div><br><div class=3D"gmail_quote"><div d=
+ir=3D"ltr" class=3D"gmail_attr">Em ter., 15 de fev. de 2022 =C3=A0s 07:25, =
+&lt;<a href=3D"mailto:admrh@acarape.ce.gov.br">admrh@acarape.ce.gov.br</a>&=
+gt; escreveu:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0p=
+x 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex">Em=
+ resposta a solicita=C3=A7=C3=A3o do TRIBUTOS MUNICIPAL, Sr. =C3=81mon Oliv=
+eira, <br>
+segue anexos fichas com dados constantes em nosso banco de dados...<br>
+<br>
+N=C3=83O ENCONTRADO, Sr Alexandre Coutinho de S=C3=A1...<br>
+<br>
+Atenciosamente,<br>
+<br>
+Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as<br>
+Setor: Recursos Humanos<br>
+Devys Queiroz de Vasconcelos<br>
+(85) 992023370<br>
+John Lennon Duarte da Silva<br>
+(85) 982115157<br>
+<br>
+Em 2022-02-14 11:12, Tributos Acarape escreveu:<br>
+&gt; Davys Queiroz de Vasconcelos - Gerente de Recursos Humanos,<br>
+&gt; Bom dia<br>
+&gt; <br>
+&gt; Tendo em vista o recebimento de processo do TCE, bem como outros<br>
+&gt; processos que em andamento, vinho solicitar informa=C3=A7=C3=B5es sobr=
+e alguns<br>
+&gt; ex-secret=C3=A1rios/as e funcion=C3=A1rios/as deste munic=C3=ADpio, pa=
+ra<br>
+&gt; realizarmos as devidas altera=C3=A7=C3=B5es e notifica=C3=A7=C3=B5es d=
+os mesmos:<br>
+&gt; <br>
+&gt;=C2=A0 =C2=A0 =C2=A0 =C2=A0* CONTATOS (Celular, telefone e e-mail): GER=
+ALDO ALEXANDRE DE<br>
+&gt; OLIVEIRA, ANT=C3=94NIA RITA=C2=A0 FERREIRA E SILVA, JOANA DARC SANTOS =
+ALVES,<br>
+&gt; JOANA DARC MESQUITA LOPES E ROMILDO DA SILVA SOUSA.<br>
+&gt;=C2=A0 =C2=A0 =C2=A0 =C2=A0* CPF E RG:=C2=A0 ALEXANDRE COUTINHO DE S=C3=
+=81.<br>
+&gt; <br>
+&gt; Favor confirmar recebimento.<br>
+&gt; Outrossim, encaminhamos c=C3=B3pia =C3=A0 Procuradoria Geral Municipal=
+ para<br>
+&gt; conhecimento.<br>
+&gt; Estamos =C3=A0 disposi=C3=A7=C3=A3o para maiores informa=C3=A7=C3=B5es=
+.<br>
+&gt; <br>
+&gt; Atenciosamente,<br>
+&gt; <br>
+&gt; =C3=81mon Oliveira<br>
+&gt; Ag. Municipal<br>
+&gt; SEFIN/NAT - Acarape-CE<br>
+&gt; <br>
+&gt; Cuide de sua sa=C3=BAde e de quem voc=C3=AA ama &gt;<br>
+&gt; Use m=C3=A1scara /<br>
+&gt; Salve vidas /=C2=A0 Lave suas m=C3=A3os / Mantenha uma dist=C3=A2ncia =
+segura!!!<br>
+<br>
+-- <br>
+</blockquote></div>
+
+--0000000000005bd58905d80d2505--

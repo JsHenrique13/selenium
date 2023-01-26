@@ -1,0 +1,172 @@
+Return-Path: <tributos.acarape.ce@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id 2GfZE2PzKmPzJgAAgqjM2g
+	(envelope-from <tributos.acarape.ce@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Wed, 21 Sep 2022 08:20:03 -0300
+Return-path: <tributos.acarape.ce@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Wed, 21 Sep 2022 08:20:03 -0300
+Received: from mail-yb1-f174.google.com ([209.85.219.174]:39741)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <tributos.acarape.ce@gmail.com>)
+	id 1oaxlq-0002Z3-P9
+	for admrh@acarape.ce.gov.br;
+	Wed, 21 Sep 2022 08:20:03 -0300
+Received: by mail-yb1-f174.google.com with SMTP id y82so7582500yby.6
+        for <admrh@acarape.ce.gov.br>; Wed, 21 Sep 2022 04:19:42 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date;
+        bh=zofv8Ti3dTNbSqMH81C+vvfbhnOC9DK3/Gp3d4dj6ug=;
+        b=jmPXtO6vQZ4BkAGJiklaqOMAtl2xzw9LJsc/1MZZ29eLyUgUeG4L6lFf+H9gfPa0OU
+         5d2bYPSiB2jH7F7ntQuYdX7t1Tbnrn5tXiD/7EZ6I1kqPQbOk0gzNuB3/9t7Ft6Ok3CX
+         qB8D497WUomXIvCvSO3mivcC3GaQXuTjgHyV8I01jNbE9tNfI5M2LG9nskvuXPDnuqh0
+         jmLrYfDlKg3oPTFHIDAlm9lDc3IvcNwJhn+yxVQJHZyLgVGuIcRYFbNsd8n8qFicX+h/
+         QPW7fzB3Y5C+Za3EMXU4oxGqvnD7BCNpHLm2I7CgXgNk3jgzZjWStHe5fRUDc9zYlUeM
+         1vJg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date;
+        bh=zofv8Ti3dTNbSqMH81C+vvfbhnOC9DK3/Gp3d4dj6ug=;
+        b=FfAcQryLQX7/LZN9JlhCdC1u2Gq+dKqRfVB/Yg/8DdLUxsmTnkTAQAmw0IrQFIfIWm
+         pmXPWLGQerF8CXNN/9J0pr2ZvSW+udbvFCfzkNs79UfZHaYhk5lpHPHSYY9KZJml19mK
+         1eXkR54Cvsei0jEWI7j1cDUMYYU50dVDAZZKgqqTOoYbz2ibfaE1BiRVdMy4wZuTVxIU
+         dK93Qh0xn3V3oohOUz7FRlJPMC8WoGgRHwpWPZuXAILSLA4yeFozUsUF2dpM2Jsi26p+
+         UvVlYOtTM/Fa3DLjBYzNlR/2cX+LgkPoaLgge6GnovMGF351HLRGLbiVw6mZvciYGgA4
+         kkgQ==
+X-Gm-Message-State: ACrzQf2FTBvBkF/0pK+XKwYQoyzPByWPJMZFBEnRC2cR8LJud6BepH5O
+	ZLlP7uAiKSTZXRFQoJ/WDaiH7eqs6O6gv5QD5/fN+y4WU4FCpA==
+X-Google-Smtp-Source: AMsMyM5OjSl+ZZrtGEZDuCCaC4bstoSkKmzNtKFn7fV0OWUCXnYy5O4t21f7sPscZsSXjmO1yBmQqPR0EwyHXZ9o9mA=
+X-Received: by 2002:a05:6902:727:b0:6b3:652a:5463 with SMTP id
+ l7-20020a056902072700b006b3652a5463mr18340516ybt.590.1663759160558; Wed, 21
+ Sep 2022 04:19:20 -0700 (PDT)
+MIME-Version: 1.0
+From: =?UTF-8?Q?N=C3=BAcleo_de_Adm=2E_Tribut=C3=A1ria_Acarape=2DCE?= <tributos.acarape.ce@gmail.com>
+Date: Wed, 21 Sep 2022 08:19:09 -0300
+Message-ID: <CAKN6VY3scmnOY+xquDusY7XeAu0D7MhwR3bKM+VqtOvfPCOXWA@mail.gmail.com>
+Subject: =?UTF-8?B?U09MSUNJVEHDh8ODTyBERSBJTkZPUk1Bw4fDlUVT?=
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="000000000000c1c93105e92e1dca"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Senhor Davys Queiroz de Vasconcelos - Gerente de Recursos
+   Humanos da PMA, Bom dia Com o intuito de atender às solicitações da Procuradoria
+    Municipal, referente ao Proc. nº 0200058-27.2022.8.06.0027, em nome da Senhora
+    Joana Darc Santos Lopes (servidora municipal), a última dil [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [tributos.acarape.ce[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+X-Spam-Flag: NO
+
+--000000000000c1c93105e92e1dca
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Senhor Davys Queiroz de Vasconcelos - Gerente de Recursos Humanos  da PMA,
+Bom dia
+
+Com o intuito de atender =C3=A0s solicita=C3=A7=C3=B5es da Procuradoria Mun=
+icipal,
+referente ao Proc. n=C2=BA 0200058-27.2022.8.06.0027, em nome da Senhora Jo=
+ana
+Darc Santos Lopes (servidora municipal), a =C3=BAltima dilig=C3=AAncia do F=
+isco
+Municipal, obteve a informa=C3=A7=C3=A3o de familiares em que a servidora h=
+avia
+falecido em outro estado e que j=C3=A1 teria notificado a prefeitura.
+Considerando o exposto, vimos solicitar deste RH o envio de provas, para
+serem encaminhadas =C3=A0 Procuradoria Municipal, se consta na pasta funcio=
+nal
+da servidora, a c=C3=B3pia da certid=C3=A3o de =C3=B3bito, bem como, alguma=
+ informa=C3=A7=C3=A3o
+oficial que comprove a hist=C3=B3ria, para que possamos informar na Execu=
+=C3=A7=C3=A3o
+Fiscal acima.
+=C3=80 inteira disposi=C3=A7=C3=A3o.
+
+Atenciosamente,
+
+=C3=81mon Oliveira
+Ag. Municipal - Mat.: 4972
+Fiscal de Tributos
+NAT/SEMAFI - Acarape-CE
+
+
+
+--=20
+*N=C3=9ACLEO DE ADMINISTRA=C3=87=C3=83O TRIBUT=C3=81RIA - ACARAPE-CE*
+* "A maior atra=C3=A7=C3=A3o de uma cidade =C3=A9 a qualidade de vida de se=
+us moradores."
+Jaime Lerner*
+
+--000000000000c1c93105e92e1dca
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><span style=3D"color:rgb(32,31,30);font-family:Calibr=
+i,Helvetica,sans-serif;font-size:16px;margin:0px"><span style=3D"color:rgb(=
+34,34,34);font-family:Arial,Helvetica,sans-serif;font-size:small">Senhor Da=
+vys Queiroz de Vasconcelos - Gerente de Recursos Humanos=C2=A0 da PMA,=C2=
+=A0</span><div style=3D"color:rgb(34,34,34);font-family:Arial,Helvetica,san=
+s-serif;font-size:small">Bom dia</div></span></div><div><span style=3D"colo=
+r:rgb(32,31,30);font-family:Calibri,Helvetica,sans-serif;font-size:16px;mar=
+gin:0px"><br></span></div><div><span style=3D"color:rgb(32,31,30);font-fami=
+ly:Calibri,Helvetica,sans-serif;font-size:16px;margin:0px">Com o intuito de=
+ atender =C3=A0s solicita=C3=A7=C3=B5es da Procuradoria Municipal, referent=
+e ao=C2=A0</span><span style=3D"color:rgb(32,31,30);font-family:Calibri,Hel=
+vetica,sans-serif;font-size:16px">Proc. n=C2=BA 0200058-27.2022.8.06.0027, =
+em nome da Senhora J</span><span style=3D"color:rgb(32,31,30);font-family:C=
+alibri,Helvetica,sans-serif;font-size:16px">oana Darc Santos Lopes (servido=
+ra municipal), a =C3=BAltima=C2=A0dilig=C3=AAncia=C2=A0do Fisco Municipal, =
+obteve a informa=C3=A7=C3=A3o de familiares=C2=A0em que a servidora havia f=
+alecido em outro estado e que j=C3=A1 teria notificado a prefeitura.</span>=
+<br></div><div><font color=3D"#201f1e" face=3D"Calibri, Helvetica, sans-ser=
+if"><span style=3D"font-size:16px">Considerando o exposto, vimos solicitar =
+deste RH o envio de provas, para serem encaminhadas =C3=A0 Procuradoria=C2=
+=A0Municipal, se consta na pasta funcional da servidora, a c=C3=B3pia da ce=
+rtid=C3=A3o de =C3=B3bito,=C2=A0bem=C2=A0como, alguma informa=C3=A7=C3=A3o =
+oficial que comprove a hist=C3=B3ria,=C2=A0</span></font><span style=3D"col=
+or:rgb(32,31,30);font-family:Calibri,Helvetica,sans-serif;font-size:16px">p=
+ara que possamos informar na Execu=C3=A7=C3=A3o Fiscal acima.</span></div><=
+div><span style=3D"color:rgb(32,31,30);font-family:Calibri,Helvetica,sans-s=
+erif;font-size:16px">=C3=80 inteira disposi=C3=A7=C3=A3o.</span></div><div>=
+<span style=3D"color:rgb(32,31,30);font-family:Calibri,Helvetica,sans-serif=
+;font-size:16px"><br></span></div><div><div style=3D"color:rgb(80,0,80)">At=
+enciosamente,</div><div style=3D"color:rgb(80,0,80)"><br></div><div style=
+=3D"color:rgb(80,0,80)">=C3=81mon Oliveira</div><div style=3D"color:rgb(80,=
+0,80)">Ag. Municipal - Mat.: 4972</div><div style=3D"color:rgb(80,0,80)">Fi=
+scal=C2=A0de=C2=A0Tributos</div><div style=3D"color:rgb(80,0,80)">NAT/SEMAF=
+I - Acarape-CE</div></div><div><br></div><br clear=3D"all"><div><br></div>-=
+- <br><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_si=
+gnature"><div dir=3D"ltr"><div style=3D"text-align:center"><b><font face=3D=
+"arial black, sans-serif">N=C3=9ACLEO DE ADMINISTRA=C3=87=C3=83O TRIBUT=C3=
+=81RIA - ACARAPE-CE</font></b></div><div style=3D"text-align:center"><b><i>=
+<font face=3D"arial black, sans-serif">=C2=A0&quot;A maior atra=C3=A7=C3=A3=
+o de uma cidade =C3=A9 a qualidade de vida de seus moradores.&quot; Jaime L=
+erner</font></i></b><br></div></div></div></div>
+
+--000000000000c1c93105e92e1dca--

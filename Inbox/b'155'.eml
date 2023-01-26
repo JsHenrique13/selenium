@@ -1,0 +1,80 @@
+Return-Path: <>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id uBZNIIkIw2IkHQAAgqjM2g
+	(envelope-from <>)
+	for <admrh@acarape.ce.gov.br>; Mon, 04 Jul 2022 12:34:33 -0300
+Return-path: <>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Mon, 04 Jul 2022 12:34:33 -0300
+Received: from mailnull by server2.assesi.com with local (Exim 4.95)
+	id 1o8O5p-0001wP-7K
+	for admrh@acarape.ce.gov.br;
+	Mon, 04 Jul 2022 12:34:33 -0300
+X-Failed-Recipients: Anathcelythcelybandeira@gmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@server2.assesi.com>
+To: admrh@acarape.ce.gov.br
+References: <aa509a8fa5b6ed069d720a22e68a61ce@acarape.ce.gov.br>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1656948873-eximdsn-850923398
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1o8O5p-0001wP-7K@server2.assesi.com>
+Date: Mon, 04 Jul 2022 12:34:33 -0300
+
+--1656948873-eximdsn-850923398
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  Anathcelythcelybandeira@gmail.com
+    host gmail-smtp-in.l.google.com [173.194.210.26]
+    SMTP error from remote mail server after RCPT TO:<Anathcelythcelybandeira@gmail.com>:
+    550-5.1.1 The email account that you tried to reach does not exist. Please try
+    550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. Learn more at
+    550 5.1.1  https://support.google.com/mail/?p=NoSuchUser n143-20020a1f2795000000b0035da3bd2502si8849008vkn.105 - gsmtp
+
+--1656948873-eximdsn-850923398
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; server2.assesi.com
+
+Action: failed
+Final-Recipient: rfc822;Anathcelythcelybandeira@gmail.com
+Status: 5.0.0
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+ 550-5.1.1 double-checking the recipient's email address for typos or
+ 550-5.1.1 unnecessary spaces. Learn more at
+ 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser n143-20020a1f2795000000b0035da3bd2502si8849008vkn.105 - gsmtp
+
+--1656948873-eximdsn-850923398
+Content-type: text/rfc822-headers
+
+Return-path: <admrh@acarape.ce.gov.br>
+Received: from [::1] (port=41116 helo=server2.assesi.com)
+	by server2.assesi.com with esmtpa (Exim 4.95)
+	(envelope-from <admrh@acarape.ce.gov.br>)
+	id 1o8O5n-0001wF-H3;
+	Mon, 04 Jul 2022 12:34:31 -0300
+MIME-Version: 1.0
+Date: Mon, 04 Jul 2022 12:34:31 -0300
+From: admrh@acarape.ce.gov.br
+To: GHM <ghm.informatica@gmail.com>
+Cc: Anathcelythcelybandeira@gmail.com, =?UTF-8?Q?Finan=C3=A7as_Acarape?=
+ <admfinancas@acarape.ce.gov.br>
+Subject: verificar
+User-Agent: Roundcube Webmail/1.4.12
+Message-ID: <aa509a8fa5b6ed069d720a22e68a61ce@acarape.ce.gov.br>
+X-Sender: admrh@acarape.ce.gov.br
+Content-Type: multipart/mixed;
+ boundary="=_f6cff10bd350ec7e94df4585e8de4c43"
+X-Exim-DSN-Information: Due to administrative limits only headers are returned
+
+
+--1656948873-eximdsn-850923398--

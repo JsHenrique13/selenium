@@ -1,0 +1,125 @@
+Return-Path: <draelida.previdenciario@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id cKl0NVdN3GE3IQAAgqjM2g
+	(envelope-from <draelida.previdenciario@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Mon, 10 Jan 2022 12:14:31 -0300
+Return-path: <draelida.previdenciario@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Mon, 10 Jan 2022 12:14:31 -0300
+Received: from mail-ua1-f43.google.com ([209.85.222.43]:45953)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <draelida.previdenciario@gmail.com>)
+	id 1n6wNT-0002He-Ez
+	for admrh@acarape.ce.gov.br; Mon, 10 Jan 2022 12:14:31 -0300
+Received: by mail-ua1-f43.google.com with SMTP id x33so22642356uad.12
+        for <admrh@acarape.ce.gov.br>; Mon, 10 Jan 2022 07:14:10 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=E1dOetiDX/RhUvt46CGloTTLjswuxb3SbLdH+Cee+q8=;
+        b=ekHG0EiGg62UteHSLBtEUQkYtBeI6bha/keYeIPsSBnoCRKzWjBePxmksY2NrxUxES
+         znd+vosz4kaUWhybrCNYDuNEcpBQg5crApDuxK9gFNftgF6azom0xG5u38dLTXouKSmd
+         K0Gt7PMowYDsKnogm/RuUmB1Iady+8mWFUgwVJQ+u+LD1vbd+j9L0gof09Sohv7mGqwg
+         H8d1rMUSqnL61PLn8zyYcDis5fL92Q7WK+bGIrPlSaJ2J0I5u0WNjhxtl+SMYA2vl9NM
+         6ka5Tvc75t8WOMlbgpkFISppqCndsuiJ8niuiCIXbOTsb9QU0iFtFzrX9nv3rVJsnzFi
+         zYYw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=E1dOetiDX/RhUvt46CGloTTLjswuxb3SbLdH+Cee+q8=;
+        b=nELaObnMez3w4L+t/iOERU0iXSk2ZBkw4x/owwAfBhqZ4/do8k47JMR3QEcXtP98Rf
+         qEUz1jzIGO0CApefwv8JPSATMVfyBSyXoh28HdNC7rtrGLV/R4T2cFm/DCknQsXvoWLU
+         IvJdwUGPC7ZwphQuy189tX2B+JXh+s8ten4sZKdKF9vHCG03DEY5ra77sv8BieFGnVSj
+         gVmqA0//DBNWORIpo3UIbJs2GjW2LIC+Kz4U8shaHCyHvETRFJK5X6Pz3MWZaR00cUWy
+         ZDFgrvdWWYPhsFy1rd5oT8gapukR9Ww2lUFmRYQvN1fN+LMD+DuohnH0cuVn0mXpr5Af
+         NetA==
+X-Gm-Message-State: AOAM5323T58zoPGEucL+CG4wLZxbtOT8mSxWaocBPMd0inimr32E4bDx
+	agYqsq2Fe++Br4ZHbTXrXNj4mHjzn3M4O9508IO/+Zo2
+X-Google-Smtp-Source: ABdhPJxEJkHKCz4Sa8jmaTJJOMxk77eviPm27dvsIVqZN9e0tsOOctygvAmLSaUYJEsNMLw3mLa/DrLmLUIK2MCtaS4=
+X-Received: by 2002:ab0:6ca7:: with SMTP id j7mr79186uaa.42.1641827629298;
+ Mon, 10 Jan 2022 07:13:49 -0800 (PST)
+MIME-Version: 1.0
+From: Dra Elida Nogueira <draelida.previdenciario@gmail.com>
+Date: Mon, 10 Jan 2022 12:13:38 -0300
+Message-ID: <CALSYre+okzRzpctXnOP0DzJXtG4Dv-kz71Dbb88yScTCr5GL4g@mail.gmail.com>
+Subject: Requerimento
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="000000000000a0788205d53bc875"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Ao Senhor(a) do setor RH Eu Elida Nogueira, advogada,compareço
+    a presença de Vossa Senhoria à SOLICITAR: Certidão de Tempo de Contribuição-CTC
+    assinada e acompanhada da relação de remuneração,férias; Declaração
+    CTC; Dados Financeiros ao qual substitui as fichas financeiras. Com intuito
+    requerer [...] 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [draelida.previdenciario[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+X-Spam-Flag: NO
+
+--000000000000a0788205d53bc875
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Ao Senhor(a) do setor RH
+
+Eu Elida Nogueira, advogada,compare=C3=A7o a presen=C3=A7a de Vossa Senhori=
+a =C3=A0
+SOLICITAR:
+
+Certid=C3=A3o de Tempo de Contribui=C3=A7=C3=A3o-CTC assinada e acompanhada=
+ da rela=C3=A7=C3=A3o de
+remunera=C3=A7=C3=A3o,f=C3=A9rias;
+Declara=C3=A7=C3=A3o CTC;
+Dados Financeiros ao qual substitui as fichas financeiras.
+Com intuito requerer aposentadoria do servidor.
+
+Servidor Municipal: Justino Costa da Silva;
+Matr=C3=ADcula:285;
+CPF: 819.174.573-91;
+RG: 221010692
+Concursado  6 de junho de 1997.
+
+Atenciosamente,
+Elida Nogueira.
+com c=C3=B3pia.
+
+--000000000000a0788205d53bc875
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Ao Senhor(a) do setor RH=C2=A0<div><br></div><div>Eu Elida=
+ Nogueira, advogada,compare=C3=A7o a presen=C3=A7a de Vossa Senhoria =C3=A0=
+ SOLICITAR:</div><div><br></div><div>Certid=C3=A3o de Tempo de Contribui=C3=
+=A7=C3=A3o-CTC assinada e acompanhada da rela=C3=A7=C3=A3o de remunera=C3=
+=A7=C3=A3o,f=C3=A9rias;</div><div>Declara=C3=A7=C3=A3o CTC;</div><div>Dados=
+ Financeiros ao qual substitui as fichas financeiras.</div><div>Com intuito=
+ requerer aposentadoria do servidor.</div><div><br></div><div>Servidor Muni=
+cipal: Justino Costa da Silva;</div><div>Matr=C3=ADcula:285;</div><div>CPF:=
+ 819.174.573-91;</div><div>RG: 221010692</div><div>Concursado=C2=A0 6 de ju=
+nho de 1997.</div><div><br></div><div>Atenciosamente,</div><div>Elida Nogue=
+ira.</div><div>com c=C3=B3pia.</div><div><br></div><div><br></div><div><br>=
+</div></div>
+
+--000000000000a0788205d53bc875--

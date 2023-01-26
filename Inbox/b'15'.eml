@@ -1,0 +1,154 @@
+Return-Path: <ghm.informatica@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id cDlYISUOaGHWIwAAgqjM2g
+	(envelope-from <ghm.informatica@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Thu, 14 Oct 2021 08:01:57 -0300
+Return-path: <ghm.informatica@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Thu, 14 Oct 2021 08:01:57 -0300
+Received: from mail-lf1-f49.google.com ([209.85.167.49]:33460)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <ghm.informatica@gmail.com>)
+	id 1mayUi-0002Qf-TL
+	for admrh@acarape.ce.gov.br; Thu, 14 Oct 2021 08:01:57 -0300
+Received: by mail-lf1-f49.google.com with SMTP id j21so25518910lfe.0
+        for <admrh@acarape.ce.gov.br>; Thu, 14 Oct 2021 04:01:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=FlsJinrBnwIlUTYl4StqC/6GwjDA6T/nIdzsAsesnkg=;
+        b=o1S3NGEUJmfVNLRo2/6AwQaPtV70mWjdyK4grfL2SKU4o9UMXQcLnPjGds3OXK0lO/
+         sxYJiABh8k9r8sTnlHnEWpIlP2QoPs3ZRCEA1ekAauNY+emMm7A2xDMq9FMgzpHB8PFw
+         7JLVpNelRELHJ9zoSzO8nyjb0ohl23b00gUT9b0KOMOM/qX8sCZ8aMP0wb853S1YAlIU
+         5OD6FEx9R030iP/BXiREfIkar3lJFt0guNjpSV0HT0a8YGfIN8T17clfvuThqohaZHXZ
+         efDgkXrD/iPdwgAoOlVML00n/hVeJxMIMQQJvzI518Ik6gfZRmnkaw+7EWuERjz/Fza3
+         v3RA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=FlsJinrBnwIlUTYl4StqC/6GwjDA6T/nIdzsAsesnkg=;
+        b=DngFAFsTqUzN994kNA9GG70kZunuybbS2JuCJk4FUkqSaDfY4tfMRW4WW0Z5+Knrd1
+         3eP1oIJfwBK/RUwhCjcJgwZjxLdthh2LNXz3I2OVdRyao6K6Gh8T8t8ux0fOlhqU4R3B
+         /M0rc7ZBXFwiP/beAAiX9Orz8uAyUwmmsa+kUEC/+6oQQHQ9AHJva4V2sRDZG51c6gLJ
+         Ed9RwPwMWabT5cz9I+eLmpiFDltJjD2u9AsOrqb596pRhq2S+psDK4UllGFi1afgBU6o
+         XNfK7xgmKiXkxLSV9DGyCSyZ6+svJoCpR9k+/JFY8v9Df0K8zYMOoB7SVe7t4h4r/TBR
+         1tTQ==
+X-Gm-Message-State: AOAM532XIf6sxJJ35X+tE359dZfGX+AAxyTcSGa4120peer2q89otVK7
+	D/JWyU/+kqCPjYHmww9m+fa2TXjc4WpLsXlP+rqEIeZn
+X-Google-Smtp-Source: ABdhPJwoT1+eMS+8Dtwcqa7I8BwIMRUkKTCyfqJgLw5WJfmIUWNKqLPZ7jAnD0+x7o065TbY32CpciW4nLEil1z+M4I=
+X-Received: by 2002:a2e:a791:: with SMTP id c17mr5332402ljf.509.1634209269089;
+ Thu, 14 Oct 2021 04:01:09 -0700 (PDT)
+MIME-Version: 1.0
+References: <1973a2f3b14f51154826dc14b18569d9@acarape.ce.gov.br>
+ <afabe576a17b799ba03da5a03d6331af@acarape.ce.gov.br> <ff0c4cd51cd734d458c919549591773d@acarape.ce.gov.br>
+In-Reply-To: <ff0c4cd51cd734d458c919549591773d@acarape.ce.gov.br>
+From: GHM INFORMATICA <ghm.informatica@gmail.com>
+Date: Thu, 14 Oct 2021 08:00:36 -0300
+Message-ID: <CAN+--kSPFC5F8aGizDeCeoXaozibg9dVHieuqVbnsuScsdBxiQ@mail.gmail.com>
+Subject: Re: RETIFICAR GFIP 2010 E 2011 - MARCILEIDE DE ALMEIDA SILVA LIMA
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="000000000000f9072105ce4dfe70"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Bom dia. Quais as datas de desligamento? Não constam no email.
+    Att GHM 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [ghm.informatica[at]gmail.com]
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+--000000000000f9072105ce4dfe70
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bom dia. Quais as datas de desligamento? N=C3=A3o constam no email.
+
+Att
+
+GHM
+
+Em qui., 16 de set. de 2021 =C3=A0s 11:10, <admrh@acarape.ce.gov.br> escrev=
+eu:
+
+> Bom dia!
+>
+>
+> Segue anexo documentos para fazer retifica=C3=A7=C3=A3o na GFIP ano 2010 =
+e 2011 no
+> nome da EX.servidora MARCILEIDE DE ALMEIDA SILVA LIMA,  ela esta
+> alegando que seu v=C3=ADnculo do ano de 2010 e 2011 ainda est=C3=A3o em a=
+berto,
+> solicitamos o encerramento com urg=C3=AAncia, pois j=C3=A1 esta ocasionan=
+do
+> problemas para a EX. servidora.
+>
+> Ficamos no aguardo....
+>
+> Att.:
+> --
+> Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as
+> Setor: Recursos Humanos
+> John Lennon Duarte da Silva
+> (85) 982115157
+> Devys Queiroz de Vasconcelos
+> (85) 992023370
+>
+
+--000000000000f9072105ce4dfe70
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Bom dia. Quais as datas de desligamento? N=C3=A3o constam =
+no email.<div><br></div><div>Att</div><div><br></div><div>GHM</div></div><b=
+r><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">Em qui.,=
+ 16 de set. de 2021 =C3=A0s 11:10, &lt;<a href=3D"mailto:admrh@acarape.ce.g=
+ov.br">admrh@acarape.ce.gov.br</a>&gt; escreveu:<br></div><blockquote class=
+=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rg=
+b(204,204,204);padding-left:1ex">Bom dia!<br>
+<br>
+<br>
+Segue anexo documentos para fazer retifica=C3=A7=C3=A3o na GFIP ano 2010 e =
+2011 no <br>
+nome da EX.servidora MARCILEIDE DE ALMEIDA SILVA LIMA,=C2=A0 ela esta <br>
+alegando que seu v=C3=ADnculo do ano de 2010 e 2011 ainda est=C3=A3o em abe=
+rto, <br>
+solicitamos o encerramento com urg=C3=AAncia, pois j=C3=A1 esta ocasionando=
+ <br>
+problemas para a EX. servidora.<br>
+<br>
+Ficamos no aguardo....<br>
+<br>
+Att.:<br>
+-- <br>
+Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as<br>
+Setor: Recursos Humanos<br>
+John Lennon Duarte da Silva<br>
+(85) 982115157<br>
+Devys Queiroz de Vasconcelos<br>
+(85) 992023370<br>
+</blockquote></div>
+
+--000000000000f9072105ce4dfe70--

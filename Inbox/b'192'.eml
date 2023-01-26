@@ -1,0 +1,154 @@
+Return-Path: <acarapeprevfolha@hotmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id 6LjkECCaUmOqaAAAgqjM2g
+	(envelope-from <acarapeprevfolha@hotmail.com>)
+	for <admrh@acarape.ce.gov.br>; Fri, 21 Oct 2022 10:09:52 -0300
+Return-path: <acarapeprevfolha@hotmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Fri, 21 Oct 2022 10:09:52 -0300
+Received: from mail-mw2nam12olkn2062.outbound.protection.outlook.com ([40.92.23.62]:23003 helo=NAM12-MW2-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <acarapeprevfolha@hotmail.com>)
+	id 1olrmX-0000t5-W3
+	for admrh@acarape.ce.gov.br;
+	Fri, 21 Oct 2022 10:09:50 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=EuUUfavnwDYudFAOdJH3aHwKh1mabUIoSctEH1uNiAZDumOtGJ3ccU4CG7Lq8ACZO5e3jb327oPh20QEYuUINtIPE7j4cfQxdcZmz4p9Puiov1YvrKrJtIuATrmjhPso8EmPxq5bW5XxhuFiWSDxnxaSyp/7JB5YqRbMVN0KipIMbIElBmZ2/Bs166DFD8yTTteuGYOoLqJM58Qdjplk6v5qaDY3+ldx0lWjg79zGGlU3lU0fH7Cvx5Pj13afK+2EK01AqY4iy161Xt3vUow5sN8txrqr1btTnfm27wYzYaUiyC07CLSSBZYlTLwOL8a4ef6Xv7/XG/cckTXdJElFA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=GvBmiTEUqMpBqQBG1rZOWAx2N02IPu8mZVgVpxrvw0I=;
+ b=AtHnvs19t4+gpc3X1HAo4EVDNwQEc+aTew5dVXhcmT91jt2I+kKhi2sQysFrGbG2ic6d/3OrEA9gLyG/SNJurfQWs+MXUMbI3Pe+cqrk0XWsCJxDbG8yWuw6ptFpDzGhg5hmkTRMzrJxR8Fnu66zq6ql2d4KErUSnX+DpbkDtfq5vtaaBfzWU9WpNJU7Pkn4qkNv6sZQwwxbSQ5OIMV1l88a3wTAUSUhVDYnZSjFvwlYb+KlaClD3TUIRjzka4sUlVmKfHzO5tUt0cjE5KQKvuo88t/Ht4Teyv/psQaRje9fFTDv6jSroa1hr7O18dhcsBwGgy9cyxhVOybRM+DVwA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=GvBmiTEUqMpBqQBG1rZOWAx2N02IPu8mZVgVpxrvw0I=;
+ b=aF9iz7NsW0xQrj3OOn9HCUMphVnOE3V1vIh1pdwrcbhaPODwTsDnu/TjFzdMNoXnQJwsd+GHIlCvzid9gonNX0wMiyKRRGkP3DzHTVOTMW6bW/HOZlE1uj/3Ux/0QGuGu6In2dGw+gSo2K6jxstnwKnPkEytUOE5mPuFDG5VZorOepz5Xj919gWUg8KAyycSmoy0Frin7HBfjzQeXactsQ6jtUITPAEbwvP/BF5mCCOmVRlkOYHsNAUkY1mRaYdNoHuQBZ0qWGTc9M2q7PMgVaMJlYpqQpSXNBKmIkJFA/CrR/tqMcoHa4nMnM7c/f3OxnO8gBDpO9JGLOsp/fOT5A==
+Received: from BL0PR01MB4579.prod.exchangelabs.com (2603:10b6:208:8c::20) by
+ CH0PR01MB6955.prod.exchangelabs.com (2603:10b6:610:108::7) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5723.29; Fri, 21 Oct 2022 13:09:07 +0000
+Received: from BL0PR01MB4579.prod.exchangelabs.com
+ ([fe80::e65a:2dd:7503:2b7d]) by BL0PR01MB4579.prod.exchangelabs.com
+ ([fe80::e65a:2dd:7503:2b7d%4]) with mapi id 15.20.5723.033; Fri, 21 Oct 2022
+ 13:09:07 +0000
+From: =?iso-8859-1?Q?acarapeprev_fundo_municipal_previd=EAncia?=
+	<acarapeprevfolha@hotmail.com>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+Subject: SOLICITO ARQUIVO CONSIGNADO CAIXA 11 2022 DA PREFEITURA 
+Thread-Topic: SOLICITO ARQUIVO CONSIGNADO CAIXA 11 2022 DA PREFEITURA 
+Thread-Index: AQHY5U4hKdpWr+vpbki58fnQm0JylQ==
+Date: Fri, 21 Oct 2022 13:09:06 +0000
+Message-ID:
+ <BL0PR01MB4579A986BD4A8C8876BC83ADD72D9@BL0PR01MB4579.prod.exchangelabs.com>
+Accept-Language: pt-BR, en-US
+Content-Language: pt-BR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+x-tmn: [/zhlyHABDFO6T23sSRykz1p0xzJUhDvvqaJJxK3G5AI=]
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: BL0PR01MB4579:EE_|CH0PR01MB6955:EE_
+x-ms-office365-filtering-correlation-id: 789627d5-6d0e-4749-d767-08dab3656f75
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ LLzVR1aufGrtgesoUwqo7y61rrJs/vJQ3s0k3gsXj0qoNRbfrjUfdaDexJOxFZ4gntUhpNsBEttvWEO9JcXRlnZRLW370Y74DpxzOgnbiCvqpMUEScbV7Gpm/RfTL64ImYfB9Mp9Disp36MyTl8JBRS21GYVX7eQ9PQ8cpk9bYmEWzmaYjqm/1JAUzTiIJ+vz9iCx4OLtpTh1iFMYUG5C6a6XmtFFkhEQEgBV4AxIHGhLhHYgzXvIt8znK7I88/rGgZRKcvaijKvX7l7CiuCicP/lVMPeXywBgrtpNyJ6iafmpPMcaLGRQ840xaWzyYhlKSJEY0FaMY+YQwS8C9al4COWAxtg0dnYc0dk1uha+qtKRtw+9q6VwhLDG8w0gzvG8y8wpiDqLFsFmDXA7I82BZSdySSNErO2ikwMLCqqUVVkqovY+3kiaKPcV5jdzPRQzzIw8ARSWguHIqxqwkgXOVUxotHYF79OFCKkmGm4xEeFUc2N0OH2uZzupzEwOIG83oL3pImMmEEiI8tY3hYNvgMt7CfhQy6ErKwF3vXaRWoiuu5OmO7FLsMV4f/XqFt85z/NTpRk8UrZYQMjFTnu33vHrqUzVUTZpJAk/NocRyR2Rftr/lslSaVAwXAV0Py8DdyC+PD99zPa2/wxPGlEw==
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?+9SiU8a/ugejW9W2r2tpX2Zdnzo/8IcYs4AYvylahcAcHWAg2tyc3ZS51f?=
+ =?iso-8859-1?Q?CktlHakJN0KSPaGb2UA4ZSSTffnXTdjwsecWPE9ncnX6xoWdo2DEgLWIBF?=
+ =?iso-8859-1?Q?pwet3GJvGi1nM8cFDN5QB6rCgSBClAFw6xPwAnoyKZyK/FrihCdNAYXNAu?=
+ =?iso-8859-1?Q?WuLNE7w1ZAeTvG93AIdOKfqsSoLf8V8Nrtn7tHmP2wARcMEtT7E4P6Pp/f?=
+ =?iso-8859-1?Q?DaLigxVLiqphzWsF03DUriOQUibN2UQwOReIYZ+CGsFo4Hojux4z/driId?=
+ =?iso-8859-1?Q?L3NYndlRWczAq4xMpl62vgV53zPZ91SO0zMnm6xK5XdD50bpnViNHnibNy?=
+ =?iso-8859-1?Q?Rw3X0DNW+Pt5nBmVf7C/caMB9LHYDPMf5t7uWO4Nh0ly06S3hOfyoBhRu1?=
+ =?iso-8859-1?Q?JUOjokb/w1fB19Vuuesbn8VNKWunqHo3sSjFiI5xhw8S5nWvbOKPPRxIMo?=
+ =?iso-8859-1?Q?VRjJ1iBkEO6Y3uApbDRtgP1yla53lDDR3yU3MgLU/W6uOMeeo63lvmdcyR?=
+ =?iso-8859-1?Q?Ax3R66RmuUrtlpZzu/qMl0IPbiy5nwxYGcRT16CTXbaxhRhvnua8n9YLn/?=
+ =?iso-8859-1?Q?dzAnpTUT/4H2TcBaI3ltlpn5wJ8y9783dlXlGMUOlHxNyQXAsARKaWoXZw?=
+ =?iso-8859-1?Q?cz30TEjYsto/+x31/oLQN6Io55X5ZJc2MIx1k3k+6aaxugUB8gXX0+Hyd/?=
+ =?iso-8859-1?Q?Oa1Egdb2IIALrEOLgcsTzmzp6OlnlzcBTlZFewXgcq2l+IpPmqiCA4srOm?=
+ =?iso-8859-1?Q?yBPkYH+s6XQ9k7aeRBkkqbABwS9SFigj/OTmrGltSlvjWoCnlPaDyWymQu?=
+ =?iso-8859-1?Q?hruVEUyoeNKIk5NU6i+mogsdQF0m6lWQ2oxg+Evl+/3bY7u1iySxXegLZO?=
+ =?iso-8859-1?Q?K3G4+W+mm8HkG4cAUhQnTVSAlSxE6iSk6Pb1s0GErToIfMYrm0uZJIxy3w?=
+ =?iso-8859-1?Q?Fv21MKLOgfsOtNQF9/X/uxp4pwIW2NI6P7E3jkKWM9eyN3/LjGP+HoDJDb?=
+ =?iso-8859-1?Q?Ocp/mUiTup0XVPRDL6Sak/pu6AO+pwzAno9Rh2V/pOe8V7ql4Pa9T+N6yS?=
+ =?iso-8859-1?Q?gPTwbTVUR6inKg7H9j8RP8TPf6Bb+1xJr+d/rgpHF10iTpOzqTUy9EL9TK?=
+ =?iso-8859-1?Q?CE02sZUzzJxdrgKDBJ5NwSa72uf8CqY0tfS6k0ydvfPBnFbgmoqR5XitMG?=
+ =?iso-8859-1?Q?+ZyUzbiK3q8iHdBmTiPix6gOSAQAI3htz8toLkF/XOq3V3z79rLOXM69AC?=
+ =?iso-8859-1?Q?NWWWTePAFfAXePWinel5XPcGxGzNU28LbyQ6NRBjo5LQSeaeu7hCx4GPAL?=
+ =?iso-8859-1?Q?tAoVNpBf8KAaRMaEWFDfx4wOqvdZ6fK4zVB8PsmsrJdvFXk=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_BL0PR01MB4579A986BD4A8C8876BC83ADD72D9BL0PR01MB4579prod_"
+MIME-Version: 1.0
+X-OriginatorOrg: sct-15-20-4755-11-msonline-outlook-24fb5.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BL0PR01MB4579.prod.exchangelabs.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 789627d5-6d0e-4749-d767-08dab3656f75
+X-MS-Exchange-CrossTenant-originalarrivaltime: 21 Oct 2022 13:09:06.8784
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH0PR01MB6955
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  SOLICITO ARQUIVO CONSIGNADO CAIXA 11 2022 DA PREFEITURA SOLICITO
+    ARQUIVO CONSIGNADO CAIXA 11 2022 DA PREFEITURA 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [acarapeprevfolha[at]hotmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+--_000_BL0PR01MB4579A986BD4A8C8876BC83ADD72D9BL0PR01MB4579prod_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+SOLICITO ARQUIVO CONSIGNADO CAIXA 11 2022 DA PREFEITURA
+
+--_000_BL0PR01MB4579A986BD4A8C8876BC83ADD72D9BL0PR01MB4579prod_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof ContentPasted0">
+SOLICITO ARQUIVO CONSIGNADO CAIXA 11 2022 DA PREFEITURA <br>
+</div>
+</body>
+</html>
+
+--_000_BL0PR01MB4579A986BD4A8C8876BC83ADD72D9BL0PR01MB4579prod_--

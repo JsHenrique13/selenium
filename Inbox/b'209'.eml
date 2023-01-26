@@ -1,0 +1,328 @@
+Return-Path: <devysdss@yahoo.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id mOAMKr69tmPaEgAAgqjM2g
+	(envelope-from <devysdss@yahoo.com>)
+	for <admrh@acarape.ce.gov.br>; Thu, 05 Jan 2023 09:08:30 -0300
+Return-path: <devysdss@yahoo.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Thu, 05 Jan 2023 09:08:30 -0300
+Received: from sonic303-21.consmr.mail.ne1.yahoo.com ([66.163.188.147]:35899)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <devysdss@yahoo.com>)
+	id 1pDP2s-0001Xb-GI
+	for admrh@acarape.ce.gov.br;
+	Thu, 05 Jan 2023 09:08:30 -0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1672920467; bh=zLBdzPwRpOzuI9X+Y+a8DakQhc8aZ21ImGbSgXw9EsQ=; h=Date:From:To:In-Reply-To:References:Subject:From:Subject:Reply-To; b=k8joLOdlAvDo0E7+N1wQMvZAFhgcDnRSoLV6e9ljbQd1E5bLy2dwEwtUhl7is0xNGYIwknFKOhiOWUjBMv1EnXumM62RXsBK2lJZh9uMkKQbGjpxlqIW0uCJa+avGok8HlSMq51fHA4XDrcdWJqo2cwXZgYA/nT/MthIY+ou/aBdJ9WxKo2vmOas15bAW3V/PT44fMLFdnaP4MMcytjIMR2Q5NBHzI294MoheYZ1CLTeK5ut3Z3WaRXEVUtZAx6jF/vO84o/ChymZV+71CoM0M6d9HlZJECmKrI4MuqZPddBjNM06Zg4SS9TkovgX3iCA0H6vR8rl5WvpV0taY/aNw==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1672920467; bh=TeP6NYQxxXJpU14MaH6hJx0RkVkon3mn5hniMPDMuRG=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=ol6fkgmuBNrDAQubOm2w3I2vSYo6s/gCI64sf0eX5y5JhA//55XznZk6Ul/QGYiP5GZpd6qP8/blDDOASbZvUeoLm3Tm5XdhnziGQgdavHpgS9FMuprzU414wfJy2qQObDouwRqNRzXIx2+oxnvY3CNeFmYhCnFf2ag7TpD8fKd1BZo1MKQz9R3QJiUMeh3VjLcRpqw8h7ISBG5ygR5g7yd3qieh/fN9mP6cCVs1ej3qMAJpnlQ6PuMuZ39OcsdrYNFaieCKNfrESmSC83ocDyuSVaLUoFrBweadusqLI4iG1TDOSZTqwTIGpguSYCODBDzOGXD6T7ePfCbTKFPR4A==
+X-YMail-OSG: O9Zo6bYVM1m9LZtHnZud145vudfWhXwyWSy1dqtkSpw3nMxYJvf0MAPeKeqIz9t
+ IAmHejJjYOxoaWSt8WqnsqEzl8Ih.aEsIYLQ9sp_SgpdWtrHNn0WNADrh34MqZDJkbQGK1FYd9UF
+ Z3v.TVZY.WhTrYi54.KLmkiZ1XS3YIfFjkjO42usGoC.zeIg8xHxjKy6YshZEHwXdBWzFYK.Kcmv
+ jPgEmB75lv_rTebG_2XMd5U.m3bFxUkLdfGXJvpuoPTCgPJ4W6WhcuOZ4p7j.qEQjAmLM1aQJXPe
+ PqIWr8upw.fBXDZA0V8fLLXQT1gq9_QAHzB4W23hDWjQFA4QQhtN9QuJ8vZEIKaaJyTM4DjWp5NK
+ 8tGaQM3wFQfGZFoFiSE3wu6PTrY3_fnb3NI1Ix024_eBK8Uuk_.JhCI8_KqQtpSFiOvnh4Hb5He6
+ L7L6iNqToQWi2fovS_liaduPKbt3KyNVe4wI6Mj8EJOTcf_D52MgGt2ibOi79bAnDEkqrWfiDg4i
+ PmJ5r20ArDaipBCd0LfHaFsSsUpRuLI4yzMnKTSh2gSE7W3YhPqy1B.DLQuzXcybqW78TZxFjbK0
+ egWMCnoOr_XeCyaL7opOkSrqLeJF4AyGucbalDRtTDWbmufyyHjiVlSRazScYYyB2G1qKMrgAd8g
+ DbXSZ48IBaEOd2TaK4EbVo1UhcE5WusAlb8o0Odj8gvGuMyE2kMMbS39DPthXZKk32XLIRD_wxDV
+ od4_XvzdOJox5dwWU5QEFDTK4cOKtYD8wxA5f29EvzACj1ZEA3hhAfiBUkF09e25Tcw9BBAuLLrk
+ 8.q8dlcZnVk00GYYnZAz1iEFoWgeroXPYkg0V4EFfeUA_EI3NcGyPuwizUj_18H.5gcULS5XT9qF
+ h4l8dx_7ilZuTEREd_uT_0gj3UHezok9QSvzsXN.6Tat7x4yB2Kvb8ZEM4qpecXP_.aRI_ISAzOe
+ wzaUssRlQKRaf_Dcdtcpb.ZDnkJCk1ZMHEJIRnLkQYoQ_r3rkS5GiUw2B0ssqoA._Gtb.sBJRxOc
+ LaiHJABYVEPLpH86weSPDjVDQH4U5SCJaCuwWsWpdikFqKJaNu1RtWymhFd6nYsmW8njBPwx4qa4
+ lL5YJdf0tFTrD6.uCrRBeE7A.wRdR_AH4murjM1J2kWr1ulbUvCUYKWKSOGH7emsv9XU4MZ2S5e6
+ w77OHrwNNu595Tv7xdXsqi3599PkI3ok9NNROwm.tBsW_FgiCVALzx0MRPiwAIxyLB3gYyy28hSB
+ 5XcV_eSojMSIHxOZ3VZG8j3WWZZDGshCETXvoHeRUJGzs51jMiMCz6PG7qsYlopQUEvHjPa7Ye0i
+ iTk6l77IEfi7Nhrg7Wx9_kY8zrEiYVHsM1vguSSnzqROfJQeqIEdX5SrsBcbl8E4A4FFUhatROfC
+ _KPEym0xm_bP5O7lq97xmjhG7OShgFbih8H2O9Vr_Y_HkBL2j73FABT6Q7MhLvCGXMuReBa283hJ
+ OJcNoQK5orbM9o1xnh_0Sw_MR.aFAnIo8wNygcldnrDspNN0XKnwdJT90h_sebVjrrF2Torp4TMf
+ vvR.SIPwgYRUjSoo8M0lsIWzCKacFfRPKy5cqChLghDrJ3gfdYuVq4VS8.1zGuef1kA4e6Llfr06
+ XDo2mR.V55u_nPNPXqzKtWGminc90xIGFXxBB64Mq8UTNZ661v4LNR8FFF4rBkZ6X6QzlIW5rBs7
+ ETiDqEhd0FqrEHV8GvsEf12mp6XFidBl0GULIYJfHB79dx8QPAMvRuZ9_m2MHtNTUDVLXHe64PWU
+ 7.xVd78g60IeBe8vfgTnZFLobpduS9YJkvDjr9IGRl_P5dfsKML5QGmMPUVsCRCYKe.Ak8cBJare
+ 1fptw.WDCEeSdkb0x6ke9HhAMqSVA_uUT5Rp2VsrzSV2rhSOYiIou59iVimpTAQHV2J1BOSpDUem
+ 1XrcM6kwcRHKcOnfCTouEDmwwLSrpJ5k7CeC6iJzl3xewmoiiy7AZhyUmCrsGNh6of9kI9VQ7f1d
+ GmgLkpS5dkZyGnkZsFY9ieka_LG7iN8ENxqlmt9JD.A589ZfV0xnRnUIm8Ifcy4mtruHSxIqIup1
+ S_hlNEAR5Un6.qp3YzBfc4g8ZGuVaAewA3ZY.dFaQwxek_zGGpgkZZSJI_SUXxH1xEw--
+X-Sonic-MF: <devysdss@yahoo.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic303.consmr.mail.ne1.yahoo.com with HTTP; Thu, 5 Jan 2023 12:07:47 +0000
+Date: Thu, 5 Jan 2023 12:07:41 +0000 (UTC)
+From: Devys Queiroz <devysdss@yahoo.com>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+Message-ID: <780251111.7569053.1672920461956@mail.yahoo.com>
+In-Reply-To: <24c1e7d1b5ec4c77bcadc5dad9df29e1@ssinformatica.net>
+References: <24c1e7d1b5ec4c77bcadc5dad9df29e1@ssinformatica.net>
+Subject: =?UTF-8?Q?Fw:_Obriga=C3=A7=C3=B5es_do_m=C3=AAs_de_janeiro_de_2023?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7569052_1671593003.1672920461953"
+X-Mailer: WebService/1.1.20982 YMailNorrin
+Content-Length: 11246
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Devys Queiroz de VasconcelosGerente de Recursos HumanosSec.
+    de Administração e FinançasPrefeitura Municipal de Acarape85- 992023370
+    ----- Mensagem encaminhada ----- De: Grupo S&S Para: "devysdss@yahoo.com"
+    Enviado: quinta-feira, 5 de janeiro de 2023 07:59:29 BRTAssunto: Obrigações
+    do mês de janeiro de 2023 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [devysdss[at]yahoo.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Spam-Flag: NO
+
+------=_Part_7569052_1671593003.1672920461953
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Devys Queiroz de VasconcelosGerente de Recursos HumanosSec. de Administra=
+=C3=A7=C3=A3o e Finan=C3=A7asPrefeitura Municipal de Acarape85- 992023370=
+=20
+
+   ----- Mensagem encaminhada ----- De: Grupo S&S <matheus@ssinformatica.ne=
+t>Para: "devysdss@yahoo.com" <devysdss@yahoo.com>Enviado: quinta-feira, 5 d=
+e janeiro de 2023 07:59:29 BRTAssunto: Obriga=C3=A7=C3=B5es do m=C3=AAs de =
+janeiro de 2023
+  =20
+| =20
+| =20
+|  |
+| =20
+|  |
+| =20
+| =20
+|  |
+
+ |
+
+ |
+| =20
+| =20
+|  |
+
+ |
+
+ |
+
+  |
+| =20
+| =20
+| Ver este email no navegador=20
+Voc=C3=AA recebeu esse email por causa da sua rela=C3=A7=C3=A3o com Grupo S=
+&S. Por favor, reconfirme aqui o seu interesse em receber os nossos e-mails=
+, ou, caso n=C3=A3o queira mais receb=C3=AA-los, remova a sua inscri=C3=A7=
+=C3=A3o aqui. |
+
+ |
+
+=20
+| =20
+| Essa mensagem foi enviada para devysdss@yahoo.com por matheus@ssinformati=
+ca.net=20
+Rua Dr. Jos=C3=A9 Vitor, 108, Fortaleza, Cear=C3=A1 60040-630, Brazil=20
+=20
+ Remover Inscri=C3=A7=C3=A3o | Ver inscri=C3=A7=C3=A3o=20
+ |
+|  |
+
+ |
+
+ |
+
+ |
+
+ |
+
+   =20
+------=_Part_7569052_1671593003.1672920461953
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div class=3D"ydpa6abc16ayahoo-style-wrap" style=
+=3D"font-family:times new roman, new york, times, serif;font-size:16px;"><d=
+iv><div><br></div><div><br></div><div class=3D"ydpa6abc16asignature"><div s=
+tyle=3D"font-family:Helvetica, Arial, sans-serif;font-size:16px;"><div dir=
+=3D"ltr">Devys Queiroz de Vasconcelos</div><div dir=3D"ltr">Gerente de Recu=
+rsos Humanos</div><div dir=3D"ltr">Sec. de Administra=C3=A7=C3=A3o e Finan=
+=C3=A7as</div><div dir=3D"ltr">Prefeitura Municipal de Acarape</div><div di=
+r=3D"ltr">85- 992023370</div></div></div></div>
+        <div><br></div><div><br></div>
+       =20
+        </div><div id=3D"ydp7e362cabyahoo_quoted_3472445106" class=3D"ydp7e=
+362cabyahoo_quoted">
+            <div style=3D"font-family:'Helvetica Neue', Helvetica, Arial, s=
+ans-serif;font-size:13px;color:#26282a;">
+                <div>----- Mensagem encaminhada -----</div>
+                <div><b>De:</b> Grupo S&amp;S &lt;matheus@ssinformatica.net=
+&gt;</div><div><b>Para:</b> "devysdss@yahoo.com" &lt;devysdss@yahoo.com&gt;=
+</div><div><b>Enviado:</b> quinta-feira, 5 de janeiro de 2023 07:59:29 BRT<=
+/div><div><b>Assunto:</b> Obriga=C3=A7=C3=B5es do m=C3=AAs de janeiro de 20=
+23</div><div><br></div>
+                <div><div id=3D"ydp7e362cabyiv8552050490">
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+<div><img src=3D"https://clt1074989.benchmarkurl.com/c/o?e=3D159444F&amp;c=
+=3D10672D&amp;l=3D87540540&amp;email=3D0NEIPzlB5rs%2Fx4C14HJfgAif8GG0Zxj9&a=
+mp;relid=3DAFA20B7" alt=3D"" border=3D"0" style=3D"display: none; width: 1p=
+x; max-width: 1px;" data-inlineimagemanipulating=3D"true">   =20
+   =20
+<table style=3D"background-color:rgb(255, 255, 255);" width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff"><tbody><tr><=
+td width=3D"100%" valign=3D"top" align=3D"center">   =20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td styl=
+e=3D"border-collapse:separate;">    =20
+<table style=3D"max-width: 600px;" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" align=3D"center" class=3D"ydp7e362cabyiv8552050490bmeHolder ydp7e3=
+62cabyiv8552050490bmeMainColumn"> <tbody><tr id=3D"ydp7e362cabyiv8552050490=
+section_1" class=3D"ydp7e362cabyiv8552050490flexible-section"><td style=3D"=
+background-color:rgb(255, 255, 255);color:rgb(102, 102, 102);" width=3D"100=
+%" valign=3D"top" bgcolor=3D"#ffffff" align=3D"center" class=3D"ydp7e362cab=
+yiv8552050490blk_container ydp7e362cabyiv8552050490bmeHolder"></td></tr> <t=
+r><td style=3D"border-collapse: separate; border-color: rgb(102, 102, 102);=
+ border-radius: 5px;" width=3D"100%" valign=3D"top" align=3D"center" class=
+=3D"ydp7e362cabyiv8552050490bmeHolder">    =20
+<table style=3D"border-radius: 5px; border-collapse: separate;" width=3D"10=
+0%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center"> <tbo=
+dy><tr id=3D"ydp7e362cabyiv8552050490section_2" class=3D"ydp7e362cabyiv8552=
+050490flexible-section"><td style=3D"background-color:rgb(255, 255, 255);" =
+width=3D"100%" valign=3D"top" bgcolor=3D"#ffffff" align=3D"center" class=3D=
+"ydp7e362cabyiv8552050490blk_container ydp7e362cabyiv8552050490bmeHolder">
+</td></tr> <tr id=3D"ydp7e362cabyiv8552050490section_3" class=3D"ydp7e362ca=
+byiv8552050490flexible-section"><td style=3D"background-color:rgb(255, 255,=
+ 255);color:rgb(54, 56, 56);" width=3D"100%" valign=3D"top" bgcolor=3D"#fff=
+fff" align=3D"center" class=3D"ydp7e362cabyiv8552050490blk_container ydp7e3=
+62cabyiv8552050490bmeHolder ydp7e362cabyiv8552050490bmeBody">
+<div id=3D"ydp7e362cabyiv8552050490dv_7" class=3D"ydp7e362cabyiv8552050490b=
+lk_wrapper">   =20
+<table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" class=
+=3D"ydp7e362cabyiv8552050490blk"><tbody><tr><td>   =20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbo=
+dy><tr><td style=3D"border-collapse:collapse;padding-left:20px;padding-righ=
+t:20px;padding-top:20px;padding-bottom:20px;" align=3D"center" class=3D"ydp=
+7e362cabyiv8552050490bmeImage"><img src=3D"https://images.benchmarkemail.co=
+m/client1074989/image13369978.jpg" style=3D"max-width: 640px; display: bloc=
+k; border-radius: 0px; width: 560px;" alt=3D"" border=3D"0" class=3D"ydp7e3=
+62cabyiv8552050490mobile-img-large" data-inlineimagemanipulating=3D"true"><=
+/td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table></div>
+</td></tr> <tr id=3D"ydp7e362cabyiv8552050490section_4" class=3D"ydp7e362ca=
+byiv8552050490flexible-section"><td style=3D"background-color:rgb(255, 255,=
+ 255);" width=3D"100%" valign=3D"top" bgcolor=3D"#ffffff" align=3D"center" =
+class=3D"ydp7e362cabyiv8552050490blk_container ydp7e362cabyiv8552050490bmeH=
+older"><div id=3D"ydp7e362cabyiv8552050490dv_4" class=3D"ydp7e362cabyiv8552=
+050490blk_wrapper">   =20
+<table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" class=
+=3D"ydp7e362cabyiv8552050490blk"><tbody><tr><td style=3D"padding:20px 0px;"=
+ class=3D"ydp7e362cabyiv8552050490tblCellMain">   =20
+<table style=3D"border-top-width:0px;border-top-style:none;min-width:1px;" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" class=3D"yd=
+p7e362cabyiv8552050490tblLine"><tbody><tr><td><span></span></td></tr></tbod=
+y>   =20
+</table></td></tr></tbody>   =20
+</table></div>
+</td></tr> </tbody>   =20
+</table> </td></tr> <tr id=3D"ydp7e362cabyiv8552050490section_5" class=3D"y=
+dp7e362cabyiv8552050490flexible-section"><td style=3D"background-color:rgb(=
+255, 255, 255);color:rgb(102, 102, 102);" width=3D"100%" valign=3D"top" bgc=
+olor=3D"#ffffff" align=3D"center" class=3D"ydp7e362cabyiv8552050490blk_cont=
+ainer ydp7e362cabyiv8552050490bmeHolder"><div id=3D"ydp7e362cabyiv855205049=
+0dv_5" class=3D"ydp7e362cabyiv8552050490blk_wrapper">   =20
+<table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" class=
+=3D"ydp7e362cabyiv8552050490blk"><tbody><tr><td style=3D"padding:20px;" val=
+ign=3D"top" align=3D"left" class=3D"ydp7e362cabyiv8552050490tblCell">   =20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbo=
+dy><tr><td style=3D"text-align:left;" align=3D"left"><span style=3D"font-fa=
+mily:Arial, Helvetica, sans-serif;font-weight:normal;font-size:11px;line-he=
+ight:140%;"><a style=3D"color:#16a7e0;" href=3D"https://clt1074989.benchmar=
+kurl.com/c/v?e=3D159444F&amp;c=3D10672D&amp;t=3D0&amp;l=3D87540540&amp;emai=
+l=3D0NEIPzlB5rs%2Fx4C14HJfgAif8GG0Zxj9" target=3D"_blank" rel=3D"noreferrer=
+ noopener">Ver este email no navegador</a>
+   =20
+<br>Voc=C3=AA recebeu esse email por causa da sua rela=C3=A7=C3=A3o com Gru=
+po S&amp;S. Por favor, <a style=3D"color:#16a7e0;" href=3D"https://clt10749=
+89.benchmarkurl.com/c/opt?e=3D159444F&amp;c=3D10672D&amp;t=3D0&amp;l=3D8754=
+0540&amp;email=3D0NEIPzlB5rs%2Fx4C14HJfgAif8GG0Zxj9" target=3D"_blank" rel=
+=3D"noreferrer noopener">reconfirme aqui</a> o seu interesse em receber os =
+nossos e-mails,  ou, caso n=C3=A3o queira mais receb=C3=AA-los, <a style=3D=
+"color:#16a7e0;" href=3D"https://clt1074989.benchmarkurl.com/c/su?e=3D15944=
+4F&amp;c=3D10672D&amp;t=3D0&amp;l=3D87540540&amp;email=3D0NEIPzlB5rs%2Fx4C1=
+4HJfgAif8GG0Zxj9" target=3D"_blank" rel=3D"noreferrer noopener">remova a su=
+a inscri=C3=A7=C3=A3o aqui</a>.
+</span></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table></div><div id=3D"ydp7e362cabyiv8552050490dv_6" class=3D"ydp7e362cab=
+yiv8552050490blk_wrapper">   =20
+<table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" class=
+=3D"ydp7e362cabyiv8552050490blk"><tbody><tr><td style=3D"padding:20px;" val=
+ign=3D"top" align=3D"left" class=3D"ydp7e362cabyiv8552050490tblCell">   =20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbo=
+dy><tr><td style=3D"text-align:left;" align=3D"left"><span id=3D"ydp7e362ca=
+byiv8552050490spnFooterText" style=3D"font-family:Arial, Helvetica, sans-se=
+rif;font-weight:normal;font-size:11px;line-height:140%;">Essa mensagem foi =
+enviada para devysdss@yahoo.com por matheus@ssinformatica.net   =20
+<br>Rua Dr. Jos=C3=A9 Vitor, 108, Fortaleza, Cear=C3=A1  60040-630, Brazil<=
+/span>   =20
+<br>   =20
+<br><span style=3D"font-family:Arial, Helvetica, sans-serif;font-weight:nor=
+mal;font-size:11px;line-height:140%;"><span><img src=3D"https://ui.benchmar=
+kemail.com/images/verified-pt.png" alt=3D"Remover Inscri=C3=A7=C3=A3o de to=
+das as listas de envio" title=3D"Remover Inscri=C3=A7=C3=A3o de todas as li=
+stas de envio" border=3D"0" data-inlineimagemanipulating=3D"true" data-id=
+=3D"1672920453286"></span> <a href=3D"https://clt1074989.benchmarkurl.com/c=
+/su?e=3D159444F&amp;c=3D10672D&amp;l=3D87540540&amp;email=3D0NEIPzlB5rs%2Fx=
+4C14HJfgAif8GG0Zxj9&amp;relid=3DAFA20B7" style=3D"color:inherit;text-decora=
+tion:underline;" class=3D"ydp7e362cabyiv8552050490bmefootertext" target=3D"=
+_blank" rel=3D"noreferrer noopener">Remover Inscri=C3=A7=C3=A3o</a>   | <a =
+href=3D"https://clt1074989.benchmarkurl.com/c/s?e=3D159444F&amp;c=3D10672D&=
+amp;l=3D87540540&amp;email=3D0NEIPzlB5rs%2Fx4C14HJfgAif8GG0Zxj9&amp;relid=
+=3DAFA20B7" style=3D"color:inherit;text-decoration:underline;" class=3D"ydp=
+7e362cabyiv8552050490bmefootertext" target=3D"_blank" rel=3D"noreferrer noo=
+pener">Ver inscri=C3=A7=C3=A3o</a>     =20
+<br></span></td></tr><tr><td style=3D"text-align:left;padding-top:20px;" al=
+ign=3D"left"><a href=3D"https://www.benchmarkemail.com?p=3D500289" target=
+=3D"_blank" rel=3D"noreferrer noopener"><img src=3D"https://www.benchmarkem=
+ail.com/images/pt/web4/misc/emailfooter/opt11.png" style=3D"max-width:116px=
+;" border=3D"0" data-inlineimagemanipulating=3D"true" data-id=3D"1672920453=
+286"></a></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table></div></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table>   =20
+</div>   =20
+
+
+</div></div>
+            </div>
+        </div></body></html>
+------=_Part_7569052_1671593003.1672920461953--

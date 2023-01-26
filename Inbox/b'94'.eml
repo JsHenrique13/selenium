@@ -1,0 +1,354 @@
+Return-Path: <aline.sousa@economia.gov.br>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id pZu2GNnyGGKZVgAAgqjM2g
+	(envelope-from <aline.sousa@economia.gov.br>)
+	for <admrh@acarape.ce.gov.br>; Fri, 25 Feb 2022 12:16:41 -0300
+Return-path: <aline.sousa@economia.gov.br>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Fri, 25 Feb 2022 12:16:41 -0300
+Received: from dc02-economia-mx01.mlicloud.com ([186.227.197.37]:32651 helo=economia-mx-balancer.mlicloud.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <aline.sousa@economia.gov.br>)
+	id 1nNcKm-0005ey-JS
+	for admrh@acarape.ce.gov.br; Fri, 25 Feb 2022 12:16:41 -0300
+Received: from economia-mx-balancer.mlicloud.com (localhost.localdomain [127.0.0.1])
+	by economia-mx-balancer.mlicloud.com (Postfix) with ESMTP id B270ABD52A7
+	for <admrh@acarape.ce.gov.br>; Fri, 25 Feb 2022 12:15:58 -0300 (-03)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=economia.gov.br;
+	s=default; t=1645802158;
+	bh=XpjabawrkBnBdrUbpyDjDByaSjs3/20xikArPOSdKDs=;
+	h=From:To:Subject:Date:References:In-Reply-To;
+	b=iv/cI8XtNSWMY1jNkdC5WGcAGaFSQLDSkZC6ou6/PPb161nWtFU+MHmuqxE3Vmddv
+	 HBXjLm0XH3J7YDOdZaDqSOJfHUTrc3YPfy8BpTCGs4sDjN+JHMJ/xXmXCcAXeTbXlU
+	 +NGt6k1Ld+eFaHqd6VqJ4gZ76CKCKKkJkoUgW86g=
+X-HSC-Mail_Inspector-IP: 104.47.23.40
+X-HSC-Mail_Inspector-From: aline.sousa@economia.gov.br
+Received: from BRA01-CPZ-obe.outbound.protection.outlook.com (mail-cpzbra01lp2040.outbound.protection.outlook.com [104.47.23.40])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by economia-mx-balancer.mlicloud.com (Postfix) with ESMTPS id 0F5B2BD526F
+	for <admrh@acarape.ce.gov.br>; Fri, 25 Feb 2022 12:15:50 -0300 (-03)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=ivb9KfRAyAvjOM0ysJAs+B19lPE6XbsykQu+rj6HahibtDajAoup0fJTfeIBunjnIKs3lqK5d3GgFA/uXBGffmSPkoUuTWLYUG6TlglgG/YlY/0G+s75b+dCmvQoZ3tC2xUI+MLOmo9lcFmCIBT47VZdGssGawhkKWurWPkSZ+4+JzNivOKZHwWzwTwhNphmelsNsAzLFCgWQzrkWjCSo1kRK9mr+I5DqXhsYLZX8wVMy0gEI43QTOeUswJoUbjr65b5H1oaXOd+BBHvsXd5NpMbYObXZCHsHMhVvFi4VKSWp5fVelBodDKqYv/2iog1Z47kOk0zirfmwpwCxx6EKQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=nkN0lUy6NwlWSzzShl4RJDcdj3lK44jUjgYIce6z1zY=;
+ b=cvswchapSBbLmTiRQZO1EfYTAHUx/WOZMgpGvtSvtBKWzSb+Ydpdov4K9xoRUGfK1mpyP3B29rTGN+2oK9tq0J/aG7G6vhe1I/G+84GHbe2XLalOct4CVl2q1tJ8g2ZWyDVgcSjAusW3IzkH1f2Elvw2PNhqn1PttbZp7sTOkeyjOIYGXP/u7IRHUVs9oLW6MZiVRHz5dgIa4T3aUnNNH5XrYr5/YfJa2cTJKrrcNfVW9SefBXflJ9HOtTiT5ozfHDnKNBWQQnup6Oms7bMcJP2Ij5PJuskxV43Bp7iZGwIEOIE+donoDnu/18++4NoL8/Ea72wsKDZ50r7GU8nRaA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=economia.gov.br; dmarc=pass action=none
+ header.from=economia.gov.br; dkim=pass header.d=economia.gov.br; arc=none
+Received: from CPZP284MB0309.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:32::7) by
+ ROAP284MB0912.BRAP284.PROD.OUTLOOK.COM (2603:10d6:10:4b::13) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5017.22; Fri, 25 Feb 2022 15:15:48 +0000
+Received: from CPZP284MB0309.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::d73:20c1:bf49:6e82]) by CPZP284MB0309.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::d73:20c1:bf49:6e82%6]) with mapi id 15.20.5017.026; Fri, 25 Feb 2022
+ 15:15:48 +0000
+From: SRTE/CE - Aline Rocha de Sousa <aline.sousa@economia.gov.br>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+Subject: RE: PASEP
+Thread-Topic: PASEP
+Thread-Index: AQHYKljLwdcvuAyWskC/7RKcu7ZppKykYGCD
+Date: Fri, 25 Feb 2022 15:15:48 +0000
+Message-ID:
+ <CPZP284MB0309FC1207F790DE90B70A5FA33E9@CPZP284MB0309.BRAP284.PROD.OUTLOOK.COM>
+References: <dbffd77330c83a97714979e17d425f25@acarape.ce.gov.br>
+In-Reply-To: <dbffd77330c83a97714979e17d425f25@acarape.ce.gov.br>
+Accept-Language: pt-BR, en-US
+Content-Language: pt-BR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+suggested_attachment_session_id: 01a20f30-e349-6849-ab7f-78ded72de3ae
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=economia.gov.br;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: ba33cd9a-2395-4718-2183-08d9f871b404
+x-ms-traffictypediagnostic: ROAP284MB0912:EE_
+x-ms-exchange-atpmessageproperties: SA|SL
+x-microsoft-antispam-prvs:
+ <ROAP284MB0912362261F4D07B25C01A85A33E9@ROAP284MB0912.BRAP284.PROD.OUTLOOK.COM>
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ cMnOAAIRy4QfbW/gtNrovxg3aHIw2MKwyrhhDJ/D1S1djsC4YfmpRcqQ6xNPLzwHuxc7nMQNyQcyeLFDyiMpXWUcecOEVSfIOxyos/MwJgrRa1Ku+skt2OrYv7mcyz15cRAmWoa6C2jJoP87XgpO5UgN9PUhsoK4FeV8V+iNEJBrVyxTHPvWV2HkQTfoyz9HtInsZE/PXrK/4VsCUaYNUenBGZKQHRAh5t79ldCPTE+scWyFcUszDhH7a1jyuegBJD9nQwgOY4I6t/yqtBuD5pkADxlzlA+IzitTa+2CtpRl+iGqfMgsLyCMTaAirhdGCuit5xn8hCUL2pVuwqHjeGZw3sCNaJcrbbrycXpGeT6CCTXfVqfY7y3kJIqRlvcuGeuLybuMcUBpq3pTEmao+M+2dGuz5nyIRSNkx0joFRTG2sh4/zqQdm0kfHnSkZsiafRm8Jkf5snHF0dF5aO2Dbc38u3Lp5rdqcO+4JNl/jWip04pjfLaVZLxo6giATwMYA2S/O0Y7amvbg8TLQeDPCMrkXkjVgec4mPgdQlF0k9JWqluxXVxq+BpAeB6q+Djg6nvFE5d6IIwAxRL58QkD0GzI38/hI2l/Tds6SfBUXbfbqs1kHmEwSfo7fhIBoeylmqSOum425hxvf6gZgX95KBaHKak6pnWQ8lYuOuyTzOKwi1Q04UOnnj9dKKoc+y5cwTdlo1itPXtf7LrcV1rrMtQ4R0253M80aEqDh+p86KH6D/H8ylTkpk1J9D5y1h6Tv8IaWxSRhvKFWmyWWidlue3Wt/AFQ3rZlOI8ofOg0hecdT/dwiHC1lZF4R3VPz9
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:pt;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CPZP284MB0309.BRAP284.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230001)(4636009)(366004)(8676002)(7116003)(19627405001)(966005)(52536014)(66574015)(76116006)(55016003)(66946007)(66556008)(66446008)(66476007)(64756008)(3480700007)(186003)(26005)(8936002)(5660300002)(166002)(316002)(6506007)(508600001)(7696005)(38100700002)(122000001)(83380400001)(6916009)(38070700005)(71200400001)(86362001)(33656002)(84970400001)(9686003)(2906002);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?8Ls1k5TyvqL93BrdJzU7oCaiulwUgWU6w9K6GKNHwBO7JpuHZsViHeajNN?=
+ =?iso-8859-1?Q?kGBtZ4quXkIw4YFzrV+u4bbCyU0aOwcg/2GDh07nIUdexOaRhAMe4Y/rVT?=
+ =?iso-8859-1?Q?dimSfVicjkNoAcvELODAf4trCg1JpAOB8LiucdssEzgvxi0M4A3b2dI2Kb?=
+ =?iso-8859-1?Q?pU5E9Pir49GykSjC9h9i9MISRwAT1PHCB6fyINCUH9C0PatOLwF50qwa0F?=
+ =?iso-8859-1?Q?srWuW+M9iOVlmTX/vMd7NuLDYkjEjDRrMVZebCB17UajIFAd6TGZWbcMJL?=
+ =?iso-8859-1?Q?RqLP5hIr55fhTukKLCcUe6lxNKeGq3pD4OTP6QWPL7NdcHVL0sU/pUp6of?=
+ =?iso-8859-1?Q?qGVcnN3agIeeSBgev9LWGqGWQiA0e7Xr+EoRHt0MI7w1XvuQ/dZZuGVHT2?=
+ =?iso-8859-1?Q?SKkoSP1pLpyPMKLIDSnAWFqFIpoUFPQJPKClOkAj822ht+dqkvu1ucti7C?=
+ =?iso-8859-1?Q?fhKw/4HqsYWv0EgT2Hesrju3ARBhjypq40Q/tvQshvGkTkTFlIO0QD5SsG?=
+ =?iso-8859-1?Q?pUGwdrLGr8qt5W02yFxeYOQnMnpyx3N0toHMYy4Z6GPwL+h7kDTvNKZqCr?=
+ =?iso-8859-1?Q?gYrVJrI0WWem4BGTUBvgjBSgLMI4TNeIWYoH4s/Z3d5vRJGMCmYNZdBoqe?=
+ =?iso-8859-1?Q?4StscsPe0Px15ujYYYCQJtUUIwNcI1qC+BX4ECdxy3YtQ6mthBANOlgmFE?=
+ =?iso-8859-1?Q?jBGlD0hA+Cl16S1g0T1PJEWNRhFa8opS6Z37cBk35kMNHIJkme0z2fsh2b?=
+ =?iso-8859-1?Q?bO5u/DGjpPfPyV+/RVGC0CxHPWuZR/A9DNe1j1p6LL3Oy+i4IglQOrke0e?=
+ =?iso-8859-1?Q?abHk6bN4OeykKyb6GvlQV1IoAqyEwkN6lPtlYgaOWX9AuJ0UMS1n4nTU3w?=
+ =?iso-8859-1?Q?UE1y18GjAbNHg4kHNkMN/4/WDxq31swQ3xv2a9+rVSnY29QYJ03pD6+n9w?=
+ =?iso-8859-1?Q?P2OSSB6z8YAV67nxoFysPizIg+Q80747UGwyS4Vf36igIeHwdbp3Zz16lD?=
+ =?iso-8859-1?Q?Yu/eekP9KIwbiZNnUd0q74OOKL4NnXZKvoT7fBp5Ja/IqeKwm70leBMxV5?=
+ =?iso-8859-1?Q?ZosKpBDwMJuktny+3dRIdc32kIr7nLDPEYePZWmWfEOeLKcH7RP5viC6iW?=
+ =?iso-8859-1?Q?FTiMdOXA2NqoQStL3kbBeK/DY3kYxMdk14yUpU9TnCWcKoxPCCrey5mmUd?=
+ =?iso-8859-1?Q?LfLajGKv8yz01ylY9mV9zMf/ejbS7+XtmpnXZT0Euu0w9FDVqA/A0WczGk?=
+ =?iso-8859-1?Q?4ykUMbMuqZ5nyNMfuVJMmHiX7L8/uDg9L9y5tcdGjx4qaJ5Pri+kLEAtt5?=
+ =?iso-8859-1?Q?w2xdrkBEsLehjNHA56oOSyWc844ZyIilNeSRL0FBqiys2MKfrVhww8NssA?=
+ =?iso-8859-1?Q?SwFG8EdwxUb7cKzU5rCkt5xsB27aEKeP59jSDphFXoAdzXqstu97S+r67D?=
+ =?iso-8859-1?Q?YGnIclOBj7i2JqIodlEZyGFo+6OsZPIUvAFxUI7K+oowxenMQR4yGv/uQu?=
+ =?iso-8859-1?Q?jKplzBWz1A1wDyWtRmm/aczlaxNl+1A8UCY8ycOEbfZ8XhuEkm5FSE3MWd?=
+ =?iso-8859-1?Q?JUCsZ0IRFpHMeKeAU0CssgVa4oWUVYD9IJiHvcOb3HaLjGff2rptBNwt1e?=
+ =?iso-8859-1?Q?5lfSjLRI95VzGAbg3ZnEd02UCgCUntA6iFjBfuzrhovDH14Wfa2mrg6oh4?=
+ =?iso-8859-1?Q?T+8V1HNYFo3WruJKWpgXl9qDVZe4x5ordnQ8iHlj?=
+Content-Type: multipart/alternative;
+	boundary="_000_CPZP284MB0309FC1207F790DE90B70A5FA33E9CPZP284MB0309BRAP_"
+MIME-Version: 1.0
+X-OriginatorOrg: economia.gov.br
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CPZP284MB0309.BRAP284.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: ba33cd9a-2395-4718-2183-08d9f871b404
+X-MS-Exchange-CrossTenant-originalarrivaltime: 25 Feb 2022 15:15:48.4017
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 3ec92969-5a51-4f18-8ac9-ef98fbafa978
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: Plx4WAXOC5jw+eybeRwedWql7v548Weeq+5TEgIuiyJnAnldZa3bsrWyTTscPJ6rwAGAe/yk+cuGwDaeQOLSTPUvs97eSLn0Xu1AbprD6Pk=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: ROAP284MB0912
+X-HSC-Mail_Inspector-IP: 104.47.23.40
+X-Relay-Countries: US
+X-HSC-Mail_Inspector-Point: 6
+X-HSC-Mail_Inspector-ID: 0F5B2BD526F.AB277
+X-Ministerio-da-Economia-HSC_MailInspector: Mensagem OK
+X-Ministerio-da-Economia-HSC_MailInspector-SpamCheck: Nao e SPAM,
+	HSC MailInspector (not cached, Pontuacao=-3.407, requerido 6,
+	autolearn=not spam, BAYES_00 -3.00, HSC_URL_WHITELISTED -0.40,
+	HTML_MESSAGE 0.00, SPF_HELO_NONE 0.00, T_SCC_BODY_TEXT_LINE -0.01,
+	URIBL_BLOCKED 0.00)
+X-Ministerio-da-Economia-HSC_MailInspector-From: aline.sousa@economia.gov.br
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Prezado (a) senhor(a), Para qualquer atendimento de abono
+   salarial, favor responder ao questionário no seguinte link: https://www.gov.br/trabalho-e-previdencia/pt-br/composicao/orgaos-especificos/secretaria-de-trabalho
+    
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+
+--_000_CPZP284MB0309FC1207F790DE90B70A5FA33E9CPZP284MB0309BRAP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Prezado (a) senhor(a),=0D
+
+Para qualquer atendimento de abono salarial, favor responder ao question=E1=
+rio no seguinte link:=0D
+
+https://www.gov.br/trabalho-e-previdencia/pt-br/composicao/orgaos-especific=
+os/secretaria-de-trabalho=0D
+
+Clique na op=E7=E3o: " formul=E1rio de solicita=E7=F5es para a Secretaria d=
+o Trabalho".=0D
+
+Ap=F3s o envio do formul=E1rio acima, aguardar retorno do agente por e-mail=
+.=0D
+
+
+
+
+[Bras=E3o da Rep=FAblica]   Aline Rocha de Sousa=0D
+Agente Administrativo=0D
+aline.sousa@economia.gov.br=0D
+SPT/SRT/CE=0D
+Minist=E9rio da Economia=0D
+gov.br/economia<https://gov.br/economia>=0D
+
+________________________________=0D
+De: admrh@acarape.ce.gov.br <admrh@acarape.ce.gov.br>=0D
+Enviado: sexta-feira, 25 de fevereiro de 2022 12:02=0D
+Para: SRTE/CE - Aline Rocha de Sousa <aline.sousa@economia.gov.br>=0D
+Cc: Finan=E7as Acarape <admfinancas@acarape.ce.gov.br>=0D
+Assunto: PASEP=0D
+
+
+Bom dia,=0D
+
+Sou servidor do RH da cidade de Acarape_CE e venho solicitar informa=E7=F5e=
+s=0D
+de uma servidora sobre o PASEP dela, a mesma j=E1 deu v=E1rias viagens ao=
+=0D
+banco e n=E3o consegue saber nem se tem direito... Tamb=E9m desejo saber se=
+=0D
+h=E1 algum canal de consulta para que as prefeituras possam verificar?=0D
+
+190.37775.57.0 ANA RITA LIMA DA SILVA, cpf:723.900.343-49=0D
+
+Desde j=E1 agrade=E7o e desejo um bom final de semana!=0D
+
+
+--=0D
+Secretaria de Administra=E7=E3o e Finan=E7as=0D
+Setor: Recursos Humanos=0D
+Devys Queiroz de Vasconcelos=0D
+(85) 992023370=0D
+John Lennon Duarte da Silva=0D
+(85) 982115157=0D
+
+--_000_CPZP284MB0309FC1207F790DE90B70A5FA33E9CPZP284MB0309BRAP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>=0D
+<head>=0D
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">=0D
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>=0D
+</head>=0D
+<body dir=3D"ltr">=0D
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">=0D
+<p style=3D"margin-right:0cm;margin-left:0cm;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;margin:0cm;margin-bottom:.0001pt">=0D
+P<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif=
+">rezado (a) senhor(a),<o:p>&nbsp;</o:p></span></p>=0D
+<p style=3D"margin-right:0cm;margin-left:0cm;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;margin:0cm;margin-bottom:.0001pt">=0D
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif"=
+>Para qualquer atendimento de abono salarial, favor responder ao question=
+=E1rio no seguinte link:<o:p>&nbsp;</o:p></span></p>=0D
+<p style=3D"margin-right:0cm;margin-left:0cm;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;margin:0cm;margin-bottom:.0001pt">=0D
+<a href=3D"https://www.gov.br/trabalho-e-previdencia/pt-br/composicao/orgao=
+s-especificos/secretaria-de-trabalho">https://www.gov.br/trabalho-e-previde=
+ncia/pt-br/composicao/orgaos-especificos/secretaria-de-trabalho</a><o:p>&nb=
+sp;</o:p></p>=0D
+<p style=3D"margin-right:0cm;margin-left:0cm;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;margin:0cm;margin-bottom:.0001pt">=0D
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif"=
+>Clique na op=E7=E3o: &quot; formul=E1rio de solicita=E7=F5es para a Secret=
+aria do Trabalho&quot;.<o:p>&nbsp;</o:p></span></p>=0D
+<p style=3D"margin-right:0cm;margin-left:0cm;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;margin:0cm;margin-bottom:.0001pt">=0D
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif"=
+>Ap=F3s o envio do formul=E1rio acima, aguardar retorno do agente por e-mai=
+l.<br style=3D"mso-special-character:line-break">=0D
+<br style=3D"mso-special-character:line-break">=0D
+</span><o:p>&nbsp;</o:p></p>=0D
+<br>=0D
+</div>=0D
+<div>=0D
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">=0D
+<br>=0D
+</div>=0D
+<div id=3D"Signature">=0D
+<div>=0D
+<div></div>=0D
+<div></div>=0D
+<div style=3D"font-family:Tahoma; font-size:13px"><font face=3D"Times New R=
+oman"></font></div>=0D
+<table style=3D"table-layout:fixed; background-color:#FFFFFF" width=3D"650"=
+>=0D
+<tbody>=0D
+<tr>=0D
+<td width=3D""><img alt=3D"Bras=E3o da Rep=FAblica" style=3D"display:block;=
+ width:210px" src=3D"https://www.gov.br/economia/pt-br/centrais-de-conteudo=
+/imagens/assinaturaf.png">=0D
+</td>=0D
+<td width=3D"420"><span style=3D"left:225px; top:30px; font-size:16px; colo=
+r:#3C3C3B; font-weight:900; font-family:Raleway">Aline Rocha de Sousa</span=
+><br>=0D
+<span style=3D"left:225px; top:57px; color:#3C3C3B; font-family:Raleway; fo=
+nt-weight:500">Agente Administrativo</span><br>=0D
+<span style=3D"left:225px; top:76px; font-family:Raleway; color:#3C3C3B; fo=
+nt-weight:500">aline.sousa@economia.gov.br</span><br>=0D
+<span style=3D"left:225px; top:117px; font-family:Raleway; color:#3C3C3B; f=
+ont-weight:500">SPT/SRT/CE</span><br>=0D
+<span style=3D"left:225px; top:136px; font-family:Raleway; color:#3C3C3B; f=
+ont-weight:500">Minist=E9rio da Economia</span><br>=0D
+<span><a href=3D"https://gov.br/economia" target=3D"blank" style=3D"left:22=
+5px; top:156px; font-size:14px; font-family:Raleway; color:#3C3C3B; font-we=
+ight:700; text-decoration:none!important">gov.br/economia</a></span>=0D
+</td>=0D
+</tr>=0D
+</tbody>=0D
+</table>=0D
+<div style=3D"font-family:Tahoma; font-size:13px"><font face=3D"Times New R=
+oman"><br>=0D
+</font></div>=0D
+</div>=0D
+</div>=0D
+</div>=0D
+<div id=3D"appendonsend"></div>=0D
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">=0D
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>De:</b> admrh@acarape.ce.gov.br=
+ &lt;admrh@acarape.ce.gov.br&gt;<br>=0D
+<b>Enviado:</b> sexta-feira, 25 de fevereiro de 2022 12:02<br>=0D
+<b>Para:</b> SRTE/CE - Aline Rocha de Sousa &lt;aline.sousa@economia.gov.br=
+&gt;<br>=0D
+<b>Cc:</b> Finan=E7as Acarape &lt;admfinancas@acarape.ce.gov.br&gt;<br>=0D
+<b>Assunto:</b> PASEP</font>=0D
+<div>&nbsp;</div>=0D
+</div>=0D
+<div class=3D"BodyFragment"><font size=3D"2"><span style=3D"font-size:11pt;=
+">=0D
+<div class=3D"PlainText"><br>=0D
+Bom dia,<br>=0D
+<br>=0D
+Sou servidor do RH da cidade de Acarape_CE e venho solicitar informa=E7=F5e=
+s <br>=0D
+de uma servidora sobre o PASEP dela, a mesma j=E1 deu v=E1rias viagens ao <=
+br>=0D
+banco e n=E3o consegue saber nem se tem direito... Tamb=E9m desejo saber se=
+ <br>=0D
+h=E1 algum canal de consulta para que as prefeituras possam verificar?<br>=
+=0D
+<br>=0D
+190.37775.57.0 ANA RITA LIMA DA SILVA, cpf:723.900.343-49<br>=0D
+<br>=0D
+Desde j=E1 agrade=E7o e desejo um bom final de semana!<br>=0D
+<br>=0D
+<br>=0D
+-- <br>=0D
+Secretaria de Administra=E7=E3o e Finan=E7as<br>=0D
+Setor: Recursos Humanos<br>=0D
+Devys Queiroz de Vasconcelos<br>=0D
+(85) 992023370<br>=0D
+John Lennon Duarte da Silva<br>=0D
+(85) 982115157<br>=0D
+</div>=0D
+</span></font></div>=0D
+</body>=0D
+</html>=0D
+
+--_000_CPZP284MB0309FC1207F790DE90B70A5FA33E9CPZP284MB0309BRAP_--

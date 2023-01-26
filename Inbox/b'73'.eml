@@ -1,0 +1,98 @@
+Return-Path: <marcileideoliveira012@gmail.com>
+Delivered-To: Admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id Vor6JPUB8GGoCgAAgqjM2g
+	(envelope-from <marcileideoliveira012@gmail.com>)
+	for <Admrh@acarape.ce.gov.br>; Tue, 25 Jan 2022 10:58:13 -0300
+Return-path: <marcileideoliveira012@gmail.com>
+Envelope-to: Admrh@acarape.ce.gov.br
+Delivery-date: Tue, 25 Jan 2022 10:58:13 -0300
+Received: from mail-oi1-f176.google.com ([209.85.167.176]:33430)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <marcileideoliveira012@gmail.com>)
+	id 1nCMKr-0000bO-Em
+	for Admrh@acarape.ce.gov.br; Tue, 25 Jan 2022 10:58:13 -0300
+Received: by mail-oi1-f176.google.com with SMTP id x193so31224434oix.0
+        for <Admrh@acarape.ce.gov.br>; Tue, 25 Jan 2022 05:57:53 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=0gDNJ0sQaQySUeysUyCbL6Lv5ZQ0bQZZzY/PQRQSW/o=;
+        b=jdu+tDp9tjaseOP/vdmSG3AWGij2TqhtS9RT/QE9UHgYauL52U2z5hPAvv46EMlqfK
+         L5TVJOaOnrD5/c7Rr+RzzdVlgFSRVQCQBvmaSPGZwCYm7naqXk5M/kGJ94jfHcj5HNgm
+         xeVkiyJ1Tr1sx8IaU3UmI5UvtMHdtIZiExHGcziNqo+3IOGY1oHoxtl87+6D4L83+m45
+         JqMpf2BIx9Y/EnkMrsU3Ls0WzB1nvICwCwu1zQVBg6Yo0NOfref7bh9kyO+3vKvNOyri
+         UJ5UBz9bYa83r9gXJeLkFwzCQVG/frBRhjvHKI8Az0x9jm/unCSlun29bVA1av50xFYY
+         mYgQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=0gDNJ0sQaQySUeysUyCbL6Lv5ZQ0bQZZzY/PQRQSW/o=;
+        b=584vhGE7Nn4GVvvQuvGzlYOIe3fj9DIE7c2WoeQrb8yAcKIE8HlNnQaBJ+P4YdHv2V
+         osQxtthibSxmQGlrrvwvP+kUK7WwKkuueOb0wSEqLom9cLN6pdpoexa2zqRukb5bPJLF
+         WTBR4BResu2Jl4D0UkgZ0CMMWvLQ64cetUoRhqZ4c2fAY40tdSYa/ymi4RX39Z9DF3e2
+         HhpO93K4Biz4pX5om8kVPqX01oNeyt1wqIruQ/AVDnW3MfSYiM/6O8GfQGTusfW42q8y
+         HHQd6gB5hDkzCBgrJi3Kf7KsFBm9rkdcIVizdN27NGuAj2VnAmBZjCrIqng8ZT8qeRUL
+         K74Q==
+X-Gm-Message-State: AOAM531W1mQIP0dCzGfC9FevcAAunKXKtw9NTCuvUGAZfhQ+OX6PWJEx
+	r0NMEiuMgfnwq4qxj/nLK8ihVJWYmKFVo4q0yGqarIG/
+X-Google-Smtp-Source: ABdhPJwWitOgJddhyHrwN3J7eK7qxkVvGyJ5phGe591HNRpeC/VxBFfUm6yAyEGPHi16Osso0RQhdLWeTaJEqcUcJkU=
+X-Received: by 2002:a05:6808:f0d:: with SMTP id m13mr684817oiw.319.1643119051952;
+ Tue, 25 Jan 2022 05:57:31 -0800 (PST)
+MIME-Version: 1.0
+From: Marcileide Oliveira <marcileideoliveira012@gmail.com>
+Date: Tue, 25 Jan 2022 10:56:10 -0300
+Message-ID: <CA+dpVx3hw11JLRKy35G2e_d5eqTut02CQ99jujFC=y_JdoPcTQ@mail.gmail.com>
+Subject: =?UTF-8?Q?Hist=C3=B3rico?=
+To: Admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="0000000000006a546f05d66877d3"
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Bom dia! Emissão do histórico de trabalho. Nome: Marcileide
+    de Oliveira Rodrigues Bom dia! Emissão do histórico de trabalho. Nome:
+   Marcileide de Oliveira Rodrigues 
+ Content analysis details:   (0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [marcileideoliveira012[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [marcileideoliveira012[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+X-Spam-Flag: NO
+
+--0000000000006a546f05d66877d3
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bom dia!
+Emiss=C3=A3o do hist=C3=B3rico de trabalho.
+Nome: Marcileide de Oliveira Rodrigues
+
+--0000000000006a546f05d66877d3
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bom dia!<div dir=3D"auto">Emiss=C3=A3o do hist=C3=B3rico =
+de trabalho.</div><div dir=3D"auto">Nome: Marcileide de Oliveira Rodrigues=
+=C2=A0</div></div>
+
+--0000000000006a546f05d66877d3--

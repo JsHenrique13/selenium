@@ -1,0 +1,101 @@
+Return-Path: <nogueiranatalia388@gmail.com>
+Delivered-To: Admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id MDVjFKX/72FZZgAAgqjM2g
+	(envelope-from <nogueiranatalia388@gmail.com>)
+	for <Admrh@acarape.ce.gov.br>; Tue, 25 Jan 2022 10:48:21 -0300
+Return-path: <nogueiranatalia388@gmail.com>
+Envelope-to: Admrh@acarape.ce.gov.br
+Delivery-date: Tue, 25 Jan 2022 10:48:21 -0300
+Received: from mail-yb1-f170.google.com ([209.85.219.170]:45910)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <nogueiranatalia388@gmail.com>)
+	id 1nCMBI-0006qh-SP
+	for Admrh@acarape.ce.gov.br; Tue, 25 Jan 2022 10:48:21 -0300
+Received: by mail-yb1-f170.google.com with SMTP id h14so61809858ybe.12
+        for <Admrh@acarape.ce.gov.br>; Tue, 25 Jan 2022 05:48:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=VjqEiGm3edbHHzmQ+VUPlpX2kn6oDH0ixojYnrr1MJs=;
+        b=RddWhTcAgcGuHcahfKm4SMN+Nx8xwDxCT0puV22gKiTXbvKEJeLDZGvdGsLG9IiMNi
+         PGZFoUnMleMRqCpyjw3Ptw2g+ueDbeuGbNR2kF5qJbc7R9XYwaeqogGHzJs/w5cWZkbc
+         jIVrbNDcmnpDd1KXDuSTylhGzRN5VjaGAYi1B4awlx7RkxoEXapXozd7tJ4vPdidHrw3
+         dGmHaPsir1MGbAJTpeza1+cW8qZ7G8KpqlUutOgQmv9K9AcQcJHHsGNApnCj9hczc31L
+         ZeK1UiRKnS9ZY/76Pigw0MVVWV5z1+xXHkvmC3/gCt37+IXqqf151jc1ZWwh6Gza6hQU
+         LAww==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=VjqEiGm3edbHHzmQ+VUPlpX2kn6oDH0ixojYnrr1MJs=;
+        b=PdcyPJ/yG2JLM/h/uKWfw7QUVOrAU/so8R3u+CtSzhFBSzxwRrnlkUmQk0Yxhw25Hm
+         hDIOBNPKX+JfV76TvcfFYc93dLmGpZIh/VspZueIYthEdq44Esq+Bo2c8DOJt9+smtjg
+         Y+O5g+Uvi/aj3C3MIa/oS87kRnUnME8rVJ1Q6P8Hme8YMvjhocLrbishTAEHZFbyaNHv
+         dwOLjswoq6HS564NK7iMqg622YF/vccltrQM1O8uM5XjdnLnEbGlmcaQWRTYlKIcIUb7
+         qxG02lvt2Usl6XrHPW/ifiJ1lc1TZp+QxYJpwpsDT3lboOnPeh1waC7f7AZByhTecYqr
+         RdjQ==
+X-Gm-Message-State: AOAM532YTkcoijH90KTWi7VvDZLP8WBE61BT+Pt+1qg1jf5lQ6EEYba1
+	fHxXAHN9EarBLkL+Jo6qyBmOAqxYAzsS0OWk41lDl4qA
+X-Google-Smtp-Source: ABdhPJzRsW5uAc1b2S+kEdaFCfei4AKFOjHKu2yedp50kPFIv9OMbi5bOp8QCMrRssGViq3HH97zQcQjvCsACOjSTNQ=
+X-Received: by 2002:a25:d107:: with SMTP id i7mr28626815ybg.495.1643118459534;
+ Tue, 25 Jan 2022 05:47:39 -0800 (PST)
+MIME-Version: 1.0
+From: =?UTF-8?Q?Nat=C3=A1lia_Nogueira?= <nogueiranatalia388@gmail.com>
+Date: Tue, 25 Jan 2022 10:43:45 -0300
+Message-ID: <CACeRzVggGR_PBrHK2hqp5-KNbqPAfKri5+SgW0=Z_0QrqtGhFQ@mail.gmail.com>
+Subject: 
+To: Admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="0000000000001ac94c05d668542f"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Bom dia... Venho por meio deste solicitar o meu Histórico
+    com tempo de serviço. Grata: Natalia Bom dia... Venho por meio deste solicitar
+    o meu Histórico com tempo de serviço. Grata: Natalia 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 KAM_BLANKSUBJECT       Message has a blank Subject
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [nogueiranatalia388[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [nogueiranatalia388[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+X-Spam-Flag: NO
+
+--0000000000001ac94c05d668542f
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bom dia...
+Venho por meio deste solicitar o meu Hist=C3=B3rico com tempo de servi=C3=
+=A7o.
+                                                 Grata: Natalia
+
+--0000000000001ac94c05d668542f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9ImF1dG8iPkJvbSBkaWEuLi48ZGl2IGRpcj0iYXV0byI+VmVuaG8gcG9yIG1laW8g
+ZGVzdGUgc29saWNpdGFyIG8gbWV1IEhpc3TDs3JpY28gY29tIHRlbXBvIGRlIHNlcnZpw6dvLsKg
+PC9kaXY+PGRpdiBkaXI9ImF1dG8iPsKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKg
+IMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgIMKgR3JhdGE6IE5hdGFsaWE8L2Rp
+dj48L2Rpdj4NCg==
+--0000000000001ac94c05d668542f--

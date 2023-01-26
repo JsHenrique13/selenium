@@ -1,0 +1,180 @@
+Return-Path: <draelida.previdenciario@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id YGi7HAeBcWEHOgAAgqjM2g
+	(envelope-from <draelida.previdenciario@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Thu, 21 Oct 2021 12:02:31 -0300
+Return-path: <draelida.previdenciario@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Thu, 21 Oct 2021 12:02:31 -0300
+Received: from mail-ua1-f52.google.com ([209.85.222.52]:34660)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <draelida.previdenciario@gmail.com>)
+	id 1mdZaR-000493-6Z
+	for admrh@acarape.ce.gov.br; Thu, 21 Oct 2021 12:02:31 -0300
+Received: by mail-ua1-f52.google.com with SMTP id h4so1819391uaw.1
+        for <admrh@acarape.ce.gov.br>; Thu, 21 Oct 2021 08:02:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=NhQIL9b3CQND0pnfxH66OELdwCakDcqi9qPBaddxWMI=;
+        b=EoKq1NntYbZz6/aD1t80kqGO0a+rZhKyyj/TQGPm1R6Oi0m4fHCFu4dtbLB4OxajK0
+         4JCPHJqhcrByZds/O4+oF/hL9WNzQotfl8VstwfPFvpSkwqtgfNQNU9XqEct8V/oSFcK
+         8KI/I6s0P47yl52jmJv5Sc7SWW0AIKh42e9JauRU+RI3QVvQWuztHCGMnwfoZnh38NRo
+         9vGrtLC8iTIiNIOzOIVzprGnpH0aP5oq+xPpZ5xBj6YUx7vniMaHfMPE1dVrO48j2+/8
+         WpeRsZEHzLsb4C8NKVHt27uQtOHpKlgZGI9Af7gXS/fXgCDntVlPlCKL7TgliRG2f9Mp
+         IDsg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=NhQIL9b3CQND0pnfxH66OELdwCakDcqi9qPBaddxWMI=;
+        b=lHFlTNvByvXnM+K2qOgwd+eg3D9G9hqtFxFd5AL0sS+LtOgFOvBOKFy0PjjlpoNKbi
+         OqfKOT5eZO23/Nw+DSnidaNWb5Mn3Uf7WD7bt8FM2JS7JZMV0pZ0iXo3Zk7sFPpFDpHz
+         tQfWSvGH7geOUGde9cTA/NceOVqdvReOofJEE+wkwxmv6fpnXGXSN1XMmTI+0BSEpVw4
+         +EavTWtWV2WpkDCj8Zpv+iHs/ntCK+gi89KTGdeASvZ7n/ilt5jb3h0ncicO2/uRU2Um
+         ZbvvGQNz1ZSBl+n2M7iXfHjslY9Q8Hlo/rqh2G5DW3RMm5/HJEfm+WS7I5CQZQtINcrs
+         dV1g==
+X-Gm-Message-State: AOAM531sIUEhsoxjEY6KmYW1KGwhcy5pHIEO8OruOaxPj8irNc/uEX3D
+	C5ShjXekY+5qJT0gp1lC4yt7f/s1u9VwqWu69nq/JvSXV14=
+X-Google-Smtp-Source: ABdhPJx64F6wMJtC29sG6PrE7VigAdnmzu6lOEJiBbUsqPmvdFAaqi3ZtvfDGzJ4mSdcvqXLH7tpISsRjlz3BciXiTY=
+X-Received: by 2002:ab0:3c93:: with SMTP id a19mr7030186uax.93.1634828509471;
+ Thu, 21 Oct 2021 08:01:49 -0700 (PDT)
+MIME-Version: 1.0
+References: <CALSYre+a7VQZ+BVUNW=A4Z_uzZjJN3_xL-5xvrk4w=EHOVzeEA@mail.gmail.com>
+ <CALSYre+Z-yc+megxLfFj3QZyEJYdmTtBVjquLVjnrs9ZPN9Hcg@mail.gmail.com>
+In-Reply-To: <CALSYre+Z-yc+megxLfFj3QZyEJYdmTtBVjquLVjnrs9ZPN9Hcg@mail.gmail.com>
+From: Dra Elida Nogueira <draelida.previdenciario@gmail.com>
+Date: Thu, 21 Oct 2021 12:01:38 -0300
+Message-ID: <CALSYre+e_s0UhfsvQCv0Wi_9ujRC2ZcobaNa7PQiBZSuDpwdPg@mail.gmail.com>
+Subject: Fwd: Servidor Justino Costa da Silva
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="00000000000093662d05cede2cbb"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Forwarded message --------- From: Dra Elida Nogueira Date:
+    Wed, Oct 20, 2021 at 10:09 AM Subject: Re: Servidor Justino Costa da Silva
+    To: Bom dia, Exmo Secretário Municipal de Finanças. 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [draelida.previdenciario[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+--00000000000093662d05cede2cbb
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ---------
+From: Dra Elida Nogueira <draelida.previdenciario@gmail.com>
+Date: Wed, Oct 20, 2021 at 10:09 AM
+Subject: Re: Servidor Justino Costa da Silva
+To: <admfinacas@acarape.ce.gov.br>
+
+
+Bom dia,  Exmo  Secret=C3=A1rio Municipal de Finan=C3=A7as.
+
+Conto  com sua cordialidade no envio da documenta=C3=A7=C3=A3o do nosso Ser=
+vidor
+Municipal
+para que consigamos prosseguir com seu pedido aposentadoria.
+
+
+Atenciosamente,
+
+Dra =C3=89lida Nogueira.
+
+On Tue, Oct 19, 2021 at 2:44 PM Dra Elida Nogueira <
+draelida.previdenciario@gmail.com> wrote:
+
+> Boa Tarde,  Exmo  Secret=C3=A1rio Municipal de Finan=C3=A7as.
+>
+> Estou representando o Sr Justino Costa da Silva, servidor de matr=C3=ADcu=
+la:
+> *0285,* referente  a sua Aposentadoria. Ocorre que preciso de alguns
+> documentos para andamento de sua aposentadoria, ao qual s=C3=A3o:
+> *1 )*Fichas Financeiras do servidor;
+> *2) *Recibos de pagamentos;
+> *3) *Certificado de Tempo de Contribui=C3=A7=C3=A3o;
+> *4) *Declara=C3=A7=C3=A3o dos per=C3=ADodos  como servidor;
+> *5) *Recibos de pagamentos (aux=C3=ADlio doen=C3=A7a);
+> referente a todo per=C3=ADodo como Servidor Efetivo do Munic=C3=ADpio de
+> Acarape/Cear=C3=A1.
+>
+> Conforme relato do meu cliente, est=C3=A1 em benef=C3=ADcio de Aux=C3=ADl=
+io Doen=C3=A7a, desde
+> de outubro de 2017.
+>
+>
+>
+> *Atenciosamente,*
+> *__________________*
+> *Dra =C3=89lida Nogueira*
+> *55 85 996064393*
+>
+
+--00000000000093662d05cede2cbb
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=
+=3D"gmail_attr">---------- Forwarded message ---------<br>From: <strong cla=
+ss=3D"gmail_sendername" dir=3D"auto">Dra Elida Nogueira</strong> <span dir=
+=3D"auto">&lt;<a href=3D"mailto:draelida.previdenciario@gmail.com">draelida=
+.previdenciario@gmail.com</a>&gt;</span><br>Date: Wed, Oct 20, 2021 at 10:0=
+9 AM<br>Subject: Re: Servidor Justino Costa da Silva<br>To:  &lt;<a href=3D=
+"mailto:admfinacas@acarape.ce.gov.br">admfinacas@acarape.ce.gov.br</a>&gt;<=
+br></div><br><br><div dir=3D"ltr">Bom dia,=C2=A0
+
+Exmo =C2=A0Secret=C3=A1rio Municipal de Finan=C3=A7as.<div><br></div><div>C=
+onto=C2=A0 com sua cordialidade no envio da documenta=C3=A7=C3=A3o do nosso=
+ Servidor Municipal</div><div>para que consigamos prosseguir com seu pedido=
+ aposentadoria.</div><div><br></div><div><br></div><div><font color=3D"#000=
+0ff">Atenciosamente,</font></div><div><font color=3D"#0000ff"><br></font></=
+div><div><font color=3D"#0000ff">Dra =C3=89lida Nogueira.</font></div></div=
+><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Tu=
+e, Oct 19, 2021 at 2:44 PM Dra Elida Nogueira &lt;<a href=3D"mailto:draelid=
+a.previdenciario@gmail.com" target=3D"_blank">draelida.previdenciario@gmail=
+.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"mar=
+gin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1=
+ex"><div dir=3D"ltr">Boa Tarde,=C2=A0
+Exmo =C2=A0Secret=C3=A1rio Municipal de Finan=C3=A7as.<div><br></div><div>E=
+stou representando o Sr Justino Costa da Silva, servidor de matr=C3=ADcula:=
+ <b><font color=3D"#0000ff">0285,</font></b> referente=C2=A0 a sua Aposenta=
+doria. Ocorre que preciso de alguns documentos para andamento de sua aposen=
+tadoria, ao qual s=C3=A3o:</div><div><b>1 )</b>Fichas Financeiras do servid=
+or;</div><div><b>2)=C2=A0</b>Recibos de pagamentos;</div><div><b>3)=C2=A0</=
+b>Certificado de Tempo de Contribui=C3=A7=C3=A3o;</div><div><b>4)=C2=A0</b>=
+Declara=C3=A7=C3=A3o dos per=C3=ADodos=C2=A0 como servidor;</div><div><b>5)=
+=C2=A0</b>Recibos de pagamentos (aux=C3=ADlio doen=C3=A7a);</div><div>refer=
+ente a todo per=C3=ADodo como Servidor Efetivo do Munic=C3=ADpio de Acarape=
+/Cear=C3=A1.</div><div><br></div><div>Conforme relato do meu cliente, est=
+=C3=A1 em benef=C3=ADcio de Aux=C3=ADlio Doen=C3=A7a, desde de outubro de 2=
+017.</div><div><br></div><div><br></div><div><br></div><div><font color=3D"=
+#3d85c6"><b>Atenciosamente,</b></font></div><div><font color=3D"#3d85c6"><b=
+>__________________</b></font></div><div><font color=3D"#3d85c6"><b>Dra =C3=
+=89lida Nogueira</b></font></div><div><font color=3D"#3d85c6"><b>55 85 9960=
+64393</b></font></div></div>
+</blockquote></div>
+</div></div>
+
+--00000000000093662d05cede2cbb--

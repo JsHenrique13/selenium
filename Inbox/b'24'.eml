@@ -1,0 +1,232 @@
+Return-Path: <xnassessoria@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id AGvMHYcBfGEFFAAAgqjM2g
+	(envelope-from <xnassessoria@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Fri, 29 Oct 2021 11:13:27 -0300
+Return-path: <xnassessoria@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Fri, 29 Oct 2021 11:13:27 -0300
+Received: from mail-ed1-f53.google.com ([209.85.208.53]:45601)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <xnassessoria@gmail.com>)
+	id 1mgSdL-0001ZB-Cj
+	for admrh@acarape.ce.gov.br; Fri, 29 Oct 2021 11:13:27 -0300
+Received: by mail-ed1-f53.google.com with SMTP id m17so37904509edc.12
+        for <admrh@acarape.ce.gov.br>; Fri, 29 Oct 2021 07:13:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=VGAijFROGfLE9IdoGNvdnniyT8NQs16S1n7J5YAt75c=;
+        b=E+p0EJNJjxWu7L/6+kHvAh8VpK8yCO7H58ZP4EtLnQ3KAH2w6JCUfKwkG5hMQsjQOq
+         F4DZt27p5YyODdqNTrbgmmB1deXWtXgPMxCfoZvExG/2CFwpXh8xpr/qsjj4mMysrkjM
+         nTfx+3PwaCm7M9j3TIQBdI1UmIZL3R1smkdtBSl1uzluLukkZpyvZdUro7dykBEKUjjS
+         NguvgM1ofKdEz7i1r1VyinG9tMWgQYKOaJtJierb5mi6eEt30X+U21p4ze7eBcFGEHRF
+         m5mLIk5rMzRb/aQ2mNj5D16OmhOG0Iu4x18/BO9WfCxfdb3DAJZ481OHbeeDDU/N5JG3
+         m8dg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=VGAijFROGfLE9IdoGNvdnniyT8NQs16S1n7J5YAt75c=;
+        b=esLQs1ii7F/x9obK7zUx5ywYQBPIGoFgprMxkZk6xd01lqr0hDh64aI9akd9f8rEcN
+         L+zVGL7UqlZ/2jUg2iWBxdbilKIK6iNsKRr5aMz5v7T89b1qOoHSPukWOMCxsry1rffx
+         mTBr2rNmlPnfuTb+TEqfLErEofRyTtuNVlXSTcREd6KhBYqhKRwhl5Vlqu8x+0zCuGoy
+         Oy48gRePCS9wCZWMEh/xWL16x96WQVas7w3zImirV3e0BsC29FoTKRnMuAggOS9fdGWb
+         m4PD52Z9SBXjPI8uWGGuBEFL7sLIi3uTI2wNjCbBmDdaOjEKO7uh34IqMyt4qoaT5Fcu
+         hzBg==
+X-Gm-Message-State: AOAM531VUJFze3iX8MmaxCaIUWRGup+CNhb6K2dv8ylhb2VKnjljDpew
+	xhqwiah3W7gJACYqRjuNzfby1a7ZsuiA9lMce0kbYDqI
+X-Google-Smtp-Source: ABdhPJyReLYG9BZsKX1K3697b+TYvcsUzTqzHSO8vz0SOSUuYF3kvx5i5LXwhTtYEzGhXey4Zip0gNZmQdctjs6CH1o=
+X-Received: by 2002:a05:6402:51d0:: with SMTP id r16mr15287857edd.353.1635516760919;
+ Fri, 29 Oct 2021 07:12:40 -0700 (PDT)
+MIME-Version: 1.0
+References: <CP4P284MB0819CECE8D0D1E6DF055D3CFE1A29@CP4P284MB0819.BRAP284.PROD.OUTLOOK.COM>
+ <CP4P284MB081916BD1CA3736C0800F376E1879@CP4P284MB0819.BRAP284.PROD.OUTLOOK.COM>
+ <a2dcff0a2f4192bd47d41a52bd2e6562@acarape.ce.gov.br>
+In-Reply-To: <a2dcff0a2f4192bd47d41a52bd2e6562@acarape.ce.gov.br>
+From: xn assessoria <xnassessoria@gmail.com>
+Date: Fri, 29 Oct 2021 11:12:28 -0300
+Message-ID: <CAD3Q_B1g0NxZVeFovdC0hV70U878Ntd3Aw=z-PcjabffBcV40g@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_ENC=3A_Oficio_para_conta_aberta_automaticamente_=2D_?=
+	=?UTF-8?Q?Munic=C3=ADpio_de_Acarape?=
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="0000000000008f161c05cf7e6ba5"
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Recebido. Em sex., 29 de out. de 2021 às 10:59, escreveu:
+    > > > -------- Mensagem original -------- > Assunto: ENC: Oficio para conta
+    aberta automaticamente - Município de > Acarape > Data: 2021-10-29 10:33
+    > De: A4367CE - AG Abolição/CE > Para: "admrh@ [...] 
+ Content analysis details:   (0.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [xnassessoria[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  1.0 FREEMAIL_REPLY         From and body contain different freemails
+X-Spam-Flag: NO
+
+--0000000000008f161c05cf7e6ba5
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Recebido.
+
+Em sex., 29 de out. de 2021 =C3=A0s 10:59, <admrh@acarape.ce.gov.br> escrev=
+eu:
+
+>
+>
+> -------- Mensagem original --------
+> Assunto: ENC: Oficio para conta aberta automaticamente - Munic=C3=ADpio d=
+e
+> Acarape
+> Data: 2021-10-29 10:33
+> De: A4367CE - AG Aboli=C3=A7=C3=A3o/CE <ag4367@caixa.gov.br>
+> Para: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+>
+> E-mail classificado como #PUBLICO
+>
+> =C3=80
+>
+> Prefeitura Municipal de Acarape
+>
+> Solicitamos envio de of=C3=ADcio (em papel timbrado), solicitando abertur=
+a
+> de conta corrente aberta automaticamente para recebimento de recursos da
+> OGU.
+>
+> Segue abaixo dados da conta, com data de abertura:
+>
+> ____Conta ____________ Dt.Abertura _______
+>
+>    4367-006-00647022-6         13/09/2018
+>
+>
+> Estamos a disposi=C3=A7=C3=A3o para qualquer d=C3=BAvida.
+>
+> Atenciosamente
+>
+> Marcelo Flavio de Castro Barros
+>
+> Gerente de Carteira PF
+>
+> Ag. Aboli=C3=A7=C3=A3o/CE
+>
+> De: Marcelo Flavio de Castro Barros
+> Enviada em: ter=C3=A7a-feira, 24 de agosto de 2021 10:49
+> Para: rfgalvao@yahoo.com.br
+> Cc: tesouraria@aquiraz.ce.gov.br; rfgtube@gmail.com
+> Assunto: Oficio para conta aberta automaticamente
+>
+> E-mail classificado como #PUBLICO
+>
+> Marcelo Flavio de Castro Barros
+>
+> Gerente de Carteira PF
+>
+> Ag. Aboli=C3=A7=C3=A3o/CE
+>
+> --
+> Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as
+> Setor: Recursos Humanos
+> Devys Queiroz de Vasconcelos
+> (85) 992023370
+> John Lennon Duarte da Silva
+> (85) 982115157
+
+--0000000000008f161c05cf7e6ba5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Recebido.</div><br><div class=3D"gmail_quote"><div dir=3D"=
+ltr" class=3D"gmail_attr">Em sex., 29 de out. de 2021 =C3=A0s 10:59, &lt;<a=
+ href=3D"mailto:admrh@acarape.ce.gov.br">admrh@acarape.ce.gov.br</a>&gt; es=
+creveu:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px =
+0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><br>
+<br>
+-------- Mensagem original --------<br>
+Assunto: ENC: Oficio para conta aberta automaticamente - Munic=C3=ADpio de =
+<br>
+Acarape<br>
+Data: 2021-10-29 10:33<br>
+De: A4367CE - AG Aboli=C3=A7=C3=A3o/CE &lt;<a href=3D"mailto:ag4367@caixa.g=
+ov.br" target=3D"_blank">ag4367@caixa.gov.br</a>&gt;<br>
+Para: &quot;<a href=3D"mailto:admrh@acarape.ce.gov.br" target=3D"_blank">ad=
+mrh@acarape.ce.gov.br</a>&quot; &lt;<a href=3D"mailto:admrh@acarape.ce.gov.=
+br" target=3D"_blank">admrh@acarape.ce.gov.br</a>&gt;<br>
+<br>
+E-mail classificado como #PUBLICO<br>
+<br>
+=C3=80<br>
+<br>
+Prefeitura Municipal de Acarape<br>
+<br>
+Solicitamos envio de of=C3=ADcio (em papel timbrado), solicitando abertura<=
+br>
+de conta corrente aberta automaticamente para recebimento de recursos da<br=
+>
+OGU.<br>
+<br>
+Segue abaixo dados da conta, com data de abertura:<br>
+<br>
+____Conta ____________ Dt.Abertura _______<br>
+<br>
+=C2=A0 =C2=A04367-006-00647022-6=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A013/09/201=
+8<br>
+<br>
+<br>
+Estamos a disposi=C3=A7=C3=A3o para qualquer d=C3=BAvida.<br>
+<br>
+Atenciosamente<br>
+<br>
+Marcelo Flavio de Castro Barros<br>
+<br>
+Gerente de Carteira PF<br>
+<br>
+Ag. Aboli=C3=A7=C3=A3o/CE<br>
+<br>
+De: Marcelo Flavio de Castro Barros<br>
+Enviada em: ter=C3=A7a-feira, 24 de agosto de 2021 10:49<br>
+Para: <a href=3D"mailto:rfgalvao@yahoo.com.br" target=3D"_blank">rfgalvao@y=
+ahoo.com.br</a><br>
+Cc: <a href=3D"mailto:tesouraria@aquiraz.ce.gov.br" target=3D"_blank">tesou=
+raria@aquiraz.ce.gov.br</a>; <a href=3D"mailto:rfgtube@gmail.com" target=3D=
+"_blank">rfgtube@gmail.com</a><br>
+Assunto: Oficio para conta aberta automaticamente<br>
+<br>
+E-mail classificado como #PUBLICO<br>
+<br>
+Marcelo Flavio de Castro Barros<br>
+<br>
+Gerente de Carteira PF<br>
+<br>
+Ag. Aboli=C3=A7=C3=A3o/CE<br>
+<br>
+-- <br>
+Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as<br>
+Setor: Recursos Humanos<br>
+Devys Queiroz de Vasconcelos<br>
+(85) 992023370<br>
+John Lennon Duarte da Silva<br>
+(85) 982115157</blockquote></div>
+
+--0000000000008f161c05cf7e6ba5--

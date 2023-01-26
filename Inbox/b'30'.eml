@@ -1,0 +1,138 @@
+Return-Path: <ghm.informatica@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id eZ0LBiZPimHBPwAAgqjM2g
+	(envelope-from <ghm.informatica@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Tue, 09 Nov 2021 07:36:22 -0300
+Return-path: <ghm.informatica@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Tue, 09 Nov 2021 07:36:22 -0300
+Received: from mail-lj1-f178.google.com ([209.85.208.178]:42628)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <ghm.informatica@gmail.com>)
+	id 1mkOUH-00048U-0s
+	for admrh@acarape.ce.gov.br; Tue, 09 Nov 2021 07:36:21 -0300
+Received: by mail-lj1-f178.google.com with SMTP id z8so12554283ljz.9
+        for <admrh@acarape.ce.gov.br>; Tue, 09 Nov 2021 02:36:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=CHOB3QPtlNWZSNsAXZS9WBH/pr8EHpmlHPjcuYCrzB8=;
+        b=KaM0VSuWbQaa/Uphk5N52/m1dvlRLltEGNuvj1YeKCZQ1vpjt7nKsJWIVbBkNmeja+
+         dcwsYKvYx+Tn2CHTN5pyxp0gvL/KBpCWfYxjtSKj3yvtJeu4lcXG6EQ6RxxPIhRjq6Ep
+         yZWFbmLPLGtv3sTII58l+HFGj1zNMEUKOORoarbvpUEfQczQCpIxNseSXAIjeNg5KsNZ
+         e50bfAss7GDVEFShcJ5Dl4exDROaDgyedFdkKFXi6TwN5tSeAOpSYqOdtp/4IK+66nLH
+         UbWMmnSCwea/MZVs1EnLWNeevJs3AVSJUyF09c7ZPLrPPllYcnn9u38M8tHnvG1bP4+j
+         3k3A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=CHOB3QPtlNWZSNsAXZS9WBH/pr8EHpmlHPjcuYCrzB8=;
+        b=Nc+aJtjAT39cUmSD8o+N/ujsDNxcXzKfraadbtjYwrY3+iRjuflauYER0fhba23Hr4
+         jy7c6onCob7MVM+V0hk1WjONZ7lkCL59clR6x1K1SVPNYUikopGW9nAjyFg2r+PYnBuO
+         dvOBPIUrzrCTeCHuqZ6WHoCcT5yekHh+DZZtbG2zsF/+rJD30Voag9vQKa70FKBuD1oD
+         a4BLTy8LdKybS/PPjEXNdim/3fLQewjFLP5HD5XdXJUuJ8JQ+F4WRASiCG/bsyeP/AAL
+         p5GHSiKGEyK7qPl3WYnFzOvRPqnqfWlkaaBO3lj7oJIANYWLcCztjFEZN1MLzaN1F34X
+         EyIQ==
+X-Gm-Message-State: AOAM5322Gq4j5fxjQi5pC+asZMEbNftQ0QRTN/aUp4m4+IyrwZvSfZTu
+	5jhOncJWQWXFZbiOdzL34wDCbVcwDh6eD7bjx9BDfm/x
+X-Google-Smtp-Source: ABdhPJzOwxAb7PYo2/mBA62H4hJurdxBjzytux5S85LevDXj58CYG0YEVbcjI6gEXn0GMijR4aaTLXW37AaShMvwUFc=
+X-Received: by 2002:a2e:a44b:: with SMTP id v11mr6236138ljn.314.1636454137805;
+ Tue, 09 Nov 2021 02:35:37 -0800 (PST)
+MIME-Version: 1.0
+References: <0ee79860d9f20d95dc4913ac121f033f@acarape.ce.gov.br>
+In-Reply-To: <0ee79860d9f20d95dc4913ac121f033f@acarape.ce.gov.br>
+From: GHM INFORMATICA <ghm.informatica@gmail.com>
+Date: Tue, 9 Nov 2021 07:35:12 -0300
+Message-ID: <CAN+--kShxeF734iDPwYMZHRz=Fe-inBXXAtvrqwuE-kpyXG7Jg@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IENPUlJFw4fDg08gRElSRiAyMDIw?=
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="00000000000093476f05d058abbf"
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Bom dia. Informamos que a devida exclusão foi processada.
+    Att GHM 
+ Content analysis details:   (0.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [ghm.informatica[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+--00000000000093476f05d058abbf
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bom dia. Informamos que a devida exclus=C3=A3o foi processada.
+
+Att
+
+GHM
+
+Em seg., 8 de nov. de 2021 =C3=A0s 09:27, <admrh@acarape.ce.gov.br> escreve=
+u:
+
+> Bom dia,
+>
+> Solicito com a maior brevidade poss=C3=ADvel a corre=C3=A7=C3=A3o da DIRF=
+ conforme
+> anexos...
+>
+> Obrigado e aguardo resposta, boa semana =C3=A0 todos!
+>
+> --
+> Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as
+> Setor: Recursos Humanos
+> Devys Queiroz de Vasconcelos
+> (85) 992023370
+> John Lennon Duarte da Silva
+> (85) 982115157
+
+--00000000000093476f05d058abbf
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Bom dia. Informamos que a devida exclus=C3=A3o foi process=
+ada.<div><br></div><div>Att</div><div><br></div><div>GHM</div></div><br><di=
+v class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">Em seg., 8 de=
+ nov. de 2021 =C3=A0s 09:27, &lt;<a href=3D"mailto:admrh@acarape.ce.gov.br"=
+>admrh@acarape.ce.gov.br</a>&gt; escreveu:<br></div><blockquote class=3D"gm=
+ail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,=
+204,204);padding-left:1ex">Bom dia,<br>
+<br>
+Solicito com a maior brevidade poss=C3=ADvel a corre=C3=A7=C3=A3o da DIRF c=
+onforme <br>
+anexos...<br>
+<br>
+Obrigado e aguardo resposta, boa semana =C3=A0 todos!<br>
+<br>
+-- <br>
+Secretaria de Administra=C3=A7=C3=A3o e Finan=C3=A7as<br>
+Setor: Recursos Humanos<br>
+Devys Queiroz de Vasconcelos<br>
+(85) 992023370<br>
+John Lennon Duarte da Silva<br>
+(85) 982115157</blockquote></div>
+
+--00000000000093476f05d058abbf--

@@ -1,0 +1,204 @@
+Return-Path: <thiagobarroso.ce@hotmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id gGbgHz1R6WKCXwAAgqjM2g
+	(envelope-from <thiagobarroso.ce@hotmail.com>)
+	for <admrh@acarape.ce.gov.br>; Tue, 02 Aug 2022 13:30:53 -0300
+Return-path: <thiagobarroso.ce@hotmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Tue, 02 Aug 2022 13:30:53 -0300
+Received: from mail-cpzbra01olkn2028.outbound.protection.outlook.com ([40.92.97.28]:62784 helo=BRA01-CPZ-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <thiagobarroso.ce@hotmail.com>)
+	id 1oIunE-0006bf-Rf
+	for admrh@acarape.ce.gov.br;
+	Tue, 02 Aug 2022 13:30:53 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=RqZM9tf6kGcqZFlGZ5c9aUG+ZEzxL41N7mjmvVSJrOGS7JQUKF8wFCoj7GwxWzJ7XwUonI+fbYqW2k5cZHA003IUcp2VbH0vIpUD0MmHMzqPOBlyTNBzgDU04jQgDwikwiB+ositprPWkqKJesoKzY2Q/1aG7+rzZ4QxMOSYtdFVRLNbGvdBQ3OSzwDweO5JUXxxO2C51k0yOWLRhvHZD3TPGHBdIY2P5RyKAANl0io8SqBqmtg0q45//CVxK8SGoDMxRyiVZU6lH2PENYw5KcWG2lXrLBqtTsB9sqRuQ8lVSaQ0alkwtjb2PQ8p5e/fiBdyC47336hd0YOpNcp0nQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=49GASjM5aNaoCBabN4wwutiCA++93VMxADm1QEkYTEE=;
+ b=KCxW7fm45AHB/1SZLUggFgBCOKZjjTv72FsZFOKGUmJU8Qt83hXrW+K8yCLW0RHUCBP3uhl4ZXb5qWepHyFiHiuqzeMTUkm1Eibw2U4s12l/K8q4nhz5RDk6tns+u4ZGu12V1bvRV8aw8XsFAIldTIuZgFZ9cAbp8vx3lUTEcHEjiGZ16yJUucPQWOQjhJfJM6Vwq9YLWjnBBUgmgNTgTeq2TfgpOXZjT1Cb4M1/8tpLCJjKG0o0hOKwcGAo65fwq9jex46wbu4t9Zp2iGL5n9Pjp83kYMDmm0IzdGwLC4q/7pq4kjBN5LkppII59omWK7dahxQtBiuXjUcS6CU6rA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=49GASjM5aNaoCBabN4wwutiCA++93VMxADm1QEkYTEE=;
+ b=c+PbamhwOhXeOnNtRGuipopI5/kG9+HfJ+fBSSd2m6ZwddbcDlKTbCc4nHPdzItl0gEXk3NJo3WigJgIF95IVdXJNT1ShpwBuZ/DAz9mISo4ulQ7twW9/8iItt+vMcIsnJIeKNcbCehtMWRhSWsJ9MBtqijQqXWJzs9MiK8HHtmoN5j29qdWap+/O+SaN1d3C1wSxzt/1indUVA4IxfI+S9yHE2sSM9zUgeGjWO4aoYewdg4IVtjUKCSwU5XKdxRZK5Jzd4NNbAfvFY3rcPHqomMBwFxBp0aSpoi6iUxfuZeKWemGAoVsnHcpDNTtMXle8QRCLBTK140fKLoo+2tiw==
+Received: from CPZP284MB0294.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:3d::12)
+ by CPZP284MB0709.BRAP284.PROD.OUTLOOK.COM (2603:10d6:103:31::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5482.11; Tue, 2 Aug
+ 2022 16:30:08 +0000
+Received: from CPZP284MB0294.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::e4d9:33d7:792d:1a2]) by CPZP284MB0294.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::e4d9:33d7:792d:1a2%5]) with mapi id 15.20.5482.016; Tue, 2 Aug 2022
+ 16:30:08 +0000
+From: Thiago Barroso <thiagobarroso.ce@hotmail.com>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+Subject: =?iso-8859-1?Q?Re:_PARECER_JUR=CDDIO_N=BA_0036/2022?=
+Thread-Topic: =?iso-8859-1?Q?PARECER_JUR=CDDIO_N=BA_0036/2022?=
+Thread-Index: AQHYporDcNm3ax7wf0eFDsT+DaFCea2bzR5b
+Date: Tue, 2 Aug 2022 16:30:08 +0000
+Message-ID:
+ <CPZP284MB029445B89E42E38AB4872D038B9D9@CPZP284MB0294.BRAP284.PROD.OUTLOOK.COM>
+References: <64150d8a46b70c99fcd0bab65118d262@acarape.ce.gov.br>
+In-Reply-To: <64150d8a46b70c99fcd0bab65118d262@acarape.ce.gov.br>
+Accept-Language: pt-BR, en-US
+Content-Language: pt-BR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [TPV6F6sXVBgRIxxrkTyptm7pfZzBjN1G]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 4767798b-e5b1-427f-6981-08da74a44392
+x-ms-traffictypediagnostic: CPZP284MB0709:EE_
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ OC4X/h4MmG/REXq4069dhElcoZSCR2X5OD8eplYqrtegF67UGAzVp7vnzqFdjf9LviyJYuLOmKAPchr65OqlE7sHqUP4IsP0uKfwPyldiLNq2TNDpNKcPM10UiAySdr4PViKXxA7SHmlp/EPc5IzW62tiEmDMOH6/lwC5dARzICYz+Q9qaLb//CZeremOsw4FvN0YHDwR9FwXO+H/Us6Ch5/pWlOWGzcADoSQOSvHhRftxE1JXpkZ7QTo9gKl+o1lRuYKq7InsglueRH232dSkksQvttPzrK65mWhgjerUDuJLzyHN433OBNVcDqbTgsS1yzWXNlDkuXWYMYyzddktKpOtIFTur7A3kzxbKVgSXIvmDnqodORVJZYDMXgh1RGc5pI1oLo/ESHw5uWl6M4QbXew1/XwSFwqjIHFfJ3KL9y+IvtCtDjJBvYDqKxuaXQa6tSz9b9vftZnCfz+5vdZn6DpfRKxQpwM3C5P4eBZgT+4qfYfySyrjAjQOnyn0Y0PXB88m1goaLd0DAN15i1SfZfdrTcCCeP9BG3mBcN7NXBqpOp7P1/c1X8kHivk0LcnN0n2j1Q6gYeq7OXX9zon0M1XkEKu++11Hc1nt030TbhQTD0UIz1uYvr2KEnRefR0TssV9zYRlWYTjGhfzBXWHgUgcEiPJ4WP0nyDDui+MeIDggjnqoTM6NxSwbpPA/
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?nCtlaFACBTxwitnRzLBAeaHBBgnfSyv6r4oZiA9/ncxoHTV0qSKthCyieF?=
+ =?iso-8859-1?Q?30ETdkKNeWp+zUjsiiy2BSdTtRuuOD/yXhfqI6lXbo00CYVcC9JWW9v2x/?=
+ =?iso-8859-1?Q?Igf/XEarwj40EtyWuTFPOMM2YIVU7naXdEwdn9ovgs3ZAFVt+Ul6o0pPTb?=
+ =?iso-8859-1?Q?HsD4AlClOuM2tbYSpNEDxE5GzsDCx5BInhL5A3sU8vd9usji7qp9Xis16u?=
+ =?iso-8859-1?Q?q9cUn6XOmfiqdOA78U7EntVi+GtIzdh17BsMVPfm9gOT+9itd5nlwekPv6?=
+ =?iso-8859-1?Q?pioRgGP6+xqoe0gKIkGIo45HZAf7c9evURSqi9VAbrLzLmUB4ZEE/LR8Vg?=
+ =?iso-8859-1?Q?MuZl3b1ZT6xkoHxhs1pGvrIybX9Yp7LBVwun3MyOc08ryEenZfrdu5EnVy?=
+ =?iso-8859-1?Q?FV3tnOoqzB6mo50mnMNFPwBTtQGh3Bf3x1Vud0skecdXQft8eUNGfy2aJb?=
+ =?iso-8859-1?Q?23c0eLIj6DgCPiFDHhWGW2yojX/LVyehFBvgXzfgrARxoueaG1y5C2wU+C?=
+ =?iso-8859-1?Q?/65GTYSbrvzooQTcxpPQAvtQ08md9YN8dAADX3D1MnmoNpyJAx3EHNOCNb?=
+ =?iso-8859-1?Q?R4o6yGg4Nb9l6R/NCBZHwxtVCS7MkjnAlmPne5k6Ohk+grrx3JACM2y1vd?=
+ =?iso-8859-1?Q?N8eMtq9iA6vCiptRkzb3Cz4iEYrEvXzBZWyFAuxa9l+oOjl30JpXOlMIG+?=
+ =?iso-8859-1?Q?7mUzZCMPRQxb+6lzACM7jWyBUXqbpBZspcp116cMWMkTWDoyYWXPa8ByGW?=
+ =?iso-8859-1?Q?URtKTHrbKVXINDwqQhk5HQBr2cewPiiLIXy2j+Y0UEI8i+/4QNvvN0e8fv?=
+ =?iso-8859-1?Q?/OuFIY3v77+IKVU/6fOpFqsNJCvnALK5nAUpU76u1ib2p8siMkBHUuRvCI?=
+ =?iso-8859-1?Q?1LbMaVxKSgbRhr7B4XkTI7iAP7Ookwjqlnwha/vMyZRmmeyI/17cbJ3Y7/?=
+ =?iso-8859-1?Q?ZOQ17y86a+AHHxjfS+/xyYjzn6B9sLjZvgNquwSfokotcIO95jDvd7wJNi?=
+ =?iso-8859-1?Q?sU5r7cIvohVHQzKiw6h2RKE4mx9tmu49DZ1PDgDamzONASaLziE8n7P9Fl?=
+ =?iso-8859-1?Q?XwaaCIprNcUBAl2RAnoQk7Chd+WlnP0L49mi7SJODyXBxGxBnXXTIG5+uF?=
+ =?iso-8859-1?Q?qu+sRkNiOPziQyZgyYXjkCAvguwncekBPy44M8Pg7r/uNOqkAX6XF6ps/9?=
+ =?iso-8859-1?Q?WKUxRJtNdZwP0e8dUf/VfoVwmBnxX7KZ+Jor7mTO446h2e1+HGW56q8RHx?=
+ =?iso-8859-1?Q?FV0d6EfjAYxNOhLXGHfqhRELl7d2WDmb8/Ked4mJ+gGRUYDWm64nUymi8A?=
+ =?iso-8859-1?Q?1/CXlPBLeR8ML1FF/cyqRu/W3AYuA2pvAuHW1McJa3YAmjQEIBNIFUmTOJ?=
+ =?iso-8859-1?Q?fDm1g1gWte?=
+Content-Type: multipart/alternative;
+	boundary="_000_CPZP284MB029445B89E42E38AB4872D038B9D9CPZP284MB0294BRAP_"
+MIME-Version: 1.0
+X-OriginatorOrg: sct-15-20-4755-11-msonline-outlook-7dc52.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CPZP284MB0294.BRAP284.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4767798b-e5b1-427f-6981-08da74a44392
+X-MS-Exchange-CrossTenant-originalarrivaltime: 02 Aug 2022 16:30:08.2848
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CPZP284MB0709
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Recebido. Obter o Outlook para Android<https://aka.ms/AAb9ysg>
+    From: admrh@acarape.ce.gov.br Sent: Tuesday, August 2, 2022 1:12:58 PM To:
+    thiagobarroso.ce@hotmail.com Subjec [...] 
+ Content analysis details:   (0.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [thiagobarroso.ce[at]hotmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+--_000_CPZP284MB029445B89E42E38AB4872D038B9D9CPZP284MB0294BRAP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Recebido.
+
+Obter o Outlook para Android<https://aka.ms/AAb9ysg>
+________________________________
+From: admrh@acarape.ce.gov.br <admrh@acarape.ce.gov.br>
+Sent: Tuesday, August 2, 2022 1:12:58 PM
+To: thiagobarroso.ce@hotmail.com <thiagobarroso.ce@hotmail.com>
+Subject: PARECER JUR=CDDIO N=BA 0036/2022
+
+Prezado Thiago Barroso, boa tarde!
+
+Segue, em anexo, o PARRCER JUR=CDDICO N=BA 0036/2022 da Procuradoria
+Municipal de Acarape/CE.
+
+Secretaria de Administra=E7=E3o e Finan=E7as
+Setor: Recursos Humanos
+Devys Queiroz de Vasconcelos
+(85) 992023370
+Lucio Cesar Oliveira Silva
+(85) 992156745
+
+--_000_CPZP284MB029445B89E42E38AB4872D038B9D9CPZP284MB0294BRAP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+</head>
+<body>
+<div style=3D"color: rgb(33, 33, 33); background-color: rgb(255, 255, 255);=
+" dir=3D"auto">
+Recebido.</div>
+<div id=3D"ms-outlook-mobile-signature" dir=3D"auto">
+<div><br>
+</div>
+Obter o <a href=3D"https://aka.ms/AAb9ysg">Outlook para Android</a></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> admrh@acarape.ce.gov.=
+br &lt;admrh@acarape.ce.gov.br&gt;<br>
+<b>Sent:</b> Tuesday, August 2, 2022 1:12:58 PM<br>
+<b>To:</b> thiagobarroso.ce@hotmail.com &lt;thiagobarroso.ce@hotmail.com&gt=
+;<br>
+<b>Subject:</b> PARECER JUR=CDDIO N=BA 0036/2022</font>
+<div>&nbsp;</div>
+</div>
+<div class=3D"BodyFragment"><font size=3D"2"><span style=3D"font-size:11pt;=
+">
+<div class=3D"PlainText">Prezado Thiago Barroso, boa tarde!<br>
+<br>
+Segue, em anexo, o PARRCER JUR=CDDICO N=BA 0036/2022 da Procuradoria <br>
+Municipal de Acarape/CE.<br>
+<br>
+Secretaria de Administra=E7=E3o e Finan=E7as<br>
+Setor: Recursos Humanos<br>
+Devys Queiroz de Vasconcelos<br>
+(85) 992023370<br>
+Lucio Cesar Oliveira Silva<br>
+(85) 992156745</div>
+</span></font></div>
+</body>
+</html>
+
+--_000_CPZP284MB029445B89E42E38AB4872D038B9D9CPZP284MB0294BRAP_--

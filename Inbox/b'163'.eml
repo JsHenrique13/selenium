@@ -1,0 +1,575 @@
+Return-Path: <advfernandesneto@hotmail.com>
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id CMx5IOOZ4mJxbwAAgqjM2g
+	(envelope-from <advfernandesneto@hotmail.com>); Thu, 28 Jul 2022 11:14:59 -0300
+Return-path: <advfernandesneto@hotmail.com>
+Envelope-to: admfinacas@acarape.ce.gov.br,
+ admrh@acarape.ce.gov.br,
+ saude@acarape.ce.gov.br
+Delivery-date: Thu, 28 Jul 2022 11:14:59 -0300
+Received: from mail-dm6nam10olkn2099.outbound.protection.outlook.com ([40.92.41.99]:45259 helo=NAM10-DM6-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <advfernandesneto@hotmail.com>)
+	id 1oH4Hz-0007Xn-Bm;
+	Thu, 28 Jul 2022 11:14:59 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=GE6Qme9PA37u3Mm//i7vwNlL08iknSrmDMFAZXVfT4CyXGvTktuLSz54nMTBW2MhYpALiQdrSn6VjDytsF9PJ6zdnTn6OaPYZriYJIZjRstJgBpwp6WRBOIijWNmBxLBPg1wWI7qwZK25vDsmVm6hMCp4h57p54QHbpwdD/i67f17x+rh04jEqhq9uWVF6XnjecA1WXeTlH1P4KPKCRmnfSht/5E9c1F7v13WQdNdpGsYVnctS928ftAwOHP5yuMgAHUbeyEKLdvDRCItWSIFJzt/VoY73S5rYoc8bIDWSQQZQ3V+byfmNgM5fFmEgYPZpnpcK5za+EPH1TiIMhfEg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=ksOoWZhgeTDz12WQfdf31De6XZJRqEKPCYkp7E8AEg0=;
+ b=HRLettMpZuicJ5mNkhugj5uP/BXe9D1dk1yP11Cu4Uw63nb2gGdslAdmiDhds1bPP2ZVzykPyVU2lWqnMXnb8LkYMFFWrccb4JA5kr52fLnQlGDwHC8nYHT/SUYuxbEGdxnPMWa+wUmQZ5eeVcZ/pxGMs9gUw7XoxMgac9cxpZFZ4t1uq1mAJLfBgHAhJmAB/ec8V4k/AZa6SFPZ88QYTjjWEmbinhSgDgp01B/ukfBYay831rH3Cx3nE0s7YoQR/TUuZtgf6B1EnubGdaKI6R9YRyXBHoVWtTaXZXBx8Wv0UjCO/0d3jkxL7sMTMxP5MOeLMBV0TIYuM5jxcUTaew==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=ksOoWZhgeTDz12WQfdf31De6XZJRqEKPCYkp7E8AEg0=;
+ b=jm73+T2Vh3zSkgB/SDZFogIo5D4YF1s1PS/fehVOe5o0aBt7l78DpzOF7WpmH5clfeIZttzWJMNEGKSSm6kmSA6rLNVORzq013FyRCqP2Z9JmJ542J5bKlDpFnWHRoG+t7B0gNbYDcfYqVb4wBgNFo5WKgpbiHsDsmdVsqx2rApZQQEP8IZzfD9BbwQ34T+POcgPfePhBl4rdd14VHo+omdWsptNQ+2kdlccXk6IiAC5EGwL2tkQuZNXLGYIYrutxsGHjTchV3DmvBWZxq4vtaz4xrDzs+QoxuogA7J8MYF3SvAotxwoA3rxCKBWipLHyl8yWdvc6f54jxTrYc/Cmg==
+Received: from DM4PR11MB6261.namprd11.prod.outlook.com (2603:10b6:8:a8::10) by
+ BN9PR11MB5321.namprd11.prod.outlook.com (2603:10b6:408:136::8) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5482.6; Thu, 28 Jul 2022 14:13:31 +0000
+Received: from DM4PR11MB6261.namprd11.prod.outlook.com
+ ([fe80::d177:4c7e:33a1:fdf1]) by DM4PR11MB6261.namprd11.prod.outlook.com
+ ([fe80::d177:4c7e:33a1:fdf1%4]) with mapi id 15.20.5458.025; Thu, 28 Jul 2022
+ 14:13:31 +0000
+From: Advocacia Associada Fernandes <advfernandesneto@hotmail.com>
+To: "admfinacas@acarape.ce.gov.br" <admfinacas@acarape.ce.gov.br>,
+	"admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>,
+	"saude@acarape.ce.gov.br" <saude@acarape.ce.gov.br>
+Subject:
+ =?iso-8859-1?Q?ENC:_Solicita=E7=E3o_de_Informa=E7=F5es_-_Proc._0002374-02?=
+ =?iso-8859-1?Q?.2019.8.06.0027?=
+Thread-Topic:
+ =?iso-8859-1?Q?Solicita=E7=E3o_de_Informa=E7=F5es_-_Proc._0002374-02.2019?=
+ =?iso-8859-1?Q?.8.06.0027?=
+Thread-Index: AQHYl4OF90B3YkVHLEeF9sFqiCS/fa192Ia2gAHSAgCAFD3t/A==
+Date: Thu, 28 Jul 2022 14:13:31 +0000
+Message-ID:
+ <DM4PR11MB6261D5F4BD6DEA3CADE849CBCE969@DM4PR11MB6261.namprd11.prod.outlook.com>
+References:
+ <DM4PR11MB626192C16A87361AF19B487ACE889@DM4PR11MB6261.namprd11.prod.outlook.com>
+ <DM4PR11MB626127209D2631C8391533B3CE889@DM4PR11MB6261.namprd11.prod.outlook.com>
+ <CAKN6VY0Vo7EXWqFxFsNgdH_9vNbpnBEbzMw09rtCcYcYDqUyNw@mail.gmail.com>
+In-Reply-To:
+ <CAKN6VY0Vo7EXWqFxFsNgdH_9vNbpnBEbzMw09rtCcYcYDqUyNw@mail.gmail.com>
+Accept-Language: pt-BR, en-US
+Content-Language: pt-BR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [WjCjcMNiuhE01lyPyoevP+lRKjRj4K5QGk2tYOYo5co=]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 3b061f84-b3b0-44ee-be83-08da70a35a07
+x-ms-traffictypediagnostic: BN9PR11MB5321:EE_
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ kogqlYQw7JB58O2qnqtZKdtfZiOk6kmeXZQnTE6Y/Nh6GC8DlR4kQqpq4A95mdlBGzKe/SFcLcihwmyXAqYMPUu30ihXgHma+z0nTTxg1OOlqKcr7HLxohTdHl/JKcd2XczlcdbjdmBMTsLBWV24gBV0TyxMxCS6b5nvuQXU6DEE8nwceg4c0u9CLxz9pULYWZVA8Q/eOweNo99v0WtpstXhZBqV3fqXygmvqb8LvKR6eV7MLhF28ZmFnSL4u2FYJzACKa1kDVqIeOYulrjozMctr3X/z5wLS+WqCq4G2mok+uOyK6codHtz8sostukEH8GOaHpfOW8RU65WjpBVyRqDrAKl0qsxrm1WzdFhgkfced/y34nK58Ft9dTEZ35nYKqvGs62aIlWnXX4XBwn3v/3cTwd3I9yB63NysR06aebhD7yOqTGuP8LA7CcMWCY2BXEvyjdocsEzL9c8rwk4Vfqkzou7Po0Q1IH1YfcUEUj1bCCPM4kISzPRMHHhTmC/GV83dpZLky9ASwUvXylF9FOdb7Hgop55H+bFrF5OSzGItnF4X8HVH6BIxVupXNw6Qk8sYxlAVTKOJjbnkRD92loe+9H8yFSQv2n3l9070o1e6a0SCpv7Gkw/ZYm5PPcHbTVH+9iJyY/HKeU6H+FMA==
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?Wkq00wy624qtQDh+mnUIDZcKwAZJ/mUj5/UQjs2Eq1n4bO/ZvKYTmihj59?=
+ =?iso-8859-1?Q?tEVlgER/XfEQTj8fonhXsuYzNuvtsCI49rdqx+hyYwbxLpwNDXN3143GKB?=
+ =?iso-8859-1?Q?v0CA6KBxtRocYGQV2jldFdNizi8h2cL4WXDeh97fjOZoF/DoSIHFPq9LIR?=
+ =?iso-8859-1?Q?A5n1S1cc4gK6bZJ9CtTGtQrrJxC8IGzSQJoRC9Tb8+QXYvmZc8T2sGA3fY?=
+ =?iso-8859-1?Q?i9gmwqvlL2I8rebG9azvcHnncPqT7QCrmo0dgJH7/JxG2H2a7DhI9enBHR?=
+ =?iso-8859-1?Q?K28qFAFy0oKZsOqWu7tGqNroDQ/MbmOaGzL0vwpo5s8i7ervyDdZ6Z21ft?=
+ =?iso-8859-1?Q?j3RrTXULg0EPGzifgKp8QmYqnKISB3s60Ou7h8QQK8uWmtsUnSGkX12KQA?=
+ =?iso-8859-1?Q?98m/3dTZnjTYqaSaFF+M9K/8Zu5l1quJW1ke/NSxkD127SbFrrEyPuCSE0?=
+ =?iso-8859-1?Q?v6/YMMqABD+cvDf66Nw0KNXRNBIWKqslPc7ZzpyRElkYljYa8oi4QqHScE?=
+ =?iso-8859-1?Q?lLyW+94SSVPmBoBMdMaWoR5AAuIOR1+1n49Fv3mOmQiWjE2PAiar2yA58n?=
+ =?iso-8859-1?Q?gidkvebAzIOcv/saRpPn47cmh3VHYaViN1m7rPwmo8BTncRvvQQ2my7RBn?=
+ =?iso-8859-1?Q?vvC1URh5BiGyJwL293T6gC3PgoYPLDFAWqeL2lZMhXyCRb072+8cjiaYlM?=
+ =?iso-8859-1?Q?h7bjbmyWg3ePZejry6me/1MYXAeSzNbfBC5s2siI1zCWDfma1h0Ht0nI1Q?=
+ =?iso-8859-1?Q?BF6lGYFNX/qTiezrggRaHLdl7wh0yt3kZfy9NWxvYlNcNjMSEf1tny6bkS?=
+ =?iso-8859-1?Q?J0IM/8JrVs1xZujIrYAX3TMFE5Ob8qbSsJZyt+XZPw4+mpLmmCOHxGs6de?=
+ =?iso-8859-1?Q?H5qt84cGvHeWb73w/kU5bzSrT7CLQmp8/rpfRrgE4dmQbyZ9ZMH7X0SXUo?=
+ =?iso-8859-1?Q?noe4AsAbNJ7r9CI0m073PNR6+uXL9mZgiORK2g05HUorruBUcyn+FTG/+y?=
+ =?iso-8859-1?Q?EROuJS7qvbg1QbxAQvpRDzSc+dTWKRERxHqJR4nCHZjZi612FUVFaka7TR?=
+ =?iso-8859-1?Q?YIA9zWFqQMLYvHCKWsGwVqZp1d3vBzDNUD5GlfY4uBA8O1wzPDgWoajyfY?=
+ =?iso-8859-1?Q?unP15aMVV9H9kQtm1AjQ0FSE9H6yuJoPL+Nd0yI3hsLUiuZVmec1nxk07Z?=
+ =?iso-8859-1?Q?3ISsv2srP8e6Uh3LS+Jpc8uRUhGoTTeWsgwUyDrzdnBw7gaW891sghKuO9?=
+ =?iso-8859-1?Q?r4vdz7Q8X3RInjvuYihabMKvgsLO2JKkxWl/WO0c21GoWV4+LY4D0+Z5oR?=
+ =?iso-8859-1?Q?+xtrb/Davy9n9w0nmDpxOwJu8g=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_DM4PR11MB6261D5F4BD6DEA3CADE849CBCE969DM4PR11MB6261namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: sct-15-20-4755-11-msonline-outlook-e8f36.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: DM4PR11MB6261.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3b061f84-b3b0-44ee-be83-08da70a35a07
+X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Jul 2022 14:13:31.8783
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN9PR11MB5321
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Prazados, bom dia Em atenção a resposta do setor tributos
+   do Município de Acarape estou lhes encaminhando o e-mail abaixo. No caso,
+   venho solicitar informações desde quando os servidores públicos do Município
+    lotados n [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [advfernandesneto[at]hotmail.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: NO
+
+--_000_DM4PR11MB6261D5F4BD6DEA3CADE849CBCE969DM4PR11MB6261namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Prazados, bom dia
+
+Em aten=E7=E3o a resposta do setor tributos do Munic=EDpio de Acarape estou=
+ lhes encaminhando o e-mail abaixo. No caso, venho solicitar informa=E7=F5e=
+s desde quando os servidores p=FAblicos do Munic=EDpio lotados no Posto de =
+Sa=FAde de Carro Atolado recebem adicional de insalubridade, para que possa=
+mos responder ao despacho de fls. 131 no Proc. 0002374-02.2019.8.06.0027. P=
+razo Final: 04/08.
+
+Atenciosamente,
+
+
+
+Fernandes Neto
+
+Advogados Associados
+
+
+Fernandes Neto
+
+Advogados Associados
+
+________________________________
+De: N=FAcleo de Adm. Tribut=E1ria Acarape-CE <tributos.acarape.ce@gmail.com=
+>
+Enviado: sexta-feira, 15 de julho de 2022 15:03
+Para: Advocacia Associada Fernandes <advfernandesneto@hotmail.com>
+Assunto: Re: Solicita=E7=E3o de Informa=E7=F5es - Proc. 0002374-02.2019.8.0=
+6.0027
+
+Boa tarde,
+
+Informamos que n=E3o dispomos estas informa=E7=F5es, contudo, estamos encam=
+inhando e-mails que podem obter tias informa=E7=F5es:
+
+  *   SECRETARIA MUN. DE ADM. E FINAN=C7AS: admfinacas@acarape.ce.gov.br<ma=
+ilto:admfinacas@acarape.ce.gov.br>
+  *   SETOR DE RECURSOS HUMANOS:  admrh@acarape.ce.gov.br<mailto:admrh@acar=
+ape.ce.gov.br>
+  *   SECRETARIA MUN. DE SA=DADE:  saude@acarape.ce.gov.br<mailto:saude@aca=
+rape.ce.gov.br>.
+
+Atenciosamente,
+
+=C1mon Oliveira
+Ag. Municipal - Mat.: 4972
+Fiscal de Tributos
+NAT/SEMAFI - Acarape-CE
+Cuide de sua sa=FAde e de quem voc=EA ama >
+Use m=E1scara /
+Salve vidas
+ /  Lave suas m=E3os / Mantenha uma dist=E2ncia segura!!!
+
+Em qui., 14 de jul. de 2022 =E0s 10:16, Advocacia Associada Fernandes <advf=
+ernandesneto@hotmail.com<mailto:advfernandesneto@hotmail.com>> escreveu:
+Prezados,
+
+Seguem Anexos
+Proc. 0002374-02.2019.8.06.0027
+
+
+Fernandes Neto
+
+Advogados Associados
+
+________________________________
+De: Advocacia Associada Fernandes
+Enviado: quinta-feira, 14 de julho de 2022 11:15
+Para: N=FAcleo de Adm. Tribut=E1ria Acarape-CE <tributos.acarape.ce@gmail.c=
+om<mailto:tributos.acarape.ce@gmail.com>>; Tributos Acarape <tributospma202=
+1@gmail.com<mailto:tributospma2021@gmail.com>>
+Assunto: Solicita=E7=E3o de Informa=E7=F5es - Proc. 0002374-02.2019.8.06.00=
+27
+
+
+Prezados,
+
+Venho, por meio deste, solicitar informa=E7=F5es desde quando os servidores=
+ p=FAblicos do Munic=EDpio lotados no Posto de Sa=FAde de Carro Atolado rec=
+ebem adicional de insalubridade, para que possamos responder ao despacho de=
+ fls. 131 no Proc. 0002374-02.2019.8.06.0027.
+
+Atenciosamente,
+
+
+
+Fernandes Neto
+
+Advogados Associados
+
+
+
+--
+N=DACLEO DE ADMINISTRA=C7=C3O TRIBUT=C1RIA - ACARAPE-CE
+ "A maior atra=E7=E3o de uma cidade =E9 a qualidade de vida de seus morador=
+es." Jaime Lerner
+
+--_000_DM4PR11MB6261D5F4BD6DEA3CADE849CBCE969DM4PR11MB6261namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0);" class=3D"elementToProof">
+Prazados, bom dia</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0);" class=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0);" class=3D"elementToProof">
+Em aten=E7=E3o a resposta do setor tributos do Munic=EDpio de Acarape estou=
+ lhes encaminhando o e-mail abaixo. No caso, venho&nbsp;<span style=3D"font=
+-size:12pt;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West Europ=
+ean)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto=
+, &quot;Helvetica Neue&quot;, sans-serif;margin:0px;background-color:rgb(25=
+5, 255, 255)">solicitar
+ informa=E7=F5es&nbsp;<span style=3D"margin:0px;background-color:rgb(255, 2=
+55, 255);display:inline">desde quando os servidores p=FAblicos do Munic=EDp=
+io lotados no Posto de Sa=FAde de Carro Atolado recebem adicional de insalu=
+bridade</span>, para que possamos responder ao despacho
+ de fls. 131 no Proc.&nbsp;<span style=3D"font-weight:700;margin:0px;text-a=
+lign:left;background-color:rgba(0, 0, 0, 0);display:inline">0002374-02.2019=
+.8.06.0027</span><span style=3D"margin:0px;text-align:left;background-color=
+:rgba(0, 0, 0, 0);display:inline">. Prazo
+ Final: 04/08.</span></span></div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0);" class=3D"elementToProof">
+<div style=3D"font-size:12pt;font-family:&quot;Segoe UI&quot;, &quot;Segoe =
+UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMac=
+SystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;margin:0px;backg=
+round-color:rgb(255, 255, 255)">
+<span style=3D"margin:0px;text-align:left;background-color:rgba(0, 0, 0, 0)=
+;display:inline"><br>
+</span></div>
+<div style=3D"font-size:12pt;font-family:&quot;Segoe UI&quot;, &quot;Segoe =
+UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMac=
+SystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;margin:0px;backg=
+round-color:rgb(255, 255, 255)">
+Atenciosamente,&nbsp;</div>
+<div style=3D"font-size:12pt;font-family:&quot;Segoe UI&quot;, &quot;Segoe =
+UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMac=
+SystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;margin:0px;backg=
+round-color:rgb(255, 255, 255)">
+<br>
+</div>
+<div style=3D"font-size:12pt;font-family:&quot;Segoe UI&quot;, &quot;Segoe =
+UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMac=
+SystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;margin:0px;backg=
+round-color:rgb(255, 255, 255)">
+<br>
+</div>
+<div style=3D"font-size:15px;font-family:&quot;Segoe UI&quot;, &quot;Segoe =
+UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMac=
+SystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;margin:0px;color=
+:rgb(32, 31, 30);background-color:rgb(255, 255, 255)">
+<div style=3D"margin:0px">
+<div style=3D"margin:0px">
+<div style=3D"font-size:12pt;font-family:Calibri, Helvetica, sans-serif;mar=
+gin:0px;color:rgb(0, 0, 0)">
+<p style=3D"margin:0cm 0cm 0.0001pt;font-size:11pt;font-family:Calibri, &qu=
+ot;sans-serif&quot;">
+<span style=3D"font-size:20pt;font-family:Haettenschweiler, &quot;sans-seri=
+f&quot;;margin:0px">Fernandes Neto</span></p>
+<p style=3D"margin:0cm 0cm 0.0001pt;font-size:11pt;font-family:Calibri, &qu=
+ot;sans-serif&quot;">
+<span style=3D"font-size:12pt;font-family:&quot;Agency FB&quot;, &quot;sans=
+-serif&quot;;margin:0px">Advogados Associados</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0);">
+<br>
+</div>
+<div id=3D"Signature">
+<div>
+<div style=3D"font-family:Calibri,Helvetica,sans-serif; font-size:12pt; col=
+or:rgb(0,0,0)">
+<p style=3D"margin:0cm 0cm 0.0001pt; font-size:11pt; font-family:&quot;Cali=
+bri&quot;,&quot;sans-serif&quot;">
+<span style=3D"font-size:20.0pt; font-family:&quot;Haettenschweiler&quot;,&=
+quot;sans-serif&quot;">Fernandes Neto</span></p>
+<p style=3D"margin:0cm 0cm 0.0001pt; font-size:11pt; font-family:&quot;Cali=
+bri&quot;,&quot;sans-serif&quot;">
+<span style=3D"font-size:12.0pt; font-family:&quot;Agency FB&quot;,&quot;sa=
+ns-serif&quot;">Advogados Associados</span></p>
+<br>
+</div>
+</div>
+</div>
+</div>
+<div id=3D"signature_bookmark"></div>
+<div id=3D"appendonsend"></div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" co=
+lor=3D"#000000" style=3D"font-size:11pt"><b>De:</b> N=FAcleo de Adm. Tribut=
+=E1ria Acarape-CE &lt;tributos.acarape.ce@gmail.com&gt;<br>
+<b>Enviado:</b> sexta-feira, 15 de julho de 2022 15:03<br>
+<b>Para:</b> Advocacia Associada Fernandes &lt;advfernandesneto@hotmail.com=
+&gt;<br>
+<b>Assunto:</b> Re: Solicita=E7=E3o de Informa=E7=F5es - Proc. 0002374-02.2=
+019.8.06.0027</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div dir=3D"ltr">
+<div dir=3D"ltr"><font face=3D"arial, sans-serif">Boa tarde,</font></div>
+<div dir=3D"ltr"><font face=3D"arial, sans-serif"><br>
+</font></div>
+<div><font face=3D"arial, sans-serif">Informamos que n=E3o dispomos estas i=
+nforma=E7=F5es, contudo, estamos encaminhando e-mails que podem obter tias =
+informa=E7=F5es:&nbsp;</font></div>
+<div>
+<ul>
+<li><font face=3D"arial, sans-serif">SECRETARIA MUN. DE ADM. E FINAN=C7AS:&=
+nbsp;<span style=3D"color:rgb(48,48,48); letter-spacing:0.1px; background-c=
+olor:rgb(252,252,252)"><a href=3D"mailto:admfinacas@acarape.ce.gov.br" data=
+-auth=3D"NotApplicable">admfinacas@acarape.ce.gov.br</a>&nbsp;</span></font=
+></li><li class=3D"elementToProof"><font face=3D"arial, sans-serif"><font c=
+olor=3D"#303030"><span style=3D"letter-spacing:0.1px; background-color:rgb(=
+252,252,252)">SETOR DE RECURSOS HUMANOS:&nbsp;</span></font>
+<span style=3D"font-size:14px"><a href=3D"mailto:admrh@acarape.ce.gov.br" d=
+ata-auth=3D"NotApplicable">admrh@acarape.ce.gov.br</a></span></font></li><l=
+i class=3D"elementToProof"><font face=3D"arial, sans-serif"><span style=3D"=
+font-size:14px">SECRETARIA MUN. DE SA=DADE:&nbsp;</span>
+<span style=3D"color:rgb(48,48,48); font-size:13px; letter-spacing:0.1px; b=
+ackground-color:rgb(252,252,252)">
+<a href=3D"mailto:saude@acarape.ce.gov.br" data-auth=3D"NotApplicable">saud=
+e@acarape.ce.gov.br</a>.</span></font></li></ul>
+</div>
+<div dir=3D"ltr">
+<div dir=3D"ltr"><span style=3D"color:rgb(80,0,80)">
+<div>Atenciosamente,</div>
+<div><br>
+</div>
+<div>
+<div>=C1mon Oliveira</div>
+<div>Ag. Municipal - Mat.: 4972</div>
+<div>Fiscal de Tributos</div>
+<div>NAT/SEMAFI - Acarape-CE</div>
+</div>
+<div>
+<div><span style=3D"background-color:rgb(0,255,0)"><b>Cuide de sua sa=FAde =
+e de quem voc=EA ama &gt;&nbsp;</b>
+<div style=3D"font-weight:bold; color:black; white-space:nowrap; padding:8p=
+x 5px 0px; display:inline-block; font-family:arial,sans-serif; text-align:c=
+enter">
+Use m=E1scara /</div>
+<div style=3D"color:black; font-weight:bold; padding:8px 5px 0px; white-spa=
+ce:nowrap; display:inline-block; font-family:arial,sans-serif; text-align:c=
+enter">
+Salve vidas</div>
+<b><span style=3D"color:black; font-family:arial,sans-serif; text-align:cen=
+ter">&nbsp;/&nbsp;&nbsp;</span><span style=3D"color:black; font-family:aria=
+l,sans-serif; text-align:center">Lave suas m=E3os /&nbsp;</span><span style=
+=3D"color:black; font-family:arial,sans-serif; text-align:center">Mantenha
+ uma dist=E2ncia segura</span>!!!&nbsp;</b></span></div>
+</div>
+</span></div>
+</div>
+</div>
+<br>
+<div class=3D"x_gmail_quote">
+<div dir=3D"ltr" class=3D"x_gmail_attr">Em qui., 14 de jul. de 2022 =E0s 10=
+:16, Advocacia Associada Fernandes &lt;<a href=3D"mailto:advfernandesneto@h=
+otmail.com" data-auth=3D"NotApplicable">advfernandesneto@hotmail.com</a>&gt=
+; escreveu:<br>
+</div>
+<blockquote class=3D"x_gmail_quote" style=3D"margin:0px 0px 0px 0.8ex; bord=
+er-left:1px solid rgb(204,204,204); padding-left:1ex">
+<div dir=3D"ltr">
+<div style=3D"font-family:Calibri,Helvetica,sans-serif; font-size:12pt; col=
+or:rgb(0,0,0)">
+<span style=3D"background-color:rgb(255,255,255); display:inline">Prezados,=
+&nbsp;</span></div>
+<div style=3D"font-family:Calibri,Helvetica,sans-serif; font-size:12pt; col=
+or:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Calibri,Helvetica,sans-serif; font-size:12pt; col=
+or:rgb(0,0,0)">
+Seguem Anexos</div>
+<div style=3D"font-family:Calibri,Helvetica,sans-serif; font-size:12pt; col=
+or:rgb(0,0,0)">
+Proc. 0002374-02.2019.8.06.0027<br>
+</div>
+<div>
+<div style=3D"font-family:Calibri,Helvetica,sans-serif; font-size:12pt; col=
+or:rgb(0,0,0)">
+<br>
+</div>
+<div id=3D"x_gmail-m_4619624150762484933gmail-m_-1842622557756882780Signatu=
+re">
+<div>
+<div style=3D"font-family:Calibri,Helvetica,sans-serif; font-size:12pt; col=
+or:rgb(0,0,0)">
+<p style=3D"margin:0cm 0cm 0.0001pt; font-size:11pt; font-family:Calibri,&q=
+uot;sans-serif&quot;">
+<span style=3D"font-size:20pt; font-family:Haettenschweiler,&quot;sans-seri=
+f&quot;">Fernandes Neto</span></p>
+<p style=3D"margin:0cm 0cm 0.0001pt; font-size:11pt; font-family:Calibri,&q=
+uot;sans-serif&quot;">
+<span style=3D"font-size:12pt; font-family:&quot;Agency FB&quot;,&quot;sans=
+-serif&quot;">Advogados Associados</span></p>
+<br>
+</div>
+</div>
+</div>
+</div>
+<div id=3D"x_gmail-m_4619624150762484933gmail-m_-1842622557756882780signatu=
+re_bookmark">
+</div>
+<div id=3D"x_gmail-m_4619624150762484933gmail-m_-1842622557756882780appendo=
+nsend"></div>
+<hr style=3D"display:inline-block; width:98%">
+<div id=3D"x_gmail-m_4619624150762484933gmail-m_-1842622557756882780divRply=
+FwdMsg" dir=3D"ltr">
+<font face=3D"Calibri, sans-serif" color=3D"#000000" style=3D"font-size:11p=
+t"><b>De:</b> Advocacia Associada Fernandes<br>
+<b>Enviado:</b> quinta-feira, 14 de julho de 2022 11:15<br>
+<b>Para:</b> N=FAcleo de Adm. Tribut=E1ria Acarape-CE &lt;<a href=3D"mailto=
+:tributos.acarape.ce@gmail.com" data-auth=3D"NotApplicable">tributos.acarap=
+e.ce@gmail.com</a>&gt;; Tributos Acarape &lt;<a href=3D"mailto:tributospma2=
+021@gmail.com" data-auth=3D"NotApplicable">tributospma2021@gmail.com</a>&gt=
+;<br>
+<b>Assunto:</b> Solicita=E7=E3o de Informa=E7=F5es - Proc. 0002374-02.2019.=
+8.06.0027</font>
+<div>&nbsp;</div>
+</div>
+<div dir=3D"ltr">
+<div style=3D"font-family:Calibri,Helvetica,sans-serif; font-size:12pt; col=
+or:rgb(0,0,0)">
+<br>
+</div>
+</div>
+<div dir=3D"ltr"><span style=3D"font-size:12pt; margin:0px; background-colo=
+r:rgb(255,255,255)">Prezados,&nbsp;</span>
+</div>
+<div dir=3D"ltr">
+<div style=3D"font-size:12pt; margin:0px; background-color:rgb(255,255,255)=
+"><br>
+</div>
+<div style=3D"font-size:12pt; margin:0px; background-color:rgb(255,255,255)=
+">Venho, por meio deste, solicitar informa=E7=F5es&nbsp;<span style=3D"font=
+-size:12pt; background-color:rgb(255,255,255); display:inline">desde quando=
+ os servidores p=FAblicos do Munic=EDpio lotados
+ no Posto de Sa=FAde de Carro Atolado recebem adicional de insalubridade</s=
+pan>, para que possamos responder ao despacho de fls. 131 no Proc.&nbsp;<sp=
+an style=3D"font-weight:700; margin:0px; text-align:left; background-color:=
+rgba(0,0,0,0); display:inline">0002374-02.2019.8.06.0027</span><span style=
+=3D"margin:0px; text-align:left; background-color:rgba(0,0,0,0); display:in=
+line">.</span></div>
+<div style=3D"font-size:12pt; margin:0px; background-color:rgb(255,255,255)=
+" class=3D"elementToProof">
+<span style=3D"margin:0px; text-align:left; background-color:rgba(0,0,0,0);=
+ display:inline"><br>
+</span></div>
+<div style=3D"font-size:12pt; margin:0px; background-color:rgb(255,255,255)=
+">Atenciosamente,&nbsp;</div>
+<div style=3D"font-size:12pt; margin:0px; background-color:rgb(255,255,255)=
+"><br>
+</div>
+<div style=3D"font-size:12pt; margin:0px; background-color:rgb(255,255,255)=
+"><br>
+</div>
+<div style=3D"font-size:15px; margin:0px; color:rgb(32,31,30); background-c=
+olor:rgb(255,255,255)">
+<div style=3D"margin:0px">
+<div style=3D"margin:0px">
+<div style=3D"font-size:12pt; font-family:Calibri,Helvetica,sans-serif; mar=
+gin:0px; color:rgb(0,0,0)">
+<p style=3D"margin:0cm 0cm 0.0001pt; font-size:11pt; font-family:Calibri,&q=
+uot;sans-serif&quot;">
+<span style=3D"font-size:20pt; font-family:Haettenschweiler,&quot;sans-seri=
+f&quot;; margin:0px">Fernandes Neto</span></p>
+<p style=3D"margin:0cm 0cm 0.0001pt; font-size:11pt; font-family:Calibri,&q=
+uot;sans-serif&quot;" class=3D"elementToProof">
+<span style=3D"font-size:12pt; font-family:&quot;Agency FB&quot;,&quot;sans=
+-serif&quot;; margin:0px">Advogados Associados</span></p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div id=3D"x_gmail-m_4619624150762484933gmail-m_-1842622557756882780x_Signa=
+ture">
+<div>
+<div style=3D"font-family:Calibri,Helvetica,sans-serif; font-size:12pt; col=
+or:rgb(0,0,0)">
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br clear=3D"all">
+<div><br>
+</div>
+-- <br>
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div style=3D"text-align:center"><b><font face=3D"arial black, sans-serif">=
+N=DACLEO DE ADMINISTRA=C7=C3O TRIBUT=C1RIA - ACARAPE-CE</font></b></div>
+<div style=3D"text-align:center"><b><i><font face=3D"arial black, sans-seri=
+f">&nbsp;&quot;A maior atra=E7=E3o de uma cidade =E9 a qualidade de vida de=
+ seus moradores.&quot; Jaime Lerner</font></i></b><br>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_DM4PR11MB6261D5F4BD6DEA3CADE849CBCE969DM4PR11MB6261namp_--

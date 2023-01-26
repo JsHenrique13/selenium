@@ -1,0 +1,305 @@
+Return-Path: <marcelo.c.barros@caixa.gov.br>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id yHWADxpilmGcAwAAgqjM2g
+	(envelope-from <marcelo.c.barros@caixa.gov.br>)
+	for <admrh@acarape.ce.gov.br>; Thu, 18 Nov 2021 11:24:26 -0300
+Return-path: <marcelo.c.barros@caixa.gov.br>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Thu, 18 Nov 2021 11:24:26 -0300
+Received: from mail-roabra01on2089.outbound.protection.outlook.com ([40.107.111.89]:8289 helo=BRA01-ROA-obe.outbound.protection.outlook.com)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <marcelo.c.barros@caixa.gov.br>)
+	id 1mniKt-0000BY-QD
+	for admrh@acarape.ce.gov.br; Thu, 18 Nov 2021 11:24:26 -0300
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=BwJbzH9oEvwaDaEHrfwGAUZVB8PUHn4TirRDZKmYxMRkcEbDaopKaISdW+eg27NIe7yhBLrmYS4LLDSQvBTBV9SaEeHno3yCAOqKyF7sEkIe81x3+JdYNe0QVu72fCTLF04k9Afk1bsZDo4UGmb0drCc+NejBcmk/3aKubsx7SSU6ArW0tCx/qvxaE3cipW3l5UIiKW4jhjk0l4L7IUdWt/x+IzGb04HOvNZGRAnW0NRLqzvbsr41ZGqze0/29BelvOhDJiM1qYQCC6hR2gkJw0oDpm0zjjgvKHt2Ccn2U3TZxxuAGceMg9alqK+OglfdzF42+f4UW7cDEnzFsT+5g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=vXNwsoU1Tcb4LlIoKFJ+wTgrCKBbZOlZkPUEqNxR8WM=;
+ b=XlRAg2lXWi55gnY1PINei74VXIGKE1ngpMyjW6MdGqK+3w7iLUdXBc6Yk6DlqvzolruhPRUnPqH7/nB0S/TO1Sw8kL4nry6pD0P/5u5hCamihfEihHWxy99uIPmrlIfjkw9RwZFXvHw7T1MkUtdDQwLaxGMonV5tqjVI4AKl/QO3nraT0Tb/FcB9OupiqHN6sVA+RW7IhgatuEkSjpqgVSrsAAwTjV/o0mI4mEh4QWstl/Dbqm19eYYiZdd8a/rOH+zic1OcNhqT0XXpOHxcZDuIILX0oAIHJAHP2xz1SFVLpl9VHbziYybUyhRCu2bgLZjUKmAr6yrsIsP6TqHwMw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=caixa.gov.br; dmarc=pass action=none header.from=caixa.gov.br;
+ dkim=pass header.d=caixa.gov.br; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=caixa.gov.br;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=vXNwsoU1Tcb4LlIoKFJ+wTgrCKBbZOlZkPUEqNxR8WM=;
+ b=ooegnRAJI14t4yMRYhYSYFVVYDTXKC392ZyqZX+iJksCSPozZJGBA/axxUEnM1zmv6kFh9iZNgAMq2IFpIBHqQobcAB90vMFpRA/vXKQwkWAdBgJ8f4T1uJZCQRfsREBQBe0gGOuEsLnrKigSCrfV/OtRQ4YZVdL0kvXcpOeQYc=
+Received: from ROAP284MB1717.BRAP284.PROD.OUTLOOK.COM (2603:10d6:10:94::7) by
+ ROAP284MB1216.BRAP284.PROD.OUTLOOK.COM (2603:10d6:10:a3::5) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4713.19; Thu, 18 Nov 2021 14:23:38 +0000
+Received: from ROAP284MB1717.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::d954:dcb4:39f5:2fd9]) by ROAP284MB1717.BRAP284.PROD.OUTLOOK.COM
+ ([fe80::d954:dcb4:39f5:2fd9%4]) with mapi id 15.20.4713.022; Thu, 18 Nov 2021
+ 14:23:38 +0000
+From: Marcelo Flavio de Castro Barros <marcelo.c.barros@caixa.gov.br>
+To: "admrh@acarape.ce.gov.br" <admrh@acarape.ce.gov.br>
+CC: "devysdss@yahoo.com" <devysdss@yahoo.com>
+Subject: Contas Novas
+Thread-Topic: Contas Novas
+Thread-Index: Adfch7tOU4klENv4T366q2DG5vmOeg==
+Date: Thu, 18 Nov 2021 14:23:38 +0000
+Message-ID:
+ <ROAP284MB1717CD42D51DD47C355049BCE19B9@ROAP284MB1717.BRAP284.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: pt-BR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels: MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Enabled=true;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_SetDate=2021-11-18T14:23:34Z;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Method=Privileged;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_Name=_PUBLICO;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_SiteId=ab9bba98-684a-43fb-add8-9c2bebede229;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_ActionId=51a0c77a-9456-4620-8eeb-9b6d8a13a472;
+ MSIP_Label_fde7aacd-7cc4-4c31-9e6f-7ef306428f09_ContentBits=1
+dlp-version: 11.6.300.5
+dlp-reaction: no-action
+dlp-product: dlpe-windows
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=caixa.gov.br;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 236640de-0050-496d-f522-08d9aa9f03bc
+x-ms-traffictypediagnostic: ROAP284MB1216:
+x-microsoft-antispam-prvs:
+ <ROAP284MB12161B8034957AF919079C3AE19B9@ROAP284MB1216.BRAP284.PROD.OUTLOOK.COM>
+x-ms-oob-tlc-oobclassifiers: OLM:1051;
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ Vs2t+5YU+RxL2nb10PRweRmiuwr6tTXWtwRgVxhyR1jZgWWDf+3l+a1yPvUNWzcwAa+llvb2+AcWaTjSeZEFjS6g1y5i4js7pp9j4/GEhCcZxkf7jx+vFobZmBgWxbyEtClxtSCw1NRKJ7JDnJOzUdT6z3S4YjBJNKUDMgeeiNhalzZRN4sk5/Hunhe+ZD5mTzaV+7sVp2ZBSZNGWWEaKdqx32en8VU3hLRwZyzmHa4sVUvJaKYQG06vdUgJrGFL9ohzIy/V7AOgv165hVhNSN6wViLZRdZEOXRTUS4Ao/tzPzywHUX3m9mjkxGoh1xuMd5qNSM40BACxmbjHLfCSEbsEVpm00UAKdbR5EIUpacdHMNSwpEsZKK/NpYIsybohEUVy2wYtwlruAouWuncwKyJkVVyJb+e/Y/OvZmFCmT0pvJtk2PAJ2ZxJFgr1eRwq3b0VWtYB/a7Z7sbNO4cZPTl/PKHsSY6QRhjN3lb6XHoLkji2J+h7oXkIEMzc3AMR7l+VwyGsqS2Iy/dKrjGT78ZfQtZ54WzFLc/XolqzqSO1Yb2y+CRGMEUrvWs4wIhuvbaKACUTBy07z3bzuBBftR5yp3Ar4vlnbjIR8kDeKjppAQsXss4G28hyXY6XOld2yEPzyueavHQvZ/RH80Mm9/5WkzoqN9yJYmYJwHETVh++D++PO30BdefSq3QCfrT6eQtAoPjpsSGtbPWLEnf7Q==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:pt;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:ROAP284MB1717.BRAP284.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(4636009)(366004)(55016002)(19627235002)(508600001)(9686003)(52536014)(71200400001)(6916009)(7116003)(2906002)(5660300002)(7696005)(3480700007)(4744005)(6506007)(4326008)(122000001)(86362001)(76116006)(33656002)(66946007)(66556008)(66446008)(8676002)(66476007)(316002)(64756008)(8936002)(38070700005)(10290500003)(186003)(26005)(38100700002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?iPMIvV3gn5fQBQJJydZKTaJP5B2H3yaO4I6FoDAK1tIA924dOhsKfOAX1sYD?=
+ =?us-ascii?Q?IUZJq9YWH0PzRfQoxgKHkSTr4zG1QPkV0JnB0QhWj7i16hzv1misDuwJsF3u?=
+ =?us-ascii?Q?9CcbbMUdlu5cnSiijgHI5tePdCPBjq6G1l1QdbnJCcF5FKwVQ2SnkSW8Sywv?=
+ =?us-ascii?Q?MGftyj1+AfabJBRZzMZi1ulE4IiNxPWkg+e7h6ATp8MO/yEhiRy7kSp0Kb9q?=
+ =?us-ascii?Q?YFFFUmqPTGbuelEwYIYHaZctzsn4sMMjh1PVpCU2E+mhB2hmU6aNzdXoU6EN?=
+ =?us-ascii?Q?pK045O3/tfZPaI1OALUYUhYoCe5Yzo0Fw3Fiak9B/JYsN7lOhS3fTCDeaED+?=
+ =?us-ascii?Q?tuGosk1TAzi7lRSvaIdqGXHrNV5fcnff79RH0EI2pyjpS4hKLEFRJpAoinOS?=
+ =?us-ascii?Q?Ok96LNblUmHIzNlh1wIk+XsG5XltymxWdMR/lFYBFSk1Q+tGuTM8xX4za69t?=
+ =?us-ascii?Q?TZq4kQKlqUUixod+ZNJ0hY+VnsVfyVVsfxKzv2pmOi/YNrkiTOFXAjWQz0bL?=
+ =?us-ascii?Q?NXndnfRlBrqfmtOyaT1cQpgThaQ3ZptmkhGHg43Xoy5Xot1MZFYcm8ASeNBj?=
+ =?us-ascii?Q?1+VlQOhIeAC7/Mz7Qc4fX5JmwqdDr/SRHkO5C5ZmRlYO1z6fqx77YnmqBDgs?=
+ =?us-ascii?Q?sz0ywZqdLZ9c/PCC73O+kn4nMm8F36rLjaajJGa/OTvt3Bhu0MchOJkc631c?=
+ =?us-ascii?Q?jLXwC1qC/zPqReGAhQp4Cn68uGUw+zau+7Lo3hlfPFqeebfweb9mc0g6HtNO?=
+ =?us-ascii?Q?NhUkVojrkMORy3NSVUXncYFr5Ma36WQf78ASUNIVQH7/IVXH/g3giQNrCfL3?=
+ =?us-ascii?Q?LzCuHkb8l2i1WGf0mkRP7QP0SA6ULvQuH9BeJdoiqjUae1TuDYn7qCqsf8pV?=
+ =?us-ascii?Q?Z3FqKH1KR3CETs19jB4lgS8XYdo3Kd4+oZhVyy+1S+MPfVoLlWJUwJBtc7u2?=
+ =?us-ascii?Q?CpqhZnwx8okFSUzi17P8EU7+ju9rBh6RTnnY8aJSJNpxvzFXU9oTBuaN9Jio?=
+ =?us-ascii?Q?71Sbtw7H3Tsy0kYjlC5P82FJXoN/nqmjxTUY2enOMHIAhMyvCFEnPV87V0OJ?=
+ =?us-ascii?Q?dxk1SDRsNTUdYo7xJaGOZk9WSyG2U64HJSz2dYVZ2nQPYUsdoEhXhKDL7BSU?=
+ =?us-ascii?Q?DUtzm64P8EEoHCF3VD/1Bs3MX+QrAQIeVNKBKjvooondmIOmqifLLoHRqoMs?=
+ =?us-ascii?Q?advaWwua7dZD1ew2iJaEFrYk1hjLvqjtU86fvezus0ay3B+rKwrpCOWemLsl?=
+ =?us-ascii?Q?OEPzI+mEJH1ObPApwE2W/NlH+7MFV2hYfXh0kigxuWkt5nyOmqCydYQxTmH0?=
+ =?us-ascii?Q?8Km4QYVvTVsHcza2/P5wxHKlpjNAj5XlJDTxv2i6XPv3x5XvWbgGPqqW34Tl?=
+ =?us-ascii?Q?eUXh4iZOwPo7fWWMErf9LtU58RwsgJKBwpYPi6HE8zxj3t4fN8K/jUB/0C4F?=
+ =?us-ascii?Q?TAWv5yHg1VPAidFveLLctzDO4wXB/vvFbEBd9TFN0kkexEhkizrJS7Ym9Byb?=
+ =?us-ascii?Q?jB+tzLN/3WEd+r/bdBwiNJo0cpe6ZitqpigR2iCrUD6UiXBh+E2ehjD5w4/u?=
+ =?us-ascii?Q?ax9jG4Jww2s8cBnrfbXMf/U0XeWmnB42pyRb3P09ttmoiKIrO3qLM3QgPv97?=
+ =?us-ascii?Q?suGBTz13VybgWN+6X46ZHEECeiNFII9YwZaQ05pX1PiP0984ki4w+sVKXPlW?=
+ =?us-ascii?Q?f8Ysmw=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_ROAP284MB1717CD42D51DD47C355049BCE19B9ROAP284MB1717BRAP_"
+MIME-Version: 1.0
+X-OriginatorOrg: caixa.gov.br
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: ROAP284MB1717.BRAP284.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 236640de-0050-496d-f522-08d9aa9f03bc
+X-MS-Exchange-CrossTenant-originalarrivaltime: 18 Nov 2021 14:23:38.6841
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: ab9bba98-684a-43fb-add8-9c2bebede229
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: T+5/06yjoeMX64HysqsygYJo6xcb97K1rnw5/i4kU76sy3jd5WIXX+uhjB9erFCzESV+3x3C8WucgFnaJ+OOXZrVjPKStE1q+LjMCTdKhJM=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: ROAP284MB1216
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  E-mail classificado como #PUBLICO Segue abaixo dados das contas
+    de dois sevidores que havia faltado realizar a abertura. CPF: 079.754.693-60
+    
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+X-Spam-Flag: NO
+
+--_000_ROAP284MB1717CD42D51DD47C355049BCE19B9ROAP284MB1717BRAP_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+E-mail classificado como #PUBLICO
+
+Segue abaixo dados das contas de dois sevidores que havia faltado realizar =
+a abertura.
+
+
+CPF: 079.754.693-60
+
+FRANCISCO HELIO LIMA DA SILVA FILHO
+
+Conta: 000853074886-5
+
+
+
+CPF: 034.936.593-85
+
+ICARO BEZERRA DE FREITAS
+
+Conta: 000853072997-6
+
+
+Att.
+Marcelo Flavio de Castro Barros
+
+--_000_ROAP284MB1717CD42D51DD47C355049BCE19B9ROAP284MB1717BRAP_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.EstiloDeEmail17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"PT-BR" link=3D"#0563C1" vlink=3D"#954F72">
+<p class=3D"msipheadere7d5a1b3" align=3D"Left" style=3D"margin:0"><span sty=
+le=3D"font-size:10.0pt;font-family:Arial;color:#008000">E-mail classificado=
+ como #PUBLICO</span></p>
+<br>
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Segue abaixo dados das contas de dois sevidores que =
+havia faltado realizar a abertura.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p style=3D"margin:0cm;margin-bottom:.0001pt;background:white"><span style=
+=3D"font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#242=
+424">CPF: 079.754.693-60<o:p></o:p></span></p>
+<p style=3D"margin:0cm;margin-bottom:.0001pt;background:white;-webkit-font-=
+smoothing: antialiased;box-sizing: border-box;font-variant-ligatures: norma=
+l;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-t=
+ext-stroke-width: 0px;text-decoration-style: initial;text-decoration-color:=
+ initial;word-spacing:0px">
+<span style=3D"font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif=
+;color:#242424">FRANCISCO HELIO LIMA DA SILVA FILHO<o:p></o:p></span></p>
+<p style=3D"margin:0cm;margin-bottom:.0001pt;background:white;-webkit-font-=
+smoothing: antialiased;box-sizing: border-box;font-variant-ligatures: norma=
+l;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-t=
+ext-stroke-width: 0px;text-decoration-style: initial;text-decoration-color:=
+ initial;word-spacing:0px">
+<span style=3D"font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif=
+;color:#242424">Conta: 000853074886-5<o:p></o:p></span></p>
+<p style=3D"margin:0cm;margin-bottom:.0001pt;background:white;-webkit-font-=
+smoothing: antialiased;box-sizing: border-box;font-variant-ligatures: norma=
+l;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-t=
+ext-stroke-width: 0px;text-decoration-style: initial;text-decoration-color:=
+ initial;word-spacing:0px">
+<span style=3D"font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif=
+;color:#242424"><o:p>&nbsp;</o:p></span></p>
+<p style=3D"margin:0cm;margin-bottom:.0001pt;background:white;-webkit-font-=
+smoothing: antialiased;box-sizing: border-box;font-variant-ligatures: norma=
+l;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-t=
+ext-stroke-width: 0px;text-decoration-style: initial;text-decoration-color:=
+ initial;word-spacing:0px">
+<span style=3D"font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif=
+;color:#242424">CPF: 034.936.593-85<o:p></o:p></span></p>
+<p style=3D"margin:0cm;margin-bottom:.0001pt;background:white;-webkit-font-=
+smoothing: antialiased;box-sizing: border-box;font-variant-ligatures: norma=
+l;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-t=
+ext-stroke-width: 0px;text-decoration-style: initial;text-decoration-color:=
+ initial;word-spacing:0px">
+<span style=3D"font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif=
+;color:#242424">ICARO BEZERRA DE FREITAS<o:p></o:p></span></p>
+<p style=3D"margin:0cm;margin-bottom:.0001pt;background:white;-webkit-font-=
+smoothing: antialiased;box-sizing: border-box;font-variant-ligatures: norma=
+l;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-t=
+ext-stroke-width: 0px;text-decoration-style: initial;text-decoration-color:=
+ initial;word-spacing:0px">
+<span style=3D"font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif=
+;color:#242424">Conta: 000853072997-6<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Att.<o:p></o:p></p>
+<p class=3D"MsoNormal">Marcelo Flavio de Castro Barros<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ROAP284MB1717CD42D51DD47C355049BCE19B9ROAP284MB1717BRAP_--

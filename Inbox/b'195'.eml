@@ -1,0 +1,140 @@
+Return-Path: <ghm.informatica@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id 8MksLQK7X2O2MwAAgqjM2g
+	(envelope-from <ghm.informatica@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Mon, 31 Oct 2022 09:09:38 -0300
+Return-path: <ghm.informatica@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Mon, 31 Oct 2022 09:09:38 -0300
+Received: from mail-ua1-f53.google.com ([209.85.222.53]:41695)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <ghm.informatica@gmail.com>)
+	id 1opTbl-0004Cf-M5
+	for admrh@acarape.ce.gov.br;
+	Mon, 31 Oct 2022 09:09:38 -0300
+Received: by mail-ua1-f53.google.com with SMTP id y20so5255482uao.8
+        for <admrh@acarape.ce.gov.br>; Mon, 31 Oct 2022 05:09:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=x652FIpURKyUTMgYheeVisvBkeiVlEK6SZYyr9jCNHM=;
+        b=luVHZYgfQFuYqWoef6v6Y+Rrju4gVp2wkQOvVQLMIAwf8npoYx1zfqenuwjDNL8Xxi
+         xFr7TPFR4ma5FhGdYb9NyAYPhZao9nV5gmbIsXQyA51mGhQMxR5Xvpg32P4/E+OaJx7j
+         vzjKpfRf7nmoZ5EXR6MvaRYNpTZDnSrXGxwQ6/W37iu9tXQ4+6gmJTLi8CAfYphfOf7T
+         VVoeCf6IcYlot6blUMOZRGyqQbQiGer/sDt2C9Bsen2JJDfg2Qwq560LHAMAq91KTlJX
+         zx1+e5A5/kz7sBhhyeyvMu2dfdb5YtZWHxAEBB14Qz1S7Ex5MXr6cvJzZZeR6RZWCcWH
+         ytLw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=x652FIpURKyUTMgYheeVisvBkeiVlEK6SZYyr9jCNHM=;
+        b=gaLEk50i2c/wYC8BY3XaZtEgzufKLmDF4VehX/YRdFiimpsxCPPMh5m+lm7eITgR/X
+         y8thWjMnpYxa6TAnpE3mzao+tADfvlxTevqDsi9PdiE3S7oioRKa5PalNVTSrJyrgm6v
+         JElG0b4LyqhZdGH3FwL8lxeeUOBHvBk1YLr19N54OCKLntP2gTLrWl+uo5nKMjbhWLDX
+         RKdPJg6EeHNgwHR4lM5kLN50QcPbFWqc5Zb+ze0LAy3YglLvaDNxOBrTrB/CxH7pR26s
+         Cj+QEwciqqvC86eVAaVaSi77TKkK6H4M7+TDFX5OJ0BMCmQU5wyYfvOp2oJ6GqrFUpXC
+         FN6g==
+X-Gm-Message-State: ACrzQf1rLFk033R2IgGZ/xFZipKaHmXgNrWDEBq13NSIZ8uPvTOqfg2V
+	Am0u7bg0XOpXPwnyEPVN/FGCdQaeY+mEOG05JZiIm7ZzwqI=
+X-Google-Smtp-Source: AMsMyM7jsenJgmgZxnC+ic5fOS3/yv6cVHIO/CUJjdvxozrKk9zfBTRkimO082qI3r9KI1BJkr492qDfHksM7mv4VbU=
+X-Received: by 2002:ab0:6649:0:b0:3dc:3d19:584 with SMTP id
+ b9-20020ab06649000000b003dc3d190584mr2934885uaq.122.1667218136064; Mon, 31
+ Oct 2022 05:08:56 -0700 (PDT)
+MIME-Version: 1.0
+From: GHM INFORMATICA <ghm.informatica@gmail.com>
+Date: Mon, 31 Oct 2022 09:08:22 -0300
+Message-ID: <CAN+--kQG0gWz0hm1kxkwCpY8zQucXv5t4QhN9xfr=b4YqFEPZw@mail.gmail.com>
+Subject: COMUNICADO IMPORTANTE E-SOCIAL
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="000000000000c365a005ec5378e3"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  *COMUNICADO IMPORTANTE E-SOCIAL* Bom dia. Vimos através desta
+    reforçar os prazos para fechamento do esocial competência outubro. Para
+    que haja tempo hábil para pagamento da guia do INSS que a partir desse mes
+    de novembro tem **novo vencimento, 15/11**, solicitamos que até o dia 10
+    seja realizado o processo da folha. 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [ghm.informatica[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+X-Spam-Flag: NO
+
+--000000000000c365a005ec5378e3
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+*COMUNICADO IMPORTANTE E-SOCIAL*
+
+Bom dia. Vimos atrav=C3=A9s desta refor=C3=A7ar os prazos para fechamento d=
+o esocial
+compet=C3=AAncia outubro.
+
+Para que haja tempo h=C3=A1bil para pagamento da guia do INSS que a partir =
+desse
+mes de novembro tem **novo vencimento, 15/11**, solicitamos que at=C3=A9 o =
+dia
+10 seja realizado o processo da folha.
+
+Pedimos ent=C3=A3o que o setor pessoal se debruce inteiramente at=C3=A9 o d=
+ia 10 na
+resolu=C3=A7=C3=A3o de pend=C3=AAncias cadastrais, problemas internos do si=
+stema junto ao
+suporte, e assessoria t=C3=A9cnica junto a GHM ACPD.
+
+Para os que ainda n=C3=A3o enviaram a compet=C3=AAncia de agosto e setembro=
+, =C3=A9
+necess=C3=A1rio fazer o fechamento desses dois meses que servem de testes d=
+a
+assertividade das rubricas e levantamento dos valores da folha.
+
+Qualquer d=C3=BAvida ficamos a disposi=C3=A7=C3=A3o.
+
+Att
+
+
+*Alexandre MartinsGHM ACPD*
+
+--000000000000c365a005ec5378e3
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><b>COMUNICADO IMPORTANTE E-SOCIAL</b><br><br>Bom dia.=
+ Vimos atrav=C3=A9s desta refor=C3=A7ar os prazos para fechamento do esocia=
+l compet=C3=AAncia outubro.<br><br>Para que haja tempo h=C3=A1bil para paga=
+mento da guia do INSS que a partir desse mes de novembro tem **novo vencime=
+nto, 15/11**, solicitamos que at=C3=A9 o dia 10 seja realizado o processo d=
+a folha.<br><br>Pedimos ent=C3=A3o que o setor pessoal se debruce inteirame=
+nte at=C3=A9 o dia 10 na resolu=C3=A7=C3=A3o de pend=C3=AAncias cadastrais,=
+ problemas internos do sistema junto ao suporte, e assessoria t=C3=A9cnica =
+junto a GHM ACPD.<br><br>Para os que ainda n=C3=A3o enviaram a compet=C3=AA=
+ncia de agosto e setembro, =C3=A9 necess=C3=A1rio fazer o fechamento desses=
+ dois meses que servem de testes da assertividade das rubricas e levantamen=
+to dos valores da folha.<br><br>Qualquer d=C3=BAvida ficamos a disposi=C3=
+=A7=C3=A3o.<br><br>Att<br><br><b>Alexandre Martins<br>GHM ACPD</b><br></div=
+></div>
+
+--000000000000c365a005ec5378e3--

@@ -1,0 +1,182 @@
+Return-Path: <tributospma2021@gmail.com>
+Delivered-To: admrh@acarape.ce.gov.br
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id QDRAFJBjCmI+UwAAgqjM2g
+	(envelope-from <tributospma2021@gmail.com>)
+	for <admrh@acarape.ce.gov.br>; Mon, 14 Feb 2022 11:13:36 -0300
+Return-path: <tributospma2021@gmail.com>
+Envelope-to: admrh@acarape.ce.gov.br
+Delivery-date: Mon, 14 Feb 2022 11:13:36 -0300
+Received: from mail-lf1-f48.google.com ([209.85.167.48]:35413)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <tributospma2021@gmail.com>)
+	id 1nJc6h-0005Qa-IL
+	for admrh@acarape.ce.gov.br; Mon, 14 Feb 2022 11:13:36 -0300
+Received: by mail-lf1-f48.google.com with SMTP id u20so2315522lff.2
+        for <admrh@acarape.ce.gov.br>; Mon, 14 Feb 2022 06:13:15 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=GIwBOdS5tRCO8vP059p7w2Ya+ORX8fKroHom+o3S3bc=;
+        b=Ua+JT4vgSNXsQxx3ieK+I5mRZiiGFbzRX4ueTpS+8LoJKEPraKQ5ii5con9QvcGZ7U
+         Yzv8IPUrMsLzltgx8W97yHjTh+I6W6hwer8RArTllV7yZcPmVcrcdV0nkGPNvibizPKO
+         J2VjaljAjiFv2ri8ywduQ0dawYRn2qC0CJtUFJUICCzbn2o/VIA0Gi4KARadHYM4rcZp
+         i2CsLpKLqzooh9xcQXqb7aHxb+E2Jjuz2nkWM5gPFpLRjo+ODwjsDJuhXH/p0eJboS7R
+         eWYugAAtB6jVEFmPs8PKDXpM1vGbwT2inZrD8dIntICXTs/susPW1zK34urtyzb93sFi
+         aL4Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=GIwBOdS5tRCO8vP059p7w2Ya+ORX8fKroHom+o3S3bc=;
+        b=MBX4fjd5cFCMrYYFsNcOZPa2PTaQH+KUqb9XvXdPnPXfwN2sF1eOV8Ftut4gKH5FKg
+         iVmcQn+K9Z1M+q3be6uzbAMixQA3aBJAUrGk73E8hqAOTGXSY5P8b/cK9hbzirSfX2/R
+         U/563N2iysYSLD0J8ZKPKQ4H8Os5WAmY3EVntT4hCj9+4EhHAdRaPIDT7RMphrs0r6OR
+         WkdcAfUiKlYhAyz10wWeoFe9roDv/7eotft8z0Gb1u0CXqQzVXljmS8Cf7WkNNJwODy9
+         9auGEXskIiTonZ3Vzl8eJiua84gRJZN/2T0rfhJSYF9FBS6XKvfIxEfMCIoCSvt+quLF
+         qNBw==
+X-Gm-Message-State: AOAM530DZtcfS1zDaIoDKojv1UXXkgJYUJtMioANoKd2/bdt+AvI3Hou
+	chb5MdfKXiyPknQEq4psjEtIGliWtBDxrhz0ZSB4s9s/tdjPDQ==
+X-Google-Smtp-Source: ABdhPJyW2k10qPNijvJtFmtEYGvxtzdoiB9SeENVI/u1E+lyCQJY/xH+snz7h61qnb6p8XB5NNisveQN/A41oDB1ck4=
+X-Received: by 2002:a05:6512:1088:: with SMTP id j8mr11397097lfg.350.1644847971589;
+ Mon, 14 Feb 2022 06:12:51 -0800 (PST)
+MIME-Version: 1.0
+From: Tributos Acarape <tributospma2021@gmail.com>
+Date: Mon, 14 Feb 2022 11:12:32 -0300
+Message-ID: <CAPavgQ5OS9C3OAra8S4E-VJmxbnZwomjNay5Hs9FiDRn1_ayyg@mail.gmail.com>
+Subject: =?UTF-8?B?U1IuIERBVllTIFZBU0NPTkNFTE9TIC0gU09MSUNJVEHDh8ODTyBERSBJTkZPUk1Bw4fDlQ==?=
+	=?UTF-8?B?RVM=?=
+To: admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="0000000000000e61d905d7fb0353"
+X-Spam-Status: No, score=0.5
+X-Spam-Score: 5
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Davys Queiroz de Vasconcelos - Gerente de Recursos Humanos,
+    Bom dia Tendo em vista o recebimento de processo do TCE, bem como outros
+   processos que em andamento, vinho solicitar informações sobre alguns ex-secretários/as
+    e funcionários/as deste município, para rea [...] 
+ Content analysis details:   (0.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [tributospma2021[at]gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [tributospma2021[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+--0000000000000e61d905d7fb0353
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Davys Queiroz de Vasconcelos - Gerente de Recursos Humanos,
+Bom dia
+
+Tendo em vista o recebimento de processo do TCE, bem como outros processos
+que em andamento, vinho solicitar informa=C3=A7=C3=B5es sobre alguns
+ex-secret=C3=A1rios/as e funcion=C3=A1rios/as deste munic=C3=ADpio, para re=
+alizarmos as
+devidas altera=C3=A7=C3=B5es e notifica=C3=A7=C3=B5es dos mesmos:
+
+   - *CONTATOS (Celular, telefone e e-mail)*: GERALDO ALEXANDRE DE
+   OLIVEIRA, ANT=C3=94NIA RITA  FERREIRA E SILVA, JOANA DARC SANTOS ALVES, =
+JOANA
+   DARC MESQUITA LOPES E ROMILDO DA SILVA SOUSA.
+   - *CPF E RG*:  ALEXANDRE COUTINHO DE S=C3=81.
+
+Favor confirmar recebimento.
+Outrossim, encaminhamos c=C3=B3pia =C3=A0 Procuradoria Geral Municipal para
+conhecimento.
+Estamos =C3=A0 disposi=C3=A7=C3=A3o para maiores informa=C3=A7=C3=B5es.
+Atenciosamente,
+
+=C3=81mon Oliveira
+Ag. Municipal
+SEFIN/NAT - Acarape-CE
+*Cuide de sua sa=C3=BAde e de quem voc=C3=AA ama > *
+Use m=C3=A1scara /
+Salve vidas
+* /  Lave suas m=C3=A3os / Mantenha uma dist=C3=A2ncia segura!!! *
+
+--0000000000000e61d905d7fb0353
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div id=3D"gmail-:1eo" class=3D"gmail-ii gmail-gt" st=
+yle=3D"direction:ltr;margin:8px 0px 0px;padding:0px;font-size:0.875rem"><di=
+v id=3D"gmail-:1en" class=3D"gmail-a3s gmail-aiL" style=3D"font-variant-num=
+eric:normal;font-variant-east-asian:normal;font-stretch:normal;font-size:sm=
+all;line-height:1.5;overflow:hidden"><div dir=3D"ltr" style=3D"">Davys Quei=
+roz de Vasconcelos - Gerente de Recursos Humanos,=C2=A0<div style=3D"font-f=
+amily:Arial,Helvetica,sans-serif">Bom dia</div><div style=3D"font-family:Ar=
+ial,Helvetica,sans-serif"><br></div><div style=3D"font-family:Arial,Helveti=
+ca,sans-serif"><span style=3D"font-family:arial,sans-serif">T<font color=3D=
+"#000000">endo em vista o recebimento de processo do TCE, bem como outros p=
+rocessos que em andamento, vinho solicitar informa=C3=A7=C3=B5es sobre algu=
+ns ex-secret=C3=A1rios/as e funcion=C3=A1rios/as deste munic=C3=ADpio, para=
+ realizarmos as devidas altera=C3=A7=C3=B5es e notifica=C3=A7=C3=B5es dos m=
+esmos</font></span><span style=3D"color:rgb(0,0,0);font-family:arial,sans-s=
+erif">:</span></div><div style=3D""><ul style=3D""><li style=3D""><font col=
+or=3D"#000000" face=3D"arial, sans-serif"><b>CONTATOS (Celular, telefone e =
+e-mail)</b>:=C2=A0</font>GERALDO ALEXANDRE DE OLIVEIRA, ANT=C3=94NIA RITA=
+=C2=A0 FERREIRA E SILVA, JOANA DARC SANTOS ALVES, JOANA DARC MESQUITA LOPES=
+ E ROMILDO DA SILVA SOUSA.</li><li style=3D""><b>CPF E RG</b>:=C2=A0
+
+ALEXANDRE COUTINHO DE S=C3=81.</li></ul></div><div style=3D""><font color=
+=3D"#000000" face=3D"arial, sans-serif">Favor confirmar recebimento.</font>=
+</div><div style=3D"font-family:Arial,Helvetica,sans-serif"><font color=3D"=
+#000000" face=3D"arial, sans-serif">Outrossim, encaminhamos c=C3=B3pia =C3=
+=A0 Procuradoria Geral Municipal para conhecimento.</font></div><div style=
+=3D"font-family:Arial,Helvetica,sans-serif"><font face=3D"arial, sans-serif=
+">Estamos =C3=A0 disposi=C3=A7=C3=A3o para maiores informa=C3=A7=C3=B5es</f=
+ont>.<br></div><div style=3D"font-family:Arial,Helvetica,sans-serif"><div i=
+d=3D"gmail-m_3111578038509631263gmail-m_-8417971129890747003gmail-m_9201324=
+17569703604m_-1770865474562966390gmail-m_4902750870110191247gmail-m_7142127=
+302237237091gmail-m_-1826839327661193039gmail-m_-254135181702759503gmail-m_=
+-4664973943403654429gmail-:1dp" style=3D"font-size:0.875rem;direction:ltr;m=
+argin:8px 0px 0px;padding:0px;font-family:Roboto,RobotoDraft,Helvetica,Aria=
+l,sans-serif"><div id=3D"gmail-m_3111578038509631263gmail-m_-84179711298907=
+47003gmail-m_920132417569703604m_-1770865474562966390gmail-m_49027508701101=
+91247gmail-m_7142127302237237091gmail-m_-1826839327661193039gmail-m_-254135=
+181702759503gmail-m_-4664973943403654429gmail-:1dq" style=3D"overflow:hidde=
+n;font-variant-numeric:normal;font-variant-east-asian:normal;font-stretch:n=
+ormal;font-size:small;line-height:1.5;font-family:Arial,Helvetica,sans-seri=
+f"><div dir=3D"ltr"><div>Atenciosamente,<br></div><div><br></div><div>=C3=
+=81mon Oliveira</div><div>Ag. Municipal</div><div>SEFIN/NAT - Acarape-CE</d=
+iv><div><div><span style=3D"background-color:rgb(0,255,0)"><b>Cuide de sua =
+sa=C3=BAde e de quem voc=C3=AA ama &gt;=C2=A0</b><div style=3D"font-weight:=
+bold;color:black;white-space:nowrap;padding:8px 5px 0px;display:inline-bloc=
+k;font-family:arial,sans-serif;text-align:center">Use m=C3=A1scara /</div><=
+div style=3D"color:black;font-weight:bold;padding:8px 5px 0px;white-space:n=
+owrap;display:inline-block;font-family:arial,sans-serif;text-align:center">=
+Salve vidas</div><b><span style=3D"color:black;font-family:arial,sans-serif=
+;text-align:center">=C2=A0/=C2=A0=C2=A0</span><span style=3D"color:black;fo=
+nt-family:arial,sans-serif;text-align:center">Lave suas m=C3=A3os /=C2=A0</=
+span><span style=3D"color:black;font-family:arial,sans-serif;text-align:cen=
+ter">Mantenha uma dist=C3=A2ncia segura</span>!!!=C2=A0</b></span></div></d=
+iv></div></div></div></div></div><div class=3D"gmail-yj6qo" style=3D"font-f=
+amily:Arial,Helvetica,sans-serif"></div><div class=3D"gmail-adL" style=3D"f=
+ont-family:Arial,Helvetica,sans-serif"></div></div></div><div class=3D"gmai=
+l-hq gmail-gt gmail-a10" id=3D"gmail-:1gg" style=3D"font-size:0.875rem;marg=
+in:15px 0px;clear:both;font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-=
+serif"><br class=3D"gmail-Apple-interchange-newline"></div></div><br></div>
+
+--0000000000000e61d905d7fb0353--

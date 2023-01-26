@@ -1,0 +1,160 @@
+Return-Path: <tributospma2021@gmail.com>
+Received: from server2.assesi.com
+	by server2.assesi.com with LMTP
+	id OFDfLidyVWJjHQAAgqjM2g
+	(envelope-from <tributospma2021@gmail.com>); Tue, 12 Apr 2022 09:35:51 -0300
+Return-path: <tributospma2021@gmail.com>
+Envelope-to: admfinancas@acarape.ce.gov.br,
+ admrh@acarape.ce.gov.br
+Delivery-date: Tue, 12 Apr 2022 09:35:51 -0300
+Received: from mail-ej1-f52.google.com ([209.85.218.52]:41476)
+	by server2.assesi.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.94.2)
+	(envelope-from <tributospma2021@gmail.com>)
+	id 1neFkM-0001p7-NJ; Tue, 12 Apr 2022 09:35:51 -0300
+Received: by mail-ej1-f52.google.com with SMTP id bh17so37017633ejb.8;
+        Tue, 12 Apr 2022 05:35:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=8vOaDymOeZPyHH5Naq8JnD7aW0adg+j+Qm/RInsqgzA=;
+        b=L/hm/6w9atXjsP+O4BXiLhQA0PCuMw4cdtG1XXYPpd0Or/NLXDZQRbqH+oK0s0nYbN
+         9GTH7dNWgWhDNX5C7ALeM1uSL/4IUwf8pxwR1s+aP272vmpOki77vGMIf/on5KQoEut2
+         WzpSbdLDUlmls2s4ucRQbo8iop+ONmH1LnrELxPGWmKGa/aghj31aP6Vp4iFt9gatkPw
+         dcjAXOivrwqt3PeRNqgBA1I2jUDdX5w3PmbVkbJnL98GpjgSQB374vI8+Zil8DQflHwC
+         /o/UR+BlHyIdm0hKoqUgDIulJ/hEwUH/EtgnyVdhNJHW6MDNzvZjBDB/PHrUa1cmYL52
+         UH5w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=8vOaDymOeZPyHH5Naq8JnD7aW0adg+j+Qm/RInsqgzA=;
+        b=cNFsQBxcdo239N7amswXS708i1PZwjkzl6WMmLb6rN9o2Y4FpZZWuIN2TG7/w1IyZO
+         0Lkd9rQAqJmcFSRU5UCSNnRen6YKhoLeu7Zv4xDGhB5mAVHX7P8QPD1VvxEfCtmr/1fr
+         1CLkKfO/z5RLqxF3+S483F4ymRgC/21xXB21bBDezjOx6J9W/TdUh2iYn2nkBO9hbgPx
+         LCk62FPegVEEst32vpRAlEJ5w7PE1JpwGxqoFlu1c5iCt7mhb3wdg5gA8SmlewISNz9G
+         w6g8Po4kvv+1ira9+oZmOR1n60ixnmgLUHdPcYu5E2WUfFtAN1SlgXOPOH4h914A0vus
+         z+sA==
+X-Gm-Message-State: AOAM530DLoo5sro/2UWKwd9q7B5IXcT3saLnB0dfkkZY71AHiZ3mJ5XF
+	dq8jiDKrBZWHWxYRQxmG77g21Z86eGQgT34qxtKRMy8qsm9l4w==
+X-Google-Smtp-Source: ABdhPJzpLqEgvVerKro6Vl6gF1Pxdz4jiz/HKJIeNyiBiQcwGgbQxzZIJ5jCilZY0/RmL7LHvPj6GtZ1TsTP7zLjbxo=
+X-Received: by 2002:a17:906:6bcd:b0:6e8:93e4:b37f with SMTP id
+ t13-20020a1709066bcd00b006e893e4b37fmr8369780ejs.529.1649766887306; Tue, 12
+ Apr 2022 05:34:47 -0700 (PDT)
+MIME-Version: 1.0
+References: <MW4PR03MB66355D9F9C51CB03400B8EA9CEE79@MW4PR03MB6635.namprd03.prod.outlook.com>
+ <MW4PR03MB663556988F5BA2C634ED1083CEE69@MW4PR03MB6635.namprd03.prod.outlook.com>
+ <CA+OO4anwtU2ibzgE1iQWdyPure0hGuU23iPivKO0qXdWA92h=g@mail.gmail.com> <CAPavgQ477gRhu9B6fTL6-Bw1TA7iay0n-P6QeTr+PkyT8N2-iQ@mail.gmail.com>
+In-Reply-To: <CAPavgQ477gRhu9B6fTL6-Bw1TA7iay0n-P6QeTr+PkyT8N2-iQ@mail.gmail.com>
+From: Tributos Acarape <tributospma2021@gmail.com>
+Date: Tue, 12 Apr 2022 09:34:35 -0300
+Message-ID: <CAPavgQ6qBiQ55MCBG3AyAC=0pSnJK_+m4Ff2BFSEFm2JykjzaQ@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IFNvbGljaXRhw6fDo28gZGUgSW5mb3JtYcOnw7VlcyAtIFByb2MuIDAwNTAxODktNQ==?=
+	=?UTF-8?B?OC4yMDIwLjguMDYuMDAyNw==?=
+To: admfinancas@acarape.ce.gov.br, admrh@acarape.ce.gov.br
+Content-Type: multipart/alternative; boundary="00000000000047b9b605dc744992"
+X-Spam-Status: No, score=0.5
+X-Spam-Score: 5
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server2.assesi.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Bom dia, Pedimos que nos seja enviado as informações solicitadas
+    até ao meio dia de hoje (12.04.2022). Em sex., 8 de abr. de 2022 às 14:23,
+    Tributos Acarape < escreveu: 
+ Content analysis details:   (0.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [tributospma2021[at]gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [tributospma2021[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+--00000000000047b9b605dc744992
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bom dia,
+
+Pedimos que nos seja enviado as informa=C3=A7=C3=B5es solicitadas at=C3=A9 =
+ao meio dia de
+hoje (12.04.2022).
+
+Em sex., 8 de abr. de 2022 =C3=A0s 14:23, Tributos Acarape <
+tributospma2021@gmail.com> escreveu:
+
+> Prezados respons=C3=A1veis pelo Setor Cont=C3=A1bil e de Pessoal,
+> Boa tarde
+>
+> Estamos reenviando a solicita=C3=A7=C3=A3o, com o objetivo de respondermo=
+s a
+> Procuradoria Geral Municipal deste munic=C3=ADpio, pedimos informa=C3=A7=
+=C3=B5es (RG e
+> CPF) do Sr. Valdemar Supriano, segue em anexo o processo.
+>
+> Atenciosamente,
+>
+> =C3=81mon Oliveira
+> Ag. Municipal - Fiscal de Tributos
+> SEMAFI/NAT - Acarape-CE
+> *Cuide de sua sa=C3=BAde e de quem voc=C3=AA ama > *
+> Use m=C3=A1scara /
+> Salve vidas
+> * /  Lave suas m=C3=A3os / Mantenha uma dist=C3=A2ncia segura!!! *
+>
+>
+>
+
+--00000000000047b9b605dc744992
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Bom dia,<div><br></div><div>Pedimos que nos seja enviado a=
+s=C2=A0informa=C3=A7=C3=B5es solicitadas=C2=A0at=C3=A9 ao meio dia de hoje =
+(12.04.2022).=C2=A0</div></div><br><div class=3D"gmail_quote"><div dir=3D"l=
+tr" class=3D"gmail_attr">Em sex., 8 de abr. de 2022 =C3=A0s 14:23, Tributos=
+ Acarape &lt;<a href=3D"mailto:tributospma2021@gmail.com">tributospma2021@g=
+mail.com</a>&gt; escreveu:<br></div><blockquote class=3D"gmail_quote" style=
+=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding=
+-left:1ex"><div dir=3D"ltr">Prezados respons=C3=A1veis pelo Setor Cont=C3=
+=A1bil e de Pessoal,<div>Boa tarde<br><div><br></div><div>Estamos reenviand=
+o a solicita=C3=A7=C3=A3o, com o objetivo=C2=A0de respondermos a Procurador=
+ia Geral Municipal=C2=A0deste munic=C3=ADpio, pedimos informa=C3=A7=C3=B5es=
+ (RG e CPF) do Sr. Valdemar Supriano, segue em anexo o processo.</div><div>=
+<br></div><div><div style=3D"color:rgb(80,0,80)">Atenciosamente,<br></div><=
+div style=3D"color:rgb(80,0,80)"><br></div><div style=3D"color:rgb(80,0,80)=
+">=C3=81mon Oliveira</div><div style=3D"color:rgb(80,0,80)">Ag. Municipal -=
+ Fiscal de Tributos</div><div style=3D"color:rgb(80,0,80)">SEMAFI/NAT - Aca=
+rape-CE</div><div style=3D"color:rgb(80,0,80)"><div><span style=3D"backgrou=
+nd-color:rgb(0,255,0)"><b>Cuide de sua sa=C3=BAde e de quem voc=C3=AA ama &=
+gt;=C2=A0</b><div style=3D"font-weight:bold;color:black;white-space:nowrap;=
+padding:8px 5px 0px;display:inline-block;font-family:arial,sans-serif;text-=
+align:center">Use m=C3=A1scara /</div><div style=3D"color:black;font-weight=
+:bold;padding:8px 5px 0px;white-space:nowrap;display:inline-block;font-fami=
+ly:arial,sans-serif;text-align:center">Salve vidas</div><b><span style=3D"c=
+olor:black;font-family:arial,sans-serif;text-align:center">=C2=A0/=C2=A0=C2=
+=A0</span><span style=3D"color:black;font-family:arial,sans-serif;text-alig=
+n:center">Lave suas m=C3=A3os /=C2=A0</span><span style=3D"color:black;font=
+-family:arial,sans-serif;text-align:center">Mantenha uma dist=C3=A2ncia seg=
+ura</span>!!!=C2=A0</b></span></div></div></div><br><div class=3D"gmail_quo=
+te"><div dir=3D"ltr" class=3D"gmail_attr"><br></div>
+</div></div></div>
+</blockquote></div>
+
+--00000000000047b9b605dc744992--
